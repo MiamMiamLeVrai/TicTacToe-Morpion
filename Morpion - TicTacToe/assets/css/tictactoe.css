@@ -1,0 +1,339 @@
+/* Background color for the main container */
+/* Primary text color */
+/* Color for navigations links */
+/* Default color for links (link and visited) */
+/* Link color for hover and actived  */
+/* Background color for buttons */
+/* Text color for buttons */
+/* Border color for buttons */
+/* Color for selectors */
+/* Basic size for all text elements */
+/* Size for <h1> titles */
+/* Size for <h2> titles */
+/* Size for <h3> titles */
+/*Size for <p> elements */
+/* Basic border radius for buttons, containers, links backgrounds, etc */
+/* Basic and imported font family for all text elements */
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+::-moz-selection {
+  background-color: #ADB6C4;
+}
+
+::selection {
+  background-color: #ADB6C4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  color: #FFFDED;
+  background: #001B2E;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFEFD3;
+  padding: 16px;
+  border-bottom: 3px solid #294C60;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: background-color 0.6s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  transition: background-color 0.6s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, background-color 0.6s ease-in-out;
+  transition: transform 0.35s ease-in-out, background-color 0.6s ease-in-out, -webkit-transform 0.35s ease-in-out;
+  will-change: transform;
+}
+nav.nav-hidden {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px;
+  cursor: default;
+}
+nav .nav-logo .logo-navbar {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
+}
+nav span {
+  color: #294C60;
+  margin: 0 16px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #294C60;
+  margin: 0 16px;
+  padding: 16px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  border-radius: 16px;
+}
+nav ul li a:hover {
+  background-color: #294C60;
+  color: #FFEFD3;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+nav ul li a:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+          box-shadow: 0 0 0 2px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+}
+
+.header-start-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vh;
+  padding: 10vh 12vw;
+  border-bottom: 4px solid #FFFDED;
+}
+.header-start-page h1 {
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin-left: 10%;
+}
+.header-start-page .logo-title {
+  max-width: 100%;
+  width: 410px;
+  height: auto;
+}
+
+hr {
+  border: 3px solid #FFFDED;
+  margin-top: 20px;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/png/Morpion_Fond_Ecran.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5vh 5vw;
+}
+
+.player-choice h2 {
+  font-size: clamp(1.7rem, 2.5vw, 3rem);
+}
+.player-choice button {
+  background-color: #FFEFD3;
+  border: 3px solid #2F2D2E;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 16px 20px;
+  font-size: 1.2rem;
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.player-choice span {
+  font-size: 1.2rem;
+  margin-left: 16px;
+}
+
+.morpion-classic h2 {
+  font-size: clamp(1.7rem, 2.5vw, 3rem);
+}
+.morpion-classic .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 20px;
+  height: 500px;
+  width: 500px;
+  max-width: 100%;
+  border: 3px solid #FFFDED;
+}
+.morpion-classic .grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.morpion-classic .grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.morpion-classic .grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.morpion-classic .grid > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.morpion-classic .grid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.morpion-classic .grid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.morpion-classic .grid > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.morpion-classic .grid > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.morpion-classic .grid > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.morpion-classic .grid .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  background-color: #001B2E;
+  border: 3px solid #FFFDED;
+  cursor: pointer;
+  aspect-ratio: 1;
+  font-size: 3rem;
+  color: #FFFDED;
+}
+.morpion-classic .grid .cell:hover {
+  background-color: rgb(0, 12.0326086957, 20.5);
+}
+
+.player-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 32px;
+}
+.player-infos h3 {
+  font-size: 1.5rem;
+}
+.player-infos span {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-left: 32px;
+}
+.buttons button {
+  background-color: #FFEFD3;
+  border: 3px solid #2F2D2E;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 16px 20px;
+  font-size: 1.2rem;
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252422;
+  padding: 5vh 0;
+  border-top: 4px solid #FFFDED;
+  text-align: center;
+}
+footer .rights {
+  margin: 32px 0;
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+  color: #FFEFD3;
+  margin: 12px auto;
+}
+footer a:link {
+  color: #FFEFD3;
+}
+footer a:visited {
+  color: #FFC49B;
+}
+footer a:hover {
+  color: #FFEFD3;
+}
+footer a:active {
+  color: #FFC49B;
+}
