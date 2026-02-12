@@ -2,7 +2,7 @@
 
 ## 🇺🇸 Tic-Tac-Toe (Personal Web Development Project)
 
-🔗 Direct link to access the Tic-Tac-Toe game: <https://simonheries.github.io/Morpion-TicTacToe/tictactoe-fr.html>
+🔗 Direct link to access the Tic-Tac-Toe game: <https://miammiamlevrai.github.io/Morpion-TicTacToe/tictactoe-en.html>
 
 ### 🎮 Project Description
 
@@ -48,23 +48,23 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 - A game reset system to restart a game.
 
-- Multilingual support (currently available in French and English) for text and interface elements.
+- Multilingual support (_currently available in French and English_) for text and interface elements.
 
 ---
 
 ### ⚠️ Important Information
 
-1. The project is under development and will be regularly updated, improved, and optimized. This applies to JavaScript, SCSS, HTML, and other languages ​​(see the "Information and Explanation of Version Types" section below).
+1. The project is __under development__ and will be regularly updated, improved, and optimized. This applies to JavaScript, SCSS, HTML, and other languages (_see the "Information and Explanation of Version Types" section below_).
 
-2. The project is primarily developed without AI (ChatGPT, GitHub Copilot, etc.), except for critical areas such as the game logic in JavaScript and certain SCSS designs.
+2. The project is __primarily developed without AI__ (_ChatGPT, GitHub Copilot, etc._), except for critical areas such as the game logic in JavaScript and certain SCSS designs.
 
 3. The project does indeed contain a link to download the project assets. These assets are free to use, but you must give credit if you use them for commercial or non-commercial purposes.
 
 4. The project is developed for modern browsers and does not guarantee full compatibility with older browsers.
 
-5. The project does not currently have mobile device support (Yes, I know, it's practically a crime 😦), but this will be included in a future update.
+5. The project does _not currently_ have mobile device support (Yes, I know, it's practically a crime 😦), but this will be included in a future update.
 
-6. The "markdown" folder contains a `color.md` file (available in French… but maybe in English, who knows 👀) and `updates-notes.md`, which respectively present the color palette used (and not used) for the project's design and update notes. Feel free to use them as inspiration, or not at all.
+6. The "markdown" folder contains a `color.md` file (_available in French… but maybe in English, who knows 👀_) and `updates-notes.md`, which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
 
 7. The "draft" folder contains files used as drafts for future project updates. Feel free to take a look; you're allowed to be curious 😉.
 
@@ -72,20 +72,22 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 ### ℹ️ Information and explanation of version types
 
-- Version x.0.0: Update named after future game modes.
+- __Version x.0.0:__ Update named after future game modes.
 -- This will represent future new game modes, as well as new web pages related to the game mode, new sections related to the game mode within certain web pages, etc.
 
-- Version 1.x.0: Major update
+- __Version 1.x.0:__ Major update
 -- This will represent a rewrite of the code in this project, a redesign of the web pages, images, new useful features, etc.
 
-- Version 1.0.x: Minor updates
+- __Version 1.0.x:__ Minor updates
 -- This will include fixes for minor bugs in the web pages, broken features, small additions without creating a full web page, etc.
 
-- Version 1.0.0: First major version of the project, featuring the classic Tic-Tac-Toe web page and the game's basic features.
+- __Version 1.0.0:__ First major version of the project, featuring the classic Tic-Tac-Toe web page and the game's basic features.
+
+---
 
 ## 🇫🇷 Morpion (Projet de développement web personnel)
 
-🔗 Lien direct pour accéder au jeu du Morpion : <https://simonheries.github.io/Morpion-TicTacToe/tictactoe-fr.html>
+🔗 Lien direct pour accéder au jeu du Morpion : <https://miammialevrai.github.io/Morpion-TicTacToe/tictactoe-fr.html>
 
 ### 🎮 Description du projet
 
@@ -147,7 +149,7 @@ Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer 
 
 5. Le projet n'a _pour l'instant_ pas de support pour les appareils mobiles (Oui, je sais c'est limite un crime 😦), mais sera prévu pour une future mise à jour.
 
-6. Le dossier "markdown" contient un fichier `color.md` (_disponible en français… mais peut-être en anglais, qui sait 👀_) et `updates-notes.md` qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
+6. Le dossier "markdown" contient un fichier `color.md` (_disponible en français… mais peut-être en anglais, qui sait 👀_) et `updates-notes.md` qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
 
 7. Le dossier "draft" contient des fichiers servant de brouillon pour les futures mises à jour du projet. Libre à vous d'y jeter un coup d'œil, vous avez le droit d'être curieux 😉.
 
