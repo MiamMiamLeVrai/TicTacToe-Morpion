@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /draft/
-Disallow: /assets/
-Disallow: robots.txt
-Disallow: /prepros.config
