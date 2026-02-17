@@ -26,10 +26,6 @@
   background-color: #ADB6C4;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
 ::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -45,16 +41,18 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
   font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   color: #FFFDED;
-  background: #001B2E;
+  background-color: #001B2E;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -94,10 +92,12 @@ nav .nav-logo {
 }
 nav .nav-logo .logo-navbar {
   max-width: 100%;
-  width: 50px;
+  width: 80px;
   height: auto;
+  outline: 1px solid #001B2E;
 }
 nav span {
+  font-size: 1.5rem;
   color: #294C60;
   margin: 0 16px;
 }
@@ -108,8 +108,13 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 nav ul li a {
+  font-size: 1.5rem;
   display: block;
   text-decoration: none;
   color: #294C60;
@@ -126,8 +131,8 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #294C60;
   color: #FFEFD3;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 nav ul li a:focus {
   outline: none;
@@ -142,12 +147,14 @@ nav ul li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10vh;
-  padding: 10vh 12vw;
+  margin-top: 200px;
+  padding-left: 200px;
+  padding-bottom: 75px;
+  border-bottom: 3px solid #FFFDED;
+  gap: 100px;
 }
 .header-start-page h1 {
-  font-size: clamp(2rem, 3.5vw, 4rem);
-  margin-left: 10%;
+  font-size: 2.4rem;
 }
 .header-start-page .logo-title {
   max-width: 100%;
@@ -155,49 +162,39 @@ nav ul li a:focus {
   height: auto;
 }
 
-hr {
-  border: 3px solid #FFFDED;
-  margin-top: 20px;
-}
-
-.background-image {
+.background {
   position: fixed;
-  top: 7vh;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  inset: 0;
+  background-image: url("../img/png/Morpion_Fond_Ecran.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
-  opacity: 0.4;
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
 
 .start-body {
   text-align: center;
-  margin: 10vh 10vw;
+  padding: 35px 150px;
 }
 .start-body h2 {
-  font-size: clamp(1.7rem, 2.5vw, 3rem);
-  margin-bottom: 32px;
+  font-size: 2.1rem;
 }
 .start-body p {
-  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+  font-size: 1.5rem;
 }
 
 .mods-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 70px 1fr 70px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 70px;
-     -moz-column-gap: 70px;
-          column-gap: 70px;
-  margin: 10vh 2vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 140px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 140px;
+     -moz-column-gap: 140px;
+          column-gap: 140px;
+  margin: 70px 180px;
+  place-content: center;
 }
 .mods-cards .card-mode {
   display: -webkit-box;
@@ -213,17 +210,18 @@ hr {
   text-align: center;
 }
 .mods-cards .card-mode h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .mods-cards .card-mode p {
-  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+  font-size: 1.5rem;
 }
 .mods-cards .card-mode .not-available {
   text-decoration: underline;
   font-weight: bold;
 }
 .mods-cards .card-mode a {
-  margin: 20px 8vw;
+  font-size: 1.5rem;
+  margin: 20px 100px;
   padding: 16px 20px;
   background: #FFEFD3;
   text-decoration: none;
@@ -241,17 +239,18 @@ hr {
   background: #252422;
   color: #FFEFD3;
   border-color: #FFEFD3;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .mods-cards .card-mode a:focus {
-  outline: none;
+  outline: #294C60;
   -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
           box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
 }
 .mods-cards .card-mode span:not(.not-available) {
+  font-size: 1.5rem;
   background-color: #FFEFD3;
-  margin: 20px 8vw;
+  margin: 20px 100px;
   padding: 16px 20px;
   color: #252422;
   border-radius: 16px;
@@ -267,29 +266,25 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5vh 0;
-  border-top: 4px solid #FFFDED;
+  padding: 50px 0;
+  border-top: 3px solid #FFFDED;
   background-color: #252422;
-  text-align: center;
 }
 footer .rights {
-  margin: 32px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 32px;
   font-weight: bold;
 }
 footer a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #FFEFD3;
-  margin: 12px auto;
-}
-footer a:link {
-  color: #FFEFD3;
-}
-footer a:visited {
-  color: #FFC49B;
+  margin: 32px auto;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 footer a:hover {
-  color: #FFEFD3;
-}
-footer a:active {
   color: #FFC49B;
+  text-decoration: underline;
 }
