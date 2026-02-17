@@ -62,7 +62,7 @@ nav {
     padding-bottom: 75px;
     border-bottom: 3px solid $textColor;
     gap: 100px;
-    
+
     & h1 {
         font-size: $title-font-size;
     }
@@ -86,6 +86,7 @@ nav {
 .start-body {
     text-align: center;
     margin: 0 150px;
+    padding-bottom: 60px;
 
     & h2 {
         font-size: $subtitle-font-size;
@@ -95,51 +96,32 @@ nav {
         font-size: $paragraph-font-size;
         margin-bottom: 70px;
     }
-}
+    & a {
+        font-size: $paragraph-font-size;
+        display: inline-block;
+        text-decoration: none;
+        color: $buttonTextColor;
+        background-color: $backgroundBtnColor;
+        cursor: pointer;
+        padding: 16px 20px;
+        border: 3px solid $borderBtnColor;
+        border-radius: $borderRadius;
+        transform: scale(1);
+        transition:
+            background 0.5s,
+            color 0.5s ease-in-out,
+            border-color 0.5s ease-in-out,
+            transform 0.5s ease-in-out;
 
-.languages {
-    display: flex;
-    justify-content: center;
-    margin: 64px;
-
-    & .languages-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-        & h2 {
-            font-size: $subtitle-font-size;
-            margin-left: 60px;
-            margin-right: 20px;
+        &:hover {
+            background: $buttonTextColor;
+            color: $backgroundBtnColor;
+            border-color: $backgroundBtnColor;
+            transform: scale(1.05);
         }
-        & a {
-            font-size: $paragraph-font-size;
-            display: inline-block;
-            text-decoration: none;
-            color: $buttonTextColor;
-            background-color: $backgroundBtnColor;
-            cursor: pointer;
-            padding: 16px 20px;
-            border: 3px solid $borderBtnColor;
-            border-radius: $borderRadius;
-            transform: scale(1);
-            transition:
-                background 0.5s,
-                color 0.5s ease-in-out,
-                border-color 0.5s ease-in-out,
-                transform 0.5s ease-in-out;
-
-            &:hover {
-                background: $buttonTextColor;
-                color: $backgroundBtnColor;
-                border-color: $backgroundBtnColor;
-                transform: scale(1.05);
-            }
-            &:focus {
-                outline: $navLinksColor;
-                box-shadow: 0 0 0 3px
-                    lighten($color: $navLinksColor, $amount: 20%);
-            }
+        &:focus {
+            outline: $navLinksColor;
+            box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
         }
     }
 }

@@ -1,181 +1,141 @@
-@import 'baseColor';
-@import 'variables';
-
-* {
-  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
-}
-::selection {
-  background-color: $selectorColor;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+@import "baseColor";
+@import "variables";
+@import "scrollbarThumb";
 
 html {
-  scroll-behavior: smooth;
-  font-size: $basic-font-size;
+    scroll-behavior: smooth;
+    font-size: $basic-font-size;
 }
 body {
-  font-family:
-    "Outfit",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  line-height: $basic-line-height;
-  color: $textColor;
-  background: $backgroundColor;
-  margin: 0;
-  padding: 0;
-}
-nav {
-  display: flex;
-  align-items: center;
-  background: $linkColor;
-  padding: 16px;
-  border-bottom: 3px solid $navLinksColor;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  transition: transform 0.35s ease-in-out, background-color 0.6s ease-in-out;
-  will-change: transform;
-
-  &.nav-hidden {
-    transform: translateY(-150px);
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-
-  & .nav-logo {
-    display: flex;
-    align-items: center;
-    margin: 16px;
-    cursor: default;
-
-    & .logo-navbar {
-      max-width: 100%;
-      width: 50px;
-      height: auto;
-    }
-  }
-  & span {
-    color: $navLinksColor;
-    margin: 0 16px;
-  }
-  & ul {
-    list-style-type: none;
+    font-family: "Outfit", $basic-font-family;
+    line-height: $basic-line-height;
+    color: $textColor;
+    background: $backgroundColor;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+nav {
     display: flex;
+    align-items: center;
+    background-color: $linkColor;
+    padding: 16px;
+    border-bottom: 3px solid $navLinksColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition:
+        transform 0.35s ease-in-out,
+        background-color 0.6s ease-in-out;
+    will-change: transform;
 
-    & li {
-      & a {
-        display: block;
-        text-decoration: none;
+    &.nav-hidden {
+        transform: translateY(-150px);
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    & .nav-logo {
+        display: flex;
+        align-items: center;
+        margin: 16px;
+        cursor: default;
+
+        & .logo-navbar {
+            display: block;
+            max-width: 100%;
+            width: 80px;
+            height: auto;
+            outline: 1px solid $backgroundColor;
+        }
+    }
+    & span {
         color: $navLinksColor;
         margin: 0 16px;
-        padding: 16px;
-        transform: scale(1);
-        transition:
-          background-color 0.5s ease-in-out,
-          color 0.5s ease-in-out,
-          transform 0.5s ease-in-out;
-        border-radius: $borderRadius;
-
-        &:hover {
-          background-color: $navLinksColor;
-          color: $linkColor;
-          transform: scale(1.1);
-        }
-        &:focus {
-          outline: none;
-          box-shadow: 0 0 0 2px lighten($color: $navLinksColor, $amount: 20%);
-        }
-      }
+        font-size: $paragraph-font-size;
     }
-  }
+    & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+        & li {
+            & a {
+                font-size: $paragraph-font-size;
+                display: block;
+                text-decoration: none;
+                color: $navLinksColor;
+                margin: 0 16px;
+                padding: 16px;
+                transform: scale(1);
+                transition:
+                    background-color 0.5s ease-in-out,
+                    color 0.5s ease-in-out,
+                    transform 0.5s ease-in-out;
+                border-radius: $borderRadius;
+
+                &:hover {
+                    background-color: $navLinksColor;
+                    color: $linkColor;
+                    transform: scale(1.05);
+                }
+                &:focus {
+                    outline: $navLinksColor;
+                    box-shadow: 0 0 0 3px
+                        lighten($color: $navLinksColor, $amount: 20%);
+                }
+            }
+        }
+    }
 }
 .header-start-page {
-  display: flex;
-  align-items: center;
-  margin-top: 10vh;
-  padding: 10vh 12vw;
-  border-bottom: 4px solid $textColor;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 75px;
+    border-bottom: 3px solid $textColor;
+    gap: 100px;
 
-  & h1 {
-    font-size: clamp($title-font-size, 3.5vw, 4rem);
-    margin-left: 10%;
-  }
-  & .logo-title {
-    max-width: 100%;
-    width: 410px;
-    height: auto;
-  }
-}
-hr {
-  border: 3px solid $textColor;
-  margin-top: 20px;
+    & h1 {
+        font-size: $title-font-size;
+    }
+    & .logo-title {
+        display: block;
+        max-width: 100%;
+        width: 410px;
+        height: auto;
+    }
 }
 .background {
-  position: fixed;
-  inset: 0;
-  background-image: url("../img/png/Morpion_Fond_Ecran.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  filter: blur(5px);
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/png/Morpion_Fond_Ecran.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(5px);
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 5vh 5vw;
-}
-.player-choice {
-    & h2 {
-        font-size: clamp($subtitle-font-size, 2.5vw, 3rem);
-    }
-    & button {
-        background-color: $backgroundBtnColor;
-        border: 3px solid $borderBtnColor;
-        border-radius: $borderRadius;
-        cursor: pointer;
-        padding: 16px 20px;
-        font-size: $paragraph-font-size;
-        font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    & span {
-        font-size: $paragraph-font-size;
-        margin-left: 16px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    margin: 75px 100px 75px 100px;
+    padding-bottom: 50px;
 }
 .morpion-classic {
     & h2 {
-        font-size: clamp($subtitle-font-size, 2.5vw, 3rem);
+        font-size: $subtitle-font-size;
+        text-align: center;
     }
     & .grid {
         display: grid;
+        margin-left: 100px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        margin-top: 20px;
         height: 500px;
         width: 500px;
         max-width: 100%;
@@ -190,30 +150,78 @@ main {
             border: 3px solid $textColor;
             cursor: pointer;
             aspect-ratio: 1;
-            font-size: 3rem;
+            font-size: 6rem;
             color: $textColor;
+            transition:
+                background-color 0.5s ease-in-out,
+                border-color 0.5s ease-in-out;
 
             &:hover {
-                background-color: darken($color: $backgroundColor, $amount: 5%)
+                border-color: $selectorColor;
+                background-color: lighten(
+                    $color: $backgroundColor,
+                    $amount: 10%
+                );
             }
         }
     }
 }
-.player-infos {
+aside {
     display: flex;
     flex-direction: column;
-    margin-left: 32px;
-
-    & h3 {
-        font-size: $third-font-size;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+.player-choice {
+    & h2 {
+        font-size: $subtitle-font-size;
     }
-    & span {
+    & button {
+        background-color: $backgroundBtnColor;
+        border: 3px solid $borderBtnColor;
+        border-radius: $borderRadius;
+        cursor: pointer;
+        padding: 16px 20px;
         font-size: $paragraph-font-size;
-        margin-top: 10px;
+        font-family: "Outfit", $basic-font-family;
+        transform: scale(1);
+        transition:
+            background-color 0.5s ease-in-out,
+            border-color 0.5s ease-in-out,
+            color 0.5s ease-in-out,
+            transform 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $borderBtnColor;
+            border-color: $backgroundBtnColor;
+            color: $backgroundBtnColor;
+            transform: scale(1.05);
+        }
+    }
+    & p {
+        font-size: $paragraph-font-size;
+        font-weight: bold;
+    }
+}
+.player-infos {
+    & h2 {
+        font-size: $subtitle-font-size;
+    }
+    & p {
+        font-size: $paragraph-font-size;
+        font-weight: bold;
     }
 }
 .buttons {
-    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & p {
+        font-size: $paragraph-font-size;
+        font-weight: bold;
+    }
 
     & button {
         background-color: $backgroundBtnColor;
@@ -222,7 +230,20 @@ main {
         cursor: pointer;
         padding: 16px 20px;
         font-size: $paragraph-font-size;
-        font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Outfit", $basic-font-family;
+        transform: scale(1);
+        transition:
+            background-color 0.5s ease-in-out,
+            border-color 0.5s ease-in-out,
+            color 0.5s ease-in-out,
+            transform 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $borderBtnColor;
+            border-color: $backgroundBtnColor;
+            color: $backgroundBtnColor;
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -230,30 +251,34 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: $buttonTextColor;
-    padding: 5vh 0;
-    border-top: 4px solid $textColor;
-    text-align: center;
+    padding: 50px 0;
+    border-top: 3px solid $textColor;
 
     & .rights {
+        font-size: $paragraph-font-size;
         margin: 32px 0;
         font-weight: bold;
+        text-align: center;
     }
     & a {
+        font-size: $paragraph-font-size;
         text-decoration: none;
         color: $linkColor;
         margin: 12px auto;
+        transition:
+            color 0.5s ease-in-out,
+            text-decoration 0.5s ease-in-out;
 
-        &:link {
-            color: $linkColor;
-        }
-        &:visited {
-            color: $secondLinkColor;
-        }
         &:hover {
-            color: $linkColor;
-        }
-        &:active {
             color: $secondLinkColor;
+            text-decoration: underline;
         }
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+        transform: scale(1);
+        scroll-behavior: auto;
     }
 }
