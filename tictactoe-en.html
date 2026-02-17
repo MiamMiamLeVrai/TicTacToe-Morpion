@@ -1,203 +1,256 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
-    />
-    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
-    <meta
-      name="copyright"
-      content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="google" content="notranslate" />
-    <meta name="theme-color" content="#FFEFD3" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
-    <meta name="google-site-verification" content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk" />
-    <meta
-      property="og:title"
-      content="Tic Tac Toe - Play online for free"
-    />
-    <meta
-      property="og:description"
-      content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
-    />
-    <meta property="og:type" content="website" />
-    <!--À completer quand le site sera mis en ligne-->
-    <meta property="og:url" content="" />
-    <!--À completer quand le site sera mis en ligne-->
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Tic Tac Toe - Play online for free"
-    />
-    <meta
-      name="twitter:description"
-      content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
-    />
-    <!--À completer quand le site sera mis en ligne-->
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:site" content="@Miammiam_am" />
-    <meta name="twitter:creator" content="@Miammiam_am" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-      rel="preload"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/favicons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="manifest" href="assets/json/site.webmanifest" />
-    <link rel="stylesheet" href="assets/css/tictactoe.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
+        />
+        <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
+        <meta
+            name="copyright"
+            content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#FFEFD3" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta
+            name="google-site-verification"
+            content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
+        />
+        <meta
+            property="og:title"
+            content="Tic Tac Toe - Play online for free"
+        />
+        <meta
+            property="og:description"
+            content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-en.html"
+        />
+        <meta
+            property="og:image"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Tic Tac Toe - Play online for free"
+        />
+        <meta
+            name="twitter:description"
+            content="The Tic Tac Toe game in all its forms, available online, without download and even without advertising. It's time to play it without moderation!"
+        />
+        <meta
+            name="twitter:image"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png"
+        />
+        <meta name="twitter:site" content="@Miammiam_am" />
+        <meta name="twitter:creator" content="@Miammiam_am" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            as="style"
+            onload="this.rel = 'stylesheet'"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="shortcut icon"
+            href="assets/favicons/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="manifest" href="assets/json/site.webmanifest" />
+        <link rel="stylesheet" href="assets/css/tictactoe.css" />
 
-    <link rel="canonical" href="tictactoe-en.html" />
-    <link rel="alternate" href="tictactoe-en.html" hreflang="en-US" />
-    <link rel="alternate" href="tictactoe-fr.html" hreflang="fr-FR" />
+        <link rel="canonical" href="tictactoe-en.html" />
+        <link rel="alternate" href="tictactoe-en.html" hreflang="en-US" />
+        <link rel="alternate" href="tictactoe-fr.html" hreflang="fr-FR" />
 
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      />
-    </noscript>
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            />
+        </noscript>
 
-    <title>Tic Tac Toe - Play online for free</title>
-  </head>
+        <title>Tic Tac Toe - Play online for free</title>
+    </head>
 
-  <body>
-    <nav aria-label="Main navigation" id="navbarMove">
-      <div class="nav-logo">
-        <img
-          src="assets/img/svg/Logo_Morpion.svg"
-          alt="Tic Tac Toe Logo"
-          width="50"
-          height="50"
-          fetchpriority="high"
-          class="logo-navbar"
-        /><span>Tic Tac Toe - Play online for free</span>
-      </div>
-      <ul>
-        <li>
-          <a href="index-en.html" rel="noopener noreferrer">Return to homepage</a>
-        </li>
-        <li>
-          <a href="choice-modes-en.html" rel="noopener noreferrer">Game modes</a>
-        </li>
-        <li>
-          <a href="download-en.html" rel="noopener noreferrer">Resources</a>
-        </li>
-        <li>
-          <a href="rules-en.html#classic" rel="noopener noreferrer"
-            >Rules of Classic Tic Tac Toe</a
-          >
-        </li>
-        <li>
-          <a href="index.html" rel="noopener noreferrer"
-            >Available languages</a
-          >
-        </li>
-        <li>
-          <a href="homepage-en.html#creditsList" rel="noopener noreferrer"
-            >Site credits</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <header class="header-start-page">
-      <img
-        src="assets/img/svg/Logo_Morpion.svg"
-        alt="Poster image of Tic Tac Toe"
-        class="logo-title"
-        width="410"
-        height="410"
-        fetchpriority="high"
-      />
-      <h1>Tic Tac Toe - Play online for free</h1>
-    </header>
-    <main>
-      <img
-        src="assets/img/png/Morpion_Fond_Ecran.png"
-        alt=""
-        class="background"
-        width="1920"
-        height="1080"
-        role="presentation"
-      />
-      <section class="player-choice" id="playerSection">
-        <h2>Who will play first?</h2>
-        <button id="playerChoice" aria-label="Choose randomly">
-          Choose randomly!
-        </button>
-        <span id="playerResult" role="status" aria-live="polite"></span>
-      </section>
-      <section class="morpion-classic" id="classicGame">
-        <h2>Classic Tic Tac Toe</h2>
-        <div class="grid" role="grid" aria-label="Classic Tic Tac Toe grid">
-          <button class="cell" data-cell="0" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="1" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="2" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="3" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="4" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="5" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="6" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="7" aria-label="Empty cell"></button>
-          <button class="cell" data-cell="8" aria-label="Empty cell"></button>
-        </div>
-      </section>
+    <body>
+        <nav aria-label="Main navigation" id="navbarMove">
+            <div class="nav-logo">
+                <img
+                    src="assets/img/png/Logo_Morpion.png"
+                    alt="Tic Tac Toe Logo"
+                    width="80"
+                    height="80"
+                    decoding="sync"
+                    fetchpriority="high"
+                    class="logo-navbar"
+                /><span>Tic Tac Toe - Play online for free</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="homepage-en.html">Return to homepage</a>
+                </li>
+                <li>
+                    <a href="choice-modes-en.html">Game modes</a>
+                </li>
+                <li>
+                    <a href="download-en.html" rel="noopener noreferrer"
+                        >Resources</a
+                    >
+                </li>
+                <li>
+                    <a href="index.html" rel="noopener noreferrer"
+                        >Available languages</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <header class="header-start-page">
+            <img
+                src="assets/img/png/Logo_Morpion.png"
+                alt="Poster image of Tic Tac Toe"
+                class="logo-title"
+                width="410"
+                height="410"
+                decoding="sync"
+                fetchpriority="high"
+            />
+            <h1>Tic Tac Toe - Play online for free</h1>
+        </header>
+        <div class="background"></div>
+        <main>
+            <section class="morpion-classic">
+                <h2>Classic Tic Tac Toe</h2>
+                <div
+                    class="grid"
+                    role="grid"
+                    aria-label="Classic Tic Tac Toe grid"
+                >
+                    <button
+                        class="cell"
+                        data-cell="0"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="1"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="2"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="3"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="4"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="5"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="6"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="7"
+                        aria-label="Empty cell"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="8"
+                        aria-label="Empty cell"
+                    ></button>
+                </div>
+            </section>
 
-      <aside aria-labelledby="infos-title">
-        <section class="player-infos">
-          <h3 id="infos-title">Game information</h3>
-          <span id="turnInfos"></span>
-          <span id="winsInfos"></span>
-        </section>
+            <aside aria-labelledby="infos-title">
+                <section class="player-choice">
+                    <h2>Who will play first?</h2>
+                    <button id="playerChoice" aria-label="Choose randomly">
+                        Choose randomly!
+                    </button>
+                    <p id="playerResult" role="status" aria-live="polite"></p>
+                </section>
+                <section class="player-infos">
+                    <h2 id="infos-title">Game information</h2>
+                    <p id="turnInfos"></p>
+                    <p id="winsInfos"></p>
+                </section>
 
-        <section class="buttons">
-          <button id="restartButton" aria-label="Restart the game" disabled>
-            Restart the game
-          </button>
-          <button id="rechoosePlayer" aria-label="Choose a new player randomly" disabled>
-            Choose a new player randomly
-          </button>
-          <span id="rechoosePlayerText" aria-live="polite" role="status"></span>
-        </section>
-      </aside>
-    </main>
-    <footer>
-      <span class="rights"
-        >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved - Version 1.0.0</span
-      >
-      <a href="homepage-en.html#creditsList">Site credits</a>
-    </footer>
-    <script src="assets/javascript/tictactoe-en.js" defer></script>
-  </body>
+                <section class="buttons">
+                    <button
+                        id="restartButton"
+                        aria-label="Restart the game"
+                        disabled
+                    >
+                        Restart the game
+                    </button>
+                    <button
+                        id="rechoosePlayer"
+                        aria-label="Choose a new player randomly"
+                        disabled
+                    >
+                        Choose a new player randomly
+                    </button>
+                    <p
+                        id="rechoosePlayerText"
+                        aria-live="polite"
+                        role="status"
+                    ></p>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            <span class="rights"
+                >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
+                - Version 1.1.0</span
+            >
+            <a href="homepage-en.html#creditsList">Site credits</a>
+        </footer>
+        <script src="assets/javascript/animation.js" defer></script>
+        <script src="assets/javascript/tictactoe-en.js" defer></script>
+    </body>
 </html>
