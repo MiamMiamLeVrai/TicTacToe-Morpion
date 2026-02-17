@@ -10,7 +10,7 @@ body {
     font-family: "Outfit", $basic-font-family;
     line-height: $basic-line-height;
     color: $textColor;
-    background: $backgroundColor;
+    background-color: $backgroundColor;
     margin: 0;
     padding: 0;
     box-sizing: border-box;;
@@ -18,7 +18,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    background: $linkColor;
+    background-color: $linkColor;
     padding: 16px;
     border-bottom: 3px solid $navLinksColor;
     position: fixed;
