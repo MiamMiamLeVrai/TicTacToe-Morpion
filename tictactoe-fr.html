@@ -1,200 +1,251 @@
 <!doctype html>
 <html lang="fr-FR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
-    />
-    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
-    <meta
-      name="copyright"
-      content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="google" content="notranslate" />
-    <meta name="theme-color" content="#FFEFD3" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
-    <meta name="google-site-verification" content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk" />
-    <meta
-      property="og:title"
-      content="Le Morpion - Jouez en ligne gratuitement"
-    />
-    <meta
-      property="og:description"
-      content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-fr.html" />
-    <meta property="og:image" content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Le Morpion - Jouez en ligne gratuitement"
-    />
-    <meta
-      name="twitter:description"
-      content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
-    />
-    <meta name="twitter:image" content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png" />
-    <meta name="twitter:site" content="@Miammiam_am" />
-    <meta name="twitter:creator" content="@Miammiam_am" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-      rel="preload"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/favicons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="manifest" href="assets/json/site.webmanifest" />
-    <link rel="stylesheet" href="assets/css/tictactoe.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
+        />
+        <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
+        <meta
+            name="copyright"
+            content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#FFEFD3" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta
+            name="google-site-verification"
+            content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
+        />
+        <meta
+            property="og:title"
+            content="Le Morpion - Jouez en ligne gratuitement"
+        />
+        <meta
+            property="og:description"
+            content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-fr.html"
+        />
+        <meta
+            property="og:image"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Le Morpion - Jouez en ligne gratuitement"
+        />
+        <meta
+            name="twitter:description"
+            content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !"
+        />
+        <meta
+            name="twitter:image"
+            content="https://miammiamlevrai.github.io/TicTacToe-Morpion/assets/img/png/Morpion-TicTacToe.png"
+        />
+        <meta name="twitter:site" content="@Miammiam_am" />
+        <meta name="twitter:creator" content="@Miammiam_am" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            as="style"
+            onload="this.rel = 'stylesheet'"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="shortcut icon"
+            href="assets/favicons/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="manifest" href="assets/json/site.webmanifest" />
+        <link rel="stylesheet" href="assets/css/tictactoe.css" />
 
-    <link rel="canonical" href="tictactoe-fr.html" />
-    <link rel="alternate" href="tictactoe-en.html" hreflang="en-US" />
-    <link rel="alternate" href="tictactoe-fr.html" hreflang="fr-FR" />
+        <link rel="canonical" href="tictactoe-fr.html" />
+        <link rel="alternate" href="tictactoe-en.html" hreflang="en-US" />
+        <link rel="alternate" href="tictactoe-fr.html" hreflang="fr-FR" />
 
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      />
-    </noscript>
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            />
+        </noscript>
 
-    <title>Le Morpion - Jouez en ligne gratuitement</title>
-  </head>
+        <title>Le Morpion - Jouez en ligne gratuitement</title>
+    </head>
 
-  <body>
-    <nav aria-label="Navigation principale" id="navbarMove">
-      <div class="nav-logo">
-        <img
-          src="assets/img/svg/Logo_Morpion.svg"
-          alt="Logo du Morpion"
-          width="50"
-          height="50"
-          fetchpriority="high"
-          class="logo-navbar"
-        /><span>Morpion - Règles</span>
-      </div>
-      <ul>
-        <li>
-          <a href="index-fr.html" rel="noopener noreferrer">Revenir à l'accueil</a>
-        </li>
-        <li>
-          <a href="choice-modes-fr.html" rel="noopener noreferrer">Modes de jeu</a>
-        </li>
-        <li>
-          <a href="download-fr.html" rel="noopener noreferrer">Ressources</a>
-        </li>
-        <li>
-          <a href="rules-fr.html#classic" rel="noopener noreferrer"
-            >Règles du Morpion classique</a
-          >
-        </li>
-        <li>
-          <a href="index.html" rel="noopener noreferrer"
-            >Langues disponibles</a
-          >
-        </li>
-        <li>
-          <a href="homepage-fr.html#creditsList" rel="noopener noreferrer"
-            >Crédits du site</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <header class="header-start-page">
-      <img
-        src="assets/img/svg/Logo_Morpion.svg"
-        alt="Image d'affiche du Morpion"
-        class="logo-title"
-        width="410"
-        height="410"
-        fetchpriority="high"
-      />
-      <h1>Morpion - Jouez directement !</h1>
-    </header>
-    <main>
-      <img
-        src="assets/img/png/Morpion_Fond_Ecran.png"
-        alt=""
-        class="background"
-        width="1920"
-        height="1080"
-        role="presentation"
-      />
-      <section class="player-choice" id="playerSection">
-        <h2>Qui va jouer en premier ?</h2>
-        <button id="playerChoice" aria-label="Choisi par tirage au sort">
-          Tire au sort !
-        </button>
-        <span id="playerResult" role="status" aria-live="polite"></span>
-      </section>
-      <section class="morpion-classic" id="classicGame">
-        <h2>Morpion classique</h2>
-        <div class="grid" role="grid" aria-label="Grille du morpion">
-          <button class="cell" data-cell="0" aria-label="Case vide"></button>
-          <button class="cell" data-cell="1" aria-label="Case vide"></button>
-          <button class="cell" data-cell="2" aria-label="Case vide"></button>
-          <button class="cell" data-cell="3" aria-label="Case vide"></button>
-          <button class="cell" data-cell="4" aria-label="Case vide"></button>
-          <button class="cell" data-cell="5" aria-label="Case vide"></button>
-          <button class="cell" data-cell="6" aria-label="Case vide"></button>
-          <button class="cell" data-cell="7" aria-label="Case vide"></button>
-          <button class="cell" data-cell="8" aria-label="Case vide"></button>
-        </div>
-      </section>
+    <body>
+        <nav aria-label="Navigation principale" id="navbarMove">
+            <div class="nav-logo">
+                <img
+                    src="assets/img/png/Logo_Morpion.png"
+                    alt="Logo du Morpion"
+                    width="80"
+                    height="80"
+                    fetchpriority="high"
+                    decoding="sync"
+                    class="logo-navbar"
+                /><span>Morpion - Jouez !</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="homepage-fr.html">Revenir à l'accueil</a>
+                </li>
+                <li>
+                    <a href="choice-modes-fr.html">Modes de jeu</a>
+                </li>
+                <li>
+                    <a href="download-fr.html">Ressources</a>
+                </li>
+                <li>
+                    <a href="index.html">Langues disponibles</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header-start-page">
+            <img
+                src="assets/img/png/Logo_Morpion.png"
+                alt="Image d'affiche du Morpion"
+                class="logo-title"
+                width="410"
+                height="410"
+                fetchpriority="high"
+                decoding="sync"
+            />
+            <h1>Morpion - Jouez directement !</h1>
+        </header>
+        <div class="background"></div>
+        <main>
+            <section class="morpion-classic">
+                <h2>Morpion classique</h2>
+                <div class="grid" role="grid" aria-label="Grille du morpion">
+                    <button
+                        class="cell"
+                        data-cell="0"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="1"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="2"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="3"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="4"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="5"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="6"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="7"
+                        aria-label="Case vide"
+                    ></button>
+                    <button
+                        class="cell"
+                        data-cell="8"
+                        aria-label="Case vide"
+                    ></button>
+                </div>
+            </section>
 
-      <aside aria-labelledby="infos-title">
-        <section class="player-infos">
-          <h3 id="infos-title">Informations de la partie</h3>
-          <span id="turnInfos"></span>
-          <span id="winsInfos"></span>
-        </section>
+            <aside aria-labelledby="infos-title">
+                <section class="player-choice">
+                    <h2>Qui va jouer en premier ?</h2>
+                    <button
+                        id="playerChoice"
+                        aria-label="Choisi par tirage au sort"
+                    >
+                        Tire au sort !
+                    </button>
+                    <p id="playerResult" role="status" aria-live="polite"></p>
+                </section>
+                <section class="player-infos">
+                    <h2 id="infos-title">Informations de la partie</h2>
+                    <p id="turnInfos"></p>
+                    <p id="winsInfos"></p>
+                </section>
 
-        <section class="buttons">
-          <button id="restartButton" aria-label="Recommencer la partie" disabled>
-            Recommencer la partie
-          </button>
-          <button id="rechoosePlayer" aria-label="Retirer au sort" disabled>
-            Retirer au sort
-          </button>
-          <span id="rechoosePlayerText" aria-live="polite" role="status"></span>
-        </section>
-      </aside>
-    </main>
-    <footer>
-      <span class="rights"
-        >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 1.0.0</span
-      >
-      <a href="homepage-fr.html#creditsList">Crédits du site</a>
-    </footer>
-    <script src="assets/javascript/tictactoe-fr.js" defer></script>
-  </body>
+                <section class="buttons">
+                    <button
+                        id="restartButton"
+                        aria-label="Recommencer la partie"
+                        disabled
+                    >
+                        Recommencer la partie
+                    </button>
+                    <button
+                        id="rechoosePlayer"
+                        aria-label="Retirer au sort"
+                        disabled
+                    >
+                        Retirer au sort
+                    </button>
+                    <p
+                        id="rechoosePlayerText"
+                        aria-live="polite"
+                        role="status"
+                    ></p>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            <span class="rights"
+                >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
+                réservés - Version 1.1.0</span
+            >
+            <a href="homepage-fr.html#creditsList">Crédits du site</a>
+        </footer>
+        <script src="assets/javascript/animation.js" defer></script>
+        <script src="assets/javascript/tictactoe-fr.js" defer></script>
+    </body>
 </html>
