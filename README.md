@@ -64,7 +64,7 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 5. The project does _not currently_ have mobile device support (Yes, I know, it's practically a crime 😦), but this will be included in a future update.
 
-6. The "markdown" folder contains a `color.md` file (_available in French… but maybe in English, who knows 👀_) and `updates-notes.md`, which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
+6. The "markdown" folder contains a `color.md` file (_available in French… but maybe in English, who knows 👀_) and `updates-notes.md` (`assets/markdown/updates-notes.md`), which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
 
 7. The "draft" folder contains files used as drafts for future project updates. Feel free to take a look; you're allowed to be curious 😉.
 
@@ -149,7 +149,7 @@ Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer 
 
 5. Le projet n'a _pour l'instant_ pas de support pour les appareils mobiles (Oui, je sais c'est limite un crime 😦), mais sera prévu pour une future mise à jour.
 
-6. Le dossier "markdown" contient un fichier `color.md` (_disponible en français… mais peut-être en anglais, qui sait 👀_) et `updates-notes.md` qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
+6. Le dossier "markdown" contient un fichier `color.md` (_disponible en français… mais peut-être en anglais, qui sait 👀_) et `updates-notes.md` (`assets/markdown/updates-notes.md`) qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
 
 7. Le dossier "draft" contient des fichiers servant de brouillon pour les futures mises à jour du projet. Libre à vous d'y jeter un coup d'œil, vous avez le droit d'être curieux 😉.
 
