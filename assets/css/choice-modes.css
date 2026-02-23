@@ -135,7 +135,7 @@ nav ul li a:hover {
           transform: scale(1.05);
 }
 nav ul li a:focus {
-  outline: none;
+  outline: #294C60;
   -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
           box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
 }
@@ -220,6 +220,7 @@ nav ul li a:focus {
   font-weight: bold;
 }
 .mods-cards .card-mode a {
+  display: inline-block;
   font-size: 1.5rem;
   margin: 20px 100px;
   padding: 16px 20px;
@@ -287,4 +288,14 @@ footer a {
 footer a:hover {
   color: #FFC49B;
   text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-transition: none;
+    transition: none;
+    scroll-behavior: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
