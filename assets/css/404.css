@@ -205,5 +205,7 @@ footer .rights {
     -webkit-transition: none;
     transition: none;
     scroll-behavior: auto;
+    -webkit-transform: none;
+            transform: none;
   }
 }
