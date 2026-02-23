@@ -192,7 +192,7 @@ footer {
 
     & .rights {
         font-size: $paragraph-font-size;
-        margin-top: 32px;
+        margin: 32px;
         font-weight: bold;
         text-align: center;
     }
@@ -201,7 +201,7 @@ footer {
         text-decoration: none;
         color: $linkColor;
         margin: 32px auto;
-        transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
+        transition: color 0.5s ease-in-out;
         
         &:hover {
             color: $secondLinkColor;
@@ -213,6 +213,6 @@ footer {
     * {
         transition: none;
         scroll-behavior: auto;
-        transform: scale(1);
+        transform: none;
     }
 }
