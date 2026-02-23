@@ -48,7 +48,7 @@ body {
   font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   color: #FFFDED;
-  background: #001B2E;
+  background-color: #001B2E;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -284,6 +284,7 @@ aside {
   font-size: 2.1rem;
 }
 .player-choice button {
+  display: inline-block;
   background-color: #FFEFD3;
   border: 3px solid #2F2D2E;
   border-radius: 16px;
@@ -333,6 +334,7 @@ aside {
   font-weight: bold;
 }
 .buttons button {
+  display: inline-block;
   background-color: #FFEFD3;
   border: 3px solid #2F2D2E;
   border-radius: 16px;
@@ -377,11 +379,9 @@ footer a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #FFEFD3;
-  margin: 12px auto;
-  -webkit-transition: color 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
+  margin: 32px auto;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 footer a:hover {
   color: #FFC49B;
@@ -392,8 +392,8 @@ footer a:hover {
   * {
     -webkit-transition: none;
     transition: none;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: none;
+            transform: none;
     scroll-behavior: auto;
   }
 }
