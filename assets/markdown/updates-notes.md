@@ -20,7 +20,8 @@
 ##### Others Things
 
 1. Reorganization of the `updates-notes.md` file: the list of new features will be better highlighted, whether it is the French or English version,
-2. `color.md` is now available in English (_because why not?_ 🤷🏽‍♂️).
+2. `color.md` is now available in English (_because why not?_ 🤷🏽‍♂️),
+3. New file : `.gitignore`.
 
 Have fun!
 
@@ -46,7 +47,8 @@ Have fun!
 ##### Autres
 
 1. Réorganisation du fichier `updates-notes.md` : la liste des nouveautés seront mieux mise en avant, que ça soit la version française comme anglaise,
-2. `color.md` est maintenant disponible en anglais (_parce que pourquoi pas ?_ 🤷🏽‍♂️).
+2. `color.md` est maintenant disponible en anglais (_parce que pourquoi pas ?_ 🤷🏽‍♂️),
+3. Nouveau fichier : `.gitignore`.
 
 Amusez-vous bien !
 
