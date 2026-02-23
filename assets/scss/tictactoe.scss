@@ -178,6 +178,7 @@ aside {
         font-size: $subtitle-font-size;
     }
     & button {
+        display: inline-block;
         background-color: $backgroundBtnColor;
         border: 3px solid $borderBtnColor;
         border-radius: $borderRadius;
@@ -224,6 +225,7 @@ aside {
     }
 
     & button {
+        display: inline-block;
         background-color: $backgroundBtnColor;
         border: 3px solid $borderBtnColor;
         border-radius: $borderRadius;
@@ -264,10 +266,9 @@ footer {
         font-size: $paragraph-font-size;
         text-decoration: none;
         color: $linkColor;
-        margin: 12px auto;
+        margin: 32px auto;
         transition:
-            color 0.5s ease-in-out,
-            text-decoration 0.5s ease-in-out;
+            color 0.5s ease-in-out;
 
         &:hover {
             color: $secondLinkColor;
@@ -278,7 +279,7 @@ footer {
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none;
-        transform: scale(1);
+        transform: none;
         scroll-behavior: auto;
     }
 }
