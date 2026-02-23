@@ -48,7 +48,7 @@ body {
   font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   color: #FFFDED;
-  background: #001B2E;
+  background-color: #001B2E;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -253,7 +253,7 @@ footer {
 }
 footer .rights {
   font-size: 1.5rem;
-  margin-top: 32px;
+  margin: 32px;
   font-weight: bold;
   text-align: center;
 }
@@ -262,10 +262,8 @@ footer a {
   text-decoration: none;
   color: #FFEFD3;
   margin: 32px auto;
-  -webkit-transition: color 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 footer a:hover {
   color: #FFC49B;
@@ -277,7 +275,7 @@ footer a:hover {
     -webkit-transition: none;
     transition: none;
     scroll-behavior: auto;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: none;
+            transform: none;
   }
 }
