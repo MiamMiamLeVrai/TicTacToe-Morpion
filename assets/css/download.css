@@ -165,6 +165,7 @@ nav ul li a:focus {
 }
 
 .start-body-button, .download-elements {
+  display: inline-block;
   font-size: 1.5rem;
   background-color: #FFEFD3;
   color: #252422;
@@ -184,7 +185,7 @@ nav ul li a:focus {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .start-body-button:hover, .download-elements:hover {
-  background-color: #252422;
+  background-color: #2F2D2E;
   color: #FFEFD3;
   border-color: #FFEFD3;
   -webkit-transform: scale(1.05);
@@ -265,8 +266,9 @@ nav ul li a:focus {
   margin-top: 64px;
 }
 .download-body a {
+  display: inline-block;
   font-size: 1.5rem;
-  background: #FFEFD3;
+  background-color: #FFEFD3;
   color: #252422;
   text-decoration: none;
   border: 3px solid #FFEFD3;
@@ -313,7 +315,7 @@ footer {
 footer .rights {
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 32px;
+  margin: 32px;
   font-weight: bold;
 }
 footer a {
@@ -334,5 +336,7 @@ footer a:hover {
     -webkit-transition: none;
     transition: none;
     scroll-behavior: auto;
+    -webkit-transform: none;
+            transform: none;
   }
 }
