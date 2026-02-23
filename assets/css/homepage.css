@@ -165,8 +165,9 @@ nav ul li a:focus {
 }
 
 .start-body-button {
+  display: inline-block;
   font-size: 1.5rem;
-  background: #FFEFD3;
+  background-color: #FFEFD3;
   color: #252422;
   text-decoration: none;
   border: 3px solid #2F2D2E;
@@ -184,7 +185,7 @@ nav ul li a:focus {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .start-body-button:hover {
-  background-color: #252422;
+  background-color: #2F2D2E;
   color: #FFEFD3;
   border-color: #FFEFD3;
   -webkit-transform: scale(1.05);
@@ -236,17 +237,17 @@ nav ul li a:focus {
   border-radius: 16px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .end-body a:hover {
   background-color: #2F2D2E;
   color: #FFEFD3;
   border-color: #FFEFD3;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .end-body a:focus {
   outline: #294C60;
@@ -357,5 +358,7 @@ footer .rights {
     -webkit-transition: none;
     transition: none;
     scroll-behavior: auto;
+    -webkit-transform: none;
+            transform: none;
   }
 }
