@@ -109,6 +109,7 @@ nav {
     }
 }
 .start-body-button {
+    display: inline-block;
     font-size: $paragraph-font-size;
     background-color: $backgroundBtnColor;
     color: $buttonTextColor;
@@ -128,7 +129,7 @@ nav {
         border-color 0.5s ease-in-out;
 
     &:hover {
-        background-color: $buttonTextColor;
+        background-color: $borderBtnColor;
         color: $backgroundBtnColor;
         border-color: $backgroundBtnColor;
         transform: scale(1.05);
@@ -196,8 +197,9 @@ nav {
     margin-top: 64px;
 
     & a {
+        display: inline-block;
         font-size: $paragraph-font-size;
-        background: $backgroundBtnColor;
+        background-color: $backgroundBtnColor;
         color: $buttonTextColor;
         text-decoration: none;
         border: 3px solid $backgroundBtnColor;
@@ -238,7 +240,7 @@ footer {
     & .rights {
         font-size: $paragraph-font-size;
         text-align: center;
-        margin-top: 32px;
+        margin: 32px;
         font-weight: bold;
     }
     & a {
@@ -258,5 +260,6 @@ footer {
     * {
         transition: none;
         scroll-behavior: auto;
+        transform: none;
     }
 }
