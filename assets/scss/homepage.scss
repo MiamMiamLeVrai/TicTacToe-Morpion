@@ -109,8 +109,9 @@ nav {
     }
 }
 .start-body-button {
+    display: inline-block;
     font-size: $paragraph-font-size;
-    background: $backgroundBtnColor;
+    background-color: $backgroundBtnColor;
     color: $buttonTextColor;
     text-decoration: none;
     border: 3px solid $borderBtnColor;
@@ -128,7 +129,7 @@ nav {
         transform 0.5s ease-in-out;
 
     &:hover {
-        background-color: $buttonTextColor;
+        background-color: $borderBtnColor;
         color: $backgroundBtnColor;
         border-color: $backgroundBtnColor;
         transform: scale(1.05);
@@ -172,7 +173,7 @@ nav {
         display: inline-block;
         text-decoration: none;
         color: $buttonTextColor;
-        background-color: $linkColor;
+        background-color: $backgroundBtnColor;
         cursor: pointer;
         padding: 16px 20px;
         margin: 32px 0;
@@ -180,16 +181,16 @@ nav {
         border-radius: $borderRadius;
         transform: scale(1);
         transition:
-            background-color 0.5s,
+            background-color 0.5s ease-in-out,
             color 0.5s ease-in-out,
             border-color 0.5s ease-in-out,
             transform 0.5s ease-in-out;
 
         &:hover {
             background-color: $borderBtnColor;
-            color: $linkColor;
-            border-color: $linkColor;
-            transform: scale(1.1);
+            color: $backgroundBtnColor;
+            border-color: $backgroundBtnColor;
+            transform: scale(1.05);
         }
         &:focus {
             outline: $navLinksColor;
@@ -291,5 +292,6 @@ footer {
     * {
         transition: none;
         scroll-behavior: auto;
+        transform: none;
     }
 }
