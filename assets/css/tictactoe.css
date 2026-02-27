@@ -136,7 +136,7 @@ nav ul li a:hover {
           transform: scale(1.05);
 }
 nav ul li a:focus {
-  outline: #294C60;
+  outline: #294C60 2px solid;
   -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
           box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
 }
@@ -262,6 +262,12 @@ main {
   border-color: #ADB6C4;
   background-color: rgb(0, 56.9347826087, 97);
 }
+.morpion-classic .grid .cell:focus {
+  outline: #ADB6C4 2px solid;
+  background-color: rgb(0, 56.9347826087, 97);
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+}
 
 aside {
   display: -webkit-box;
@@ -305,6 +311,11 @@ aside {
   color: #FFEFD3;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+.player-choice button:focus {
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
 }
 .player-choice p {
   font-size: 1.5rem;
@@ -356,6 +367,11 @@ aside {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.buttons button:focus {
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+}
 
 footer {
   display: -webkit-box;
@@ -386,6 +402,51 @@ footer a {
 footer a:hover {
   color: #FFC49B;
   text-decoration: underline;
+}
+footer a:focus {
+  outline: #FFEFD3 2px solid;
+  -webkit-box-shadow: 0 0 0 3px white;
+          box-shadow: 0 0 0 3px white;
+}
+
+#playerResult {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  opacity: 0;
+}
+
+#rechoosePlayerText {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  opacity: 0;
+}
+
+#turnInfos {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  opacity: 0;
+}
+
+#winsInfos {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
