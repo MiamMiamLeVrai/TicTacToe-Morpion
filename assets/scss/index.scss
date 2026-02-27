@@ -100,18 +100,17 @@ nav {
 .languages {
     display: flex;
     justify-content: center;
-    margin: 64px;
+    margin: 70px auto;
 
     & .languages-list {
         display: flex;
         flex-direction: row;
         align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        gap: 50px;
         
-        & h2 {
-            font-size: $subtitle-font-size;
-            margin-left: 60px;
-            margin-right: 20px;
-        }
         & a {
             display: inline-block;
             font-size: $paragraph-font-size;
@@ -125,7 +124,7 @@ nav {
             border-radius: $borderRadius;
             transform: scale(1);
             transition:
-                background 0.5s,
+                background-color 0.5s,
                 color 0.5s ease-in-out,
                 border-color 0.5s ease-in-out,
                 transform 0.5s ease-in-out;
@@ -137,9 +136,9 @@ nav {
                 transform: scale(1.05);
             }
             &:focus {
-                outline: $navLinksColor;
+                outline: $selectorColor 2px solid;
                 box-shadow: 0 0 0 3px
-                    lighten($color: $navLinksColor, $amount: 20%);
+                    lighten($color: $selectorColor, $amount: 20%);
             }
         }
     }
