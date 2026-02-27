@@ -81,7 +81,7 @@ nav {
                     transform: scale(1.05);
                 }
                 &:focus {
-                    outline: $navLinksColor;
+                    outline: $navLinksColor 2px solid;
                     box-shadow: 0 0 0 2px
                         lighten($color: $navLinksColor, $amount: 20%);
                 }
@@ -135,13 +135,20 @@ nav {
         transform: scale(1.05);
     }
     &:focus {
-        outline: $navLinksColor;
-        box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
+        outline: $selectorColor 2px solid;
+        box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
+    }
+    &.start-body-hidden {
+        transform: translateX(200%);
     }
 }
 .download-elements {
     @extend .start-body-button;
     right: calc(30px + 240px);
+    
+    &.download-elements-hidden {
+        transform: translateX(65%);
+    }
 }
 .background {
     position: fixed;
@@ -159,10 +166,11 @@ nav {
     padding: 35px 150px;
 
     & h2 {
-        font-size: $subtitle-font-size
+        font-size: $subtitle-font-size;
     }
     & p {
-        font-size: $paragraph-font-size
+        font-size: $paragraph-font-size;
+        padding-bottom: 35px;
     }
 }
 .middle-body {
@@ -220,8 +228,8 @@ nav {
             transform: scale(1.05);
         }
         &:focus {
-            outline: $navLinksColor;
-            box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
+            outline: $selectorColor 2px solid;
+            box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
         }
     }
     & span {
@@ -253,6 +261,10 @@ footer {
         &:hover {
             color: $secondLinkColor;
             text-decoration: underline;
+        }
+        &:focus {
+            outline: $linkColor 2px solid;
+            box-shadow: 0 0 0 3px lighten($color: $linkColor, $amount: 20%);
         }
     }
 }
