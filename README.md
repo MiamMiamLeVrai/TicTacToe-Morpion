@@ -14,7 +14,7 @@ A Tic-Tac-Toe game project developed personally to practice and improve my web d
 
 - 📄 HTML5
 
-- 🎨 CSS3 (SCSS) (Using Prepros software)
+- 🎨 CSS3 - SCSS (_Using Prepros software_)
 
 - 🖌️ JavaScript (ES6+)
 
@@ -42,13 +42,13 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 #### ℹ️ Core Project Features (_tictactoe-fr.html_)
 
-- A classic Tic-Tac-Toe game with a simple and intuitive interface.
+- A classic Tic-Tac-Toe game with a simple and intuitive interface,
 
-- A player selection and re-selection system represented by Xs or Os, with a random draw.
+- A player selection and re-selection system represented by Xs or Os, with a random draw,
 
-- A game reset system to restart a game.
+- A game reset system to restart a game,
 
-- Multilingual support (_currently available in French and English_) for text and interface elements.
+- Multilingual support (_currently available in French and English_).
 
 ---
 
@@ -64,9 +64,7 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 5. The project does _not currently_ have mobile device support (Yes, I know, it's practically a crime 😦), but this will be included in a future update.
 
-6. The "markdown" folder contains a `color.md` file (_available in French… but maybe in English, who knows 👀_) and `updates-notes.md` (`assets/markdown/updates-notes.md`), which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
-
-7. The "draft" folder contains files used as drafts for future project updates. Feel free to take a look; you're allowed to be curious 😉.
+6. The "markdown" folder contains `color.md` and `updates-notes.md` (`assets/markdown/updates-notes.md`), which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
 
 ---
 
@@ -99,7 +97,7 @@ Un projet de jeu de Morpion (ou TicTacToe en anglais) développé à titre perso
 
 - 📄 HTML5
 
-- 🎨 CSS3 (SCSS) (_Utilisation du logiciel Prepros_)
+- 🎨 CSS3 - SCSS (_Utilisation du logiciel Prepros_)
 
 - 🖌️ JavaScript (ES6+)
 
@@ -127,13 +125,13 @@ Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer 
 
 #### ℹ️ Fonctionnalités du cœur du projet (_tictactoe-fr.html_)
 
-- Un jeu de Morpion classique, avec une interface simple et intuitive.
+- Un jeu de Morpion classique, avec une interface simple et intuitive,
 
-- Un système de choix, et de rechoix du joueur représentés par des X ou des O, avec un tirage au sort.
+- Un système de choix, et de rechoix du joueur représentés par des X ou des O, avec un tirage au sort,
 
-- Un système de réinitialisation du jeu pour recommencer une partie.
+- Un système de réinitialisation du jeu pour recommencer une partie,
 
-- Un support multilingue (_pour l'instant disponibles en français et en anglais_) pour les textes et les éléments de l'interface.
+- Un support multilingue (_pour l'instant disponibles en français et en anglais_).
 
 ---
 
@@ -149,9 +147,7 @@ Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer 
 
 5. Le projet n'a _pour l'instant_ pas de support pour les appareils mobiles (Oui, je sais c'est limite un crime 😦), mais sera prévu pour une future mise à jour.
 
-6. Le dossier "markdown" contient un fichier `color.md` (_disponible en français… mais peut-être en anglais, qui sait 👀_) et `updates-notes.md` (`assets/markdown/updates-notes.md`) qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
-
-7. Le dossier "draft" contient des fichiers servant de brouillon pour les futures mises à jour du projet. Libre à vous d'y jeter un coup d'œil, vous avez le droit d'être curieux 😉.
+6. Le dossier "markdown" contient deux fichiers ; `color.md` et `updates-notes.md` (`assets/markdown/updates-notes.md`) qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
 
 ---
 
@@ -167,3 +163,5 @@ Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer 
 -- Elle représentera des corrections de petits bugs dans les pages webs, des fonctionnalités cassées, des minis ajouts sans en créer une page web, etc.
 
 - __Version 1.0.0:__ Première version majeure du projet, avec la page web du Morpion classique, et les fonctionnalités de base du jeu.
+
+---
