@@ -120,8 +120,8 @@ nav {
             transform: scale(1.05);
         }
         &:focus {
-            outline: $navLinksColor;
-            box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
+            outline: $selectorColor 2px solid;
+            box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
         }
     }
 }
