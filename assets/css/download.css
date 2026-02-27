@@ -136,7 +136,7 @@ nav ul li a:hover {
           transform: scale(1.05);
 }
 nav ul li a:focus {
-  outline: #294C60;
+  outline: #294C60 2px solid;
   -webkit-box-shadow: 0 0 0 2px rgb(71.5255474453, 132.5839416058, 167.4744525547);
           box-shadow: 0 0 0 2px rgb(71.5255474453, 132.5839416058, 167.4744525547);
 }
@@ -192,13 +192,21 @@ nav ul li a:focus {
           transform: scale(1.05);
 }
 .start-body-button:focus, .download-elements:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+}
+.start-body-button.start-body-hidden, .start-body-hidden.download-elements {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 .download-elements {
   right: 270px;
+}
+.download-elements.download-elements-hidden {
+  -webkit-transform: translateX(65%);
+          transform: translateX(65%);
 }
 
 .background {
@@ -223,6 +231,7 @@ nav ul li a:focus {
 }
 .start-body p {
   font-size: 1.5rem;
+  padding-bottom: 35px;
 }
 
 .middle-body {
@@ -290,9 +299,9 @@ nav ul li a:focus {
           transform: scale(1.05);
 }
 .download-body a:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
 }
 .download-body span {
   font-weight: bold;
@@ -329,6 +338,11 @@ footer a {
 footer a:hover {
   color: #FFC49B;
   text-decoration: underline;
+}
+footer a:focus {
+  outline: #FFEFD3 2px solid;
+  -webkit-box-shadow: 0 0 0 3px white;
+          box-shadow: 0 0 0 3px white;
 }
 
 @media (prefers-reduced-motion: reduce) {
