@@ -156,7 +156,7 @@ nav span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 64px;
+  margin: 70px auto;
 }
 .languages .languages-list {
   display: -webkit-box;
@@ -169,11 +169,10 @@ nav span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.languages .languages-list h2 {
-  font-size: 2.1rem;
-  margin-left: 60px;
-  margin-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
 }
 .languages .languages-list a {
   display: inline-block;
@@ -188,10 +187,10 @@ nav span {
   border-radius: 16px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: background 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: background 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: background 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-  transition: background 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .languages .languages-list a:hover {
   background: #252422;
@@ -201,9 +200,9 @@ nav span {
           transform: scale(1.05);
 }
 .languages .languages-list a:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
 }
 
 footer {
