@@ -174,9 +174,9 @@ nav span {
           transform: scale(1.05);
 }
 .start-body a:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
 }
 
 footer {
