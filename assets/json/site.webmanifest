@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Tic-Tac-Toe",
+    "short_name": "Tic-Tac-Toe",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
