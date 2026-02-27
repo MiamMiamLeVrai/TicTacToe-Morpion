@@ -136,7 +136,7 @@ nav ul li a:hover {
           transform: scale(1.05);
 }
 nav ul li a:focus {
-  outline: #294C60;
+  outline: #294C60 2px solid;
   -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
           box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
 }
@@ -192,9 +192,13 @@ nav ul li a:focus {
           transform: scale(1.05);
 }
 .start-body-button:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+}
+.start-body-button.start-body-hidden {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 .background {
@@ -211,7 +215,7 @@ nav ul li a:focus {
 
 .start-body, .end-body, .middle-body {
   text-align: center;
-  padding: 35px 150px;
+  padding: 45px 150px;
 }
 .start-body h2, .end-body h2, .middle-body h2 {
   font-size: 2.1rem;
@@ -250,9 +254,9 @@ nav ul li a:focus {
           transform: scale(1.05);
 }
 .end-body a:focus {
-  outline: #294C60;
-  -webkit-box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
-          box-shadow: 0 0 0 3px rgb(71.5255474453, 132.5839416058, 167.4744525547);
+  outline: #ADB6C4 2px solid;
+  -webkit-box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
+          box-shadow: 0 0 0 3px rgb(232.3191489362, 234.8085106383, 238.6808510638);
 }
 
 footer {
@@ -281,9 +285,12 @@ footer .contact-list span {
   font-size: 1.5rem;
   margin-left: 32px;
 }
+footer .contact-list span a {
+  margin-right: 16px;
+}
 footer .contact-list span img {
   max-width: 100%;
-  width: 60px;
+  width: 80px;
   height: auto;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -291,11 +298,16 @@ footer .contact-list span img {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  margin-right: 16px;
+  margin: auto;
 }
 footer .contact-list span img:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .contact-list span img:focus {
+  outline: #FFFDED 2px solid;
+  -webkit-box-shadow: 0 0 0 3px white;
+          box-shadow: 0 0 0 3px white;
 }
 footer .explanation-list h3 {
   text-align: center;
@@ -343,6 +355,11 @@ footer .credits-list ul li a {
 footer .credits-list ul li a:hover {
   color: #FFC49B;
   text-decoration: underline;
+}
+footer .credits-list ul li a:focus {
+  outline: #FFEFD3 2px solid;
+  -webkit-box-shadow: 0 0 0 3px white;
+          box-shadow: 0 0 0 3px white;
 }
 footer .rights {
   font-size: 1.5rem;
