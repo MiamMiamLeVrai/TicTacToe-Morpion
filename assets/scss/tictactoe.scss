@@ -82,7 +82,7 @@ nav {
                     transform: scale(1.05);
                 }
                 &:focus {
-                    outline: $navLinksColor;
+                    outline: $navLinksColor 2px solid;
                     box-shadow: 0 0 0 3px
                         lighten($color: $navLinksColor, $amount: 20%);
                 }
@@ -163,6 +163,15 @@ main {
                     $amount: 10%
                 );
             }
+            &:focus {
+                outline: $selectorColor 2px solid;
+                background-color: lighten(
+                    $color: $backgroundColor,
+                    $amount: 10%
+                );
+                box-shadow: 0 0 0 3px
+                    lighten($color: $selectorColor, $amount: 20%);
+            }
         }
     }
 }
@@ -198,6 +207,11 @@ aside {
             border-color: $backgroundBtnColor;
             color: $backgroundBtnColor;
             transform: scale(1.05);
+        }
+        &:focus {
+            outline: $selectorColor 2px solid;
+            box-shadow: 0 0 0 3px
+                lighten($color: $selectorColor, $amount: 20%);
         }
     }
     & p {
@@ -246,6 +260,11 @@ aside {
             color: $backgroundBtnColor;
             transform: scale(1.05);
         }
+        &:focus {
+            outline: $selectorColor 2px solid;
+            box-shadow: 0 0 0 3px
+                lighten($color: $selectorColor, $amount: 20%);
+        }
     }
 }
 
@@ -274,8 +293,36 @@ footer {
             color: $secondLinkColor;
             text-decoration: underline;
         }
+        &:focus{
+            outline: $linkColor 2px solid;
+            box-shadow: 0 0 0 3px
+                lighten($color: $linkColor, $amount: 20%);
+        }
     }
 }
+//Only for Javascript
+#playerResult {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+#rechoosePlayerText {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+#turnInfos {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+#winsInfos {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+//Only for Javascript
+
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none;
