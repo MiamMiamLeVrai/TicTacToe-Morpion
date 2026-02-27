@@ -81,7 +81,7 @@ nav {
                     transform: scale(1.05);
                 }
                 &:focus {
-                    outline: $navLinksColor;
+                    outline: $navLinksColor 2px solid;
                     box-shadow: 0 0 0 3px
                         lighten($color: $navLinksColor, $amount: 20%);
                 }
@@ -135,8 +135,11 @@ nav {
         transform: scale(1.05);
     }
     &:focus {
-        outline: $navLinksColor;
-        box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
+        outline: $selectorColor 2px solid;
+        box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
+    }
+    &.start-body-hidden {
+        transform: translateX(200%);
     }
 }
 .background {
@@ -151,7 +154,7 @@ nav {
 }
 .start-body {
     text-align: center;
-    padding: 35px 150px;
+    padding: 45px 150px;
 
     & h2 {
         font-size: $subtitle-font-size;
@@ -193,8 +196,8 @@ nav {
             transform: scale(1.05);
         }
         &:focus {
-            outline: $navLinksColor;
-            box-shadow: 0 0 0 3px lighten($color: $navLinksColor, $amount: 20%);
+            outline: $selectorColor 2px solid;
+            box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
         }
     }
 }
@@ -217,17 +220,26 @@ footer {
             align-items: center;
             font-size: $paragraph-font-size;
             margin-left: 32px;
+            
+            & a {
+                margin-right: 16px;
+            }
 
             & img {
                 max-width: 100%;
-                width: 60px;
+                width: 80px;
                 height: auto;
                 transform: scale(1);
                 transition: transform 0.5s ease-in-out;
-                margin-right: 16px;
+                margin: auto;
 
                 &:hover {
-                    transform: scale(1.25);
+                    transform: scale(1.1);
+                }
+                &:focus {
+                    outline: $textColor 2px solid;
+                    box-shadow: 0 0 0 3px
+                        lighten($color: $textColor, $amount: 20%);
                 }
             }
         }
@@ -275,6 +287,10 @@ footer {
                     &:hover {
                         color: $secondLinkColor;
                         text-decoration: underline;
+                    }
+                    &:focus {
+                        outline: $linkColor 2px solid;
+                        box-shadow: 0 0 0 3px lighten($color: $linkColor, $amount: 20%);
                     }
                 }
             }
