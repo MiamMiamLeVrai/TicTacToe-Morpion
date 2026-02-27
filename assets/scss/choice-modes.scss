@@ -80,7 +80,7 @@ nav {
                     transform: scale(1.05);
                 }
                 &:focus {
-                    outline: $navLinksColor;
+                    outline: $navLinksColor 2px solid;
                     box-shadow: 0 0 0 3px
                         lighten($color: $navLinksColor, $amount: 20%);
                 }
@@ -176,9 +176,9 @@ nav {
                 transform: scale(1.05);
             }
             &:focus {
-                outline: $navLinksColor;
+                outline: $selectorColor 2px solid;
                 box-shadow: 0 0 0 3px
-                    lighten($color: $navLinksColor, $amount: 20%);
+                    lighten($color: $selectorColor, $amount: 20%);
             }
         }
         & span {
@@ -218,6 +218,11 @@ footer {
         &:hover {
             color: $secondLinkColor;
             text-decoration: underline;
+        }
+        &:focus {
+            outline: $linkColor 2px solid;
+            box-shadow: 0 0 0 3px
+                lighten($color: $linkColor, $amount: 20%);
         }
     }
 }
