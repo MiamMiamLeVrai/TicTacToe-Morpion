@@ -7,7 +7,7 @@
 #### Main colors
 
 - **Background color** : `#001B2E` (Prussian blue)
-- **Main text color** : `#FFF8F0` (Floral white) or `#FFFDED` (Ivory)
+- **Main text color** : `#FFFDED` (Ivory)
 - **Title color** : `#294C60` (Anthracite blue)
 
 #### Secondary colors
@@ -18,7 +18,7 @@
 #### Button colors
 
 - **Button background color** : `#FFEFD3` (Light beige)
-- **Button text color** : `#2F2D2E` (Graphite) or `#252422` (Charcoal)
+- **Button text color** : `#2F2D2E` (Graphite)
 
 #### Accentuation colors
 
@@ -31,7 +31,7 @@
 #### Palette principale
 
 - **Couleur de fond principale** : `#001B2E` (Bleu de prusse)
-- **Couleur des textes principaux** : `#FFF8F0` (Blanc floral) ou `#FFFDED` (Ivoire)
+- **Couleur des textes principaux** : `#FFFDED` (Ivoire)
 - **Couleur des titres** : `#294C60` (Bleu anthracite)
 
 #### Palette secondaire
@@ -42,7 +42,7 @@
 #### Palette des boutons
 
 - **Couleur des fonds de boutons** : `#FFEFD3` (Beige clair)
-- **Couleur des textes de boutons** : `#2F2D2E` (Graphite) ou `#252422` (Charbon)
+- **Couleur des textes de boutons** : `#2F2D2E` (Graphite)
 
 #### Palette d'accentuation
 
