@@ -1,8 +1,5 @@
 User-agent: *
-Disallow: /draft/
-Disallow: /assets/
-Disallow: robots.txt
-Disallow: prepros.config
-Disallow: .DS_Store
-Disallow: 404.html
-Disallow: README.md
+Disallow: /.DS_Store
+Disallow: assets/.DS_Store
+
+Sitemap : https://miammiamlevrai.github.io/TicTacToe-Morpion/sitemap.xml
