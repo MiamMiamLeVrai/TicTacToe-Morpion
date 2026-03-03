@@ -12,7 +12,7 @@
 - Minor spelling corrections have been made to the French pages of the site.
 - Translation errors in the `download-en.html` page for image alt text have been corrected.
 - Several minor corrections have been made to the HTML files.
-- The `404.html` file contained a link to the potentially broken language choice page, this link has been corrected to redirect properly to the `index.html` page.
+- The `404.html` file contained a link to the potentially broken language choice page, this link has been corrected to redirect properly to the `index.html` page. The same applies to the `tictactoe-en.html` page.
 - New layout of the `updates-notes.md` file for improved readability and direct display of site updates.
 - `robots.txt` has been updated to prevent search engines from correctly indexing the site's web pages.
 - New `sitemap.xml` file to help search engines index the site's pages more efficiently.
@@ -36,7 +36,7 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Corrections d'orthographe mineures dans les pages françaises du site.
 - Erreurs de traductions dans la page `download-en.html` pour les textes alternatifs des images corrigés.
 - Quelques corrections mineures dans les fichiers HTML.
-- Le fichier `404.html` contenait un lien vers la page des choix de langues potentiellement cassé, ce lien a été corrigé pour rediriger correctement vers la page `index.html`.
+- Le fichier `404.html` contenait un lien vers la page des choix de langues potentiellement cassé, ce lien a été corrigé pour rediriger correctement vers la page `index.html`. Idem pour la page `tictactoe-fr.html`.
 - Nouvelle agencement du fichier `updates-notes.md` pour une meilleure lisibilité et un affichage directe des mises à jour du site.
 - `robots.txt` a été mis à jour pour éviter que les moteurs de recherche indexent correctement les pages webs du site.
 - Nouveau fichier `sitemap.xml` pour aider les moteurs de recherche à indexer les pages du site de manière plus efficace.
