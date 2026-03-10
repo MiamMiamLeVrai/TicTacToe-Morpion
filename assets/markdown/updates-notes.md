@@ -2,9 +2,76 @@
 
 ## 🇺🇸 Update Notes
 
-### ⚙️ NEW VERSION: Version 1.2.0 (2026/02/27)
+### ⚙️ NEW VERSION: Version 1.3.0 : The site is FINALLY ADAPTIVE 🥳 ! + Big bugs fixed (2026/03/10)
+
+The site is now responsive, which means it adapts to all types of screens, whether on a computer, tablet, large screens or smartphone. You can now enjoy the site wherever you are and on any device! But so...
 
 #### What's new 👀?
+
+- __The major new feature: A 100% adaptive site, whether you're on a computer, tablet or smartphone, the site adapts to your screen for an optimal experience.__
+- Slight design modifications in `homepage.scss` to better fit the design of the previous version.
+- The "Not available" buttons of the `choice-modes-en.html` site now have a "not-allowed" cursor to indicate that they are not clickable.
+- Additions of some styles in `404.scss` for more readable and better organized sections.
+- `animation.js` received a fairly significant upgrade in connection with the new features added in version 1.3.0.
+- From version 1.3.0, updates will carry version names to better differentiate and understand the different updates of the site.
+- The `robots.txt` file is updated for the umpteenth time to prevent search engines from correctly indexing the site's web pages.
+- The `sitemap.xml` file has been updated to help search engines index the site's pages more efficiently.
+- Semantic error where the `<footer>` tag was nested in the `<main>` tag corrected for better accessibility and compliance with HTML standards. This bug was present in the `choice-modes-en.html` file.
+- A better description of images and alternative texts in the `download-en.html` and `rules-en.html` files to better fit screen readers and improve the accessibility of the site.
+- Accessibility additions for screen readers and keyboard navigation in the `rules-en.html` file.
+- Added accessibility for the background of the `aria-hidden` site, for more safety so that it is not selected by the screen reader or keyboard navigation.
+- Additions and corrections of `<meta>` and `<link>` tags in the HTML files for better natural referencing (SEO) optimization and better compatibility with browsers and search engines.
+- Accessibility additions in all buttons of the site where these buttons lacked accessibility for screen readers and keyboard navigation.
+- Slight changes in HTML tags for better semantics and accessibility of the site.
+- Small translation error corrected for the `aria-label` of LinkedIn in the `homepage-en.html` page.
+- A new section has been added in the `404.html` page.
+- Better accessibility for game buttons and in the entire game grid of the `tictactoe-en.html` page.
+- More or less important corrections in the style sheets.
+- More or less important corrections in the HTML files.
+- Updated from version 1.2.1 to 1.3.0.
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+
+## 🇫🇷 Notes des mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 1.3.0 : Le site est ENFIN RESPONSIVE 🥳 ! + Gros bugs corrigés (10/03/2026)
+
+Ça y est, c'est arrivé ! Le site est désormais responsive, ce qui signifie qu'il s'adapte à tous les types d'écrans, que ce soit sur ordinateur, tablette, grands écrans ou smartphone. Vous pouvez désormais profiter du site où que vous soyez et sur n'importe quel appareil ! Mais du coup…
+
+#### C'est quoi les nouveautés 👀 ?
+
+- __La nouveauté majeure : Un site 100% adaptatif, que vous soyez sur un ordinateur, une tablette ou un smartphone, le site s'adapte à votre écran pour une expérience optimale.__
+- Légères modifications du design dans `homepage.scss` pour mieux coller au design de la version précédente.
+- Les boutons "Non disponible" du site `choice-modes-fr.html` ont maintenant un curseur "not-allowed" pour indiquer qu'ils ne sont pas cliquables.
+- Ajouts de quelques styles dans `404.scss` pour des sections plus lisibles et mieux organisées.
+- `animation.js` a reçu une mise à niveau assez importante en lien des nouveautés ajoutés dans la version 1.3.0.
+- À partir de la version 1.3.0, les mises à jour porteront des noms de versions pour mieux différencier et comprendre les différentes mises à jour du site.
+- Le fichier `robots.txt` est pour la énième fois mis à jour pour éviter que les moteurs de recherche n'indexent pas correctement les pages webs du site.
+- Le fichier `sitemap.xml` a été mis à jour pour aider les moteurs de recherche à indexer les pages du site de manière plus efficace.
+- Erreur de sémantique où la balise `<footer>` était imbriqué dans la balise `<main>` corrigé pour une meilleure accessibilité et conformité aux normes HTML. Ce bug était présent dans le fichier `choice-modes-fr.html`.
+- Une meilleure description des images et des textes alternatifs dans les fichiers `download-fr.html` et `rules-fr.html` pour mieux coller aux lecteurs d'écrans et améliorer l'accessibilité du site.
+- Ajouts d'accessibilités pour les lecteurs d'écrans et les navigations par claviers dans le fichier `rules-fr.html`.
+- Ajout d’une accessibilité pour l’arrière-plan du site `aria-hidden`, pour plus de sûreté pour qu’elle ne soit pas sélectionnée par le lecteur d’écran ou la navigation par clavier.
+- Ajouts et corrections des balises `<meta>` et `<link>` dans les fichiers HTML pour une meilleure optimisation du référencement naturel (SEO) et une meilleure compatibilité avec les navigateurs et les moteurs de recherche.
+- Ajouts d'accessibilités dans l'ensemble des boutons du site où ces boutons manquaient d'accessibilité pour les lecteurs d'écrans et les navigations par claviers.
+- Légèrs changements de balises HTML pour une meilleure sémantique et accessibilité du site.
+- Petit erreur de traduction corrigés pour le `aria-label` de LinkedIn dans la page `homepage-en.html`.
+- Une nouvelle section a été ajoutée dans la page `404.html`.
+- Meilleure accessibilité au niveau des boutons de jeu et dans l’ensemble de la grille de jeu de la page `tictactoe-fr.html`.
+- Corrections plus ou moins importantes dans les feuilles de styles.
+- Corrections plus ou moins importantes dans les fichiers HTML.
+- Version mise à jour de la version 1.2.1 vers 1.3.0.
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+---
+
+🇺🇸 Update Notes
+⚙️ NEW VERSION: Version 1.2.1 (2026/02/27)
+What's new 👀?
 
 - Canonical links have been corrected in the HTML files. Previously, they pointed to HTML files without the domain name, which could cause problems for search engines.
 - The `<meta http-equiv="X-UA-Compatible" content="ie=edge" />` tag has been removed from the HTML files, as this tag is obsolete and no longer required by modern browsers.
@@ -20,15 +87,9 @@
 - `color.md` is now available in English.
 - Updated from version 1.2.0 to 1.2.1.
 
-__HAVE FUN ON TIC-TAC-TOE!__
-
----
-
-## 🇫🇷 Notes des mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 1.2.1 (03/03/2026)
-
-#### C'est quoi les nouveautés 👀 ?
+🇫🇷 Notes des mise à jour
+⚙️ NOUVELLE VERSION : Version 1.2.1 (03/03/2026)
+C'est quoi les nouveautés 👀 ?
 
 - Les liens "canonical" ont été corrigés dans les fichiers HTML, autrefois ils pointaient vers des fichiers HTML sans le nom de domaine, ce qui pouvait poser des problèmes pour les moteurs de recherche.
 - Suppresison de `<meta http-equiv="X-UA-Compatible" content="ie=edge" />` dans les fichiers HTML, car cette balise est obsolète et n'est plus nécessaire pour les navigateurs modernes.
@@ -43,11 +104,6 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - `credits.md` a été mis à jour pour une disponibilité en anglais et des ajouts pour les droits d'utilisations des assets du site.
 - `color.md` est désormais disponible en anglais.
 - Mise à jour de la version 1.2.0 vers 1.2.1.
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
-
----
----
 
 🇺🇸 Update Notes
 ⚙️ NEW VERSION: Version 1.2.0 (2026/02/27)
