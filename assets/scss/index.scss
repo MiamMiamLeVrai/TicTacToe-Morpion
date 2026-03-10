@@ -56,13 +56,13 @@ nav {
 }
 .header-start-page {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 200px;
-    padding-left: 200px;
-    padding-bottom: 75px;
+    padding: 0 0 75px 200px;
     border-bottom: 3px solid $textColor;
     gap: 100px;
-    
+
     & h1 {
         font-size: $title-font-size;
     }
@@ -93,12 +93,12 @@ nav {
     }
     & p {
         font-size: $paragraph-font-size;
-        margin-bottom: 70px;
     }
 }
 
 .languages {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 70px auto;
 
@@ -110,11 +110,10 @@ nav {
         margin: 0;
         padding: 0;
         gap: 50px;
-        
+
         & a {
             display: inline-block;
             font-size: $paragraph-font-size;
-            display: inline-block;
             text-decoration: none;
             color: $buttonTextColor;
             background-color: $backgroundBtnColor;
@@ -145,7 +144,6 @@ nav {
 }
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 50px 0;
     border-top: 3px solid $textColor;
@@ -159,8 +157,198 @@ footer {
 }
 @media (prefers-reduced-motion: reduce) {
     * {
-        transition: none;
-        scroll-behavior: auto;
-        transform: none;
+        transition: none !important;
+        scroll-behavior: auto !important;
+        transform: none !important;
+    }
+}
+
+// Responsive design for mobile devices under 600px
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 6px;
+
+        & .nav-logo {
+            margin: 6px;
+
+            & .logo-navbar {
+                width: 60px;
+            }
+        }
+        & span {
+            font-size: calc($paragraph-font-size - 4px);
+        }
+    }
+    .header-start-page {
+        flex-direction: column;
+        margin-top: 150px;
+        padding: 0 0 50px 0;
+        gap: 30px;
+
+        & h1 {
+            font-size: calc($title-font-size - 10px)
+        }
+        & .logo-title {
+            width: 200px;
+        }
+    }
+    .start-body {
+        margin: 0 10px;
+
+        & h2 {
+            font-size: calc($subtitle-font-size - 6px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 4px);
+        }
+    }
+    .languages {
+        margin: 50px auto;
+
+        & .languages-list {
+            gap: 25px;
+            flex-direction: column;
+
+            & a {
+                font-size: calc($paragraph-font-size - 4px);
+                padding: 12px 16px;
+            }
+        }
+    }
+    footer {
+        padding: 20px 0;
+
+        & .rights {
+            font-size: calc($paragraph-font-size - 4px);
+            margin: 16px 16px;
+            text-align: center;
+        }
+    }
+}
+// Responsive design for tablets between 601px and 992px
+@media (min-width: 601px) and (max-width: 992px) {
+    nav {
+        padding: 10px;
+
+        & .nav-logo {
+            margin: 10px;
+
+            & .logo-navbar {
+                width: 60px;
+            }
+        }
+        & span {
+            font-size: calc($paragraph-font-size - 2px);
+        }
+    }
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 0 0 50px 100px;
+        gap: 40px;
+        
+        & h1 {
+            font-size: calc($title-font-size - 5px);
+        }
+        & .logo-title {
+            width: 270px;
+        }
+    }
+    .start-body {
+        margin: 0 50px;
+
+        & h2 {
+            font-size: calc($subtitle-font-size - 3px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 2px);
+        }
+    }
+    .languages {
+        margin: 50px auto;
+
+        & .languages-list {
+            gap: 30px;
+            flex-direction: row;
+
+            & a {
+                font-size: calc($paragraph-font-size - 2px);
+                padding: 14px 18px;
+            }
+        }
+    }
+    footer {
+        padding: 30px 0;
+        
+        & .rights {
+            font-size: calc($paragraph-font-size - 2px);
+            margin: 24px 16px;
+            text-align: center;
+        }
+    }
+}
+// Responsive design for desktops between 993px and 1200px
+@media (min-width: 993px) and (max-width: 1200px) {
+    nav {
+        padding: 12px;
+
+        & .nav-logo {
+            margin: 12px;
+
+            & .logo-navbar {
+                width: 70px;
+            }
+        }
+        & span {
+            font-size: calc($paragraph-font-size - 1px);
+        }
+    }
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 25px 0 65px 100px;
+        gap: 50px;
+        
+        & h1 {
+            font-size: calc($title-font-size - 2px);
+        }
+        & .logo-title {
+            width: 350px;
+        }
+    }
+    .start-body {
+        margin: 0 75px;
+
+        & h2 {
+            font-size: calc($subtitle-font-size - 1px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 1px);
+        }
+    }
+    .languages {
+        margin: 50px auto;
+        
+        & .languages-list {
+            gap: 40px;
+            flex-direction: row;
+
+            & a {
+                font-size: calc($paragraph-font-size - 1px);
+                padding: 16px 20px;
+            }
+        }
+    }
+    footer {
+        padding: 40px 0;
+        
+        & .rights {
+            font-size: calc($paragraph-font-size - 1px);
+            margin: 28px 16px;
+            text-align: center;
+        }
     }
 }
