@@ -16,11 +16,12 @@
         <meta name="theme-color" content="#FFEFD3" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta
             name="google-site-verification"
             content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
         />
+        <meta name="language" content="fr" />
         <meta
             property="og:title"
             content="Le Morpion - Jouez en ligne gratuitement"
@@ -93,6 +94,7 @@
         <link rel="canonical" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-fr.html" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-en.html" hreflang="en-US" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/tictactoe-fr.html" hreflang="fr-FR" />
+        <link rel="alternate" hreflang="x-default" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/index.html" />
 
         <noscript>
             <link
@@ -117,6 +119,14 @@
                     class="logo-navbar"
                 /><span>Morpion - Jouez !</span>
             </div>
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Ouvre le menu de navigation"
+                aria-controls="navbarMove"
+                aria-expanded="false">
+                ☰
+            </button>
             <ul>
                 <li>
                     <a href="homepage-fr.html">Revenir à l'accueil</a>
@@ -144,55 +154,64 @@
             />
             <h1>Morpion - Jouez directement !</h1>
         </header>
-        <div class="background"></div>
+        <div class="background" aria-hidden="true"></div>
         <main>
             <section class="morpion-classic">
                 <h2>Morpion classique</h2>
-                <div class="grid" aria-label="Grille du morpion">
+                <div class="grid" aria-label="Grille du morpion" role="grid">
                     <button
                         class="cell"
                         data-cell="0"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 1, colonne 1"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="1"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 1, colonne 2"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="2"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 1, colonne 3"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="3"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 2, colonne 1"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="4"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 2, colonne 2"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="5"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 2, colonne 3"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="6"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 3, colonne 1"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="7"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 3, colonne 2"
+                        role="gridcell"
                     ></button>
                     <button
                         class="cell"
                         data-cell="8"
-                        aria-label="Case vide"
+                        aria-label="Case vide, ligne 3, colonne 3"
+                        role="gridcell"
                     ></button>
                 </div>
             </section>
@@ -202,6 +221,7 @@
                     <h2>Qui va jouer en premier ?</h2>
                     <button
                         id="playerChoice"
+                        aria-label="Tire au sort"
                     >
                         Tire au sort !
                     </button>
@@ -209,22 +229,24 @@
                 </section>
                 <section class="player-infos">
                     <h2 id="infos-title">Informations de la partie</h2>
-                    <p id="turnInfos"></p>
-                    <p id="winsInfos"></p>
+                    <p id="turnInfos" aria-live="polite" role="status"></p>
+                    <p id="winsInfos" aria-live="polite" role="status"></p>
                 </section>
 
                 <section class="buttons">
                     <button
                         id="restartButton"
+                        aria-label="Recommencer la partie"
                         disabled
                     >
                         Recommencer la partie
                     </button>
                     <button
                         id="rechoosePlayer"
+                        aria-label="Retirer un nouveau joueur au sort"
                         disabled
                     >
-                        Retirer au sort
+                        Nouveau tirage au sort
                     </button>
                     <p
                         id="rechoosePlayerText"
@@ -237,7 +259,7 @@
         <footer>
             <span class="rights"
                 >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
-                réservés - Version 1.2.1</span
+                réservés - Version 1.3.0</span
             >
             <a href="homepage-fr.html#creditsList">Crédits du site</a>
         </footer>
