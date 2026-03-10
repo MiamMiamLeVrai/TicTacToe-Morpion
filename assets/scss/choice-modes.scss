@@ -15,8 +15,20 @@ body {
     padding: 0;
     box-sizing: border-box;;
 }
+.menu-button {
+    display: none;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: $navLinksColor;
+    font-size: $paragraph-font-size;
+    margin-left: auto;
+    margin-right: 32px;
+}
 nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background: $linkColor;
     padding: 16px;
@@ -58,7 +70,11 @@ nav {
         padding: 0;
         display: flex;
         flex-direction: row;
-
+        
+        &.nav-open {
+            display: flex;
+            flex-direction: column;
+        }
         & li {
             & a {
                 font-size: $paragraph-font-size;
@@ -104,6 +120,40 @@ nav {
         max-width: 100%;
         width: 410px;
         height: auto;
+    }
+}
+.start-body-button {
+    display: inline-block;
+    font-size: $paragraph-font-size;
+    background-color: $backgroundBtnColor;
+    color: $buttonTextColor;
+    text-decoration: none;
+    border: 3px solid $borderBtnColor;
+    border-radius: $borderRadius;
+    padding: 16px 20px;
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+    bottom: 30px;
+    transform: scale(1);
+    transition:
+        background-color 0.5s ease-in-out,
+        color 0.5s ease-in-out,
+        transform 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+
+    &:hover {
+        background-color: $borderBtnColor;
+        color: $backgroundBtnColor;
+        border-color: $backgroundBtnColor;
+        transform: scale(1.05);
+    }
+    &:focus {
+        outline: $selectorColor 2px solid;
+        box-shadow: 0 0 0 3px lighten($color: $selectorColor, $amount: 20%);
+    }
+    &.start-body-hidden {
+        transform: translateX(200%);
     }
 }
 .background {
@@ -190,7 +240,7 @@ nav {
                 color: $buttonTextColor;
                 border-radius: $borderRadius;
                 border: 3px solid $backgroundBtnColor;
-                cursor: default;
+                cursor: not-allowed;
             }
         }
     }
@@ -228,8 +278,340 @@ footer {
 }
 @media (prefers-reduced-motion: reduce) {
     * {
-        transition: none;
-        scroll-behavior: auto;
-        transform: none;
+        transition: none !important;
+        scroll-behavior: auto !important;
+        transform: none !important;
+    }
+}
+// Responsive design for mobile devices under 600px
+@media only screen and (max-width : 600px) { 
+    #menuButton {
+        display: block;
+    }
+    nav {
+        padding: 6px;
+        flex-wrap: wrap;
+        
+        & ul {
+            width: calc(100% - 12px);
+            height: auto;
+            display: none;
+            flex-direction: column;
+        }
+        &.nav-open {
+            display: flex;
+        }
+        & .nav-logo {
+            margin: 6px;
+    
+            & .logo-navbar {
+                width: 60px;
+            }
+        }
+        & span {
+            margin: 0 8px;
+            font-size: calc($paragraph-font-size - 4px);
+        }
+        & ul {
+            display: none;
+            flex-direction: column;
+            
+            & li {
+                & a {
+                    padding: 8px;
+                    margin: 0 auto;
+                    font-size: calc($paragraph-font-size - 4px);
+                    border-radius: 0px;
+                    
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+    .header-start-page {
+        flex-direction: column;
+        margin-top: 150px;
+        padding: 0 0 50px 0;
+        gap: 30px;
+    
+        & h1 {
+            font-size: calc($title-font-size - 10px)
+        }
+        & .logo-title {
+            width: 200px;
+        }
+    }
+    .start-body-button {
+        padding: 12px 16px;
+        font-size: calc($paragraph-font-size - 4px);
+    }
+    .start-body {
+        padding: 0 15px;
+        flex-wrap: wrap;
+    
+        & h2 {
+            font-size: calc($subtitle-font-size - 3px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 4px);
+        }
+    }
+    .mods-cards {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin: 50px 15px;
+        
+        & .card-mode {
+            & h3 {
+                font-size: calc($third-font-size - 3px);
+            }
+            & p {
+                font-size: calc($paragraph-font-size - 4px);
+            }
+            & .not-available {
+                font-size: calc($paragraph-font-size - 4px);
+            }
+            & a {
+                margin: 20px auto;
+                padding: 12px 16px;
+                font-size: calc($paragraph-font-size - 4px);
+            }
+            & span {
+                &:not(.not-available) {
+                    font-size: calc($paragraph-font-size - 4px);
+                    margin: 20px auto;
+                    padding: 12px 16px;
+                }
+            }
+        }
+    }
+    footer {
+        & .rights {
+            font-size: calc($paragraph-font-size - 4px);
+            margin: 16px 16px;
+            text-align: center;
+        }
+        & a {
+            font-size: calc($paragraph-font-size - 4px);
+            margin: 16px auto;
+        }
+    }
+}
+// Responsive design for tablets between 601px and 992px
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #menuButton {
+        display: block;
+    }
+    nav {
+        padding: 10px;
+        flex-wrap: wrap;
+        
+        & ul {
+            width: calc(100% - 17px);
+            height: auto;
+            display: none;
+            flex-direction: column;
+        }
+        &.nav-open {
+            display: flex;
+        }
+        & .nav-logo {
+            margin: 6px;
+    
+            & .logo-navbar {
+                width: 60px;
+            }
+        }
+        & span {
+            margin: 0 8px;
+            font-size: calc($paragraph-font-size - 2px);
+        }
+        & ul {
+            display: none;
+            flex-direction: column;
+            
+            & li {
+                & a {
+                    padding: 8px;
+                    margin: 0 8px;
+                    font-size: calc($paragraph-font-size - 2px);
+                    border-radius: 0px;
+                    
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 0 0 50px 100px;
+        gap: 40px;
+        
+        & h1 {
+            font-size: calc($title-font-size - 5px);
+        }
+        & .logo-title {
+            width: 270px;
+        }
+    }
+    .start-body-button {
+        padding: 12px 16px;
+        font-size: calc($paragraph-font-size - 2px);
+    }
+    .start-body {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        
+        & h2 {
+            font-size: calc($subtitle-font-size - 3px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 2px);
+        }
+    }
+    .mods-cards {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin: 50px 20px;
+        
+        & .card-mode {
+            & h3 {
+                font-size: calc($third-font-size - 2px);
+            }
+            & p {
+                font-size: calc($paragraph-font-size - 2px);
+            }
+            & .not-available {
+                font-size: calc($paragraph-font-size - 2px);
+            }
+            & a {
+                margin: 20px auto;
+                padding: 12px 16px;
+                font-size: calc($paragraph-font-size - 2px);
+            }
+            & span {
+                &:not(.not-available) {
+                    font-size: calc($paragraph-font-size - 2px);
+                    margin: 20px auto;
+                    padding: 12px 16px;
+                }
+            }
+        }
+    }
+    footer {
+        & .rights {
+            font-size: calc($paragraph-font-size - 2px);
+            margin: 16px 16px;
+            text-align: center;
+        }
+        & a {
+            font-size: calc($paragraph-font-size - 2px);
+            margin: 16px auto;
+        }
+    }
+}
+// Responsive design for desktops between 993px and 1200px
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #menuButton {
+        display: none;
+    }
+    nav {
+        padding: 12px;
+    
+        & .nav-logo {
+            margin: 12px;
+    
+            & .logo-navbar {
+                width: 70px;
+            }
+        }
+        & span {
+            font-size: calc($paragraph-font-size - 1px);
+        }
+        ul {
+            & li {
+                & a {
+                    padding: 12px;
+                    margin: 0 6px;
+                    font-size: calc($paragraph-font-size - 1px);
+                }
+            }
+        }
+    }
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 25px 0 65px 100px;
+        gap: 50px;
+        
+        & h1 {
+            font-size: calc($title-font-size - 2px);
+        }
+        & .logo-title {
+            width: 350px;
+        }
+    }
+    .start-body-button {
+        padding: 14px 18px;
+        font-size: calc($paragraph-font-size - 1px);
+    }
+    .start-body {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    
+        & h2 {
+            font-size: calc($subtitle-font-size - 1px);
+            margin-top: 50px;
+        }
+        & p {
+            font-size: calc($paragraph-font-size - 1px);
+        }
+    }
+    .mods-cards {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        margin: 50px 10px;
+        
+        & .card-mode {
+            & h3 {
+                font-size: calc($third-font-size - 1px);
+            }
+            & p {
+                font-size: calc($paragraph-font-size - 1px);
+            }
+            & .not-available {
+                font-size: calc($paragraph-font-size - 1px);
+            }
+            & a {
+                margin: 20px auto;
+                padding: 14px 18px;
+                font-size: calc($paragraph-font-size - 1px);
+            }
+            & span {
+                &:not(.not-available) {
+                    font-size: calc($paragraph-font-size - 1px);
+                    margin: 20px auto;
+                    padding: 14px 18px;
+                }
+            }
+        }
+    }
+    footer {
+        & .rights {
+            font-size: calc($paragraph-font-size - 1px);
+            margin: 16px 16px;
+            text-align: center;
+        }
+        & a {
+            font-size: calc($paragraph-font-size - 1px);
+            margin: 16px auto;
+        }
     }
 }
