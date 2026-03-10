@@ -16,11 +16,12 @@
         <meta name="theme-color" content="#FFEFD3" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta
             name="google-site-verification"
             content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
         />
+        <meta name="language" content="fr" />
 
         <meta property="og:title" content="Morpion - Ressources" />
         <meta
@@ -90,6 +91,7 @@
         <link rel="canonical" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/download-fr.html" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/download-en.html" hreflang="en-US" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/download-fr.html" hreflang="fr-FR" />
+        <link rel="alternate" hreflang="x-default" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/index.html" />
 
         <noscript>
             <link
@@ -114,6 +116,14 @@
                 />
                 <span>Morpion - Ressources</span>
             </div>
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Ouvre le menu de navigation"
+                aria-controls="navbarMove"
+                aria-expanded="false">
+                ☰
+            </button>
             <ul>
                 <li>
                     <a href="homepage-fr.html">Revenir à l'accueil</a>
@@ -145,7 +155,7 @@
         <a href="#downloadElements" id="downloadEmntsMove" class="download-elements"
             >Aller sur <b>Obtenir les éléments</b></a
         >
-        <div class="background" role="status"></div>
+        <div class="background" aria-hidden="true"></div>
         <main id="startBody">
             <section class="start-body">
                 <h2>Images, polices, arrière-plan et autres téléchargeables</h2>
@@ -165,14 +175,14 @@
                 </p>
             </section>
             <section class="middle-body">
-                <h3>
+                <h2>
                     Tous les assets présents dans ce site sont en libre
                     téléchargement
                     <i
                         >(Voir les conditions dans le fichier
                         <code>credits.md</code>)</i
                     >
-                </h3>
+                </h2>
                 <div class="assets-list">
                     <figure>
                         <img
@@ -185,8 +195,7 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            TicTacToe_Logo - Logo du Morpion réalisé sur Canva
-                            au format PNG
+                            Logo du Morpion réalisé sur Canva au format PNG
                         </figcaption>
                     </figure>
 
@@ -201,8 +210,7 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Background_TicTacToe - Arrière-plan principal des
-                            pages du site réalisé sur Canva
+                            Arrière-plan principal des pages du site réalisé sur Canva
                         </figcaption>
                     </figure>
 
@@ -217,8 +225,7 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            square-x-twitter-brands-solid-full - Logo de X
-                            (Twitter) au format SVG
+                            Logo de X (Twitter) au format SVG
                         </figcaption>
                     </figure>
 
@@ -233,8 +240,7 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            linkedin-brands-solid-full - Logo de LinkedIn au
-                            format SVG
+                            Logo de LinkedIn au format SVG
                         </figcaption>
                     </figure>
 
@@ -249,15 +255,14 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            github-brands-solid-full - Logo de GitHub au format
-                            SVG
+                            Logo de GitHub au format SVG
                         </figcaption>
                     </figure>
 
                     <figure>
                         <img
                             src="assets/download/Success_1.png"
-                            alt="Icône de succès"
+                            alt="Icône de succès horizontale"
                             width="128"
                             height="128"
                             loading="lazy"
@@ -265,15 +270,14 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Success_1 - Icône de succès horizontale au format
-                            PNG
+                            Icône de succès horizontale au format PNG
                         </figcaption>
                     </figure>
 
                     <figure>
                         <img
                             src="assets/download/Success_2.png"
-                            alt="Icône de succès"
+                            alt="Icône de succès diagonale"
                             width="128"
                             height="128"
                             loading="lazy"
@@ -281,14 +285,14 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Success_2 - Icône de succès diagonale au format PNG
+                            Icône de succès diagonale au format PNG
                         </figcaption>
                     </figure>
 
                     <figure>
                         <img
                             src="assets/download/Success_3.png"
-                            alt="Icône de succès"
+                            alt="Icône de succès verticale"
                             width="128"
                             height="128"
                             loading="lazy"
@@ -296,7 +300,7 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Success_3 - Icône de succès verticale au format PNG
+                            Icône de succès verticale au format PNG
                         </figcaption>
                     </figure>
 
@@ -311,10 +315,10 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Tie - Icône de match nul au format PNG
+                            Icône de match nul au format PNG
                         </figcaption>
                     </figure>
-                    
+
                     <figure>
                         <img
                             src="assets/download/Morpion-TicTacToe.png"
@@ -326,19 +330,18 @@
                             fetchpriority="low"
                         />
                         <figcaption>
-                            Morpion-TicTacToe - Image d'affiche pour les
-                            partages de liens au format PNG
+                            Image d'affiche pour les partages de liens au format PNG
                         </figcaption>
                     </figure>
                 </div>
             </section>
 
             <section class="download-body" id="downloadElements">
-                <span
+                <p
                     >En cliquant sur ce bouton, vous téléchargerez un dossier au
                     format zip avec comme contenant, les assets présentés juste
-                    au-dessus.</span
-                >
+                    au-dessus.
+                </p>
                 <a
                     href="assets/download.zip"
                     download="download.zip"
@@ -350,7 +353,7 @@
         <footer>
             <span class="rights"
                 >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
-                réservés - Version 1.2.1</span
+                réservés - Version 1.3.0</span
             >
             <a href="homepage-fr.html#creditsList">Crédits du site</a>
         </footer>
