@@ -16,11 +16,12 @@
         <meta name="theme-color" content="#FFEFD3" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta
             name="google-site-verification"
             content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
         />
+        <meta name="language" content="en">
 
         <meta property="og:title" content="Homepage of Tic-Tac-Toe" />
         <meta
@@ -90,6 +91,7 @@
         <link rel="canonical" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/homepage-en.html" />
         <link rel="alternate" hreflang="fr-FR" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/homepage-fr.html" />
         <link rel="alternate" hreflang="en-US" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/homepage-en.html" />
+        <link rel="alternate" hreflang="x-default" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/index.html" />
 
         <noscript>
             <link
@@ -115,6 +117,14 @@
                 />
                 <span>Tic-Tac-Toe - Homepage</span>
             </div>
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-controls="navbarMove"
+                aria-expanded="false">
+                ☰
+            </button>
             <ul>
                 <li>
                     <a href="download-en.html">Resources</a>
@@ -141,7 +151,7 @@
             <h1>Tic-Tac-Toe - Homepage</h1>
         </header>
         <a href="#startBody" id="startbodyMove" class="start-body-button">Go to content</a>
-        <div class="background"></div>
+        <div class="background" aria-hidden="true"></div>
         <main id="startBody">
             <section class="start-body">
                 <h2>The famous Tic-Tac-Toe game playable on the web!</h2>
@@ -182,7 +192,7 @@
                     this directly in your browser, no need to install anything
                     unknown to anyone.
                 </p>
-                <a href="choice-modes-en.html">Choose your game mode</a>
+                <a href="choice-modes-en.html" role="button" aria-label="Choose your game mode">Choose your game mode</a>
             </section>
         </main>
 
@@ -192,12 +202,12 @@
                     You will find all the ways to contact me and see all my
                     works below
                 </h3>
-                <span>
+                <p>
                     <a
                         href="https://www.linkedin.com/in/simon-heries-3447563aa/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Profil LinkedIn (ouvre un nouvel onglet)"
+                        aria-label="LinkedIn Profile (opens in a new tab)"
                     >
                         <img
                             src="assets/img/svg/linkedin-brands-solid-full.svg"
@@ -210,9 +220,9 @@
                         />
                     </a>
                     LinkedIn Profile
-                </span>
+                </p>
 
-                <span>
+                <p>
                     <a
                         href="https://github.com/MiamMiamLeVrai"
                         target="_blank"
@@ -230,9 +240,9 @@
                         />
                     </a>
                     GitHub Profile
-                </span>
+                </p>
 
-                <span>
+                <p>
                     <a
                         href="https://x.com/Miammiam_am"
                         target="_blank"
@@ -250,7 +260,7 @@
                         />
                     </a>
                     X Profile (Formerly Twitter)
-                </span>
+                </p>
             </section>
 
             <section class="explanation-list">
@@ -312,7 +322,7 @@
 
             <span class="rights"
                 >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
-                - Version 1.2.1</span
+                - Version 1.3.0</span
             >
         </footer>
         <script src="assets/javascript/animation.js" defer></script>
