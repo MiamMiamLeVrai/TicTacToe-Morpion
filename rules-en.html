@@ -16,11 +16,12 @@
         <meta name="theme-color" content="#FFEFD3" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FFEFD3" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta
             name="google-site-verification"
             content="V7Ou9jDUFP0iSarDazDPFjRR0yYWzYTgX0kP4REbRZk"
         />
+        <meta name="language" content="en" />
 
         <meta property="og:title" content="Tic-Tac-Toe - Rules of game modes" />
         <meta
@@ -53,7 +54,7 @@
         <meta name="twitter:site" content="@Miammiam_am" />
         <meta name="twitter:creator" content="@Miammiam_am" />
 
-        <link rel="preconnect" href="https://fonts.googlesapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
@@ -93,6 +94,7 @@
         <link rel="canonical" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/rules-en.html" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/rules-en.html" hreflang="en-US" />
         <link rel="alternate" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/rules-fr.html" hreflang="fr-FR" />
+        <link rel="alternate" hreflang="x-default" href="https://miammiamlevrai.github.io/TicTacToe-Morpion/index.html" />
 
         <noscript>
             <link
@@ -117,6 +119,14 @@
                     class="logo-navbar"
                 /><span>Tic-Tac-Toe - Rules</span>
             </div>
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Ouvre le menu de navigation"
+                aria-controls="navbarMove"
+                aria-expanded="false">
+                ☰
+            </button>
             <ul>
                 <li>
                     <a href="homepage-en.html">Return to homepage</a>
@@ -144,9 +154,9 @@
             />
             <h1>Tic-Tac-Toe - Rules of game modes</h1>
         </header>
-        <div class="navpage-rules" style="display: none;"></div>
+        <div class="navpage-rules" aria-hidden="true"></div>
         <a href="#startBody" id="startbodyMove" class="start-body-button">Go to content</a>
-        <div class="background"></div>
+        <div class="background" aria-hidden="true"></div>
         <main id="startBody">
             <section class="start-body">
                 <h2>Small introduction</h2>
@@ -166,7 +176,7 @@
             <section class="middle-body" id="classic">
                 <h2>Rules of Classic Tic-Tac-Toe</h2>
                 <p>
-                    The classic Tic-Tac-Toe is played on a 3x3 grid. (9 cases in
+                    The classic Tic-Tac-Toe is played on a 3x3 grid (9 cells in
                     total). Two players face off, one using "X" and the other
                     using "O". The goal for the players is to align three of
                     their symbols in one of the following directions:
@@ -191,8 +201,8 @@
                             fetchpriority="low"
                             decoding="async"
                         />
-                        <figcaption>
-                            <sup>[1]</sup>One of the examples of horizontal alignment
+                        <figcaption aria-label="Example of horizontal alignment">
+                            <sup aria-hidden="true">[1]</sup>One of the examples of horizontal alignment
                         </figcaption>
                     </figure>
                     <figure>
@@ -205,8 +215,8 @@
                             fetchpriority="low"
                             decoding="async"
                         />
-                        <figcaption>
-                            <sup>[2]</sup>One of the examples of vertical alignment
+                        <figcaption aria-label="Example of vertical alignment">
+                            <sup aria-hidden="true">[2]</sup>One of the examples of vertical alignment
                         </figcaption>
                     </figure>
                     <figure>
@@ -219,8 +229,8 @@
                             fetchpriority="low"
                             decoding="async"
                         />
-                        <figcaption>
-                            <sup>[3]</sup>One of the examples of diagonal alignment
+                        <figcaption aria-label="Example of diagonal alignment">
+                            <sup aria-hidden="true">[3]</sup>One of the examples of diagonal alignment
                         </figcaption>
                     </figure>
                     <figure>
@@ -233,7 +243,9 @@
                             fetchpriority="low"
                             decoding="async"
                         />
-                        <figcaption><sup>[4]</sup>One of the examples of a draw</figcaption>
+                        <figcaption aria-label="Example of a draw">
+                            <sup aria-hidden="true">[4]</sup>One of the examples of a draw
+                        </figcaption>
                     </figure>
                 </div>
             </section>
@@ -242,7 +254,7 @@
         <footer>
             <span class="rights"
                 >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
-                - Version 1.2.1</span
+                - Version 1.3.0</span
             >
             <a href="homepage-en.html#creditsList">Site credits</a>
         </footer>
