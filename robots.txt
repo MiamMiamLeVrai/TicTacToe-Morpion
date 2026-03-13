@@ -7,4 +7,4 @@ Disallow: /assets/img/.DS_Store
 Disallow: /assets/img/png/.DS_Store
 Disallow: /assets/img/svg/.DS_Store
 
-Sitemap: https://miammiamlevrai.github.io/TicTacToe-Morpion/sitemap.xml
+Sitemap: https://tictactoe-morpion.netlify.app/sitemap.xml
