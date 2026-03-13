@@ -1,2 +1,7 @@
 include:
-   - sitemap.xml
+  - sitemap.xml
+
+exclude:
+  - sitemap.xml
+
+plugins: []
