@@ -2,7 +2,7 @@
 
 ## 🇺🇸 Tic-Tac-Toe (Personal Web Development Project)
 
-🔗 Direct link to access the Tic-Tac-Toe game: <https://miammiamlevrai.github.io/Morpion-TicTacToe/tictactoe-en.html>
+🔗 Direct link to access the Tic-Tac-Toe game: <https://tictactoe-morpion.netlify.app/tictactoe-en.html>
 
 ### 🎮 Project Description
 
@@ -85,7 +85,7 @@ No installation is required. Simply follow these steps to play Tic-Tac-Toe:
 
 ## 🇫🇷 Morpion (Projet de développement web personnel)
 
-🔗 Lien direct pour accéder au jeu du Morpion : <https://miammialevrai.github.io/Morpion-TicTacToe/tictactoe-fr.html>
+🔗 Lien direct pour accéder au jeu du Morpion : <https://tictactoe-morpion.netlify.app/tictactoe-fr.html>
 
 ### 🎮 Description du projet
 
