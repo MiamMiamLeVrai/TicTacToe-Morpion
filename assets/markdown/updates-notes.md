@@ -2,11 +2,43 @@
 
 ## 🇺🇸 Update Notes
 
-### ⚙️ NEW VERSION: Version 1.3.0 : The site is FINALLY ADAPTIVE 🥳 ! + Big bugs fixed (2026/03/10)
+### ⚙️ NEW VERSION: Version 1.4.0 : Goodbye GitHub Pages, Hello Netlify! (2026/03/13)
 
-The site is now responsive, which means it adapts to all types of screens, whether on a computer, tablet, large screens or smartphone. You can now enjoy the site wherever you are and on any device! But so...
+Since the beginning of the project (since version 1.0.0 in general), GitHub Pages has served as the hosting for the site, which is also, by the way, a personal project for me. However, after several months of use, I decided to migrate the site to Netlify for several reasons, including to benefit from better performance, greater flexibility, and additional features that Netlify offers compared to GitHub Pages. This migration was carried out with care to ensure a smooth transition and minimize disruptions for users of the site. But so...
 
 #### What's new 👀?
+
+- __Major new feature: The site is now hosted on Netlify, offering better performance, greater flexibility, and additional features compared to GitHub Pages.__
+- Updated __ALL__ site links to match the new Netlify domain, ensuring that all links work correctly and redirect to the correct pages.
+- Updated links in the `README.md` file to reflect the change in hosting and provide up-to-date information about the project.
+- Updated from version 1.3.0 to version 1.4.0.
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+
+## 🇫🇷 Notes des mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 1.4.0 : Fini GitHub Pages, Bonjour Netlify 👋🏽 (13/03/2026)
+
+Depuis le début du projet (depuis la version 1.0.0 en gros), GitHub Pages a servi d'hébergement pour le site qui est aussi, par ailleurs, un projet personnel pour moi. Cependant, après plusieurs mois d'utilisation, j'ai décidé de migrer le site vers Netlify pour plusieurs raisons, notamment pour bénéficier de meilleures performances, d'une plus grande flexibilité et de fonctionnalités supplémentaires que Netlify offre par rapport à GitHub Pages. Cette migration a été effectuée avec soin pour assurer une transition en douceur et minimiser les interruptions pour les utilisateurs du site. Mais du coup…
+
+#### C'est quoi les nouveautés 👀 ?
+
+- __La nouveauté majeure : Le site est désormais hébergé sur Netlify, offrant de meilleures performances, une plus grande flexibilité et des fonctionnalités supplémentaires par rapport à GitHub Pages.__
+- Mise à jour de __TOUS__ les liens du site pour correspondre au nouveau domaine Netlify, assurant ainsi que tous les liens fonctionnent correctement et redirigent vers les bonnes pages.
+- Mise à jour des liens du fichier `README.md` pour refléter le changement d'hébergement et fournir des informations à jour sur le projet.
+- Mise à jour de la version de 1.3.0 à 1.4.0.
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+---
+
+🇺🇸 Update Notes
+⚙️ NEW VERSION: Version 1.3.0 : The site is FINALLY ADAPTIVE 🥳 ! + Big bugs fixed (2026/03/10)
+The site is now responsive, which means it adapts to all types of screens, whether on a computer, tablet, large screens or smartphone. You can now enjoy the site wherever you are and on any device! But so...
+What's new 👀?
 
 - __The major new feature: A 100% adaptive site, whether you're on a computer, tablet or smartphone, the site adapts to your screen for an optimal experience.__
 - Slight design modifications in `homepage.scss` to better fit the design of the previous version.
@@ -32,15 +64,10 @@ The site is now responsive, which means it adapts to all types of screens, wheth
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
----
-
-## 🇫🇷 Notes des mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 1.3.0 : Le site est ENFIN RESPONSIVE 🥳 ! + Gros bugs corrigés (10/03/2026)
-
+🇫🇷 Notes des mise à jour
+⚙️ NOUVELLE VERSION : Version 1.3.0 : Le site est ENFIN RESPONSIVE 🥳 ! + Gros bugs corrigés (10/03/2026)
 Ça y est, c'est arrivé ! Le site est désormais responsive, ce qui signifie qu'il s'adapte à tous les types d'écrans, que ce soit sur ordinateur, tablette, grands écrans ou smartphone. Vous pouvez désormais profiter du site où que vous soyez et sur n'importe quel appareil ! Mais du coup…
-
-#### C'est quoi les nouveautés 👀 ?
+C'est quoi les nouveautés 👀 ?
 
 - __La nouveauté majeure : Un site 100% adaptatif, que vous soyez sur un ordinateur, une tablette ou un smartphone, le site s'adapte à votre écran pour une expérience optimale.__
 - Légères modifications du design dans `homepage.scss` pour mieux coller au design de la version précédente.
@@ -63,11 +90,6 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Corrections plus ou moins importantes dans les feuilles de styles.
 - Corrections plus ou moins importantes dans les fichiers HTML.
 - Version mise à jour de la version 1.2.1 vers 1.3.0.
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
-
----
----
 
 🇺🇸 Update Notes
 ⚙️ NEW VERSION: Version 1.2.1 (2026/02/27)
