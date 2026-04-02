@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Play Tic-Tac-Toe against AI in this online game. Challenge the computer and test your strategic skills to win.">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="en">
+
+    <meta property="og:title" content="Tic-Tac-Toe vs AI">
+    <meta property="od:description"
+        content="Play Tic-Tac-Toe against AI in this online game. Challenge the computer and test your strategic skills to win.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/vsIA-en.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tic-Tac-Toe vs AI">
+    <meta name="twitter:description"
+        content="Play Tic-Tac-Toe against AI in this online game. Challenge the computer and test your strategic skills to win.">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/vsIA-en.html">
+    <meta name="twitter:site" content="@Miammiam_am">
+    <meta name="twitter:creator" content="@Miammiam_am">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/vsIA.css">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/vsIA-en.html">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/vsIA-en.html" hreflang="en-US">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/vsIA-fr.html" hreflang="fr-FR">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/vsIA-es.html" hreflang="es-ES">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>Tic-Tac-Toe vs AI - Play Online for Free</title>
+</head>
+
+<body>
+    <nav aria-label="Main navigation" id="navbarMove">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" fetchpriority="high"
+                decoding="async" class="logo-navbar"><span>Tic-Tac-Toe vs AI- Play online for free</span>
+        </div>
+        <button id="menu-button" class="menu-button" aria-label="Open the navigation menu" aria-controls="navbarMove"
+            aria-expanded="false">☰</button>
+        <ul>
+            <li>
+                <a href="homepage-en.html">Return to homepage</a>
+            </li>
+            <li>
+                <a href="choice-modes-en.html">Game modes</a>
+            </li>
+            <li>
+                <a href="download-en.html">Resources</a>
+            </li>
+            <li>
+                <a href="index.html">Available languagues</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img src="assets/img/png/Logo_Morpion.png" alt="Poster of Tic-Tac-Toe" class="logo-title" width="410"
+            height="410" fetchpriority="high" decoding="async">
+        <h1>Tic-Tac-Toe vs AI - Play online for free</h1>
+    </header>
+    <div class="background"></div>
+    <main>
+        <section class="morpion-classic">
+            <h2>Tic-Tac-Toe vs AI</h2>
+            <div class="grid" aria-label="Tic-Tac-Toe grid" role="grid">
+                <button class="cell" data-cell="0" aria-label="Empty cell, row 1, column 1"></button>
+                <button class="cell" data-cell="1" aria-label="Empty cell, row 1, column 2"></button>
+                <button class="cell" data-cell="2" aria-label="Empty cell, row 1, column 3"></button>
+                <button class="cell" data-cell="3" aria-label="Empty cell, row 2, column 1"></button>
+                <button class="cell" data-cell="4" aria-label="Empty cell, row 2, column 2"></button>
+                <button class="cell" data-cell="5" aria-label="Empty cell, row 2, column 3"></button>
+                <button class="cell" data-cell="6" aria-label="Empty cell, row 3, column 1"></button>
+                <button class="cell" data-cell="7" aria-label="Empty cell, row 3, column 2"></button>
+                <button class="cell" data-cell="8" aria-label="Empty cell, row 3, column 3"></button>
+            </div>
+        </section>
+
+        <aside aria-labelledby="infos-title">
+            <section class="player-choice">
+                <h2>Choose your symbol</h2>
+                <div class="buttons">
+                    <button id="startBtn" aria-label="Start the game">Start the game</button>
+                </div>
+            </section>
+            <p id="playerSymbol" role="status" aria-live="polite"></p>
+            <section class="player-infos">
+                <h2 id="infos-title">Player Information</h2>
+                <p id="winsInfos" aria-live="polite" role="status"></p>
+            </section>
+
+            <div class="buttons">
+                <button id="restartButton" aria-label="Restart the game" disabled>Restart the game</button>
+                <button id="rechooseSymbol" aria-label="Choose a new symbol" disabled>Choose a new symbol</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved - Version 2.0.0</span>
+        <a href="homepage-en.html#creditsList">Site credits</a>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+    <script src="assets/javascript/vsIA-en.js" type="module"></script>
+</body>
+
+</html>
