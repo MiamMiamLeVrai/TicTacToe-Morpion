@@ -1,17 +1,31 @@
 # Tic-Tac-Toe - Morpion
 
-## 🇺🇸 Update Notes
+## 🇺🇸 Updates notes
 
-### ⚙️ NEW VERSION: Version 1.4.0 : Goodbye GitHub Pages, Hello Netlify! (2026/03/13)
+### ⚙️ NEW VERSION: Version 2.0.0: Hello AI, goodbye SCSS, new language, and a major spring cleaning! (02/04/2026)
 
-Since the beginning of the project (since version 1.0.0 in general), GitHub Pages has served as the hosting for the site, which is also, by the way, a personal project for me. However, after several months of use, I decided to migrate the site to Netlify for several reasons, including to benefit from better performance, greater flexibility, and additional features that Netlify offers compared to GitHub Pages. This migration was carried out with care to ensure a smooth transition and minimize disruptions for users of the site. But so...
+It's here! The most important update to the Morpion project has finally arrived! This update brings a ton of new features, listed below, including bug fixes (as usual), the end of support for a particular programming language, and a language no one could have imagined 🤨. But so…
 
-#### What's new 👀?
+#### What's new? 👀
 
-- __Major new feature: The site is now hosted on Netlify, offering better performance, greater flexibility, and additional features compared to GitHub Pages.__
-- Updated __ALL__ site links to match the new Netlify domain, ensuring that all links work correctly and redirect to the correct pages.
-- Updated links in the `README.md` file to reflect the change in hosting and provide up-to-date information about the project.
-- Updated from version 1.3.0 to version 1.4.0.
+- SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; 1) Modern browsers no longer need specific properties to display a grid. 2) Bugs will be easier to fix and will be addressed directly in the CSS if needed.
+- The design of some pages has been reworked to be visually cleaner.
+- Responsiveness has been improved for most web pages, but further improvements are planned for future updates.
+- Some long-standing, unnecessary properties have been removed, but further improvements are planned for future updates.
+- Interaction bugs on the "__Go to Get Items__" and "__Go to Content__" buttons in the `download.html` and `rules.html` pages have been fixed.
+- A bug where the fourth image (the image showing an example of a draw) in `rules.html`, which was shrinking relative to the window, has been fixed.
+- New language added: Spanish! All web pages in this project will be available in Spanish starting with version 2.0.0 because… why not 🤷
+- The `vsIA.html` page has been added, which will serve as the new game mode, with CSS file, JS file and Tic-Tac-Toe AI
+- A property has been added to the `<meta>` tag that relates to the Twitter share link (X) in most HTML files.
+- Several HTML tag corrections have been made in most files to comply with SEO and semantic standards.
+- Several text modifications (for the new game mode), tags, and minor and major corrections have been made, particularly in the `rules.html`, `homepage.html`, `choice-modes.html`, `404.html`, and other HTML files.
+- A major bug that impacted the gameplay experience in `tictactoe.html`, preventing players from replaying, has now been fixed.
+- Regarding `tictactoc.html`, some interaction logic and text have been updated. Rewritten, non-essential text has been reviewed and corrected to improve clarity and understanding during Tic-Tac-Toe games, but further improvements are planned for future updates.
+- The `config.yml` file no longer exists because the project is now hosted on Netlify.
+- The `.gitignore` file has been modified to exclude more non-essential project files.
+- The `site.webmanifest` file has been modified to correct an icon path error and to include the Spanish translation of Tic-Tac-Toe.
+- The `sitemap.xml` file has been modified to add the Spanish links for Tic-Tac-Toe.
+- Updated from version 1.4.0 to version 2.0.0
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -19,21 +33,59 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ## 🇫🇷 Notes des mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 1.4.0 : Fini GitHub Pages, Bonjour Netlify 👋🏽 (13/03/2026)
+### ⚙️ NOUVELLE VERSION : Version 2.0.0 : , Bonjour l'IA, fini le SCSS, nouvelle langue et grand ménage de printemps ! (02/04/2026)
 
-Depuis le début du projet (depuis la version 1.0.0 en gros), GitHub Pages a servi d'hébergement pour le site qui est aussi, par ailleurs, un projet personnel pour moi. Cependant, après plusieurs mois d'utilisation, j'ai décidé de migrer le site vers Netlify pour plusieurs raisons, notamment pour bénéficier de meilleures performances, d'une plus grande flexibilité et de fonctionnalités supplémentaires que Netlify offre par rapport à GitHub Pages. Cette migration a été effectuée avec soin pour assurer une transition en douceur et minimiser les interruptions pour les utilisateurs du site. Mais du coup…
+Ça y est, la mise à jour la plus importante du projet Morpion est enfin arrivé ! Cette MAJ apporte énormément de nouveautés listés juste en-dessous comme des bugs corrigés (comme d'habitude), une fin d'utilisation d'un langage de programmation en particulier et une langue que personne n'aurait pu imaginer 🤨. Mais du coup…
 
-#### C'est quoi les nouveautés 👀 ?
+#### C'est quoi les nouveautés ? 👀
 
-- __La nouveauté majeure : Le site est désormais hébergé sur Netlify, offrant de meilleures performances, une plus grande flexibilité et des fonctionnalités supplémentaires par rapport à GitHub Pages.__
-- Mise à jour de __TOUS__ les liens du site pour correspondre au nouveau domaine Netlify, assurant ainsi que tous les liens fonctionnent correctement et redirigent vers les bonnes pages.
-- Mise à jour des liens du fichier `README.md` pour refléter le changement d'hébergement et fournir des informations à jour sur le projet.
-- Mise à jour de la version de 1.3.0 à 1.4.0.
+- Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; 1) Les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, 2) Les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
+- Le design de certaines pages ont été refaits pour être plus "propres" visuellement
+- Le responsive pour la majorité des pages webs ont été améliorés, mais d'autres améliorations seront prévus pour des MAJ futures
+- Certaines propriétés inutiles présents depuis un bon moment ont été supprimés, mais d'autres améliorations seront prévues pour des MAJ futures
+- Les bugs d'interactions sur les boutons "__Aller sur Obtenir les éléments__" et "__Aller au contenu__" dans les pages respectives `download.html` et `rules.html` ont été corrigés
+- Un bug sur la quatrième image (l'image qui montre un exemple de match nul) dans `rules.html` qui rétrécissait par rapport à la fenêtre a été corrigé
+- Nouvelle langue ajoutée : l'espagnol ! Toutes les pages webs présents dans ce projet sera à partir de la version 2.0.0 disponibles en espagnole parce que… pourquoi pas 🤷
+- La page `vsIA.html` ajouté qui fera office du nouveau mode de jeu, avec lui son CSS, son JS et l'IA du Morpion
+- Ajout d'une propriété de la balise `<meta>` qui concerne le lien de partage pour Twitter (X) dans la majorité des fichiers HTML
+- Quelques corrections de balises HTML dans la plupart des fichiers pour être dans les normes SEO et sémantiques
+- Quelques modifications des textes (pour le nouveau mode de jeu), balises, corrections mineures et majeures ont été apportés, notamment dans les fichiers `rules.html`, `homepage.html`, `choice-modes.html`, `404.html` et dans les autres fichiers HTML
+- Un bug majeur qui impactait l'expérience jeu dans `tictactoe.html` dans lequel on ne pouvait plus rejouer est maintenant corrigé
+- Concernant `tictactoc.html` les quelques logiques d'intéractions, textes réécrits, textes non essentiels, ont été revues et corrigés pour apporter une meilleure clarté et compréhension pendant les parties de Morpion, mais d'autres améliorations seront prévus pour des MAJ futures
+- Le fichier `config.yml` n'existe plus pour la raison que le projet est maintenant hébergé sur Netlify
+- Le fichier `.gitignore` a été modifié pour exclure plus de fichiers non essentiels au projet
+- Le fichier `site.webmanifest` a été modifié pour corriger une erreur de chemin des icônes et pour accueillir la traduction espagnole du Morpion
+- Le fichier `sitemap.xml` a été modifié pour ajouter les liens espagnoles du Morpion
+- Mise à jour de la version de 1.4.0 à 2.0.0
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ---
 ---
+
+---
+---
+
+🇺🇸 Update Notes
+⚙️ NEW VERSION: Version 1.4.0 : Goodbye GitHub Pages, Hello Netlify! (2026/03/13)
+Since the beginning of the project (since version 1.0.0 in general), GitHub Pages has served as the hosting for the site, which is also, by the way, a personal project for me. However, after several months of use, I decided to migrate the site to Netlify for several reasons, including to benefit from better performance, greater flexibility, and additional features that Netlify offers compared to GitHub Pages. This migration was carried out with care to ensure a smooth transition and minimize disruptions for users of the site. But so...
+What's new 👀?
+
+- __Major new feature: The site is now hosted on Netlify, offering better performance, greater flexibility, and additional features compared to GitHub Pages.__
+- Updated __ALL__ site links to match the new Netlify domain, ensuring that all links work correctly and redirect to the correct pages.
+- Updated links in the `README.md` file to reflect the change in hosting and provide up-to-date information about the project.
+- Updated from version 1.3.0 to version 1.4.0.
+
+---
+
+🇫🇷 Notes des mise à jour
+⚙️ NOUVELLE VERSION : Version 1.4.0 : Fini GitHub Pages, Bonjour Netlify 👋🏽 (13/03/2026)
+Depuis le début du projet (depuis la version 1.0.0 en gros), GitHub Pages a servi d'hébergement pour le site qui est aussi, par ailleurs, un projet personnel pour moi. Cependant, après plusieurs mois d'utilisation, j'ai décidé de migrer le site vers Netlify pour plusieurs raisons, notamment pour bénéficier de meilleures performances, d'une plus grande flexibilité et de fonctionnalités supplémentaires que Netlify offre par rapport à GitHub Pages. Cette migration a été effectuée avec soin pour assurer une transition en douceur et minimiser les interruptions pour les utilisateurs du site. Mais du coup…
+C'est quoi les nouveautés 👀 ?
+- __La nouveauté majeure : Le site est désormais hébergé sur Netlify, offrant de meilleures performances, une plus grande flexibilité et des fonctionnalités supplémentaires par rapport à GitHub Pages.__
+- Mise à jour de __TOUS__ les liens du site pour correspondre au nouveau domaine Netlify, assurant ainsi que tous les liens fonctionnent correctement et redirigent vers les bonnes pages.
+- Mise à jour des liens du fichier `README.md` pour refléter le changement d'hébergement et fournir des informations à jour sur le projet.
+- Mise à jour de la version de 1.3.0 à 1.4.0.
 
 🇺🇸 Update Notes
 ⚙️ NEW VERSION: Version 1.3.0 : The site is FINALLY ADAPTIVE 🥳 ! + Big bugs fixed (2026/03/10)
@@ -61,8 +113,6 @@ What's new 👀?
 - More or less important corrections in the style sheets.
 - More or less important corrections in the HTML files.
 - Updated from version 1.2.1 to 1.3.0.
-
-__HAVE FUN ON TIC-TAC-TOE!__
 
 🇫🇷 Notes des mise à jour
 ⚙️ NOUVELLE VERSION : Version 1.3.0 : Le site est ENFIN RESPONSIVE 🥳 ! + Gros bugs corrigés (10/03/2026)
