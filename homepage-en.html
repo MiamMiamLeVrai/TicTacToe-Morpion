@@ -1,327 +1,214 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Welcome to the home page of the Morpion. Rediscover a classic game of the Morpion with different game modes available at launch and even later, online for free!"
-        />
-        <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
-        <meta
-            name="copyright"
-            content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#FFEFD3" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A" />
-        <meta name="language" content="en">
 
-        <meta property="og:title" content="Homepage of Tic-Tac-Toe" />
-        <meta
-            property="og:description"
-            content="Welcome to the home page of Tic-Tac-Toe. Rediscover a classic game of Tic-Tac-Toe with different game modes available at launch and even later, online for free!"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://tictactoe-morpion.netlify.app/homepage-en.html"
-        />
-        <meta
-            property="og:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the home page of the Morpion. Rediscover a classic game of the Morpion with different game modes available at launch and even later, online for free!">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="en">
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Homepage of Tic Tac Toe" />
-        <meta
-            name="twitter:description"
-            content="Welcome to the home page of Tic-Tac-Toe. Rediscover a classic game of Tic-Tac-Toe with different game modes available at launch and even later, online for free!"
-        />
-        <meta
-            name="twitter:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
-        <meta name="twitter:site" content="@Miammiam_am" />
-        <meta name="twitter:creator" content="@Miammiam_am" />
+    <meta property="og:title" content="Homepage of Tic-Tac-Toe">
+    <meta property="og:description"
+        content="Welcome to the home page of Tic-Tac-Toe. Rediscover a classic game of Tic-Tac-Toe with different game modes available at launch and even later, online for free!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/homepage-en.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            as="style"
-            onload="this.rel = 'stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/favicons/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/favicons/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/favicons/favicon-16x16.png"
-        />
-        <link
-            rel="shortcut icon"
-            href="assets/favicons/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="manifest" href="assets/json/site.webmanifest" />
-        <link rel="stylesheet" href="assets/css/homepage.css" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Homepage of Tic-Tac-Toe">
+    <meta name="twitter:description"
+        content="Welcome to the home page of Tic-Tac-Toe. Rediscover a classic game of Tic-Tac-Toe with different game modes available at launch and even later, online for free!">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/homepage-en.html">
+    <meta name="twitter:site" content="@Miammiam_am">
+    <meta name="twitter:creator" content="@Miammiam_am">
 
-        <link rel="canonical" href="https://tictactoe-morpion.netlify.app/homepage-en.html" />
-        <link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html" />
-        <link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html" />
-        <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
 
-        <noscript>
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-            />
-        </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/homepage.css">
 
-        <title>Homepage of Tic-Tac-Toe</title>
-    </head>
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/homepage-en.html">
+    <link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html">
+    <link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html">
+    <link rel="alternate" hreflang="en-ES" href="https://tictactoe-morpion.netlify.app/homepage-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
 
-    <body>
-        <nav id="navbarMove" aria-label="Main navigation">
-            <div class="nav-logo">
-                <img
-                    src="assets/img/png/Logo_Morpion.png"
-                    alt="Tic-Tac-Toe Logo"
-                    width="80"
-                    height="80"
-                    decoding="async"
-                    fetchpriority="high"
-                    class="logo-navbar"
-                />
-                <span>Tic-Tac-Toe - Homepage</span>
-            </div>
-            <button
-                id="menuButton"
-                class="menu-button"
-                aria-label="Open navigation menu"
-                aria-controls="navbarMove"
-                aria-expanded="false">
-                ☰
-            </button>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>Homepage of Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <nav id="navbarMove" aria-label="Main navigation">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Tic-Tac-Toe Logo" width="80" height="80" decoding="async"
+                fetchpriority="high" class="logo-navbar">
+            <span>Tic-Tac-Toe - Homepage</span>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-controls="navbarMove"
+            aria-expanded="false">
+            ☰
+        </button>
+        <ul>
+            <li>
+                <a href="download-en.html">Resources</a>
+            </li>
+            <li>
+                <a href="choice-modes-en.html">Game modes</a>
+            </li>
+            <li><a href="rules-en.html">Rules</a></li>
+            <li>
+                <a href="index.html">Languages choice</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img class="logo-title" src="assets/img/png/Logo_Morpion.png" alt="Poster image of Tic-Tac-Toe" width="410"
+            height="410" decoding="async" fetchpriority="high">
+        <h1>Tic-Tac-Toe - Homepage</h1>
+    </header>
+    <a href="#startBody" id="startbodyMove" class="start-body-button">Go to content</a>
+    <div class="background" aria-hidden="true"></div>
+    <main id="startBody">
+        <section class="start-body">
+            <h2>The famous Tic-Tac-Toe game playable on the web!</h2>
+            <p>
+                What if I told you that playing Tic-Tac-Toe on paper is a thing of the past? With this website, I can
+                assure you that playing old-fashioned Tic-Tac-Toe will be a thing of the past.
+                All you need is a screen <i>(PC or phone screen)</i>, a quiet place, and an internet connection.
+                After that, gone are all those times when you had to get out your paper and pen to play this game, find
+                a spot on the already scribbled-on Tic-Tac-Toe grid, and then search for another blank sheet to scribble
+                on even more&mldr; poor trees that had to endure all those pencil strokes! &#128532;
+            </p>
+        </section>
+        <section class="middle-body">
+            <h2>Different game modes of Tic-Tac-Toe</h2>
+            <p>
+                Yes, you read that right, there will be different game modes available for playing Tic-Tac-Toe,
+                but before we dive into the details, all the game modes <i>(and I emphasize
+                    <b>ALL</b>))</i>
+                share the same basic rule: two players must place shapes (X and O) in a grid of
+                9 squares, and the first player to line up three
+                identical shapes wins the game, regardless of which way you read it. Simple and effective.
+                From a single database, several modes can be created:
+                a classic version, a game mode against an AI, perhaps a 5x5 mode, and many others that could
+                spring from the mind of a web developer &#128064;.
+                With all that, if you say you're bored, I don't know what else to do&mldr;
+            </p>
+        </section>
+        <section class="end-body">
+            <h2>It's time to start a game!</h2>
+            <p>
+                Here we are, it's time to get down to business and
+                get to the heart of the matter! &#128526; Just below, you'll find a button that takes you to a catalog
+                of available game modes, or you can find it in the navigation bar if you're on another page. And all of
+                this is right in your browser, no need to install any
+                shady or unknown applications.
+            </p>
+            <a href="choice-modes-en.html" role="button" aria-label="Choose your game mode">Choose your game mode</a>
+        </section>
+    </main>
+
+    <footer id="creditsList">
+        <section class="contact-list">
+            <h3>
+                You will find all the ways to contact me and see all my
+                works below
+            </h3>
+            <p>
+                <a href="https://www.linkedin.com/in/simon-heries-3447563aa/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile (opens in a new tab)">
+                    <img src="assets/img/svg/linkedin-brands-solid-full.svg" alt="LinkedIn logo" width="80" height="80"
+                        loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                LinkedIn Profile
+            </p>
+
+            <p>
+                <a href="https://github.com/MiamMiamLeVrai" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Profile (opens in a new tab)">
+                    <img src="assets/img/svg/github-brands-solid-full.svg" alt="GitHub logo" width="80" height="80"
+                        loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                GitHub Profile
+            </p>
+
+            <p>
+                <a href="https://x.com/Miammiam_am" target="_blank" rel="noopener noreferrer"
+                    aria-label="X Profile (opens in a new tab)">
+                    <img src="assets/img/svg/square-x-twitter-brands-solid-full.svg" alt="X logo (Formerly Twitter)"
+                        width="80" height="80" loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                X Profile (Formerly Twitter)
+            </p>
+        </section>
+
+        <section class="explanation-list">
+            <h3>A brief explanation of what you will find on the different pages of the site</h3>
+            <dl>
+                <dt>Resources</dt>
+                <dd>
+                    You will be able to download all the resources present
+                    This page showcases all the assets used for this website. You can find created images, icons, fonts,
+                    etc., all available for free download.
+                </dd>
+                <dt>Game Modes</dt>
+                <dd>
+                    The different game modes are on this page. Between
+                    local Tic-Tac-Toe or Tic-Tac-Toe against AI and many more to come later, it's already quite a lot.
+                </dd>
+                <dt>Rules</dt>
+                <dd>
+                    For those unfamiliar with the rules of Tic-Tac-Toe, or who want to discover the rules of the
+                    new game modes implemented.
+                </dd>
+                <dt>Availables languages</dt>
+                <dd>
+                    For those who selected the wrong language
+                    other than French, English, or even Spanish&mldr;
+                    in short, if you clicked too quickly.
+                </dd>
+            </dl>
+        </section>
+
+        <section class="credits-list">
+            <h3>All assets credits used outside of my own creations.</h3>
             <ul>
                 <li>
-                    <a href="download-en.html">Resources</a>
+                    <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Google Fonts (opens in a new tab)">Google Fonts</a><span>Outfit font</span>
                 </li>
                 <li>
-                    <a href="choice-modes-en.html">Game modes</a>
-                </li>
-                <li><a href="rules-en.html">Rules</a></li>
-                <li>
-                    <a href="index.html">Languages choice</a>
+                    <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Font Awesome (opens in a new tab)">Font Awesome</a><span>GitHub, LinkedIn and X
+                        (Twitter) icons</span>
                 </li>
             </ul>
-        </nav>
-        <header class="header-start-page">
-            <img
-                class="logo-title"
-                src="assets/img/png/Logo_Morpion.png"
-                alt="Poster image of Tic-Tac-Toe"
-                width="410"
-                height="410"
-                decoding="async"
-                fetchpriority="high"
-            />
-            <h1>Tic-Tac-Toe - Homepage</h1>
-        </header>
-        <a href="#startBody" id="startbodyMove" class="start-body-button">Go to content</a>
-        <div class="background" aria-hidden="true"></div>
-        <main id="startBody">
-            <section class="start-body">
-                <h2>The famous Tic-Tac-Toe game playable on the web!</h2>
-                <p>
-                    What if I told you that playing Tic-Tac-Toe on paper is over
-                    now? With this website, I can assure you that playing the
-                    classic version of Tic-Tac-Toe will be quickly forgotten.
-                    You only need a screen and an internet connection, and after
-                    that, all those boring hours and waiting for a simple
-                    appointment are over.
-                </p>
-            </section>
-            <section class="middle-body">
-                <h2>Different game modes of Tic-Tac-Toe</h2>
-                <p>
-                    We all know how to play Tic-Tac-Toe
-                    <i
-                        >(if you don't know how to play, this is the right place
-                        to discover it)</i
-                    >
-                    : two players must place shapes (crosses and circles) in a
-                    9-square grid, and the one who aligns identical shapes wins
-                    the game. Simple and effective&mldr; but who says I haven't
-                    implemented new features to spice up your games ?<br />
-                    Between the classic mode, a countdown mode, against the AI,
-                    or a 2-player <i>(available soon)</i>, if you say you're
-                    bored, I've at least tried my best&mldr;
-                </p>
-            </section>
-            <section class="end-body">
-                <h2>It's time to start a game!</h2>
-                <p>
-                    Enough talking, it's time to get serious and launch into the
-                    heart of the matter! Just below, you'll find a button that
-                    will start a Tic-Tac-Toe game, but before that, you'll need
-                    to choose the available game modes. That same button is also
-                    present in the navigation bar, so no worries. And all of
-                    this directly in your browser, no need to install anything
-                    unknown to anyone.
-                </p>
-                <a href="choice-modes-en.html" role="button" aria-label="Choose your game mode">Choose your game mode</a>
-            </section>
-        </main>
+        </section>
 
-        <footer id="creditsList">
-            <section class="contact-list">
-                <h3>
-                    You will find all the ways to contact me and see all my
-                    works below
-                </h3>
-                <p>
-                    <a
-                        href="https://www.linkedin.com/in/simon-heries-3447563aa/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn Profile (opens in a new tab)"
-                    >
-                        <img
-                            src="assets/img/svg/linkedin-brands-solid-full.svg"
-                            alt="LinkedIn logo"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    LinkedIn Profile
-                </p>
+        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
+            - Version 2.0.0</span>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+</body>
 
-                <p>
-                    <a
-                        href="https://github.com/MiamMiamLeVrai"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub Profile (opens in a new tab)"
-                    >
-                        <img
-                            src="assets/img/svg/github-brands-solid-full.svg"
-                            alt="GitHub logo"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    GitHub Profile
-                </p>
-
-                <p>
-                    <a
-                        href="https://x.com/Miammiam_am"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="X Profile (opens in a new tab)"
-                    >
-                        <img
-                            src="assets/img/svg/square-x-twitter-brands-solid-full.svg"
-                            alt="X logo (Formerly Twitter)"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    X Profile (Formerly Twitter)
-                </p>
-            </section>
-
-            <section class="explanation-list">
-                <h3>All explanations of each page present on this site</h3>
-                <dl>
-                    <dt>Resources</dt>
-                    <dd>
-                        You will be able to download all the resources present
-                        on this site. This includes images, the font used, icons
-                        and much more.
-                    </dd>
-                    <dt>Game Modes</dt>
-                    <dd>
-                        Different game modes will be presented on this page,
-                        those that are available will be clickable, otherwise it
-                        will be specified.
-                    </dd>
-                    <dt>Rules</dt>
-                    <dd>
-                        For those who don't know the rules of classic Tic-Tac
-                        -Toe, or who want to discover the rules of the newly
-                        implemented game modes.
-                    </dd>
-                    <dt>Language Choice</dt>
-                    <dd>
-                        For those who are used to browsing in another language
-                        than French, or even those who want to learn a new
-                        language by playing Tic-Tac-Toe.
-                    </dd>
-                </dl>
-            </section>
-
-            <section class="credits-list">
-                <h3>All assets credits used outside of my own creations.</h3>
-                <ul>
-                    <li>
-                        <a
-                            href="https://fonts.google.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Google Fonts (opens in a new tab)"
-                            >Google Fonts</a
-                        ><span>Outfit font</span>
-                    </li>
-                    <li>
-                        <a
-                            href="https://fontawesome.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Font Awesome (opens in a new tab)"
-                            >Font Awesome</a
-                        ><span
-                            >Application icons (GitHub, LinkedIn, X
-                            (Twitter))</span
-                        >
-                    </li>
-                </ul>
-            </section>
-
-            <span class="rights"
-                >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
-                - Version 1.4.0</span
-            >
-        </footer>
-        <script src="assets/javascript/animation.js" defer></script>
-    </body>
 </html>
