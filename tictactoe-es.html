@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tres en raya en todas sus versiones, disponible online, sin descargas y sin anuncios. ¡Ahora es el momento de jugar sin límites!">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="es">
+
+    <meta property="og:title" content="Tres en raya: juega online gratis">
+    <meta property="og:description"
+        content="Tres en raya en todas sus versiones, disponible online, sin descargas y sin anuncios. ¡Ahora es el momento de jugar sin límites!">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/tictactoe-es.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tres en raya: juega online gratis">
+    <meta name="twitter:description"
+        content="Tres en raya en todas sus versiones, disponible online, sin descargas y sin anuncios. ¡Ahora es el momento de jugar sin límites!">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/tictactoe-es.html">
+    <meta name="twitter:site" content="@Miammiam_am">
+    <meta name="twitter:creator" content="@Miammiam_am">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/tictactoe.css">
+
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/tictactoe-es.html">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/tictactoe-en.html" hreflang="en-US">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/tictactoe-fr.html" hreflang="fr-FR">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/tictactoe-es.html" hreflang="es-ES">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>Tres en raya: juega online gratis</title>
+</head>
+
+<body>
+    <nav id="navbarMove" aria-label="Navegación principal">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Logo del Tres en raya" width="80" height="80"
+                fetchpriority="high" decoding="async" class="logo-navbar"><span>Tres en raya - ¡A jugar!</span>
+        </div>
+        <button id="menuButton" aria-label="Abrir el menú de navegación" class="menu-button" aria-expanded="false"
+            aria-controls="navbarMove">☰</button>
+        <ul>
+            <li>
+                <a href="homepage-es.html">Volver a la página principal</a>
+            </li>
+            <li>
+                <a href="choice-modes-es.html">Modos del juego</a>
+            </li>
+            <li>
+                <a href="download-es.html">Recursos</a>
+            </li>
+            <li>
+                <a href="index.html">Idiomas disponibles</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img src="assets/img/png/Logo_Morpion.png" alt="Logo del Tres en raya" class="logo-title" width="410"
+            height="410" fetchpriority="high" decoding="async">
+        <h1>Tres en raya: juega online gratis</h1>
+    </header>
+    <div class="background" aria-hidden="true"></div>
+    <main>
+        <section class="morpion-classic">
+            <h2>Tres en Raya clásico</h2>
+            <div class="grid" aria-label="Tablero de tres en raya" role="grid">
+                <button class="cell" aria-label="Casilla vacía, fila 1, columna 1" data-cell="0"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 1, columna 2" data-cell="1"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 1, columna 3" data-cell="2"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 2, columna 1" data-cell="3"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 2, columna 2" data-cell="4"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 2, columna 3" data-cell="5"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 3, columna 1" data-cell="6"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 3, columna 2" data-cell="7"></button>
+                <button class="cell" aria-label="Casilla vacía, fila 3, columna 3" data-cell="8"></button>
+            </div>
+        </section>
+
+        <aside aria-labelledby="infos-title">
+            <section class="player-choice">
+                <h2>¿Quién jugará primero?</h2>
+                <button id="playerChoice" aria-label="Echar suertes">¡Echar suertes!</button>
+                <p id="playerResult" role="status" aria-live="polite"></p>
+            </section>
+            <section class="player-infos">
+                <h2 id="infos-title">Información de la pieza</h2>
+                <p id="turnInfos" aria-live="polite" role="status"></p>
+                <p id="winsInfos" aria-live="polite" role="status"></p>
+            </section>
+
+            <div class="buttons">
+                <button id="restartButton" aria-label="Reinicia el juego" disabled>Reinicia el juego</button>
+                <button id="rechoosePlayer" aria-label="Se sortea un nuevo jugador al azar." disabled>Nuevo
+                    sorteo</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Reservados todos los derechos - Version
+            2.0.0</span>
+        <a href="homepage-es.html#creditsList">Créditos del sitio</a>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+    <script src="assets/javascript/tictactoe-es.js" defer></script>
+</body>
+
+</html>
