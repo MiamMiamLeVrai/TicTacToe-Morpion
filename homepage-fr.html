@@ -1,337 +1,227 @@
 <!doctype html>
 <html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !"
-        />
-        <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
-        <meta
-            name="copyright"
-            content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#FFEFD3" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A" />
-        <meta name="language" content="fr" />
 
-        <meta property="og:title" content="Page d'accueil du Morpion" />
-        <meta
-            property="og:description"
-            content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://tictactoe-morpion.netlify.app/homepage-fr.html"
-        />
-        <meta
-            property="og:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="fr">
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Page d'accueil du Morpion" />
-        <meta
-            name="twitter:description"
-            content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !"
-        />
-        <meta
-            name="twitter:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
-        <meta name="twitter:site" content="@Miammiam_am" />
-        <meta name="twitter:creator" content="@Miammiam_am" />
+    <meta property="og:title" content="Page d'accueil du Morpion">
+    <meta property="og:description"
+        content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/homepage-fr.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            as="style"
-            onload="this.rel = 'stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/favicons/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/favicons/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/favicons/favicon-16x16.png"
-        />
-        <link
-            rel="shortcut icon"
-            href="assets/favicons/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="manifest" href="assets/json/site.webmanifest" />
-        <link rel="stylesheet" href="assets/css/homepage.css" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page d'accueil du Morpion">
+    <meta name="twitter:description"
+        content="Bienvenue sur la page d'accueil du Morpion. Redécouvrez une partie classique du Morpion avec différents modes de jeu disponibles au lancement et même plus tard, en ligne gratuitement !">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/homepage-fr.html">
+    <meta name="twitter:site" content="@Miammiam_am">
+    <meta name="twitter:creator" content="@Miammiam_am">
 
-        <link rel="canonical" href="https://tictactoe-morpion.netlify.app/homepage-fr.html" />
-        <link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html" />
-        <link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html" />
-        <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
 
-        <noscript>
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-            />
-        </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/homepage.css">
 
-        <title>Page d'accueil du Morpion</title>
-    </head>
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/homepage-fr.html">
+    <link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html">
+    <link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html">
+    <link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/homepage-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
 
-    <body>
-        <nav id="navbarMove" aria-label="Navigation principale">
-            <div class="nav-logo">
-                <img
-                    src="assets/img/png/Logo_Morpion.png"
-                    alt="Logo du Morpion"
-                    width="80"
-                    height="80"
-                    fetchpriority="high"
-                    decoding="async"
-                    class="logo-navbar"
-                />
-                <span>Morpion - Page d'accueil</span>
-            </div>
-            <button
-                id="menuButton"
-                class="menu-button"
-                aria-label="Ouvre le menu de navigation"
-                aria-controls="navbarMove"
-                aria-expanded="false">
-                ☰
-            </button>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>Page d'accueil du Morpion</title>
+</head>
+
+<body>
+    <nav id="navbarMove" aria-label="Navigation principale">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" fetchpriority="high"
+                decoding="async" class="logo-navbar">
+            <span>Morpion - Page d'accueil</span>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-controls="navbarMove"
+            aria-expanded="false">
+            ☰
+        </button>
+        <ul>
+            <li>
+                <a href="download-fr.html">Ressources</a>
+            </li>
+            <li>
+                <a href="choice-modes-fr.html">Modes de jeu</a>
+            </li>
+            <li>
+                <a href="rules-fr.html">Règles</a>
+            </li>
+            <li>
+                <a href="index.html">Langues disponibles</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img class="logo-title" src="assets/img/png/Logo_Morpion.png" alt="Affiche du Morpion" width="410"
+            height="410" decoding="async" fetchpriority="high">
+        <h1>Morpion - Page d'accueil</h1>
+    </header>
+    <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
+    <div class="background" aria-hidden="true"></div>
+    <main id="startBody">
+        <section class="start-body">
+            <h2>Le célèbre jeu Morpion jouable sur le web !</h2>
+            <p>
+                Et si je vous disais que jouer au Morpion sur papier, est terminé ? Avec ce site, je peux
+                vous affirmer que jouer au Morpion à l'ancienne sera de l'histoire ancienne.
+                Il vous suffit juste d'un écran <i>(écran PC, ou téléphone)</i>, d'un endroit calme et d'une connexion
+                internet, après ça, fini toutes ces moments ou vous deviez sortir votre feuille et votre stylo pour
+                jouer à ce jeu, de trouver une
+                place sur la feuille déjà gribouillé de grille de Morpion et de chercher une autre feuille vierge pour
+                gribouiller
+                encore plus la feuille&mldr; pauvres arbres qui ont du subîr tous ces coups de crayons &#128532;.
+            </p>
+        </section>
+        <section class="middle-body">
+            <h2>Les différents modes de jeu du Morpion</h2>
+            <p>
+                Oui, vous avez bien lu, il y aura différents modes de jeu disponibles pour jouer au Morpion,
+                mais avant de vous jeter dans le vif du sujet, tous les modes de jeu <i>(et j'insiste sur le
+                    <b>TOUS</b>)</i>,
+                ont une seule et même règle de base : deux joueurs doivent placer des formes (X et O) dans une grille de
+                9 cases et celui qui aligne trois
+                formes identiques gagne la partie, qu'importe le sens que vous lisez. Simple et efficace.
+                Dans une seule et même base on peut en créée plusieurs modes :
+                une version classique, un mode de jeu contre une IA, peut-être un mode 5x5, et plein d'autres qui peut
+                sortir d'un cerveau de développeur web &#128064;.
+                Avec tout ça, si vous dites que vous vous ennuyez, je sais pas quoi faire de plus&mldr;
+            </p>
+        </section>
+        <section class="end-body">
+            <h2>C'est le moment de lancer une partie !</h2>
+            <p>
+                Ça y est, nous y sommes, il est temps de passer aux choses sérieuses et
+                de vous lancer dans le vif du sujet &#128526; ! Juste en-dessous, vous
+                avez un bouton qui amène à un catalogue de modes de jeu disponibles, ou sinon
+                dans la barre de navigation si vous êtes dans une autre page. Et tout ça
+                directement sur votre navigateur, pas besoin d'installer des
+                applications douteuses ou inconnus.
+            </p>
+            <a href="choice-modes-fr.html" role="button" aria-label="Choisis ton mode de jeu">Choisis ton mode de
+                jeu</a>
+        </section>
+    </main>
+
+    <footer id="creditsList">
+        <section class="contact-list">
+            <h3>
+                Vous trouverez tous les moyens de me contacter et de voir
+                tous mes travaux ci-dessous
+            </h3>
+            <p>
+                <a href="https://www.linkedin.com/in/simon-heries-3447563aa/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Profil LinkedIn (ouvre un nouvel onglet)">
+                    <img src="assets/img/svg/linkedin-brands-solid-full.svg" alt="Logo LinkedIn" width="80" height="80"
+                        loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                Profil LinkedIn
+            </p>
+
+            <p>
+                <a href="https://github.com/MiamMiamLeVrai" target="_blank" rel="noopener noreferrer"
+                    aria-label="Profil GitHub (ouvre un nouvel onglet)">
+                    <img src="assets/img/svg/github-brands-solid-full.svg" alt="Logo GitHub" width="80" height="80"
+                        loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                Profil GitHub
+            </p>
+
+            <p>
+                <a href="https://x.com/Miammiam_am" target="_blank" rel="noopener noreferrer"
+                    aria-label="Profil X (ouvre un nouvel onglet)">
+                    <img src="assets/img/svg/square-x-twitter-brands-solid-full.svg" alt="Logo X (Anciennement Twitter)"
+                        width="80" height="80" loading="lazy" decoding="async" fetchpriority="low">
+                </a>
+                Profil X (Anciennement Twitter)
+            </p>
+        </section>
+
+        <section class="explanation-list">
+            <h3>
+                Petit explicatif de ce que vous pourrez trouver sur les différentes pages du site
+            </h3>
+            <dl>
+                <dt>Ressources</dt>
+                <dd>
+                    Page mettant en avant tous les assets utilisés pour
+                    ce site web. Vous pouvez trouver des images créées,
+                    des icônes, des polices, etc, tout ça disponible en
+                    téléchargement gratuit.
+                </dd>
+                <dt>Modes de jeu</dt>
+                <dd>
+                    Les différents modes de jeu sur cette page. Entre
+                    le Morpion en local ou contre IA et bien d'autres plus tard, c'est déjà pas mal.
+                </dd>
+                <dt>Règles</dt>
+                <dd>
+                    Pour ceux qui ne connaissent pas les règles du Morpion, ou qui veulent découvrir les règles des
+                    nouveaux modes de jeu implémentés.
+                </dd>
+                <dt>Langues disponibles</dt>
+                <dd>
+                    Pour ceux qui se sont trompés de langue autre
+                    autre que le français, ou l'anglais, ou même l'espagnol&mldr;
+                    bref, si vous avez cliqué trop vite.
+                </dd>
+            </dl>
+        </section>
+
+        <section class="credits-list">
+            <h3>
+                Tous les crédits des assets utilisés en dehors de mes
+                propres créations.
+            </h3>
             <ul>
                 <li>
-                    <a href="download-fr.html">Ressources</a>
+                    <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Site des polices Google (ouvre un nouvel onglet)">Google Fonts</a><span>Police
+                        Outfit</span>
                 </li>
                 <li>
-                    <a href="choice-modes-fr.html">Modes de jeu</a>
-                </li>
-                <li>
-                    <a href="rules-fr.html">Règles</a>
-                </li>
-                <li>
-                    <a href="index.html">Langues disponibles</a>
+                    <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Site pour les icônes (ouvre un nouvel onglet)">Font Awesome</a><span>Icônes
+                        GitHub, LinkedIn et X
+                        (Twitter)</span>
                 </li>
             </ul>
-        </nav>
-        <header class="header-start-page">
-            <img
-                class="logo-title"
-                src="assets/img/png/Logo_Morpion.png"
-                alt="Image d'affiche du Morpion"
-                width="410"
-                height="410"
-                decoding="async"
-                fetchpriority="high"
-            />
-            <h1>Morpion - Page d'accueil</h1>
-        </header>
-        <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
-        <div class="background" aria-hidden="true"></div>
-        <main id="startBody">
-            <section class="start-body">
-                <h2>Le célèbre jeu Morpion jouable sur le web !</h2>
-                <p>
-                    Et si je vous disais que jouer au Morpion sur papier, à
-                    partir de maintenant est terminé ? Avec ce site, je peux
-                    vous affirmer que jouer au Morpion à l'ancienne sera vite
-                    oublié. Il vous suffit juste d'un écran et d'une connexion
-                    internet, et après ça, fini toutes ces heures ennuyantes et
-                    d'attente pour un simple rendez-vous.
-                </p>
-            </section>
-            <section class="middle-body">
-                <h2>Les différents modes de jeu du Morpion</h2>
-                <p>
-                    On connaît tous comment jouer au Morpion
-                    <i
-                        >(si ce n'est pas le cas, c'est le bon endroit pour le
-                        découvrir)</i
-                    >
-                    : deux joueurs doivent placer des formes (des croix et des
-                    ronds) dans une grille de 9 cases et celui qui aligne les
-                    formes identiques gagne la partie. Simple et efficace&mldr;
-                    mais qui vous dit que j'ai pas implémenté des nouveautés
-                    pour pimenter vos parties ?<br />
-                    Entre le mode classique, un mode contre-la-montre, contre
-                    l'IA, ou encore un mode 2-joueurs
-                    <i>(disponibles prochainement)</i>, si vous dites que vous
-                    vous ennuyez, j'ai au moins fait de mon mieux&mldr;
-                </p>
-            </section>
-            <section class="end-body">
-                <h2>C'est le moment de lancer une partie !</h2>
-                <p>
-                    Assez parlé, il est temps de passer aux choses sérieuses et
-                    de vous lancer dans le vif du sujet ! Juste en-dessous, vous
-                    avez un bouton qui lancera une partie de Morpion, mais avant
-                    cela, il faudra choisir les modes de jeu présents et
-                    disponibles. Ce même bouton est aussi présent dans la barre
-                    de navigation, donc pas d'inquiétudes. Et tout ça
-                    directement sur votre navigateur, pas besoin d'installer des
-                    choses que personne ne connaît.
-                </p>
-                <a href="choice-modes-fr.html" role="button" aria-label="Choisis ton mode de jeu">Choisis ton mode de jeu</a>
-            </section>
-        </main>
+        </section>
+        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
+            réservés - Version 2.0.0</span>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+</body>
 
-        <footer id="creditsList">
-            <section class="contact-list">
-                <h3>
-                    Vous retrouverez tous les moyens de me contacter et de voir
-                    tous mes travaux ci-dessous
-                </h3>
-                <p>
-                    <a
-                        href="https://www.linkedin.com/in/simon-heries-3447563aa/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Profil LinkedIn (ouvre un nouvel onglet)"
-                    >
-                        <img
-                            src="assets/img/svg/linkedin-brands-solid-full.svg"
-                            alt="Logo LinkedIn"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    Profil LinkedIn
-                </p>
-
-                <p>
-                    <a
-                        href="https://github.com/MiamMiamLeVrai"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Profil GitHub (ouvre un nouvel onglet)"
-                    >
-                        <img
-                            src="assets/img/svg/github-brands-solid-full.svg"
-                            alt="Logo GitHub"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    Profil GitHub
-                </p>
-
-                <p>
-                    <a
-                        href="https://x.com/Miammiam_am"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Profil X (ouvre un nouvel onglet)"
-                    >
-                        <img
-                            src="assets/img/svg/square-x-twitter-brands-solid-full.svg"
-                            alt="Logo X (Anciennement Twitter)"
-                            width="80"
-                            height="80"
-                            loading="lazy"
-                            decoding="async"
-                            fetchpriority="low"
-                        />
-                    </a>
-                    Profil X (Anciennement Twitter)
-                </p>
-            </section>
-
-            <section class="explanation-list">
-                <h3>
-                    Toutes les explications de chaque page présente dans ce
-                    site
-                </h3>
-                <dl>
-                    <dt>Ressources</dt>
-                    <dd>
-                        Vous pourrez télécharger toutes les ressources présentes
-                        sur ce site. Cela inclut les images, la police utilisée,
-                        les icônes et bien plus.
-                    </dd>
-                    <dt>Modes de jeu</dt>
-                    <dd>
-                        Différents modes de jeu seront présentés sur cette page,
-                        ceux qui sont disponibles seront cliquables, sinon ça
-                        sera précisé.
-                    </dd>
-                    <dt>Règles</dt>
-                    <dd>
-                        Pour ceux qui ne connaissent pas les règles du Morpion
-                        classique, ou qui veulent découvrir les règles des
-                        nouveaux modes de jeu implémentés.
-                    </dd>
-                    <dt>Choix de la langue</dt>
-                    <dd>
-                        Pour ceux qui ont l'habitude de naviguer dans une autre
-                        langue que le français, ou même ceux qui veulent
-                        apprendre une nouvelle langue en jouant au Morpion.
-                    </dd>
-                </dl>
-            </section>
-
-            <section class="credits-list">
-                <h3>
-                    Tous les crédits des assets utilisés en dehors de mes
-                    propres créations.
-                </h3>
-                <ul>
-                    <li>
-                        <a
-                            href="https://fonts.google.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Site des polices Google (ouvre un nouvel onglet)"
-                            >Google Fonts</a
-                        ><span>Police Outfit</span>
-                    </li>
-                    <li>
-                        <a
-                            href="https://fontawesome.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Site pour les icônes (ouvre un nouvel onglet)"
-                            >Font Awesome</a
-                        ><span
-                            >Icônes d'application (GitHub, LinkedIn, X
-                            (Twitter))</span
-                        >
-                    </li>
-                </ul>
-            </section>
-            <span class="rights"
-                >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
-                réservés - Version 1.4.0</span
-            >
-        </footer>
-        <script src="assets/javascript/animation.js" defer></script>
-    </body>
 </html>
