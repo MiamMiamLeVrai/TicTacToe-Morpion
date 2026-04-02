@@ -2,98 +2,188 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://tictactoe-morpion.netlify.app/</loc>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>1.0</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/homepage-fr.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/homepage-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.8</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/homepage-en.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/homepage-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/homepage-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/homepage-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/homepage-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/homepage-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.8</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/download-fr.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/download-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/download-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/download-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/download-en.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/download-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/download-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/download-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/download-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/download-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/download-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/download-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/choice-modes-fr.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/choice-modes-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/choice-modes-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/choice-modes-en.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/choice-modes-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/choice-modes-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-            <lastmod>2026-03-13</lastmod>
-            <changefreq>weekly</changefreq>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/choice-modes-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/choice-modes-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/choice-modes-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+            <lastmod>2026-04-02</lastmod>
+            <changefreq>monthly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/rules-fr.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/rules-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/rules-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/rules-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-                <lastmod>2026-03-13</lastmod>
-                <changefreq>weekly</changefreq>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
                 <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/rules-en.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/rules-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/rules-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/rules-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-                <lastmod>2026-03-13</lastmod>
-                <changefreq>weekly</changefreq>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/rules-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/rules-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/rules-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/rules-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
                 <priority>0.6</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/tictactoe-fr.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/tictactoe-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/tictactoe-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/tictactoe-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-                <lastmod>2026-03-13</lastmod>
-                <changefreq>weekly</changefreq>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
                 <priority>0.8</priority>
     </url>
     <url>
         <loc>https://tictactoe-morpion.netlify.app/tictactoe-en.html</loc>
         <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/tictactoe-fr.html"/>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/tictactoe-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/tictactoe-es.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
-                <lastmod>2026-03-13</lastmod>
-                <changefreq>weekly</changefreq>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/tictactoe-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/tictactoe-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/tictactoe-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/tictactoe-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/vsIA-fr.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/vsIA-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/vsIA-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/vsIA-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/vsIA-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/vsIA-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/vsIA-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/vsIA-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://tictactoe-morpion.netlify.app/vsIA-es.html</loc>
+        <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tictactoe-morpion.netlify.app/vsIA-fr.html"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://tictactoe-morpion.netlify.app/vsIA-en.html"/>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://tictactoe-morpion.netlify.app/vsIA-es.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html"/>
+                <lastmod>2026-04-02</lastmod>
+                <changefreq>monthly</changefreq>
                 <priority>0.8</priority>
     </url>
 </urlset>
