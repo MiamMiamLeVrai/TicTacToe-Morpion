@@ -1,0 +1,732 @@
+:root {
+    --background-color: #001B2E;
+    --text-color: #FFFDED;
+    --nav-links-color: #294C60;
+    --lighter-nav-links-color: #3d6b85;
+    --link-color: #FFEFD3;
+    --secondary-link-color: #FFC49D;
+    --background-btn-color: #FFEFD3;
+    --button-text-color: #252422;
+    --button-border-color: #2F2D2E;
+    --selector-color: #ADB6C4;
+}
+
+::selection {
+    background-color: var(--selector-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.4;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-button {
+    display: none;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: var(--nav-links-color);
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--link-color);
+    padding: 16px;
+    border-bottom: 3px solid var(--nav-links-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: transform 0.35s ease-in-out, background-color 0.6s ease-in-out;
+    will-change: transform;
+    overflow: hidden;
+}
+
+nav.nav-hidden {
+    transform: translateY(-150px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    cursor: default;
+}
+
+.logo-navbar {
+    display: block;
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+    outline: 1px solid var(--background-color);
+}
+
+nav span {
+    color: var(--nav-links-color);
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul.nav-open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: var(--nav-links-color);
+    margin: 0 16px;
+    padding: 16px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border-radius: 16px;
+}
+
+nav ul li a:hover {
+    background-color: var(--nav-links-color);
+    color: var(--link-color);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+nav ul li a:focus {
+    outline: var(--nav-links-color) 2px solid;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.header-start-page {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 75px;
+    border-bottom: 3px solid var(--text-color);
+    gap: 100px;
+}
+
+.header-start-page h1 {
+    font-size: 2.4rem;
+}
+
+.header-start-page .logo-title {
+    display: block;
+    max-width: 100%;
+    width: 410px;
+    height: auto;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/png/Morpion_Fond_Ecran.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 75px 100px 75px 100px;
+    padding-bottom: 50px;
+}
+
+.morpion-classic h2 {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.morpion-classic .grid {
+    display: grid;
+    margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+    width: 500px;
+    max-width: 100%;
+    border: 3px solid var(--text-color);
+}
+
+.morpion-classic .grid>*:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.morpion-classic .grid>*:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.morpion-classic .grid>*:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.morpion-classic .grid>*:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.morpion-classic .grid>*:nth-child(5) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.morpion-classic .grid>*:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.morpion-classic .grid>*:nth-child(7) {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.morpion-classic .grid>*:nth-child(8) {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.morpion-classic .grid>*:nth-child(9) {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.morpion-classic .grid .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: var(--background-color);
+    border: 3px solid var(--text-color);
+    cursor: pointer;
+    aspect-ratio: 1;
+    font-size: 6rem;
+    color: var(--text-color);
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.morpion-classic .grid .cell:hover {
+    border-color: var(--selector-color);
+    background-color: var(--nav-links-color);
+}
+
+.morpion-classic .grid .cell:focus {
+    outline: var(--selector-color) 2px solid;
+    background-color: var(--lighter-nav-links-color);
+    box-shadow: 0 0 0 3px white;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.player-choice h2 {
+    font-size: 2.1rem;
+}
+
+.player-choice button {
+    display: inline-block;
+    background-color: var(--link-color);
+    border: 3px solid var(--button-border-color);
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 1.5rem;
+    font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.player-choice button:hover {
+    background-color: var(--button-border-color);
+    border-color: var(--background-btn-color);
+    color: var(--background-btn-color);
+    transform: scale(1.05);
+}
+
+.player-choice button:focus {
+    outline: var(--selector-color) 2px solid;
+    box-shadow: 0 0 0 3px white;
+}
+
+.player-infos h2 {
+    font-size: 2.1rem;
+}
+
+.player-infos p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttons button {
+    display: inline-block;
+    background-color: var(--background-btn-color);
+    border: 3px solid var(--button-text-color);
+    border-radius: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: var(--button-text-color);
+    border-color: var(--background-btn-color);
+    color: var(--background-btn-color);
+    transform: scale(1.05);
+}
+
+.buttons button:focus {
+    outline: var(--selector-color) 2px solid;
+    box-shadow: 0 0 0 3px white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--button-text-color);
+    padding: 50px 0;
+    border-top: 3px solid var(--text-color);
+}
+
+footer .rights {
+    font-size: 1.5rem;
+    margin: 32px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--link-color);
+    margin: 32px auto;
+    transition: color 0.5s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--secondary-link-color);
+    text-decoration: underline;
+}
+
+footer a:focus {
+    outline: var(--link-color) 2px solid;
+    box-shadow: 0 0 0 3px white;
+}
+
+#playerSymbol {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#turnInfos {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#winsInfos {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        transform: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #menuButton {
+        display: block;
+    }
+
+    nav {
+        padding: 6px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        width: calc(100% - 12px);
+        height: auto;
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.nav-open {
+        display: flex;
+    }
+
+    .logo-navbar {
+        width: 60px;
+    }
+
+    nav span {
+        margin-left: 8px;
+        font-size: calc(1.5rem - 4px);
+    }
+
+    nav ul li a {
+        padding: 8px;
+        margin: 0 auto;
+        font-size: calc(1.5rem - 4px);
+        border-radius: 0px;
+    }
+
+    nav ul li a:hover {
+        transform: none;
+    }
+
+    .header-start-page {
+        flex-direction: column;
+        margin-top: 150px;
+        padding: 0 0 25px 0;
+        gap: 30px;
+    }
+
+    .header-start-page h1 {
+        font-size: calc(2.4rem - 4px);
+    }
+
+    .header-start-page .logo-title {
+        width: 200px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        margin: 50px 16px;
+    }
+
+    .morpion-classic h2 {
+        font-size: calc(2.1rem + 5px);
+    }
+
+    .morpion-classic .grid {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .morpion-classic .grid .cell {
+        font-size: 4rem;
+    }
+
+    aside {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .player-choice {
+        text-align: center;
+    }
+
+    .player-choice h2 {
+        font-size: calc(2.1rem + 5px);
+    }
+
+    .player-choice button {
+        padding: 12px 16px;
+        font-size: calc(1.5rem - 4px);
+    }
+
+    .player-choice p {
+        font-size: calc(1.5rem - 4px);
+    }
+
+    .player-infos {
+        text-align: center;
+    }
+
+    .player-infos h2 {
+        font-size: calc(2.1rem + 5px);
+    }
+
+    .player-infos p {
+        font-size: calc(1.5rem - 4px);
+    }
+
+    .buttons button {
+        padding: 12px 16px;
+        font-size: calc(1.5rem - 4px);
+    }
+
+    .buttons p {
+        text-align: center;
+        font-size: calc(1.5rem - 4px);
+    }
+
+    footer .rights {
+        font-size: calc(1.5rem - 4px);
+        margin: 16px 16px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: calc(1.5rem - 4px);
+        margin: 16px auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #menuButton {
+        display: block;
+    }
+
+    nav {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        width: calc(100% - 17px);
+        height: auto;
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.nav-open {
+        display: flex;
+    }
+
+    .logo-navbar {
+        width: 65px;
+    }
+
+    nav span {
+        margin-left: 8px;
+        font-size: calc(1.5rem - 3px);
+    }
+
+    nav ul li a {
+        padding: 8px;
+        margin: 0 8px;
+        font-size: calc(1.5rem - 2px);
+        border-radius: 0px;
+    }
+
+    nav ul li a:hover {
+        transform: none;
+    }
+
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 0 0 50px 50px;
+        gap: 40px;
+    }
+
+    .header-start-page h1 {
+        font-size: calc(2.4rem - 3px);
+    }
+
+    .header-start-page .logo-title {
+        width: 270px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        margin: 50px 16px;
+    }
+
+    .morpion-classic h2 {
+        font-size: calc(2.1rem + 3px);
+    }
+
+    .morpion-classic .grid {
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+    }
+
+    .morpion-classic .grid .cell {
+        font-size: 5rem;
+    }
+
+    aside {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 35px;
+    }
+
+    .player-choice {
+        text-align: center;
+    }
+
+    .player-choice h2 {
+        font-size: calc(2.1rem + 3px);
+    }
+
+    .player-choice button {
+        padding: 14px 18px;
+        font-size: calc(1.5rem - 2px);
+    }
+
+    .player-choice p {
+        font-size: calc(1.5rem - 2px);
+    }
+
+    .player-infos {
+        text-align: center;
+    }
+
+    .player-infos h2 {
+        font-size: calc(2.1rem + 3px);
+    }
+
+    .player-infos p {
+        font-size: calc(1.5rem - 2px);
+    }
+
+    .buttons button {
+        padding: 14px 18px;
+        font-size: calc(1.5rem - 2px);
+    }
+
+    .buttons p {
+        text-align: center;
+        font-size: calc(1.5rem - 2px);
+    }
+
+    footer .rights {
+        font-size: calc(1.5rem - 2px);
+        margin: 16px;
+    }
+
+    footer a {
+        font-size: calc(1.5rem - 2px);
+        margin: 16px auto;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    .logo-navbar {
+        width: 75px;
+    }
+
+    nav span {
+        margin-left: 8px;
+        font-size: calc(1.5rem - 3px);
+    }
+
+    nav ul li a {
+        padding: 12px;
+        margin: 0 6px;
+        font-size: calc(1.5rem - 3px);
+    }
+
+    .header-start-page {
+        flex-direction: row;
+        margin-top: 150px;
+        padding: 25px 0 65px 100px;
+        gap: 50px;
+    }
+
+    .header-start-page h1 {
+        font-size: calc(2.4rem - 2px);
+    }
+
+    .header-start-page .logo-title {
+        width: 350px;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .morpion-classic h2 {
+        font-size: calc(2.1rem - 1px);
+    }
+
+    .morpion-classic .grid {
+        width: 450px;
+        height: 450px;
+        margin: 0 auto;
+    }
+
+    .morpion-classic .grid .cell {
+        font-size: 5.5rem;
+    }
+
+    aside {
+        justify-content: flex-start;
+        margin-left: 20px;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .player-choice {
+        text-align: flex-start;
+    }
+
+    footer .rights {
+        font-size: calc(1.5rem - 1px);
+        margin: 16px 16px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: calc(1.5rem - 1px);
+        margin: 16px auto;
+    }
+}
