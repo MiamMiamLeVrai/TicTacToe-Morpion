@@ -1,7 +1,0 @@
-include:
-  - sitemap.xml
-
-exclude:
-  - sitemap.xml
-
-plugins: []
