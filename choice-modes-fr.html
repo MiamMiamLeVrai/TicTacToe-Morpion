@@ -1,200 +1,128 @@
 <!doctype html>
 <html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles"
-        />
-        <meta name="author" content="Simon HERIES (MiamMiamLeVrai)" />
-        <meta
-            name="copyright"
-            content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#FFEFD3" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A" />
-        <meta name="language" content="fr" />
 
-        <meta property="og:title" content="Morpion - Modes de jeu" />
-        <meta
-            property="og:description"
-            content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://tictactoe-morpion.netlify.app/choice-modes-fr.html"
-        />
-        <meta
-            property="og:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="fr">
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Morpion - Modes de jeu" />
-        <meta
-            name="twitter:description"
-            content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles"
-        />
-        <meta
-            name="twitter:image"
-            content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png"
-        />
-        <meta name="twitter:site" content="@Miammiam_am" />
-        <meta name="twitter:creator" content="@Miammiam_am" />
+    <meta property="og:title" content="Morpion - Modes de jeu">
+    <meta property="og:description"
+        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/choice-modes-fr.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            as="style"
-            onload="this.rel = 'stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/favicons/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/favicons/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/favicons/favicon-16x16.png"
-        />
-        <link
-            rel="shortcut icon"
-            href="assets/favicons/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="manifest" href="assets/json/site.webmanifest" />
-        <link rel="stylesheet" href="assets/css/choice-modes.css" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Morpion - Modes de jeu">
+    <meta name="twitter:description"
+        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/choice-modes-fr.html">
+    <meta name="twitter:site" content="@Miammiam_am">
+    <meta name="twitter:creator" content="@Miammiam_am">
 
-        <link rel="canonical" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html" />
-        <link rel="alternate" href="https://tictactoe-morpion.netlify.app/choice-modes-en.html" hreflang="en-US" />
-        <link rel="alternate" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html" hreflang="fr-FR" />
-        <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
 
-        <noscript>
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-            />
-        </noscript>
-        <title>Morpion - Modes de jeu</title>
-    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/choice-modes.css">
 
-    <body>
-        <nav id="navbarMove" aria-label="Navigation principale">
-            <div class="nav-logo">
-                <img
-                    src="assets/img/png/Logo_Morpion.png"
-                    alt="Logo du Morpion"
-                    width="80"
-                    height="80"
-                    decoding="async"
-                    fetchpriority="high"
-                    class="logo-navbar"
-                />
-                <span>Morpion - Modes de jeu</span>
-            </div>
-            <button
-                id="menuButton"
-                class="menu-button"
-                aria-label="Ouvre le menu de navigation"
-                aria-controls="navbarMove"
-                aria-expanded="false">
-                ☰
-            </button>
-            <ul>
-                <li>
-                    <a href="homepage-fr.html"
-                        >Revenir à l'accueil</a
-                    >
-                </li>
-                <li>
-                    <a href="download-fr.html"
-                        >Ressources</a
-                    >
-                </li>
-                <li>
-                    <a href="rules-fr.html">Règles</a>
-                </li>
-                <li>
-                    <a href="index.html"
-                        >Langues disponibles</a
-                    >
-                </li>
-            </ul>
-        </nav>
-        <header class="header-start-page">
-            <img
-                class="logo-title"
-                src="assets/img/png/Logo_Morpion.png"
-                alt="Image d'affiche du Morpion"
-                width="410"
-                height="410"
-                decoding="async"
-                fetchpriority="high"
-            />
-            <h1>Morpion - Modes de jeu</h1>
-        </header>
-        <div class="background" aria-hidden="true"></div>
-        <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
-        <main id="startBody">
-            <section class="start-body">
-                <h2>Choisissez votre mode de jeu</h2>
-                <p>
-                    Voici tous les modes de jeu disponibles pour le Morpion.
-                    Certains sont disponibles directement, (Mode Classique),
-                    d'autres sont en cours de développement et d'autres bloqués
-                    pour le moment. Si vous voulez revoir les règles d'un des
-                    modes de jeu, n'hésitez pas à consulter la page des règles
-                    soit avec le menu de navigation en haut, soit en cliquant
-                    sur <i>Revoir les règles</i> dans chaque carte de mode de
-                    jeu.
-                </p>
-            </section>
-            <section class="mods-cards">
-                <article class="card-mode">
-                    <h3>Morpion Classique</h3>
-                    <p>Le mode classique du Morpion contre un joueur en local</p>
-                    <a href="tictactoe-fr.html" aria-label="Jouer au Morpion Classique">Jouer maintenant !</a>
-                    <a href="rules-fr.html#classic" aria-label="Revoir les règles du Morpion Classique">Revoir les règles</a>
-                </article>
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/choice-modes-en.html" hreflang="en-US">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/choice-modes-fr.html" hreflang="fr-FR">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/choice-modes-es.html" hreflang="es-ES">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
 
-                <article class="card-mode">
-                    <h3>Joueur VS IA</h3>
-                    <p>Même principe que le Morpion classique mais contre une IA</p>
-                    <span class="not-available"
-                        >Prochainement&mldr; (ouais c'est long là)</span
-                    >
-                    <span aria-hidden="true">Non disponible</span>
-                    <span aria-hidden="true">Non disponible</span>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <span class="rights"
-                >&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 1.4.0</span
-            >
-            <a href="homepage-fr.html#creditsList">Crédits du site</a>
-        </footer>
-        <script src="assets/javascript/animation.js" defer></script>
-    </body>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+    <title>Morpion - Modes de jeu</title>
+</head>
+
+<body>
+    <nav id="navbarMove" aria-label="Navigation principale">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" decoding="async"
+                fetchpriority="high" class="logo-navbar">
+            <span>Morpion - Modes de jeu</span>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-controls="navbarMove"
+            aria-expanded="false">
+            ☰
+        </button>
+        <ul>
+            <li>
+                <a href="homepage-fr.html">Revenir à l'accueil</a>
+            </li>
+            <li>
+                <a href="download-fr.html">Ressources</a>
+            </li>
+            <li>
+                <a href="rules-fr.html">Règles</a>
+            </li>
+            <li>
+                <a href="index.html">Langues disponibles</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img class="logo-title" src="assets/img/png/Logo_Morpion.png" alt="Image d'affiche du Morpion" width="410"
+            height="410" decoding="async" fetchpriority="high">
+        <h1>Morpion - Modes de jeu</h1>
+    </header>
+    <div class="background" aria-hidden="true"></div>
+    <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
+    <main id="startBody">
+        <section class="start-body">
+            <h2>Choisissez votre mode de jeu</h2>
+            <p>
+                Voici les modes de jeu disponibles pour le Morpion :
+                Morpion Classique et le mode Joueur VS IA.
+                Si vous voulez revoir les règles d'un des modes de jeu, n'hésitez pas à cliquer sur la page des règles
+                dans la barre de navigation en haut, ou en cliquant
+                sur <i>Revoir les règles</i> dans les cartes juste en dessous. Si vous voulez jouer directement, cliquez
+                sur <i>Jouer maintenant !</i>.
+            </p>
+        </section>
+        <div class="mods-cards">
+            <article class="card-mode">
+                <h3>Morpion Classique</h3>
+                <p>Mode classique du Morpion : Joueur VS Joueur</p>
+                <a href="tictactoe-fr.html" aria-label="Jouer au Morpion Classique">Jouer maintenant !</a>
+                <a href="rules-fr.html#classic" aria-label="Revoir les règles du Morpion Classique">Revoir les
+                    règles</a>
+            </article>
+
+            <article class="card-mode">
+                <h3>Joueur VS IA</h3>
+                <p>Même principe que le Morpion classique mais contre une IA <b>ENFIN !!!</b></p>
+                <a href="vsIA-fr.html" aria-label="Jouer au mode Joueur VS IA">Jouer maintenant !</a>
+                <a href="rules-fr.html#vsIA" aria-label="Revoir les règles du mode Joueur VS IA">Revoir les règles</a>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 2.0.0</span>
+        <a href="homepage-fr.html#creditsList">Crédits du site</a>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+</body>
+
 </html>
