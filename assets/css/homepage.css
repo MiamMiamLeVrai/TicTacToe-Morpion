@@ -36,14 +36,13 @@ body {
     border: none;
     cursor: pointer;
     color: var(--nav-links-color);
-    font-size: 1.5rem;
+    font-size: x-large;
     margin-left: auto;
     margin-right: 32px;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: var(--link-color);
     padding: 16px;
@@ -65,7 +64,6 @@ nav.nav-hidden {
 .nav-logo {
     display: flex;
     align-items: center;
-    margin: 16px;
     cursor: default;
 }
 
@@ -80,7 +78,8 @@ nav.nav-hidden {
 nav span {
     color: var(--nav-links-color);
     margin-left: 8px;
-    font-size: 1.5rem;
+    margin-right: 8px;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
 }
 
 nav ul {
@@ -88,7 +87,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
 }
 
 nav ul.nav-open {
@@ -100,8 +98,9 @@ nav ul li a {
     display: block;
     text-decoration: none;
     color: var(--nav-links-color);
-    font-size: 1.5rem;
-    margin: 0 16px;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    margin-left: 8px;
+    margin-right: 8px;
     padding: 16px;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
     border-radius: 16px;
@@ -114,24 +113,24 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-    outline: var(--nav-links-color) 2px solid;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 3px var(--nav-links-color)
 }
 
 .header-start-page {
     display: flex;
     align-items: center;
     margin-top: 200px;
-    padding: 0 0 75px 200px;
+    padding-left: 200px;
+    padding-bottom: 75px;
     border-bottom: 3px solid var(--text-color);
-    gap: 100px;
+    gap: 75px;
 }
 
 .header-start-page h1 {
-    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
-.header-start-page .logo-title {
+.logo-title {
     display: block;
     max-width: 100%;
     width: 410px;
@@ -140,7 +139,7 @@ nav ul li a:focus {
 
 .start-body-button {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 2.6rem);
     background-color: var(--background-btn-color);
     color: var(--button-text-color);
     text-decoration: none;
@@ -157,13 +156,12 @@ nav ul li a:focus {
 .start-body-button:hover {
     background-color: var(--button-border-color);
     color: var(--background-btn-color);
-    border-color: var(--link-color);
+    border-color: var(--background-btn-color);
     transform: scale(1.05);
 }
 
 .start-body-button:focus {
-    outline: var(--selector-color) 2px solid;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 3px var(--link-color);
 }
 
 .start-body-button.start-body-hidden {
@@ -185,30 +183,31 @@ nav ul li a:focus {
 .end-body,
 .middle-body {
     text-align: center;
-    padding: 20px 150px;
+    padding: 10px 100px;
 }
 
 .start-body h2,
 .end-body h2,
 .middle-body h2 {
-    font-size: 2.1rem;
+    font-size: clamp(1.3rem, 3vw, 3rem);
 }
 
 .start-body p,
 .end-body p,
 .middle-body p {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
 }
 
 .end-body a {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
     display: inline-block;
     text-decoration: none;
     color: var(--button-text-color);
     background-color: var(--background-btn-color);
     cursor: pointer;
     padding: 16px 20px;
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
     border: 3px solid var(--button-border-color);
     border-radius: 16px;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -222,29 +221,26 @@ nav ul li a:focus {
 }
 
 .end-body a:focus {
-    outline: var(--selector-color) 2px solid;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 3px var(--background-btn-color);
 }
 
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
     background-color: var(--button-text-color);
-    padding: 50px 30px;
+    padding: 20px 30px;
     border-top: 3px solid var(--text-color);
 }
 
 .contact-list h3 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
 }
 
 .contact-list p {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
     margin-left: 32px;
 }
 
@@ -262,23 +258,23 @@ footer {
 }
 
 .contact-list p img:focus {
-    outline: var(--text-color) 2px solid;
     box-shadow: 0 0 0 3px white;
 }
 
 .explanation-list h3 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
 }
 
 .explanation-list dl {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
 }
 
 .explanation-list dt {
     text-align: center;
     font-weight: bold;
-    margin: 12px 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .explanation-list dd {
@@ -288,27 +284,26 @@ footer {
 
 .credits-list h3 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
 }
 
 .credits-list ul {
     list-style-type: none;
     padding: 0;
-    margin: 12px 16px;
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
 }
 
 .credits-list ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 16px 0;
+    margin-top: 16px;
 }
 
 .credits-list ul li a {
     color: var(--background-btn-color);
     font-weight: bold;
-    margin: 12px auto;
+    margin: 12px 0;
     transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
     text-decoration: none;
 }
@@ -319,15 +314,15 @@ footer {
 }
 
 .credits-list ul li a:focus {
-    outline: var(--background-btn-color) 2px solid;
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px var(--secondary-link-color);
 }
 
 .rights {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
     font-weight: bold;
     text-align: center;
     margin-top: 64px;
+    margin-bottom: 30px;
     grid-column: 1 / -1;
 }
 
@@ -365,13 +360,16 @@ footer {
     }
 
     nav span {
-        font-size: calc(1.5rem - 4px);
+        margin-left: 16px;
+    }
+    
+    nav ul li:nth-child(1) {
+        margin-top: 8px;
     }
 
     nav ul li a {
         padding: 8px;
         margin: 0 auto;
-        font-size: calc(1.5rem - 4px);
         border-radius: 0px;
     }
 
@@ -383,44 +381,35 @@ footer {
         flex-direction: column;
         margin-top: 150px;
         padding: 0 0 25px 0;
-        gap: 30px;
+        gap: 10px;
     }
 
     .header-start-page h1 {
-        font-size: calc(2.4rem - 4px);
+        text-align: center;
     }
 
-    .header-start-page .logo-title {
+    .logo-title {
         width: 200px;
     }
 
     .start-body-button {
         padding: 12px 16px;
-        font-size: calc(1.5rem - 4px);
     }
 
     .start-body,
     .middle-body,
     .end-body {
-        padding: 0 25px;
-        flex-wrap: wrap;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .start-body h2,
     .middle-body h2,
     .end-body h2 {
-        font-size: calc(2.1rem + 5px);
-        margin-top: 50px;
-    }
-
-    .start-body p,
-    .middle-body p,
-    .end-body p {
-        font-size: calc(1.5rem - 4px);
+        margin-top: 10px;
     }
 
     .end-body a {
-        font-size: calc(1.5rem - 4px);
         padding: 12px 16px;
     }
 
@@ -431,50 +420,28 @@ footer {
     }
 
     .contact-list h3 {
-        font-size: calc(1.8rem - 5px);
-        padding: 0 16px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .contact-list p {
         justify-content: center;
-        margin: 16px auto;
-        font-size: calc(1.5rem - 4px);
+        margin: 8px auto;
     }
 
     .explanation-list h3 {
-        font-size: calc(1.8rem - 5px);
-        padding: 0 16px;
-    }
-
-    .explanation-list dl {
-        justify-content: center;
-    }
-    
-    .explanation-list dt {
-        font-size: calc(1.5rem + 2px);
+        padding-left: 8px;
+        padding-right: 8px;
     }
     
     .explanation-list dd {
-        font-size: calc(1.5rem - 4px);
-        padding: 0 16px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .credits-list h3 {
-        font-size: calc(1.8rem - 5px);
-        padding: 0 16px;
-    }
-
-    .credits-list ul {
-        font-size: calc(1.5rem + 2px);
-    }
-
-    .credits-list ul li a {
-        margin: 12px auto;
-    }
-
-    .rights {
-        margin: 16px 16px;
-        font-size: calc(1.5rem - 6px);
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
 
@@ -502,15 +469,13 @@ footer {
     .logo-navbar {
         width: 65px;
     }
-
-    nav span {
-        font-size: calc(1.5rem - 3px);
+    
+    nav ul li:nth-child(1) {
+        margin-top: 16px;
     }
 
     nav ul li a {
         padding: 8px;
-        margin: 0 8px;
-        font-size: calc(1.5rem - 2px);
         border-radius: 0px;
     }
 
@@ -519,99 +484,49 @@ footer {
     }
 
     .header-start-page {
-        flex-direction: row;
         margin-top: 150px;
         padding: 0 0 50px 50px;
         gap: 40px;
     }
 
-    .header-start-page h1 {
-        font-size: calc(2.4rem - 3px);
-    }
-
-    .header-start-page .logo-title {
+    .logo-title {
         width: 270px;
     }
 
     .start-body-button {
         padding: 12px 16px;
-        font-size: calc(1.5rem - 2px);
     }
 
     .start-body,
     .middle-body,
     .end-body {
-        padding: 0 50px;
-        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .start-body h2,
     .middle-body h2,
     .end-body h2 {
-        font-size: calc(2.1rem + 3px);
-        margin-top: 50px;
-    }
-
-    .start-body p,
-    .middle-body p,
-    .end-body p {
-        font-size: calc(1.5rem - 2px);
+        margin-top: 25px;
     }
 
     .end-body a {
-        font-size: calc(1.5rem - 2px);
         padding: 14px 18px;
     }
 
     footer {
         grid-template-columns: repeat(2, 1fr);
-        justify-content: space-evenly;
-        padding: 20px 10px;
-    }
-
-    .contact-list h3 {
-        font-size: calc(1.8rem - 5px);
+        padding: 20px 0;
+        gap: 10px;
     }
 
     .contact-list p {
-        margin-top: 24px;
         margin-left: 10px;
-        font-size: calc(1.5rem - 5px);
-    }
-
-    .explanation-list h3 {
-        font-size: calc(1.8rem - 5px);
-    }
-
-    .explanation-list dl {
-        justify-content: center;
-    }
-    
-    .explanation-list dt {
-        font-size: calc(1.5rem - 2px);
     }
     
     .explanation-list dd {
-        font-size: calc(1.5rem - 6px);
-        padding: 0 16px;
-    }
-
-    .credits-list h3 {
-        font-size: calc(1.8rem - 5px);
-    }
-
-    .credits-list ul {
-        font-size: calc(1.5rem - 2px);
-    }
-
-    .credits-list ul li a {
-        margin: 12px auto;
-    }
-
-    .rights {
-        margin: 16px 16px;
-        font-size: calc(1.5rem - 2px);
-        align-self: center;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -630,101 +545,60 @@ footer {
 
     nav span {
         margin-left: 8px;
-        font-size: calc(1.5rem - 3px);
     }
 
     nav ul li a {
         padding: 12px;
-        margin: 0 6px;
-        font-size: calc(1.5rem - 3px);
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
     .header-start-page {
-        flex-direction: row;
         margin-top: 150px;
         padding: 25px 0 65px 100px;
         gap: 50px;
     }
 
-    .header-start-page h1 {
-        font-size: calc(2.4rem - 2px);
-    }
-
-    .header-start-page .logo-title {
+    .logo-title {
         width: 360px;
     }
 
     .start-body-button {
         padding: 14px 18px;
-        font-size: calc(1.5rem - 1px);
     }
 
     .start-body,
     .middle-body,
     .end-body {
-        padding: 0 45px;
-        flex-wrap: wrap;
+        padding-left: 55px;
+        padding-right: 55px;
     }
 
     .start-body h2,
     .middle-body h2,
     .end-body h2 {
-        font-size: calc(2.1rem - 1px);
-        margin-top: 50px;
-    }
-
-    .start-body p,
-    .middle-body p,
-    .end-body p {
-        font-size: calc(1.5rem - 1px);
+        margin-top: 25px;
     }
 
     .end-body a {
-        font-size: calc(1.5rem - 1px);
         padding: 16px 20px;
     }
 
     footer {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-list h3 {
-        font-size: calc(1.8rem - 1px);
+        padding: 25px 15px;
     }
 
     .contact-list p {
         margin: 12px 16px;
-        font-size: calc(1.5rem - 1px);
-    }
-
-    .explanation-list h3 {
-        font-size: calc(1.8rem - 1px);
     }
 
     .explanation-list dl {
         justify-content: center;
     }
     
-    .explanation-list dt {
-        font-size: calc(1.5rem + 4px);
-    }
-    
     .explanation-list dd {
-        font-size: calc(1.5rem - 2px);
-        padding: 0 16px;
-    }
-
-    .credits-list h3 {
-        font-size: calc(1.8rem - 1px);
-    }
-
-    .credits-list ul {
-        font-size: calc(1.5rem - 1px);
-    }
-
-    rights {
-        font-size: 1.5rem;
-        margin: 28px 16px;
-        text-align: center;
+        padding-right: 8px;
+        padding-left: 8px;
     }
 }
