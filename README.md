@@ -1,167 +1,163 @@
-# Morpion - TicTacToe
+# Morpion - Tic-Tac-Toe
 
-## 🇺🇸 Tic-Tac-Toe (Personal Web Development Project)
+## 🇫🇷 Tic-Tac-Toe (First Personal Web Project)
 
-🔗 Direct link to access the Tic-Tac-Toe game: <https://tictactoe-morpion.netlify.app/tictactoe-en.html>
+🔗 Link to access the Tic-Tac-Toe game directly: <https://tictactoe-morpion.netlify.app/tictactoe-en.html>
 
-### 🎮 Project Description
+### 🎮 Explanation
 
-A Tic-Tac-Toe game project developed personally to practice and improve my web development skills. It's designed to be simple, fun to play, and accessible to everyone, while maintaining a professional look and feel (as if it were an official web development project). It was a fairly easy project to complete, but it took me the time to do things properly and learn new things along the way.
+__Here is my very first web project and also my first portfolio project: the Tic-Tac-Toe game.__ 😊
+This is a web project that is personally very important to me because the idea came to me towards the end of my Computer Science degree at university (since December 2025). This project is designed for a specific purpose:
+
+- To master the three primary languages of web development; That is to say, HTML, CSS, and JavaScript
+- To consolidate the knowledge I acquired during my Computer Science degree
+- To learn and improve UX/UI design for websites
+
+This project is designed to be user-friendly, featuring a web page for launching Tic-Tac-Toe games that is pleasant and accessible to everyone, while maintaining a professional look and feel. It was a fairly easy project to complete overall, and while it did take some time to get off the ground (since the project officially launched on February 12, 2026), I preferred to take my time to create a website that reflects my identity. Hoping you enjoy the project and have a great time playing! 😉
 
 ---
 
-### 🛠️ Technologies Used
+### 🛠️ Web Languages Used
 
 - 📄 HTML5
 
-- 🎨 CSS3 - SCSS (_Using Prepros software_)
+- 🎨 CSS3
 
 - 🖌️ JavaScript (ES6+)
 
-- 📊 JSON
+---
+
+### 🚀 Installation and Usage
+
+No external applications or web extensions are required for this project as it is hosted on [Netlify](https://www.netlify.com), a free and easy-to-use web hosting service. But you can access this site in several ways:
+
+1. Browse the website from the homepage by clicking 👉[right here](https://tictactoe-morpion.netlify.app/)👈
+
+2. Clone or download the project using GitHub Desktop or directly from the GitHub website
+
+3. Go directly to the Tic-Tac-Toe game by clicking the first link displayed at the top ⬆️
 
 ---
 
-### Installation and Use
+### ℹ️ Core Project Features: _tictactoe-fr.html_
 
-#### 🚀 Installation and Use
+- Classic Tic-Tac-Toe, with a simple, intuitive interface and essential information displayed during gameplay
 
-No installation is required. Simply follow these steps to play Tic-Tac-Toe:
+- A player selection system represented by the X and O symbols
 
-1. Download or clone the project,
+- A game reset button to restart the game indefinitely
 
-2. Open an HTML file `index.html`,
-
-3. Navigate the web pages,
-
-4. Play 🎉
-
----
-
-### ✨ Project Features
-
-#### ℹ️ Core Project Features (_tictactoe-fr.html_)
-
-- A classic Tic-Tac-Toe game with a simple and intuitive interface,
-
-- A player selection and re-selection system represented by Xs or Os, with a random draw,
-
-- A game reset system to restart a game,
-
-- Multilingual support (_currently available in French and English_).
+- Three languages available: French, English, and Spanish
 
 ---
 
 ### ⚠️ Important Information
 
-1. The project is __under development__ and will be regularly updated, improved, and optimized. This applies to JavaScript, SCSS, HTML, and other languages (_see the "Information and Explanation of Version Types" section below_).
+1. This project is __constantly evolving__ and will be regularly updated, improved, and optimized. This applies to JavaScript, CSS3, and HTML. Version numbers are described in the section below ⬇️
 
-2. The project is __primarily developed without AI__ (_ChatGPT, GitHub Copilot, etc._), except for critical areas such as the game logic in JavaScript and certain SCSS designs.
+2. This project is __intended to be developed as much as possible without using AI__, whether it be Claude or GitHub Copilot. Their use has been helpful in certain critical areas, such as the JavaScript game logic, the MiniMax algorithm, and some CSS3 design elements.
 
-3. The project does indeed contain a link to download the project assets. These assets are free to use, but you must give credit if you use them for commercial or non-commercial purposes.
+3. The project includes a link to download the project's web elements. These web elements are free to use, but you must credit me if you use them for commercial or non-commercial purposes. For more details on how to use them, see the `credits.md` file located in the `assets/download` folder.
 
-4. The project is developed for modern browsers and does not guarantee full compatibility with older browsers.
+4. The project is developed for modern browsers and does not guarantee compatibility with older browsers.
 
-5. The project does _not currently_ have mobile device support (Yes, I know, it's practically a crime 😦), but this will be included in a future update.
-
-6. The "markdown" folder contains `color.md` and `updates-notes.md` (`assets/markdown/updates-notes.md`), which respectively present the color palette used (and not used) for the project's design and update notes that will be updated regularly. Feel free to use them as inspiration, or not at all.
+5. The "markdown" folder contains two files: `color.md` and `updates-notes.md`. These two files respectively present the color palette used to create the project's design and the update notes.
 
 ---
 
-### ℹ️ Information and explanation of version types
+### ℹ️ Version Number Explanation
 
-- __Version x.0.0:__ Update named after future game modes.
--- This will represent future new game modes, as well as new web pages related to the game mode, new sections related to the game mode within certain web pages, etc.
+- Each site update will have a title. These will often be related to changes made for a redesign of certain elements, new pages, optimizations, or simply a new game mode.
 
-- __Version 1.x.0:__ Major update
--- This will represent a rewrite of the code in this project, a redesign of the web pages, images, new useful features, etc.
+- __Version x.0.0:__ The most important of all 😱
+-- Version number that generally represents new game modes, new web pages related to the game mode, new sections within certain web pages, etc.
 
-- __Version 1.0.x:__ Minor updates
--- This will include fixes for minor bugs in the web pages, broken features, small additions without creating a full web page, etc.
+- __Version 1.x.0:__ All the major fixes 🧐
+-- Version number that represents a rewrite of the code and text present on the site, a redesign of the web pages, images, new features, etc.
 
-- __Version 1.0.0:__ First major version of the project, featuring the classic Tic-Tac-Toe web page and the game's basic features.
+- __Version 1.0.x:__ All the minor fixes 👀
+-- Version number that represents fixes for small bugs on the web pages, broken features, small additions without creating a new web page, etc.
 
----
-
-## 🇫🇷 Morpion (Projet de développement web personnel)
-
-🔗 Lien direct pour accéder au jeu du Morpion : <https://tictactoe-morpion.netlify.app/tictactoe-fr.html>
-
-### 🎮 Description du projet
-
-Un projet de jeu de Morpion (ou TicTacToe en anglais) développé à titre personnel pour pratiquer et améliorer mes compétences en développement web. Il est conçu pour être simple, agréable à jouer et accessible pour tout le monde, tout en restant "professionnel" dans sa présentation et son fonctionnement. (Comme si c'était un projet de développement web officiel). Ça a été un projet assez facile à réaliser, tout en prenant de mon temps pour faire les choses bien, et pour apprendre de nouvelles choses au passage.
+- __Version 1.0.0:__ First version of the project
 
 ---
 
-### 🛠️ Technologies utilisées
+## 🇫🇷 LE MORPION (Premier projet web personnel)
+
+🔗 Lien pour accéder directement au jeu du Morpion : <https://tictactoe-morpion.netlify.app/tictactoe-fr.html>
+
+### 🎮 Description
+
+__Voici mon tout premier projet web et aussi mon premier projet de portfolio : le jeu du Morpion.__ 😊
+C'est un projet web qui me tient personnellement à cœur car l'idée est venu vers la fin de ma Licence Informatique à l'Univeristé (depuis Décembre 2025). Ce projet est conçu pour un but précis :
+
+- Maitrîser les trois langages primaires du développement web; c'est-à-dire HTML, CSS et JavaScript
+- Consolider mes connaissances appris en Licence Informatique
+- Apprendre et améliorer la conception UX/UI des sites webs
+
+Ce projet est conçu pour être simple d'utilisation, possédant une page web pour lancer les parties de Morpion agréable et accessible pour tout le monde, tout en restant "professionnel" dans sa présentation et son fonctionnement. Ça a été un projet assez facile à réaliser dans son ensemble, et certes c'est un projet qui a mis du temps à se lancer (puisque officiellement le projet est apparu le 12 Février 2026), j'ai préféré de prendre mon temps pour faire un site dont l'identité me correspond. En espérant que le projet vous plaît et je vous souhaite une bonne partie 😉
+
+---
+
+### 🛠️ Langages webs utilisées
 
 - 📄 HTML5
 
-- 🎨 CSS3 - SCSS (_Utilisation du logiciel Prepros_)
+- 🎨 CSS3
 
 - 🖌️ JavaScript (ES6+)
 
-- 📊 JSON
+---
+
+### 🚀 Installation et utilisation
+
+Aucune installations d'applications externes ou d'extensions webs ne sont nécessaires pour ce projet puisqu'il est publié grâce à [Netlify](https://www.netlify.com), un hébergeur web gratuit et simple d'utilisation. Mais vous pouvez accéder à ce site par plusieurs moyens :
+
+1. Parcourir le site web depuis la page d'accueil en cliquant 👉[juste ici](https://tictactoe-morpion.netlify.app/)👈
+
+2. Clonez ou télécharger le projet avec GitHub Desktop ou directement sur le site GitHub
+
+3. Accéder directement dans la partie jeu du Morpion en cliquant sur le premier lien affiché juste en haut ⬆️
 
 ---
 
-### Installation et utilisation
+### ℹ️ Fonctionnalités du cœur du projet : _tictactoe-fr.html_
 
-#### 🚀 Installation et utilisation
+- Le jeu du Morpion classique, avec une interface simple, intuitive et des informations essentiels affichés pendant une partie
 
-Aucune installation n'est nécessaire. Suivez simplement ces étapes pour jouer au jeu du Morpion :
+- Un système de tirage au sort du joueur représentés par les symboles X et O
 
-1. Téléchargez ou clonez le projet,
+- Un bouton de réinitialisation du jeu pour recommencer une partie à l'infini
 
-2. Ouvrez un fichier HTML `index.html`,
-
-3. Naviguez dans les pages webs,
-
-4. Jouez 🎉
-
----
-
-### ✨ Fonctionnalités du projet
-
-#### ℹ️ Fonctionnalités du cœur du projet (_tictactoe-fr.html_)
-
-- Un jeu de Morpion classique, avec une interface simple et intuitive,
-
-- Un système de choix, et de rechoix du joueur représentés par des X ou des O, avec un tirage au sort,
-
-- Un système de réinitialisation du jeu pour recommencer une partie,
-
-- Un support multilingue (_pour l'instant disponibles en français et en anglais_).
+- Trois langues disponibles : français, anglais et espagnole
 
 ---
 
 ### ⚠️ Infos importantes à savoir
 
-1. Le projet est __en cours de développement__ et est vu à être régulièrement mis à jour, amélioré et optimisé. Que ça soit pour du JavaScript, SCSS, HTML et autres _(Voir la section "Informations et explication des types de versions" ci-dessous)_.
+1. Le projet est __évolutif__ et est vu à être régulièrement mis à jour, amélioré et optimisé. Que ça soit pour du JavaScript, CSS3 et HTML. Ce projet possède des numéros de versions qui sont décrites dans la section juste en-dessous ⬇️
 
-2. Le projet est __majoritairement développé sans IA__ (_ChatGPT, GitHub Copilot, etc._) sauf à des points sensibles comme la logique du jeu en JavaScript, ou encore certains design en SCSS.
+2. Le projet est __prévu à être développé le plus possible sans utiliser une IA__, que ça soit Claude ou GitHub Copilot. Leurs utilisations m'a été utile à des points assez sensibles comme la logique du jeu en JavaScript, l'algorithme MiniMax ou encore certains design en CSS3.
 
-3. Le projet contient réellement un lien pour télécharger les assets du projet, l'utilisation de ces assets est libre de droit, mais vous devez créditer si vous les utilisez pour des fins commerciales ou non-commerciales.
+3. Le projet contient un lien pour télécharger les éléments webs du projet, l'utilisation de ces éléments webs sont libre de droits, mais vous devez les créditer à mon nom si vous voulez les utiliser pour des fins lucratifs ou non. Pour plus de précisions de comment les utiliser sont décrites dans le fichier `credits.md` dans le chemin de dossier `assets/download`
 
-4. Le projet est développé pour des navigateurs modernes et ne garantit pas une compatibilité maximale avec les anciens navigateurs.
+4. Le projet est développé pour des navigateurs modernes et ne garantit pas une compatibilité avec les anciens navigateurs.
 
-5. Le projet n'a _pour l'instant_ pas de support pour les appareils mobiles (Oui, je sais c'est limite un crime 😦), mais sera prévu pour une future mise à jour.
-
-6. Le dossier "markdown" contient deux fichiers ; `color.md` et `updates-notes.md` (`assets/markdown/updates-notes.md`) qui présente respectivement la palette de couleurs utilisée (et non utilisée) pour la partie design du projet et des notes de mise à jour qui sera mis à jour régulièrement. Libre à vous de vous en inspirer, de l'utiliser, ou pas du tout.
+5. Le dossier "markdown" contient deux fichiers ; `color.md` et `updates-notes.md`. Ces deux fichiers présentent respectivement l'ensemble des couleurs utilisés pour créer la partie design du projet et des notes de mise à jour.
 
 ---
 
-### ℹ️ Informations et explication des types de versions
+### ℹ️ Explication des numéros de versions
 
-- __Version x.0.0:__ Mise à jour portant le nom des futures modes de jeu.
--- Elle représentera des futures nouveaux modes de jeu, en plus des nouvelles pages web en liens avec le mode de jeu, des nouvelles sections en liens avec le mode de jeu dans certaines pages webs, etc.
+- Chaque mise à jour du site auront un intitulé. Elles seront souvent liés aux modifications apportés pour une refonte du design de certains éléments, de nouvelles pages, d'optimisations, ou tout simplement d'un nouveau mode de jeu
 
-- __Version 1.x.0:__ Mise à jour majeures
--- Elle représentera une réécriture des codes présents dans ce projet, une refonte des designs des pages webs, des images, des nouvelles fonctionnalités utiles, etc.
+- __Version x.0.0 :__ La plus importante de ce qui est important 😱
+-- Numéro de version qui représente généralement les nouveaux modes de jeu,des nouvelles pages web en liens avec le mode de jeu, des nouvelles sections dans certaines pages webs, etc.
 
-- __Version 1.0.x:__ Mise à jour mineures
--- Elle représentera des corrections de petits bugs dans les pages webs, des fonctionnalités cassées, des minis ajouts sans en créer une page web, etc.
+- __Version 1.x.0 :__ Tout ce qui est majeure à corriger 🧐
+-- Numéro de version qui représente une réécriture des codes et textes présents dans le site, une refonte des designs des pages webs, des images, des nouvelles fonctionnalités, etc.
 
-- __Version 1.0.0:__ Première version majeure du projet, avec la page web du Morpion classique, et les fonctionnalités de base du jeu.
+- __Version 1.0.x :__ Tout ce qui est mineures à corriger 👀
+-- Numéro de version qui représente des corrections de petits bugs dans les pages webs, des fonctionnalités cassées, des minis ajouts sans en créer une page web, etc.
 
----
+- __Version 1.0.0 :__ Première version du projet
