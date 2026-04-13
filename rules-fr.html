@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr-FR">
 
 <head>
@@ -48,7 +48,7 @@
     <link rel="alternate" href="https://tictactoe-morpion.netlify.app/rules-en.html" hreflang="en-US">
     <link rel="alternate" href="https://tictactoe-morpion.netlify.app/rules-fr.html" hreflang="fr-FR">
     <link rel="alternate" href="https://tictactoe-morpion.netlify.app/rules-es.html" hreflang="es-ES">
-    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/">
 
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
@@ -94,30 +94,28 @@
         <section class="start-body">
             <h2>Petite introduction</h2>
             <p>
-                Bienvenue dans les règles des modes de jeu ! Ici, vous trouverez des explications détaillées
-                sur les variantes du Morpion, afin de vous assurer
-                de ne pas être perdu lors de vos parties. Prenez le temps de
-                lire attentivement chaque règle pour bien comprendre les
-                spécificités de chaque mode de jeu. Amusez-vous bien et
-                bonne chance ! &#128077;
+                Vous êtes ici parce que vous avez oublié comment on joue n'est-ce pas &#128064; ?
+                Ne vous inquiétez pas, ce n'est pas si grave, vous avez les explications détaillées
+                sur le Morpion et ses variantes ! Prenez le temps de
+                lire attentivement leurs règles pour bien comprendre les
+                spécificités de chaque mode de jeu <i>(même si il n'y a pas grande utilité pour être honnête
+                    avec vous, mais faut pas le dire &#129323;)</i>.
             </p>
         </section>
         <section class="middle-body" id="classic">
             <h2>Règles du Morpion classique</h2>
             <p>
-                Le Morpion classique se joue sur une grille de 3x3 cases. (9
-                cases au total). Deux joueurs s'affrontent, l'un utilisant
-                les "X" et l'autre les "O". Le but pour les joueurs est
-                d'aligner trois de leurs symboles dans l'un des trois sens
-                suivants : horizontalement<sup>[1]</sup>, verticalement<sup>[2]</sup>
-                ou en diagonale<sup>[3]</sup>. Le joueur qui réussit à
-                aligner trois de ses symboles en premier remporte la partie.
+                Le Morpion classique, ou Joueur VS Joueur, se joue sur une grille de taille 3x3 cases.
+                Le choix des symboles X et O se fait par tirage au sort, pas besoin de créer une guerre pour un seul
+                symbole &#128518;.
+                Le but pour les deux joueurs est
+                d'aligner trois de leurs symboles de trois façons possibles : horizontal<sup>[1]</sup>,
+                vertical<sup>[2]</sup>
+                ou diagonale<sup>[3]</sup>. Pour gagner ? Aligner trois de ses symboles en premier.
                 Si toutes les cases de la grille sont remplies sans qu'aucun
                 joueur n'ait réussi à aligner trois symboles identiques, la
                 partie se termine par un match nul<sup>[4]</sup>.
-                Les joueurs jouent à tour de rôle, en plaçant leur symbole
-                dans une case vide de la grille. Un tirage au sort
-                déterminera qui commence la partie. Simple n'est-ce pas ?
+                Simple n'est-ce pas ?
             </p>
             <div class="illustrations" id="xoAlign">
                 <figure>
@@ -154,20 +152,24 @@
         <section class="end-body" id="vsIA">
             <h2>Règles du Morpion contre l'IA</h2>
             <p>
-                Ce mode de jeu reprend les mêmes règles que le Morpion classique, à
-                la différence que vous jouez contre une IA au lieu d'un autre joueur.
-                Vous pouvez tout de même choisir entre "X" ou "O" et l'IA jouera
-                automatiquement l'autre symbole. Le but du jeu reste le même, aligner trois de vos symboles
-                avant que l'IA n'aligne les siens (comme sur les schémas <a href="#xoAlign">juste ici</a>). Faites
-                atention, L'IA peut être très redoutable,
-                alors soyez stratégique (et un peu chanceux) pour tenter de la battre ! Bonne chance !
+                Ce mode de jeu a une petite particularité comparé au Morpion classique. Certes,
+                il s'agit toujours de jouer dans une grille de même taille, d'aligner ses symboles, tout ceci contre un
+                autre joueur&mldr;
+                sauf que l'autre joueur, c'est contre l'IA qui joue, et non un autre humain &#128556;.
+                Vous pouvez tout de même choisir entre les deux mêmes symboles, toujours au hasard et l'IA choisira
+                automatiquement le symbole adverse. Attention, l'IA jouera toujours en premier s'il est désigné par le
+                symbole X, mais le but du jeu reste le même, aligner trois de vos symboles
+                avant que l'IA n'aligne les siens <i>(comme sur les schémas <a href="rules-fr.html#xoAlign">juste ici</a>)</i>. Une
+                dernière chose,
+                L'IA est <b>VRAIMENT</b> redoutable <i>(oui, vous pouvez le dire plus tard quand l'IA vous aura battue,
+                    c'est ma faute &#128517;)</i>, alors soyez stratégique et bonne chance !
             </p>
         </section>
     </main>
 
     <footer>
         <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits
-            réservés - Version 2.0.0</span>
+            réservés - Version 2.1.0</span>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
