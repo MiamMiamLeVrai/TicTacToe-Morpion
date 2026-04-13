@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function handledScroll() {
         const CURRENT_SCROLL = window.scrollY;
-        //Navigation navbarMove
         if (NAVBAR) {
             if (CURRENT_SCROLL > lastScroll) {
                 NAVBAR.classList.add("nav-hidden");
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 NAVBAR.classList.remove("nav-hidden");
             }
         }
-        //Start body button
         if (START_BODY) {
             if (CURRENT_SCROLL > START_BODY.offsetTop) {
                 START_BODY.classList.add("start-body-hidden");
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 START_BODY.classList.remove("start-body-hidden");
             }
         }
-        //Download elements button
         if (DOWNLOAD_ELEMENTS) {
             if (CURRENT_SCROLL > DOWNLOAD_ELEMENTS.offsetTop) {
                 DOWNLOAD_ELEMENTS.classList.add("download-elements-hidden");
@@ -44,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScroll = CURRENT_SCROLL;
         ticking = false;
     }
-    //Navigation bar for mobile
     if (NAVBAR_BUTTON && navForMobile) { 
         NAVBAR_BUTTON.addEventListener("click", function () {
             const IS_OPEN = navForMobile.classList.toggle("nav-open");
