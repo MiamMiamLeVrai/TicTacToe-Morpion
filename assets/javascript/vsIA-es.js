@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerSymbolText = document.getElementById("playerSymbol");
     const winsInfos = document.getElementById("winsInfos");
     const restartBtn = document.getElementById("restartButton");
-    const rechooseBtn = document.getElementById("rechooseSymbol");
     
     let humanSymbol = null;
     let aiSymbol = null;
@@ -32,8 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
-        rechooseBtn.disabled = true;
-        rechooseBtn.style.pointerEvents = "none";
         
         cells.forEach((cell) => {
             cell.textContent = "";
@@ -100,8 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
         startBtn.style.pointerEvents = "none";
         restartBtn.disabled = false;
         restartBtn.style.pointerEvents = "auto";
-        rechooseBtn.disabled = false;
-        rechooseBtn.style.pointerEvents = "auto";
         
         playerSymbolText.textContent = `Estás jugando con el símbolo ${humanSymbol}, así que la IA está jugando con el símbolo ${aiSymbol}.`;
         playerSymbolText.style.transform = "translateX(0%)";
@@ -155,8 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
             
             setTimeout(playAI, 400);
         });
-    });
-    
+    });  
     restartBtn.addEventListener("click", resetGame);
-    rechooseBtn.addEventListener("click", resetGame);
 });
