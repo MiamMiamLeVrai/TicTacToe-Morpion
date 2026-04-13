@@ -2,11 +2,52 @@
 
 ## 🇺🇸 Updates notes
 
-### ⚙️ NEW VERSION: Version 2.0.0: Hello AI, goodbye SCSS, new language, and a major spring cleaning! (02/04/2026)
+### ⚙️ NEW VERSION: Version 2.1.0: Shall we improve everything? Yes! 🙂‍↕️(2026/04/13)
 
-It's here! The most important update to the Morpion project has finally arrived! This update brings a ton of new features, listed below, including bug fixes (as usual), the end of support for a particular programming language, and a language no one could have imagined 🤨. But so…
+A huge number of fixes and changes have been made in this major new update to the Tic-Tac-Toe project. Whether it's visual improvements, gameplay, the removal of unnecessary features, or even web-related issues, everything has been thoroughly reviewed 🔍. So yes, it's all well and good to say all that, but…
 
 #### What's new? 👀
+
+- The CSS was the biggest (and most time-consuming 😮‍💨) part of this update: it was simplified as much as possible without breaking the core design. Responsive design has seen more improvements than before, notably the font size, which now scales to fit the window size, rewritten for better readability, and improved design elements like the navigation bar. All these changes are present in all CSS files.
+- The `rules.html` page and its associated CSS received slightly different treatment, in addition to the CSS changes: 1) The display style of the images used as alignment examples had been problematic for some time; the display style has now been changed and is more suitable for the page and subsequent sections. 2) The text is no longer centered but left-aligned; this is normal and intended. This page is only being tested to ensure greater consistency with the design of the game pages `tictactoe.html` and `vsIA.html` (it might be implemented on the others 🤷).
+- The button that allowed random selection of an X or O symbol during a game or within `tictactoe.html` and `vsIA.html` has been removed due to space constraints and because it wasn't particularly useful for Tic-Tac-Toe games.
+- Removing the button means simplified JavaScript! `tictactoe.js` and `vsIA.js` have had fewer lines of code removed due to the button being deleted as mentioned above, which also improves the readability and consistency of the file.
+- The text section of the site has undergone a major rewrite in the `homepage.html` and `rules.html` pages.
+- The text section of the site has undergone a minor rewrite in the `tictactoe.html`, `vsIA.html`, and `download.html` pages.
+- Some links located in the `<head>` tag in all HTML files except the `404.html` page, which were breaking Google's indexing, including in `sitemap.xml`, are resolved in version 2.1.0.
+- Significant text changes have been made to the `README.md` and `credits.md` files to better align with the 2.0.0 update.
+- Update of the version from 2.0.0 to 2.1.0
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+
+## 🇫🇷 Notes de mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 2.1.0 : On améliore le tout ? Oui ! 🙂‍↕️ (13/04/2026)
+
+Énormément de correctifs et de modifications ont été faites dans cette nouvelle mise à jour majeure du projet Morpion. Que ça soit visuel, pratique, du superflus supprimés ou même encore lié au web, tous y sont passés à la loupe 🔍. Alors oui, c'est bien beau de dire tout ça mais…
+
+#### C'est quoi les nouveautés ? 👀
+
+- Le CSS a été le plus gros (et le plus long 😮‍💨) dans cette MAJ : elle a été simplifié le plus possible sans casser le design de base, le responsive a eu plus d'améliorations qu'auparavant, notamment la taille des caractères qui s'agrandit ou rétrécit par rapport à la taille de la fenêtre, réécrite pour une compréhension de qualité, des design améliorés comme la barre de navigation, et d'autres. Toutes ces modifications sont présents dans la totalité des fichiers CSS
+- La page `rules.html` et son CSS lié ont eu un traitement un peu différent, en plus de ce qui a été fait pour le CSS : de 1) le style d'affichage des images servant d'exemples d'alignement a eu quelque soucis depuis un certain temps, maintenant le style d'affichage a changé et est plus adapté pour la page et pour la suite. De 2) le texte n'est plus centré mais aligné à gauche; c'est normal et c'est même prévu. Uniquement pour cette page, elle sert de test pour être plus cohérent par rapport au design des pages de jeu `tictactoe.html` et `vsIA.html` (peut-être que ça sera sur les autres 🤷)
+- Le bouton qui permettait de rechoisir alétoirement un symbole X ou O, pendant une partie ou  dans `ticactoe.html` et `vsIA.html` sont supprimés pour des raisons d'emcombrements et que ce bouton n'a pas de grande utilité pour les parties de Morpion
+- Qui dit bouton supprimé, dit JavaScript simplifié ! `tictactoe.js` et `vsIA.js` ont connus des lignes de codes en moins en lien du bouton supprimé dit au point ci-dessus, ce qui permet aussi à une meilleure lisibité et cohérence du fichier
+- La partie texte du site a eu une réécriture majeure dans les pages `homepage.html` et `rules.html`
+- La partie texte du site a eu une réécriture mineure dans les pages `tictactoe.html`, `vsIA.html` et `download.html`
+- Certains liens, situés dans la balise `<head>` dans tous les fichiers HTML sauf la page `404.html` cassaient la recherche d'indexation de Google, y compris dans `sitemap.xml` sont résolus dans la 2.1.0
+- Énormes modifications du texte ont eu lieu dans les fichiers `README.md` et `credits.md` pour mieux coller à la MAJ 2.0.0
+- Mise à jour de la version de 2.0.0 à 2.1.0
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+
+🇺🇸 Updates notes
+⚙️ NEW VERSION: Version 2.0.0: Hello AI, goodbye SCSS, new language, and a major spring cleaning! (2026/04/02)
+It's here! The most important update to the Morpion project has finally arrived! This update brings a ton of new features, listed below, including bug fixes (as usual), the end of support for a particular programming language, and a language no one could have imagined 🤨. But so…
+What's new? 👀
 
 - SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; 1) Modern browsers no longer need specific properties to display a grid. 2) Bugs will be easier to fix and will be addressed directly in the CSS if needed.
 - The design of some pages has been reworked to be visually cleaner.
@@ -27,14 +68,14 @@ It's here! The most important update to the Morpion project has finally arrived!
 - The `sitemap.xml` file has been modified to add the Spanish links for Tic-Tac-Toe.
 - Updated from version 1.4.0 to version 2.0.0
 
-__HAVE FUN ON TIC-TAC-TOE!__
-
+---
 ---
 
-## 🇫🇷 Notes des mise à jour
+---
+---
 
-### ⚙️ NOUVELLE VERSION : Version 2.0.0 : , Bonjour l'IA, fini le SCSS, nouvelle langue et grand ménage de printemps ! (02/04/2026)
-
+🇫🇷 Notes des mise à jour
+⚙️ NOUVELLE VERSION : Version 2.0.0 : Bonjour l'IA, fini le SCSS, nouvelle langue et grand ménage de printemps ! (02/04/2026)
 Ça y est, la mise à jour la plus importante du projet Morpion est enfin arrivé ! Cette MAJ apporte énormément de nouveautés listés juste en-dessous comme des bugs corrigés (comme d'habitude), une fin d'utilisation d'un langage de programmation en particulier et une langue que personne n'aurait pu imaginer 🤨. Mais du coup…
 
 #### C'est quoi les nouveautés ? 👀
@@ -57,14 +98,6 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Le fichier `site.webmanifest` a été modifié pour corriger une erreur de chemin des icônes et pour accueillir la traduction espagnole du Morpion
 - Le fichier `sitemap.xml` a été modifié pour ajouter les liens espagnoles du Morpion
 - Mise à jour de la version de 1.4.0 à 2.0.0
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
-
----
----
-
----
----
 
 🇺🇸 Update Notes
 ⚙️ NEW VERSION: Version 1.4.0 : Goodbye GitHub Pages, Hello Netlify! (2026/03/13)
