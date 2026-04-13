@@ -5,14 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const turnInfos = document.getElementById("turnInfos");
     const winsInfos = document.getElementById("winsInfos");
     const restartBtn = document.getElementById("restartButton");
-    const rechooseBtn = document.getElementById("rechoosePlayer");
 
     let currentPlayer = null;
     let board = Array(9).fill("");
     let gameActive = false;
     
     restartBtn.style.pointerEvents = "none";
-    rechooseBtn.style.pointerEvents = "none";
 
     function resetGame() {
         currentPlayer = null;
@@ -31,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         btnChoice.style.pointerEvents = "auto";
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
-        rechooseBtn.disabled = true;
-        rechooseBtn.style.pointerEvents = "none";
         cells.forEach((cell) => {
             cell.style.backgroundColor = "";
             cell.textContent = "";
@@ -79,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.style.pointerEvents = "none";
             restartBtn.disabled = false;
             restartBtn.style.pointerEvents = "auto";
-            rechooseBtn.disabled = false;
-            rechooseBtn.style.pointerEvents = "auto";
 
             const winData = verifyWin();
             if (winData) {
@@ -134,22 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
         btnChoice.style.pointerEvents = "none";
         restartBtn.disabled = false;
         restartBtn.style.pointerEvents = "auto";
-        rechooseBtn.disabled = false;
-        rechooseBtn.style.pointerEvents = "auto";
-    });
-    rechooseBtn.addEventListener("click", () => {
-        resetGame();
-        gameActive = true;
-        currentPlayer = Math.random() < 0.5 ? "X" : "O";
-        resultText.textContent = `It's the turn of player ${currentPlayer} to start!`;
-        resultText.style.transform = "translateX(0%)";
-        resultText.style.opacity = 1;
-        btnChoice.disabled = true;
-        btnChoice.style.pointerEvents = "none";
-        restartBtn.disabled = false;
-        restartBtn.style.pointerEvents = "auto";
-        rechooseBtn.disabled = false;
-        rechooseBtn.style.pointerEvents = "auto";
     });
     restartBtn.addEventListener("click", resetGame);
 });
