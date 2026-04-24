@@ -1,13 +1,4 @@
-:root {
-    --background-color: #001B2E;
-    --text-color: #FFFDED;
-    --nav-links-color: #294C60;
-    --link-color: #FFEFD3;
-    --secondary-link-color: #FFC49D;
-    --button-text-color: #252422;
-    --button-border-color: #2F2D2E;
-    --selector-color: #ADB6C4;
-}
+@import url('variables.css');
 
 ::selection {
     background-color: var(--selector-color);
