@@ -36,6 +36,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
@@ -64,10 +65,7 @@
                 fetchpriority="high" class="logo-navbar">
             <span>Tic-Tac-Toe - Homepage</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-controls="navbarMove"
-            aria-expanded="false">
-            ☰
-        </button>
+        <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <ul>
             <li>
                 <a href="download-en.html">Resources</a>
@@ -141,8 +139,7 @@
             <p>
                 <a href="https://www.linkedin.com/in/simon-heries-3447563aa/" target="_blank" rel="noopener noreferrer"
                     aria-label="LinkedIn Profile (opens in a new tab)">
-                    <img src="assets/img/svg/linkedin-brands-solid-full.svg" alt="LinkedIn logo" width="80" height="80"
-                        loading="lazy" decoding="async" fetchpriority="low">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
                 LinkedIn Profile
             </p>
@@ -150,8 +147,7 @@
             <p>
                 <a href="https://github.com/MiamMiamLeVrai" target="_blank" rel="noopener noreferrer"
                     aria-label="GitHub Profile (opens in a new tab)">
-                    <img src="assets/img/svg/github-brands-solid-full.svg" alt="GitHub logo" width="80" height="80"
-                        loading="lazy" decoding="async" fetchpriority="low">
+                    <i class="fa-brands fa-github"></i>
                 </a>
                 GitHub Profile
             </p>
@@ -159,8 +155,7 @@
             <p>
                 <a href="https://x.com/Miammiam_am" target="_blank" rel="noopener noreferrer"
                     aria-label="X Profile (opens in a new tab)">
-                    <img src="assets/img/svg/square-x-twitter-brands-solid-full.svg" alt="X logo (Formerly Twitter)"
-                        width="80" height="80" loading="lazy" decoding="async" fetchpriority="low">
+                    <i class="fa-brands fa-square-x-twitter"></i>
                 </a>
                 X Profile (Formerly Twitter)
             </p>
@@ -207,8 +202,8 @@
             </ul>
         </section>
 
-        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - All rights reserved
-            - Version 2.1.0</span>
+        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved
+            - Version 2.1.1</span>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
 </body>
