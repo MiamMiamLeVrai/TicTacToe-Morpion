@@ -58,4 +58,4 @@ function getBestMove(board, aiSymbol, humanSymbol) {
     return bestMove;
 }
 
-export { getBestMove, miniMax, verifyWinIA };
+export { getBestMove, verifyWinIA };
