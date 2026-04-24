@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Empty cell");
+            cell.setAttribute("aria-label", "Empty cell, row " + Math.floor(cell.getAttribute("data-cell") / 3) + ", column " + (cell.getAttribute("data-cell") % 3));
         });
     }
 
@@ -60,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
         cell.addEventListener("click", () => {
             const index = Number(cell.getAttribute("data-cell"));
             if (!gameActive) {
-                alert("Before starting the game, click on the \"Choose randomly!\" button");
+                resultText.style.transform = "translateX(0%)";
+                resultText.style.opacity = 1;
+                resultText.textContent = "Before starting the game, click on the \"Choose randomly!\" button";
                 return;
             }
             if (board[index] !== "") {
