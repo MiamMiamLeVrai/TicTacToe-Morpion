@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     const NAVBAR = document.getElementById("navbarMove");
     const START_BODY = document.getElementById("startbodyMove");
-    const DOWNLOAD_ELEMENTS = document.getElementById("downloadEmntsMove");
+    const dateFooter = document.getElementById("dateFooter");
     
     const NAVBAR_BUTTON = document.getElementById("menuButton");
     const navForMobile = NAVBAR ? NAVBAR.querySelector("ul") : null;
@@ -30,17 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 START_BODY.classList.remove("start-body-hidden");
             }
         }
-        if (DOWNLOAD_ELEMENTS) {
-            if (CURRENT_SCROLL > DOWNLOAD_ELEMENTS.offsetTop) {
-                DOWNLOAD_ELEMENTS.classList.add("download-elements-hidden");
-            } else {
-                DOWNLOAD_ELEMENTS.classList.remove("download-elements-hidden");
-            }
-        }
         
         lastScroll = CURRENT_SCROLL;
         ticking = false;
     }
+    
+    if (dateFooter) { 
+        dateFooter.textContent = new Date().toLocaleDateString("fr-FR", { month: "numeric", year: "numeric" });
+    }
+    
     if (NAVBAR_BUTTON && navForMobile) { 
         NAVBAR_BUTTON.addEventListener("click", function () {
             const IS_OPEN = navForMobile.classList.toggle("nav-open");
