@@ -1,12 +1,63 @@
 # Tic-Tac-Toe - Morpion
 
-## 🇺🇸 Updates notes
+## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 2.1.0: Shall we improve everything? Yes! 🙂‍↕️(2026/04/13)
+### ⚙️ NEW VERSION: Version 2.1.1: Fixes and improvements… basically: not much… (April 24, 2026)
 
-A huge number of fixes and changes have been made in this major new update to the Tic-Tac-Toe project. Whether it's visual improvements, gameplay, the removal of unnecessary features, or even web-related issues, everything has been thoroughly reviewed 🔍. So yes, it's all well and good to say all that, but…
+An update that brings very few changes but is nonetheless welcome, since it fixes quite a few bugs, also includes improvements, fixes, etc., etc., you know the drill. But so…
 
 #### What's new? 👀
+
+- The SVG images downloaded and implemented in the project are now replaced by the popular Font Awesome CDN link, allowing you to get icons for free without paying extra 😏. This change has been implemented for now on the SVG images of the `homepage.html` pages. We'll see if other icons will also be affected.
+- `download.html` no longer contains SVG images, for the reason explained above ⬆️
+- The `download` folder no longer contains SVG images.
+- The "Go to __Get the elements__" button on the `download.html` pages has been removed to "allow users to discover the web elements I created myself 🤩"
+- Small change to the date: the date is now handled by JavaScript to compensate for the removal of the "Go to Get Items" button.
+- The `download.html` page has had its SVG elements removed; the project now uses the Font Awesome CDN link.
+- `download.css` and `animation.js` have been simplified to align with the changes made to `download.html`.
+- Emojis are now present in the JavaScript files. `vsIA.js` has been replaced with encoding codes to avoid display errors on platforms other than macOS (Yes, the project was done on a Mac 🤓)
+- Added the `aria-hidden` attribute, which was missing from the `vsIA.html` pages
+- A `variable.css` file was created to improve the simplicity of the other CSS files
+- Various improvements and fixes across all files
+- Site version updated from 2.1.0 to 2.1.1
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+
+## 🇫🇷 Notes de mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 2.1.1 : Correctifs et améliorations… en gros : pas grand-chose… (24/04/2026)
+
+Une mise à jour qui apporte très peu de changement mais qui fait plaisir, puisqu'il corrige pas mal d'erreurs, il apporte aussi des améliorations, des correctifs, etc et etc, bref vous connaissez la chanson. Mais du coup…
+
+#### C'est quoi les nouveautés ? 👀
+
+- Les images au format SVG, téléchagées et implémentées dans le projet est maintenant remplacée par le fameux lien CDN Font Awesome permettant d'obtenir des icônes gratuitement et sans payer en plus 😏. Ce changement a été fait pour l'instant sur les images SVG des pages `homepage.html`, à voir si d'autres icônes auront aussi ce changement
+- `download.html` ne possède plus les images SVG, pour la raison qui est juste au-dessus ⬆️
+- Le dossier `download` ne possède plus les images SVG
+- Le bouton "Aller sur __Obtenir les éléments__" des pages `download.html` a été supprimé pour "laisser découvrir les éléments webs créés de mes propres mains 🤩"
+- Petite modification de la date : la date est maintenant géré par du JavaScript pour compenser la suppression du bouton « Aller sur Obtenir les éléments »
+- La page `download.html` s’est vu supprimée les éléments SVG le projet utilise maintenant le lien CDN de Font Awesome
+- `download.css` et `animation.js` s'est vu simplifiés pour être en lien avec les modifications apportés dans `download.html`
+- Les emojis présents dans les fichiers JavaScript `vsIA.js` s’est vu remplacé par les codes d’encodages pour éviter les erreurs d’affichages autres que sur MacOS (Oui le projet s’est fait sur Mac 🤓)
+- Ajout de l’attribut `aria-hidden` qui manquait dans les pages `vsIA.hmtl`
+- Fichier `variable.css` créé pour améliorer la simplicité des autres fichiers CSS
+- Diverses améliorations et corrections sur l’ensemble des fichiers présents
+- Version du site 2.1.0 vers 2.1.1
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+---
+
+---
+---
+
+🇺🇸 Updates notes
+⚙️ NEW VERSION: Version 2.1.0: Shall we improve everything? Yes! 🙂‍↕️(2026/04/13)
+A huge number of fixes and changes have been made in this major new update to the Tic-Tac-Toe project. Whether it's visual improvements, gameplay, the removal of unnecessary features, or even web-related issues, everything has been thoroughly reviewed 🔍. So yes, it's all well and good to say all that, but…
+What's new? 👀
 
 - The CSS was the biggest (and most time-consuming 😮‍💨) part of this update: it was simplified as much as possible without breaking the core design. Responsive design has seen more improvements than before, notably the font size, which now scales to fit the window size, rewritten for better readability, and improved design elements like the navigation bar. All these changes are present in all CSS files.
 - The `rules.html` page and its associated CSS received slightly different treatment, in addition to the CSS changes: 1) The display style of the images used as alignment examples had been problematic for some time; the display style has now been changed and is more suitable for the page and subsequent sections. 2) The text is no longer centered but left-aligned; this is normal and intended. This page is only being tested to ensure greater consistency with the design of the game pages `tictactoe.html` and `vsIA.html` (it might be implemented on the others 🤷).
@@ -18,17 +69,10 @@ A huge number of fixes and changes have been made in this major new update to th
 - Significant text changes have been made to the `README.md` and `credits.md` files to better align with the 2.0.0 update.
 - Update of the version from 2.0.0 to 2.1.0
 
-__HAVE FUN ON TIC-TAC-TOE!__
-
----
-
-## 🇫🇷 Notes de mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 2.1.0 : On améliore le tout ? Oui ! 🙂‍↕️ (13/04/2026)
-
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 2.1.0 : On améliore le tout ? Oui ! 🙂‍↕️ (13/04/2026)
 Énormément de correctifs et de modifications ont été faites dans cette nouvelle mise à jour majeure du projet Morpion. Que ça soit visuel, pratique, du superflus supprimés ou même encore lié au web, tous y sont passés à la loupe 🔍. Alors oui, c'est bien beau de dire tout ça mais…
-
-#### C'est quoi les nouveautés ? 👀
+C'est quoi les nouveautés ? 👀
 
 - Le CSS a été le plus gros (et le plus long 😮‍💨) dans cette MAJ : elle a été simplifié le plus possible sans casser le design de base, le responsive a eu plus d'améliorations qu'auparavant, notamment la taille des caractères qui s'agrandit ou rétrécit par rapport à la taille de la fenêtre, réécrite pour une compréhension de qualité, des design améliorés comme la barre de navigation, et d'autres. Toutes ces modifications sont présents dans la totalité des fichiers CSS
 - La page `rules.html` et son CSS lié ont eu un traitement un peu différent, en plus de ce qui a été fait pour le CSS : de 1) le style d'affichage des images servant d'exemples d'alignement a eu quelque soucis depuis un certain temps, maintenant le style d'affichage a changé et est plus adapté pour la page et pour la suite. De 2) le texte n'est plus centré mais aligné à gauche; c'est normal et c'est même prévu. Uniquement pour cette page, elle sert de test pour être plus cohérent par rapport au design des pages de jeu `tictactoe.html` et `vsIA.html` (peut-être que ça sera sur les autres 🤷)
@@ -39,8 +83,6 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Certains liens, situés dans la balise `<head>` dans tous les fichiers HTML sauf la page `404.html` cassaient la recherche d'indexation de Google, y compris dans `sitemap.xml` sont résolus dans la 2.1.0
 - Énormes modifications du texte ont eu lieu dans les fichiers `README.md` et `credits.md` pour mieux coller à la MAJ 2.0.0
 - Mise à jour de la version de 2.0.0 à 2.1.0
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ---
 
@@ -68,17 +110,10 @@ What's new? 👀
 - The `sitemap.xml` file has been modified to add the Spanish links for Tic-Tac-Toe.
 - Updated from version 1.4.0 to version 2.0.0
 
----
----
-
----
----
-
 🇫🇷 Notes des mise à jour
 ⚙️ NOUVELLE VERSION : Version 2.0.0 : Bonjour l'IA, fini le SCSS, nouvelle langue et grand ménage de printemps ! (02/04/2026)
 Ça y est, la mise à jour la plus importante du projet Morpion est enfin arrivé ! Cette MAJ apporte énormément de nouveautés listés juste en-dessous comme des bugs corrigés (comme d'habitude), une fin d'utilisation d'un langage de programmation en particulier et une langue que personne n'aurait pu imaginer 🤨. Mais du coup…
-
-#### C'est quoi les nouveautés ? 👀
+C'est quoi les nouveautés ? 👀
 
 - Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; 1) Les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, 2) Les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
 - Le design de certaines pages ont été refaits pour être plus "propres" visuellement
@@ -108,8 +143,6 @@ What's new 👀?
 - Updated __ALL__ site links to match the new Netlify domain, ensuring that all links work correctly and redirect to the correct pages.
 - Updated links in the `README.md` file to reflect the change in hosting and provide up-to-date information about the project.
 - Updated from version 1.3.0 to version 1.4.0.
-
----
 
 🇫🇷 Notes des mise à jour
 ⚙️ NOUVELLE VERSION : Version 1.4.0 : Fini GitHub Pages, Bonjour Netlify 👋🏽 (13/03/2026)
