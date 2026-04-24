@@ -1,14 +1,4 @@
-:root {
-    --background-color: #001B2E;
-    --text-color: #FFFDED;
-    --nav-links-color: #294C60;
-    --link-color: #FFEFD3;
-    --secondary-link-color: #FFC49D;
-    --background-btn-color: #FFEFD3;
-    --button-text-color: #252422;
-    --button-border-color: #2F2D2E;
-    --selector-color: #ADB6C4;
-}
+@import url('variables.css');
 
 ::selection {
     background-color: var(--selector-color);
@@ -241,23 +231,21 @@ footer {
     display: flex;
     align-items: center;
     font-size: clamp(1.3rem, 1.7vw, 2rem);
-    margin-left: 32px;
 }
 
-.contact-list p img {
-    display: block;
-    max-width: 100%;
-    width: 80px;
-    height: auto;
+.contact-list p i {
+    font-size: clamp(65px, 8vw, 100px);
+    color: var(--text-color);
     transition: transform 0.5s ease-in-out;
-    margin: auto;
+    margin: 0;
+    padding-right: 10px;
 }
 
-.contact-list p img:hover {
+.contact-list p i:hover {
     transform: scale(1.1);
 }
 
-.contact-list p img:focus {
+.contact-list p i:focus {
     box-shadow: 0 0 0 3px white;
 }
 
