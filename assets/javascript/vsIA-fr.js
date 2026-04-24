@@ -17,28 +17,23 @@ document.addEventListener('DOMContentLoaded', () => {
         aiSymbol = null;
         board = Array(9).fill("");
         gameActive = false;
-        
         playerSymbolText.textContent = "";
         playerSymbolText.style.transform = "translateX(200%)";
         playerSymbolText.style.opacity = 0;
-        
         winsInfos.textContent = "";
         winsInfos.style.transform = "translateX(200%)";
         winsInfos.style.opacity = 0;
-        
         startBtn.disabled = false;
         startBtn.style.pointerEvents = "auto";
-        
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
-        
         cells.forEach((cell) => {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.backgroundColor = "";
             cell.style.color = "";
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Case vide");
+            cell.setAttribute("aria-label", "Case vide, ligne " + Math.floor(cell.getAttribute("data-cell") / 3) + ", colonne " + (cell.getAttribute("data-cell") % 3));
         });
     }
     
@@ -78,11 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 }
             }
-            endGame("Oh non, c'est l'IA qui a gagné 😦 ! Faudra retenter !");
+            endGame("Oh non, c'est l'IA qui a gagné \ud83d\ude26 ! Faudra retenter !");
             return;
         }
         if (board.every(cell => cell !== "")) {
-            endGame("Match nul… au moins c'est pas l'IA qui a gagné 😐");
+            endGame("Match nul… au moins c'est pas l'IA qui a gagné \ud83d\ude10");
             return;
         }
     }
@@ -111,7 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Number(cell.getAttribute("data-cell"));
             
             if (!gameActive) { 
-                alert("Avant de commencer, clique sur \"Tire au sort\" pour choisir le symbole");
+                winsInfos.textContent = "Avant de commencer, clique sur \"Tire au sort\" pour choisir le symbole";
+                winsInfos.style.transform = "translateX(0%)";
+                winsInfos.style.opacity = 1;
                 return;
             }
             
@@ -138,12 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     }
                 }
-                endGame("Félicitations, tu as gagné 🏆 !");
+                endGame("Félicitations, tu as gagné \ud83c\udfc6 !");
                 return;
             }
             
             if (board.every(cell => cell !== "")) {
-                endGame("Match nul… au moins c'est pas l'IA qui a gagné 😐");
+                endGame("Match nul… au moins c'est pas l'IA qui a gagné \ud83d\ude10");
                 return;
             }
             
