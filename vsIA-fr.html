@@ -55,7 +55,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
     </noscript>
 
-    <title>Morpion VS IA - Jouer en ligne gratuitement</title>
+    <title>Morpion VS IA - Jouez en ligne gratuitement</title>
 </head>
 
 <body>
@@ -64,10 +64,7 @@
             <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" fetchpriority="high"
                 decoding="async" class="logo-navbar"><span>Morpion - Jouez !</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-controls="navbarMove"
-            aria-expanded="false">
-            ☰
-        </button>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-expanded="false">☰</button>
         <ul>
             <li>
                 <a href="homepage-fr.html">Revenir à l'accueil</a>
@@ -88,7 +85,7 @@
             height="410" fetchpriority="high" decoding="async">
         <h1>Morpion VS IA - Jouez directement !</h1>
     </header>
-    <div class="background"></div>
+    <div class="background" aria-hidden="true"></div>
     <main>
         <section class="morpion-classic">
             <h2>Morpion VS IA</h2>
@@ -124,7 +121,7 @@
         </aside>
     </main>
     <footer>
-        <span class="rights">&copy; 2026 Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 2.1.0</span>
+        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 2.1.1</span>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
