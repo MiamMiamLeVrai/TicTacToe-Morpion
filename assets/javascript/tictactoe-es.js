@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Casilla vacía");
+            cell.setAttribute("aria-label", "Casilla vacía, fila " + Math.floor(cell.getAttribute("data-cell") / 3) + ", columna " + (cell.getAttribute("data-cell") % 3));
         });
     }
 
@@ -60,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
         cell.addEventListener("click", () => {
             const index = Number(cell.getAttribute("data-cell"));
             if (!gameActive) {
-                alert("Antes de comenzar el juego, haz clic en el botón \"¡Echa suertes!\"");
+                resultText.style.transform = "translateX(0%)";
+                resultText.style.opacity = 1;
+                resultText.textContent = "Antes de comenzar el juego, haz clic en el botón \"¡Echa suertes!\"";
                 return;
             }
             if (board[index] !== "") {
