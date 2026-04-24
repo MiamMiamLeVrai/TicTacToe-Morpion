@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 }
             }
-            endGame("Oh no, the AI won 😦! We'll have to try again!");
+            endGame("Oh no, the AI won \ud83d\ude26! We'll have to try again!");
             return;
         }
         if (board.every(cell => cell !== "")) {
-            endGame("It's a draw… at least the AI didn't win 😐");
+            endGame("It's a draw… at least the AI didn't win \ud83d\ude10");
             return;
         }
     }
@@ -138,12 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     }
                 }
-                endGame("Congratulations, you won 🏆!");
+                endGame("Congratulations, you won \ud83c\udfc6!");
                 return;
             }
             
             if (board.every(cell => cell !== "")) {
-                endGame("It's a draw… at least the AI didn't win 😐");
+                endGame("It's a draw… at least the AI didn't win \ud83d\ude10");
                 return;
             }
             
