@@ -17,28 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
         aiSymbol = null;
         board = Array(9).fill("");
         gameActive = false;
-        
         playerSymbolText.textContent = "";
         playerSymbolText.style.transform = "translateX(200%)";
         playerSymbolText.style.opacity = 0;
-        
         winsInfos.textContent = "";
         winsInfos.style.transform = "translateX(200%)";
         winsInfos.style.opacity = 0;
-        
         startBtn.disabled = false;
         startBtn.style.pointerEvents = "auto";
-        
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
-        
         cells.forEach((cell) => {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.backgroundColor = "";
             cell.style.color = "";
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Case vide");
+            cell.setAttribute("aria-label", "Casilla vacía, fila " + Math.floor(cell.getAttribute("data-cell") / 3) + ", columna " + (cell.getAttribute("data-cell") % 3));
         });
     }
     
@@ -78,12 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
                 }
             }
-            endGame("¡Oh no, la IA ganó 😦! ¡Tendremos que intentarlo de nuevo!");
+            endGame("¡Oh no, la IA ganó \ud83d\ude26! ¡Tendremos que intentarlo de nuevo!");
             return;
         }
         
         if (board.every((cell) => cell !== "")) {
-            endGame("Empate… al menos la IA no ganó 😐");
+            endGame("Empate… al menos la IA no ganó \ud83d\ude10");
             return;
         }
     }
@@ -139,12 +134,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         break;
                     }
                 }
-                endGame("¡Felicidades, has ganado 🏆!");
+                endGame("¡Felicidades, has ganado \ud83c\udfc6!");
                 return;
             }
             
             if (board.every(cell => cell !== "")) {
-                endGame("Un empate... al menos la IA no ganó 😐");
+                endGame("Un empate... al menos la IA no ganó \ud83d\ude10");
                 return;
             }
             
