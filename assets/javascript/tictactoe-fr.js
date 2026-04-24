@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Case vide");
+            cell.setAttribute("aria-label", "Case vide, ligne " + Math.floor(cell.getAttribute("data-cell") / 3) + ", colonne " + (cell.getAttribute("data-cell") % 3));
         });
     }
 
@@ -60,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
         cell.addEventListener("click", () => {
             const index = Number(cell.getAttribute("data-cell"));
             if (!gameActive) {
-                alert("Avant de commencer la partie, clique sur le bouton \"Tire au sort !\"");
+                resultText.style.transform = "translateX(0%)";
+                resultText.style.opacity = 1;
+                resultText.textContent = "Avant de commencer la partie, clique sur le bouton \"Tire au sort !\"";
                 return;
             }
             if (board[index] !== "") {
