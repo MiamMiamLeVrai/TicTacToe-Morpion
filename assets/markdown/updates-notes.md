@@ -2,11 +2,32 @@
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 2.1.1: Fixes and improvements… basically: not much… (April 24, 2026)
+### ⚙️ NEW VERSION: Version 3.0.0 (beta): 5v5 mode is FINALLY here… and that's it 😐 (2026/05/05)
 
+Well, this update is quite unusual because while the new game mode (5v5 Tic-Tac-Toe) has officially arrived, let's just say that's about it ☹️
+The reason why this update is coming out as is, and especially, in beta? I took too long to make it 💀.
+The new mode is only available in French, but don't worry, the next one will be full of all kinds of optimizations 😎
+
+---
+
+## 🇫🇷 Notes de mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 3.0.0 (bêta) : Le mode 5x5 est ENFIN arrivé… et c'est tout 😐 (05/05/2026)
+
+Bon, cette mise à jour est très particulière puisque certes, le nouveau mode de jeu (Morpion 5x5) est arrivé officiellement, mais disons que c'est un peu près tout ☹️
+La raison de pourquoi cette mise à jour arrive tel que et surtout, sort en bêta ? : j'ai pris trop de temps à le faire 💀.
+Le nouveau mode est disponible uniquement en français, mais pour la prochaine, ne vous inquiétez pas, elle va être remplie d'optimisation en tout genre 😎
+
+---
+---
+
+---
+---
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 2.1.1: Fixes and improvements… basically: not much… (April 24, 2026)
 An update that brings very few changes but is nonetheless welcome, since it fixes quite a few bugs, also includes improvements, fixes, etc., etc., you know the drill. But so…
-
-#### What's new? 👀
+What's new? 👀
 
 - The SVG images downloaded and implemented in the project are now replaced by the popular Font Awesome CDN link, allowing you to get icons for free without paying extra 😏. This change has been implemented for now on the SVG images of the `homepage.html` pages. We'll see if other icons will also be affected.
 - `download.html` no longer contains SVG images, for the reason explained above ⬆️
@@ -25,9 +46,8 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ---
 
-## 🇫🇷 Notes de mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 2.1.1 : Correctifs et améliorations… en gros : pas grand-chose… (24/04/2026)
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 2.1.1 : Correctifs et améliorations… en gros : pas grand-chose… (24/04/2026)
 
 Une mise à jour qui apporte très peu de changement mais qui fait plaisir, puisqu'il corrige pas mal d'erreurs, il apporte aussi des améliorations, des correctifs, etc et etc, bref vous connaissez la chanson. Mais du coup…
 
@@ -47,12 +67,6 @@ Une mise à jour qui apporte très peu de changement mais qui fait plaisir, puis
 - Version du site 2.1.0 vers 2.1.1
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
-
----
----
-
----
----
 
 🇺🇸 Updates notes
 ⚙️ NEW VERSION: Version 2.1.0: Shall we improve everything? Yes! 🙂‍↕️(2026/04/13)
