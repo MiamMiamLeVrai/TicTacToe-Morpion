@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A 25-square Tic-Tac-Toe? It really exists! Play this game mode for free and without limits!">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright © 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="en">
+
+    <meta property="og:title" content="XL Tic-Tac-Toe (5x5)">
+    <meta property="og:description"
+        content="A 25-square Tic-Tac-Toe? It really exists! Play this game mode for free and without limits!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/5x5-en.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XL Tic-Tac-Toe (5x5)">
+    <meta name="twitter:description"
+        content="A 25-square Tic-Tac-Toe? It really exists! Play this game mode for free and without limits!">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/5x5-en.html">
+    <meta name="twitter:creator" content="@Miammiam_am">
+    <meta name="twitter:site" content="@Miammiam_am">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/5x5.css">
+
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/5x5-en.html">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-es.html" hreflang="es-ES">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-fr.html" hreflang="fr-FR">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-en.html" hreflang="en-US">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>XL Tic-Tac-Toe (5x5)</title>
+</head>
+
+<body>
+    <nav aria-label="Main navigation" id="navbarMove">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Tic-Tac-Toe Logo" width="80" height="80"
+                fetchpriority="high" decoding="async" class="logo-navbar"><span>Tic-Tac-Toe - Play!</span>
+        </div>
+        <button class="menu-button" id="menuButton" aria-label="Open navigation menu">☰</button>
+        <ul>
+            <li>
+                <a href="homepage-en.html">Homepage</a>
+            </li>
+            <li>
+                <a href="choice-modes-en.html">Game modes</a>
+            </li>
+            <li>
+                <a href="download-en.html">Download</a>
+            </li>
+            <li>
+                <a href="index.html">Available languages</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img src="assets/img/png/Logo_Morpion.png" alt="Tic-Tac-Toe poster image" width="410" height="410"
+            fetchpriority="high" decoding="async" class="logo-title">
+        <h1>XL Tic-Tac-Toe (5x5)</h1>
+    </header>
+    <div class="background" aria-hidden="true"></div>
+    <main>
+        <section class="morpion-classic">
+            <h2>XL Tic-Tac-Toe (5x5)</h2>
+            <div class="grid" aria-label="Tic-Tac-Toe grid" role="grid">
+                <button class="cell" data-cell="0" aria-label="Empty cell, row 1, column 1"></button>
+                <button class="cell" data-cell="1" aria-label="Empty cell, row 1, column 2"></button>
+                <button class="cell" data-cell="2" aria-label="Empty cell, row 1, column 3"></button>
+                <button class="cell" data-cell="3" aria-label="Empty cell, row 1, column 4"></button>
+                <button class="cell" data-cell="4" aria-label="Empty cell, row 1, column 5"></button>
+                <button class="cell" data-cell="5" aria-label="Empty cell, row 2, column 1"></button>
+                <button class="cell" data-cell="6" aria-label="Empty cell, row 2, column 2"></button>
+                <button class="cell" data-cell="7" aria-label="Empty cell, row 2, column 3"></button>
+                <button class="cell" data-cell="8" aria-label="Empty cell, row 2, column 4"></button>
+                <button class="cell" data-cell="9" aria-label="Empty cell, row 2, column 5"></button>
+                <button class="cell" data-cell="10" aria-label="Empty cell, row 3, column 1"></button>
+                <button class="cell" data-cell="11" aria-label="Empty cell, row 3, column 2"></button>
+                <button class="cell" data-cell="12" aria-label="Empty cell, row 3, column 3"></button>
+                <button class="cell" data-cell="13" aria-label="Empty cell, row 3, column 4"></button>
+                <button class="cell" data-cell="14" aria-label="Empty cell, row 3, column 5"></button>
+                <button class="cell" data-cell="15" aria-label="Empty cell, row 4, column 1"></button>
+                <button class="cell" data-cell="16" aria-label="Empty cell, row 4, column 2"></button>
+                <button class="cell" data-cell="17" aria-label="Empty cell, row 4, column 3"></button>
+                <button class="cell" data-cell="18" aria-label="Empty cell, row 4, column 4"></button>
+                <button class="cell" data-cell="19" aria-label="Empty cell, row 4, column 5"></button>
+                <button class="cell" data-cell="20" aria-label="Empty cell, row 5, column 1"></button>
+                <button class="cell" data-cell="21" aria-label="Empty cell, row 5, column 2"></button>
+                <button class="cell" data-cell="22" aria-label="Empty cell, row 5, column 3"></button>
+                <button class="cell" data-cell="23" aria-label="Empty cell, row 5, column 4"></button>
+                <button class="cell" data-cell="24" aria-label="Empty cell, row 5, column 5"></button>
+            </div>
+        </section>
+
+        <aside aria-labelledby="infos-title">
+            <h2 id="infos-title">Player choice</h2>
+            <section class="player-choice">
+                <div class="buttons">
+                    <button id="iaChoice" aria-label="Play against an AI">Play against an AI</button>
+                    <button id="humanChoice" aria-label="Play against a player">Play against a player</button>
+                    <button id="startBtn" aria-label="Draw a random player to start the game" disabled>Draw</button>
+                    <button id="restartButton" aria-label="Restart the game" disabled>Restart the game</button>
+                </div>
+            </section>
+            <section class="player-infos">
+                <h2>Game information</h2>
+                <b><p id="playerSymbol" role="status" aria-live="polite"></p></b>
+                <b><p id="winsInfos" role="status" aria-live="polite"></p></b>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved - Version 3.2.0
+        </b>
+        <a href="homepage-en.html#creditsList">Site credits</a>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+    <script src="assets/javascript/5x5-en.js" type="module"></script>
+</body>
+
+</html>
