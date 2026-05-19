@@ -2,27 +2,121 @@
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.0.0 (beta): 5v5 mode is FINALLY here… and that's it 😐 (2026/05/05)
+### ⚙️ NEW VERSION: Version 3.2.0: The update that will make you like this: 🤯 (2026/05/19)
+
+That's it, the new version is finally out! But why does it have the name Version 3.2.0? Lots of new features have been integrated in this version; first the 3.0.0 beta that was released only brought the 5x5 mode, and secondly the improvements made in the 3.1.0 version, which should have been released earlier than expected. This version is here to correct, repair, improve and add features to the project in full. But as a result...
+
+#### What's new? 👀
+
+##### On the HTML side
+
+- The new game mode "Morpion XL" or "Morpion 5x5" is now available in its English and Spanish versions, with their respective JavaScript files.
+- Rewriting certain paragraphs on most of the site's pages, notably `index.html`, `homepage.html`, `download.html`, `choice-modes.html`, `rules.html`, `tictactoe.html` and `vsIA.html` (_Change also applied in the French and Spanish versions_).
+- The accessibility button "Go to content" present in most of the site's pages has had a text change, which becomes "Main content" to better match the idea of viewing the main content of a page. (_Change also applied in the French and Spanish versions_).
+- The navigation link "Return to homepage" also had a text change, becoming "Homepage" to be clearer, more accessible, and shorter in the navigation bar. (_Change also applied in the French and Spanish versions_).
+- Same thing for the navigation link "Resources" which has been changed to "Download" to be much clearer in which part of the site the user can find the project elements (_Change also applied in the French and Spanish versions_).
+- The pages `choice-modes.html` and `rules.html` receive a new section that hosts the new "Morpion 5x5" game mode, respectively a new box for the 5x5 mode and a section with a detailed explanation of the rules.
+- Some links in the Spanish version of the pages `download.html` and `vsIA.html` leading to English pages instead of Spanish ones have been corrected.
+- A new navigation bar is being introduced in `rules.html`, allowing users to navigate more easily between the three different game modes (_Change also applied in the French and Spanish versions_).
+- A "Back to top" button has been added to `rules.html` to allow users to quickly return to the top of the page. (_Change also applied in the French and Spanish versions_).
+- The accessibility button "Go to content" for `rules.html` has been removed to make room for the new navigation bar that allows you to navigate between game modes. (_Change also applied in the French and Spanish versions_).
+- The download button "Get the elements" for `download.html` also had a text change to "Download the folder" related to that of the main navigation bar. (_Change also applied in the French and Spanish versions_).
+- All translations of all pages, for the English and Spanish versions, have been updated to [Reverso](https://www.reverso.net/), so no more fraudulent translations from Google Translate.
+
+##### On the CSS side
+
+- New CSS animations created for the accessibility buttons found on most web pages, the download button in `download.html`, game mode choices in `choice-modes.html`, `tictactoe.html`, `5x5.html` and `vsIA.html`, the main navigation bar on all pages, the navigation bar in game modes `rules.html`, certain images in `homepage.html`, other buttons in `index.html` and the error page `404.html`.
+- The page `5x5.html` is now suitable for mobile and tablet display.
+- All font sizes and some image sizes have been adjusted for better readability on mobile devices, tablets, desktop screens and more.
+- All web pages, except `index.html` and other unspecified elements, will adopt the left-text alignment design to better match the appearance of the site’s `tictactoe.html`, `5x5.html` and `vsIA.html` game pages.
+
+##### On the JavaScript side
+
+- The date present in all web pages gets a small improvement, so that every time a page is loaded, the date is automatically updated to match today's date, in `MM/YYYY` format, and is necessarily displayed in capital letters. (_Change also applied in the French and Spanish versions_).
+- `tictactoe.js` and `vsIA.js` have been modified/corrected in a few minor ways.
+- The AI logic has been slightly improved to prevent crashes and unexpected behaviors, more precisely in the AI logic for the 3x3 Morpion.
+- All emojis have been replaced by their unicode equivalents to avoid display issues on different browsers and operating systems, and to better match the choices made for emojis in HTML pages.
+
+##### On the other files side
+
+- All images with visual artifacts have been reworked to improve their quality and visibility on different platforms.
+- The icons for tabs (Favicons) have been replaced by the new image versions.
+- The `sitemap.xml` file has been updated to include the three new pages.
+- The `.gitignore` file has been updated.
+- The `download` folder has been updated to include new versions of downloadable files.
+- Version 3.0.0 (beta) updated to version 3.2.0.
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+
+## 🇫🇷 Notes de mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 3.2.0 : La mise à jour qui va vous rendre comme ça : 🤯 (19/05/2026)
+
+Ça y est, la nouvelle version est enfin sortie ! Mais pourquoi elle porte le nom Version 3.2.0 ? Pleins de nouveautés ont été intégrées dans cette version ; premièrement la 3.0.0 bêta qui est sortie a uniquement apporté le mode 5x5, et deuxièmement les améliorations apportées dans la version 3.1.0, qui aurait du sortir plus tôt que prévu. Cette version est là pour corriger, réparer, améliorer et ajouter des fonctionnalités au projet en long et en large. Mais du coup...
+
+#### C'est quoi les nouveautés ? 👀
+
+##### Du côté de HTML
+
+- Le nouveau mode de jeu "Morpion XL" ou "Morpion 5x5" est maintenant disponible dans sa version anglaise et espagnole, avec leurs fichiers JavaScript respectifs.
+- Réécriture de certains paragraphes dans la plupart des pages du site, notamment `index.html`, `homepage.html`, `download.html`, `choice-modes.html`, `rules.html`, `tictactoe.html` et `vsIA.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le bouton d'accessibilité "Aller au contenu" présent dans la majorité des pages du site a eu un changement de texte, qui devient "Contenu principal" pour mieux correspondre à l'idée de voir le contenu principal d'une page (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le lien de navigation "Revenir à l'accueil" a également eu un changement de texte, devenant "Accueil" pour être plus clair, plus accessible et plus court dans la barre de navigation (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Même chose pour le lien de navigation "Ressources" qui a été modifié pour "Téléchargement" pour être beaucoup plus clair dans quelle partie du site l'utilisateur peut trouver les éléments du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Les pages `choice-modes.html` et `rules.html` reçoivent une nouvelle section qui accueille le nouveau mode de jeu "Morpion 5x5", respectivement une nouvelle case pour le mode 5x5 et une section présentant une explication détaillée des règles.
+- Certains liens dans la version espagnole des pages `download.html` et `vsIA.html`, amenant vers les pages anglaises du site au lieu de celles en espagnol ont été corrigés.
+- Une nouvelle barre de navigation fait son apparition dans `rules.html`, permettant aux utilisateurs de naviguer plus facilement entre les trois différentes modes de jeu (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le bouton d'accessibilité "Aller au contenu" pour `rules.html` a été supprimé pour laisser place à la nouvelle barre de navigation permettant de naviguer entre les modes de jeu (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Un bouton "Revenir en haut de la page" a été ajouté pour `rules.html` afin de permettre aux utilisateurs de revenir en haut de la page rapidement (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le bouton de téléchargement "Obtenir les éléments" pour `download.html` a aussi eu un changement de texte pour "Télécharger le dossier" en lien avec celui de la barre de navigation principale (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Toutes les traductions de toutes les pages, pour les versions anglaise et espagnole, sont passées à la traduction de [Reverso](https://www.reverso.net/), donc fini les traductions frauduleuses de Google Translate.
+
+##### Du côté de CSS
+
+- De nouvelles animations CSS créées pour les boutons d'accessibilité présent dans la majorité des pages webs, du bouton de téléchargement dans `download.html`, de choix de mode de jeu dans `choice-modes.html`, `tictactoe.html`, `5x5.html` et `vsIA.html`, de la barre de navigation principale dans toutes les pages, de la barre de navigation des modes de jeu `rules.html`, de certains images dans `homepage.html`, des autres boutons dans `index.html` et de la page d'erreur `404.html`.
+- La page `5x5.html` est maintenant adaptée pour un affichage mobile et tablette.
+- Toutes les tailles de police et certaines tailles d'images ont été ajustées pour une meilleure lisibilité sur les appareils mobiles, tablettes, écrans de bureau et plus.
+- Toutes les pages webs, sauf `index.html` et d'autres éléments non spécifiés, adopteront le design d'alignement de texte à gauche pour mieux correspondre à l'apparence des pages jeux `tictactoe.html`, `5x5.html` et `vsIA.html` du site.
+
+##### Du côté de JavaScript
+
+- La date présent dans toutes les pages webs obtient une petite amélioration qui fait qu'à chaque chargement de page, la date est mise à jour automatiquement pour correspondre à la date du jour, au format `MM/AAAA` et s'affiche obligatoirement en capitales (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Quelques légères modifications / corrections ont été apportées dans `tictactoe.js` et `vsIA.js`.
+- La logique IA a été légèrement améliorée pour éviter les crashs et les comportements inattendus, plus précisement dans la logique de l'IA pour le Morpion 3x3.
+- Tous les emojis ont été remplacés par leurs équivalents unicode pour éviter les problèmes d'affichage sur les différents navigateurs et systèmes d'exploitation, et pour mieux correspondre aux choix faite pour les emojis dans les pages HTML.
+
+##### Du côté des autres fichiers
+
+- Toutes les images présentant des artefacts visuels ont été retravaillées pour améliorer leur qualité et leur visibilité sur les différentes plateformes.
+- Les icônes pour les onglets (Favicons) ont été remplacées par les nouvelles versions d'images.
+- Le fichier `sitemap.xml` a été mis à jour pour inclure les trois nouvelles pages.
+- Le fichier `.gitignore` a été mis à jour.
+- Le dossier `download` a été mis à jour pour inclure les nouvelles versions des fichiers téléchargeables.
+- Version 3.0.0 (bêta) mise à jour vers la version 3.2.0.
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+---
+
+---
+---
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.0.0 (beta): 5v5 mode is FINALLY here… and that's it 😐 (2026/05/05)
 
 Well, this update is quite unusual because while the new game mode (5v5 Tic-Tac-Toe) has officially arrived, let's just say that's about it ☹️
 The reason why this update is coming out as is, and especially, in beta? I took too long to make it 💀.
 The new mode is only available in French, but don't worry, the next one will be full of all kinds of optimizations 😎
 
----
-
-## 🇫🇷 Notes de mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 3.0.0 (bêta) : Le mode 5x5 est ENFIN arrivé… et c'est tout 😐 (05/05/2026)
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.0.0 (bêta) : Le mode 5x5 est ENFIN arrivé… et c'est tout 😐 (05/05/2026)
 
 Bon, cette mise à jour est très particulière puisque certes, le nouveau mode de jeu (Morpion 5x5) est arrivé officiellement, mais disons que c'est un peu près tout ☹️
 La raison de pourquoi cette mise à jour arrive tel que et surtout, sort en bêta ? : j'ai pris trop de temps à le faire 💀.
 Le nouveau mode est disponible uniquement en français, mais pour la prochaine, ne vous inquiétez pas, elle va être remplie d'optimisation en tout genre 😎
-
----
----
-
----
----
 
 🇺🇸 Release Notes
 ⚙️ NEW VERSION: Version 2.1.1: Fixes and improvements… basically: not much… (April 24, 2026)
@@ -42,16 +136,13 @@ What's new? 👀
 - Various improvements and fixes across all files
 - Site version updated from 2.1.0 to 2.1.1
 
-__HAVE FUN ON TIC-TAC-TOE!__
-
 ---
 
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 2.1.1 : Correctifs et améliorations… en gros : pas grand-chose… (24/04/2026)
 
 Une mise à jour qui apporte très peu de changement mais qui fait plaisir, puisqu'il corrige pas mal d'erreurs, il apporte aussi des améliorations, des correctifs, etc et etc, bref vous connaissez la chanson. Mais du coup…
-
-#### C'est quoi les nouveautés ? 👀
+C'est quoi les nouveautés ? 👀
 
 - Les images au format SVG, téléchagées et implémentées dans le projet est maintenant remplacée par le fameux lien CDN Font Awesome permettant d'obtenir des icônes gratuitement et sans payer en plus 😏. Ce changement a été fait pour l'instant sur les images SVG des pages `homepage.html`, à voir si d'autres icônes auront aussi ce changement
 - `download.html` ne possède plus les images SVG, pour la raison qui est juste au-dessus ⬆️
@@ -65,8 +156,6 @@ Une mise à jour qui apporte très peu de changement mais qui fait plaisir, puis
 - Fichier `variable.css` créé pour améliorer la simplicité des autres fichiers CSS
 - Diverses améliorations et corrections sur l’ensemble des fichiers présents
 - Version du site 2.1.0 vers 2.1.1
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 🇺🇸 Updates notes
 ⚙️ NEW VERSION: Version 2.1.0: Shall we improve everything? Yes! 🙂‍↕️(2026/04/13)
@@ -367,7 +456,7 @@ Details
 C'est quoi les nouveautés 👀 ?
 HTML
 
-1. Suppression d'éléments HTML superflu (Principalement `choice-modes-fr.html`, les autres considérées comme mineures),
+1. Suppression d'éléments HTML superflu (Principalement dans `choice-modes-fr.html`, les autres considérées comme mineures),
 2. Nouvelle page d'erreur HTML personnalisée `404.html` (plus en lien avec le thème du site),
 3. Ajouts de certains éléments HTML + meilleurs cohérences entre fichiers HTML,
 4. Nouvelle fonctionnalité visible (_mais pas pour tout de suite…_ 😏).
