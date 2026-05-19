@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="¿Un Tres en Raya de 25 casillas? ¡Existe de verdad! ¡Juega a este modo de juego gratis y sin límites!">
+    <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright © 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFEFD3">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
+    <meta name="language" content="es">
+
+    <meta property="og:title" content="XL Tres en Raya (5x5)">
+    <meta property="og:description"
+        content="¿Un Tres en Raya de 25 casillas? ¡Existe de verdad! ¡Juega a este modo de juego gratis y sin límites!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tictactoe-morpion.netlify.app/5x5-es.html">
+    <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XL Tres en Raya (5x5)">
+    <meta name="twitter:description"
+        content="¿Un Tres en Raya de 25 casillas? ¡Existe de verdad! ¡Juega a este modo de juego gratis y sin límites!">
+    <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
+    <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/5x5-es.html">
+    <meta name="twitter:creator" content="@Miammiam_am">
+    <meta name="twitter:site" content="@Miammiam_am">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/5x5.css">
+    <link rel="manifest" href="assets/json/site.webmanifest">
+
+    <link rel="canonical" href="https://tictactoe-morpion.netlify.app/5x5-es.html">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-en.html" hreflang="en-US">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-fr.html" hreflang="fr-FR">
+    <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-es.html" hreflang="es-ES">
+    <link rel="alternate" hreflang="x-default" href="https://tictactoe-morpion.netlify.app/">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+    </noscript>
+
+    <title>XL Tres en Raya (5x5)</title>
+</head>
+
+<body>
+    <nav aria-label="Navegación principal" id="navbarMove">
+        <div class="nav-logo">
+            <img src="assets/img/png/Logo_Morpion.png" alt="Logo de Tres en Raya" width="80" height="80"
+                fetchpriority="high" decoding="async" class="logo-navbar"><span>Tres en Raya - ¡Juega!</span>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Abrir el menú de navegación"
+            aria-expanded="false">☰</button>
+        <ul>
+            <li>
+                <a href="homepage-es.html">Inicio</a>
+            </li>
+            <li>
+                <a href="choice-modes-es.html">Modos de juego</a>
+            </li>
+            <li>
+                <a href="download-es.html">Descarga</a>
+            </li>
+            <li>
+                <a href="index.html">Idiomas disponibles</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header-start-page">
+        <img src="assets/img/png/Logo_Morpion.png" alt="Logo de Tres en Raya" width="410" height="410"
+            fetchpriority="high" decoding="async" class="logo-title">
+        <h1>XL Tres en Raya (5x5)</h1>
+    </header>
+    <div class="background" aria-hidden="true"></div>
+    <main>
+        <section class="morpion-classic">
+            <h2>XL Tres en Raya (5x5)</h2>
+            <div class="grid" aria-label="Tablero de Tres en Raya" role="grid">
+                <button class="cell" data-cell="0" aria-label="Casilla vacía, fila 1, columna 1"></button>
+                <button class="cell" data-cell="1" aria-label="Casilla vacía, fila 1, columna 2"></button>
+                <button class="cell" data-cell="2" aria-label="Casilla vacía, fila 1, columna 3"></button>
+                <button class="cell" data-cell="3" aria-label="Casilla vacía, fila 1, columna 4"></button>
+                <button class="cell" data-cell="4" aria-label="Casilla vacía, fila 1, columna 5"></button>
+                <button class="cell" data-cell="5" aria-label="Casilla vacía, fila 2, columna 1"></button>
+                <button class="cell" data-cell="6" aria-label="Casilla vacía, fila 2, columna 2"></button>
+                <button class="cell" data-cell="7" aria-label="Casilla vacía, fila 2, columna 3"></button>
+                <button class="cell" data-cell="8" aria-label="Casilla vacía, fila 2, columna 4"></button>
+                <button class="cell" data-cell="9" aria-label="Casilla vacía, fila 2, columna 5"></button>
+                <button class="cell" data-cell="10" aria-label="Casilla vacía, fila 3, columna 1"></button>
+                <button class="cell" data-cell="11" aria-label="Casilla vacía, fila 3, columna 2"></button>
+                <button class="cell" data-cell="12" aria-label="Casilla vacía, fila 3, columna 3"></button>
+                <button class="cell" data-cell="13" aria-label="Casilla vacía, fila 3, columna 4"></button>
+                <button class="cell" data-cell="14" aria-label="Casilla vacía, fila 3, columna 5"></button>
+                <button class="cell" data-cell="15" aria-label="Casilla vacía, fila 4, columna 1"></button>
+                <button class="cell" data-cell="16" aria-label="Casilla vacía, fila 4, columna 2"></button>
+                <button class="cell" data-cell="17" aria-label="Casilla vacía, fila 4, columna 3"></button>
+                <button class="cell" data-cell="18" aria-label="Casilla vacía, fila 4, columna 4"></button>
+                <button class="cell" data-cell="19" aria-label="Casilla vacía, fila 4, columna 5"></button>
+                <button class="cell" data-cell="20" aria-label="Casilla vacía, fila 5, columna 1"></button>
+                <button class="cell" data-cell="21" aria-label="Casilla vacía, fila 5, columna 2"></button>
+                <button class="cell" data-cell="22" aria-label="Casilla vacía, fila 5, columna 3"></button>
+                <button class="cell" data-cell="23" aria-label="Casilla vacía, fila 5, columna 4"></button>
+                <button class="cell" data-cell="24" aria-label="Casilla vacía, fila 5, columna 5"></button>
+            </div>
+        </section>
+
+        <aside aria-labelledby="infos-title">
+            <h2 id="infos-title">Elección del jugador</h2>
+            <section class="player-choice">
+                <div class="buttons">
+                    <button id="iaChoice" aria-label="Contra un IA">Contra un IA</button>
+                    <button id="humanChoice" aria-label="Contra un jugador">Contra un jugador</button>
+                    <button id="startBtn" aria-label="Sorteo" disabled>Sorteo</button>
+                    <button id="restartButton" aria-label="Reiniciar el juego" disabled>Reiniciar el juego</button>
+                </div>
+            </section>
+            <section class="player-infos">
+                <h2>Información de la partida</h2>
+                <b><p id="playerSymbol" aria-live="polite" role="status"></p></b>
+                <b><p id="winsInfos" aria-live="polite" role="status"></p></b>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Todos los derechos
+            reservados - Versión 3.2.0
+        </b>
+        <a href="homepage-es.html#creditsList">Créditos del sitio</a>
+    </footer>
+    <script src="assets/javascript/animation.js" defer></script>
+    <script src="assets/javascript/5x5-es.js" type="module"></script>
+</body>
+
+</html>
