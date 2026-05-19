@@ -4,6 +4,12 @@
     background-color: var(--selector-color);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -14,9 +20,6 @@ body {
     line-height: 1.4;
     color: var(--text-color);
     background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
@@ -28,14 +31,14 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
-    transition: background-color 0.6s ease-in-out, transform 0.35s ease-in-out;
-    will-change: transform;
+    z-index: 10;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
+    will-change: transform, background-color;
 }
 
 nav.nav-hidden {
-    transform: translateY(-150px);
-    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-100%);
+    background-color: transparent;
 }
 
 .nav-logo {
@@ -54,22 +57,20 @@ nav.nav-hidden {
 
 nav span {
     color: var(--nav-links-color);
-    margin-left: 8px;
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    margin: 0 0 0 16px;
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
 }
 
 .header-start-page {
     display: flex;
     align-items: center;
-    margin-top: 200px;
-    padding-bottom: 75px;
-    padding-left: 200px;
+    padding: 200px 0 75px 200px;
     border-bottom: 3px solid var(--text-color);
     gap: 100px;
 }
 
 .header-start-page h1 {
-    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-size: clamp(2.1rem, 4vw, 4.2rem);
 }
 
 .logo-title {
@@ -92,72 +93,70 @@ nav span {
 
 .start-body {
     text-align: center;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin: 0 60px;
 }
 
 .start-body h2 {
-    font-size: clamp(1.5rem, 3vw, 3.5rem);
-    margin-top: 70px;
+    font-size: clamp(1.6rem, 2.4vw, 3.5rem);
+    margin: 50px 0 25px 0;
 }
 
 .start-body p {
-    font-size: clamp(1.15rem, 1.7vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
 }
 
 .languages {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin: 40px 0 50px 0;
 }
 
 .languages-list {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 50px;
+    gap: 55px;
 }
 
 .languages-list a {
     display: inline-block;
-    font-size: clamp(1.15rem, 1.7vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     text-decoration: none;
     color: var(--button-text-color);
     background-color: var(--background-btn-color);
-    cursor: pointer;
-    padding: 16px 20px;
+    padding: 20px 26px;
     border: 3px solid var(--button-border-color);
     border-radius: 16px;
-    transition: background-color 0.5s, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: background-color 0.4s cubic-bezier(0.23, 1, 0.320, 1),
+                color 0.4s cubic-bezier(0.23, 1, 0.320, 1),
+                border-color 0.4s cubic-bezier(0.23, 1, 0.320, 1),
+                transform 0.6s cubic-bezier(0.23, 1, 0.320, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .languages-list a:hover {
     background: var(--button-text-color);
     color: var(--background-btn-color);
     border-color: var(--background-btn-color);
-    transform: scale(1.05);
+    transform: translate(-5px, -5px);
+    box-shadow: var(--button-box-shadow);
 }
 
-.languages-list a:focus {
-    box-shadow: 0 0 0 3px var(--background-btn-color);
+.languages-list a:active {
+    transform: translate(2px, 2px);
 }
 
 footer {
     display: flex;
     justify-content: center;
-    padding: 30px 30px;
+    padding: 70px 0;
     border-top: 3px solid var(--text-color);
     background-color: var(--button-text-color);
 }
 
-.rights {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: clamp(1.15rem, 1.7vw, 2.5rem);
-    font-weight: bold;
+footer b {
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    margin: 0 20px;
     text-align: center;
 }
 
@@ -171,7 +170,7 @@ footer {
 
 @media (max-width: 600px) {
     nav {
-        padding: 6px;
+        padding: 10px;
     }
 
     .logo-navbar {
@@ -180,13 +179,12 @@ footer {
 
     .header-start-page {
         flex-direction: column;
-        margin-top: 150px;
-        padding: 0;
-        gap: 10px;
+        padding: 130px 0 0 0;
+        gap: 30px;
     }
 
     .header-start-page h1 {
-        text-align: center;
+        margin: 0 0 30px 0;
     }
 
     .logo-title {
@@ -194,32 +192,34 @@ footer {
     }
 
     .start-body {
-        margin-right: 16px;
-        margin-left: 16px;
+        margin: 0 20px;
     }
 
     .start-body h2 {
-        margin-top: 30px;
+        margin: 30px 0;
     }
 
     .languages {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
 
     .languages-list {
-        gap: 20px;
+        gap: 25px;
         flex-direction: column;
     }
 
     .languages-list a {
-        padding: 14px 18px;
+        padding: 16px 22px;
+    }
+
+    footer {
+        padding: 40px 0;
     }
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
     nav {
-        padding: 10px;
+        padding: 12px;
     }
 
     .logo-navbar {
@@ -227,10 +227,8 @@ footer {
     }
 
     .header-start-page {
-        margin-top: 150px;
-        padding-bottom: 50px;
-        padding-left: 50px;
-        gap: 30px;
+        padding: 150px 50px 50px 50px;
+        gap: 80px;
     }
 
     .logo-title {
@@ -238,25 +236,27 @@ footer {
     }
 
     .start-body {
-        margin-right: 50px;
-        margin-left: 50px;
+        margin: 0 30px;
     }
 
     .start-body h2 {
-        margin-top: 30px;
+        margin: 35px 0 25px 0;
     }
 
     .languages {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 30px 0 35px 0;
     }
 
     .languages-list {
-        gap: 15px;
+        gap: 30px;
     }
 
     .languages-list a {
-        padding: 14px 18px;
+        padding: 16px 20px;
+    }
+
+    footer {
+        padding: 40px 0;
     }
 }
 
@@ -266,12 +266,11 @@ footer {
     }
 
     .logo-navbar {
-        width: 70px;
+        width: 75px;
     }
 
     .header-start-page {
-        margin-top: 150px;
-        padding: 25px 0 65px 100px;
+        padding: 150px 0 65px 100px;
         gap: 50px;
     }
 
@@ -280,20 +279,22 @@ footer {
     }
 
     .start-body {
-        margin-right: 50px;
-        margin-left: 50px;
+        margin: 0 40px;
     }
 
     .start-body h2 {
-        margin-top: 45px;
+        margin: 50px 0 20px 0;
     }
 
     .languages {
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin: 30px 0 50px 0;
     }
 
     .languages-list {
-        gap: 25px;
+        gap: 55px;
+    }
+
+    footer {
+        padding: 55px 0;
     }
 }
