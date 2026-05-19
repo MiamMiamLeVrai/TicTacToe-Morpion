@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let aiSymbol = null;
     let board = Array(9).fill("");
     let gameActive = false;
+
+    restartBtn.style.pointerEvents = "none";
     
     function resetGame() {
         humanSymbol = null;
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cell.style.backgroundColor = "";
             cell.style.color = "";
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Case vide");
+            cell.setAttribute("aria-label", "Empty cell, row " + (Math.floor(cell.getAttribute("data-cell") / 3) + 1) + ", column " + (cell.getAttribute("data-cell") % 3 + 1));
         });
     }
     
@@ -65,19 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const winner = verifyWinIA(board);
         if (winner) { 
-            const combos =
-                [[0,1,2],[3,4,5],[6,7,8],
-                [0,3,6],[1,4,7],[2,5,8],
-                [0,4,8],[2,4,6]];
-            for (const [a, b, c] of combos) {
-                if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-                    [a, b, c].forEach(i => {
-                        cells[i].style.backgroundColor = "#B40000";
-                        cells[i].style.color = "#FFEFD3";
-                    });
-                    break;
-                }
-            }
+            winner.combo.forEach(i => {
+                cells[i].style.backgroundColor = "#B40000";
+                cells[i].style.color = "#FFEFD3";
+            });
             endGame("Oh no, the AI won \ud83d\ude26! We'll have to try again!");
             return;
         }
@@ -111,7 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Number(cell.getAttribute("data-cell"));
             
             if (!gameActive) { 
-                alert("Before you begin, click on \"Draw a symbol\" to choose the symbol");
+                winsInfos.textContent = "Before you begin, click on \"Draw a symbol\" to choose the symbol";
+                winsInfos.style.transform = "translateX(0%)";
+                winsInfos.style.opacity = 1;
                 return;
             }
             

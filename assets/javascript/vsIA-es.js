@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let aiSymbol = null;
     let board = Array(9).fill("");
     let gameActive = false;
+
+    restartBtn.style.pointerEvents = "none";
     
     function resetGame() {
         humanSymbol = null;
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cell.style.backgroundColor = "";
             cell.style.color = "";
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Casilla vacía, fila " + Math.floor(cell.getAttribute("data-cell") / 3) + ", columna " + (cell.getAttribute("data-cell") % 3));
+            cell.setAttribute("aria-label", "Casilla vacía, fila " + (Math.floor(cell.getAttribute("data-cell") / 3) + 1) + ", columna " + (cell.getAttribute("data-cell") % 3 + 1));
         });
     }
     
@@ -60,19 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const winner = verifyWinIA(board);
         if (winner) { 
-            const combos =
-                [[0,1,2],[3,4,5],[6,7,8],
-                [0,3,6],[1,4,7],[2,5,8],
-                [0,4,8],[2,4,6]];
-            for (const [a, b, c] of combos) {
-                if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-                    [a, b, c].forEach(i => {
-                        cells[i].style.backgroundColor = "#B40000";
-                        cells[i].style.color = "#FFEFD3";
-                    });
-                    break;
-                }
-            }
+            winner.combo.forEach(i => {
+                cells[i].style.backgroundColor = "#B40000";
+                cells[i].style.color = "#FFEFD3";
+            });
             endGame("¡Oh no, la IA ganó \ud83d\ude26! ¡Tendremos que intentarlo de nuevo!");
             return;
         }
@@ -107,7 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const index = Number(cell.getAttribute("data-cell"));
             
             if (!gameActive) { 
-                alert("Antes de comenzar, haga clic en \"Dibujar un símbolo\" para elegir el símbolo.");
+                winsInfos.textContent = "Antes de comenzar, haga clic en \"Dibujar un símbolo\" para elegir el símbolo.";
+                winsInfos.style.transform = "translateX(0%)";
+                winsInfos.style.opacity = 1;
                 return;
             }
             
