@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+        content="Ici, tous les modes de jeu sur cette page sont jouables gratuitement et sans publicité ! Trois modes de jeu sont disponibles, mais d’autres pourraient venir bientôt !">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
-    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright © 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#FFEFD3">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -18,7 +18,7 @@
 
     <meta property="og:title" content="Morpion - Modes de jeu">
     <meta property="og:description"
-        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+        content="Ici, tous les modes de jeu sur cette page sont jouables gratuitement et sans publicité ! Trois modes de jeu sont disponibles, mais d’autres pourraient venir bientôt !">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/choice-modes-fr.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Morpion - Modes de jeu">
     <meta name="twitter:description"
-        content="Tous les modes de jeu présents juste ici. Certains sont jouables directement, d'autres en cours de construction et d'autres pas encore disponibles">
+        content="Ici, tous les modes de jeu sur cette page sont jouables gratuitement et sans publicité ! Trois modes de jeu sont disponibles, mais d'autres pourraient venir bientôt !">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/choice-modes-fr.html">
     <meta name="twitter:site" content="@Miammiam_am">
@@ -63,13 +63,14 @@
                 fetchpriority="high" class="logo-navbar">
             <span>Morpion - Modes de jeu</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-expanded="false">☰</button>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation"
+            aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-fr.html">Revenir à l'accueil</a>
+                <a href="homepage-fr.html">Accueil</a>
             </li>
             <li>
-                <a href="download-fr.html">Ressources</a>
+                <a href="download-fr.html">Téléchargement</a>
             </li>
             <li>
                 <a href="rules-fr.html">Règles</a>
@@ -85,38 +86,51 @@
         <h1>Morpion - Modes de jeu</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
-    <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
+    <a href="#startBody" id="startbodyMove" class="start-body-button">Contenu principal</a>
     <main id="startBody">
         <section class="start-body">
             <h2>Choisissez votre mode de jeu</h2>
             <p>
-                Voici les modes de jeu disponibles pour le Morpion :
-                Morpion Classique et le mode Joueur VS IA.
-                Si vous voulez revoir les règles d'un des modes de jeu, n'hésitez pas à cliquer sur la page des règles
-                dans la barre de navigation en haut, ou en cliquant
-                sur <i>Revoir les règles</i> dans les cartes juste en dessous. Si vous voulez jouer directement, cliquez
-                sur <i>Jouer maintenant !</i>.
+                Bon, vous avez lu les règles des modes de jeu qui vous intéressent et maintenant il est temps de passez
+                à l'action ! &#129340;.
+                Juste en-dessous, les modes de jeu disponibles pour les différentes variantes de Morpion.
+                Si vous avez des doutes sur les modes de jeu qui ressemblent déjà à <i><sup>*</sup>Comment on joue déjà
+                    ? &#129300;<sup>*</sup></i>, n'hésitez pas à cliquer sur les boutons <i>Revoir les règles</i>, ça
+                vous amène directement à la page des règles pour vérifier avant de jouer.
+            </p>
+            <p>
+                Assez discuté, cliquez sur <i>Jouez maintenant</i> du mode de votre choix pour commencer à jouer !
+                Amusez-vous bien et bonne chance !
             </p>
         </section>
         <div class="mods-cards">
             <article class="card-mode">
                 <h3>Morpion Classique</h3>
                 <p>Mode classique du Morpion : Joueur VS Joueur</p>
-                <a href="tictactoe-fr.html" aria-label="Jouer au Morpion Classique">Jouer maintenant !</a>
-                <a href="rules-fr.html#classic" aria-label="Revoir les règles du Morpion Classique">Revoir les
+                <a href="tictactoe-fr.html" aria-label="Jouer au Morpion Classique" role="button">Jouer maintenant !</a>
+                <a href="rules-fr.html#classic" aria-label="Revoir les règles du Morpion Classique" role="button">Revoir les
                     règles</a>
             </article>
 
             <article class="card-mode">
                 <h3>Joueur VS IA</h3>
                 <p>Même principe que le Morpion classique mais contre une IA</p>
-                <a href="vsIA-fr.html" aria-label="Jouer au mode Joueur VS IA">Jouer maintenant !</a>
-                <a href="rules-fr.html#vsIA" aria-label="Revoir les règles du mode Joueur VS IA">Revoir les règles</a>
+                <a href="vsIA-fr.html" aria-label="Jouer au mode Joueur VS IA" role="button">Jouer maintenant !</a>
+                <a href="rules-fr.html#vsIA" aria-label="Revoir les règles du mode Joueur VS IA" role="button">Revoir les règles</a>
+            </article>
+
+            <article class="card-mode">
+                <h3>Morpion XL (5x5)</h3>
+                <p>Le nouveau mode 5x5 du Morpion : Joueur VS Joueur ou contre une IA</p>
+                <a href="5x5-fr.html" aria-label="Jouer au mode Morpion XL (5x5)" role="button">Jouer maintenant !</a>
+                <a href="rules-fr.html#5x5" aria-label="Revoir les règles du mode Morpion XL (5x5)" role="button">Revoir les règles</a>
             </article>
         </div>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits réservés - Version 3.2.0
+        </b>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>

@@ -63,13 +63,14 @@
                 decoding="async" loading="lazy" fetchpriority="high" class="logo-navbar">
             <span>Tres en Raya - Modos de juego</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Abrir el menú de navegación" aria-expanded="false">☰</button>
+        <button id="menuButton" class="menu-button" aria-label="Abrir el menú de navegación"
+            aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-es.html">Volver a la página principal</a>
+                <a href="homepage-es.html">Inicio</a>
             </li>
             <li>
-                <a href="download-es.html">Recursos</a>
+                <a href="download-es.html">Descarga</a>
             </li>
             <li>
                 <a href="rules-es.html">Reglas del juego</a>
@@ -81,19 +82,22 @@
     </nav>
     <header class="header-start-page">
         <img class="logo-title" src="assets/img/png/Logo_Morpion.png" alt="Logo de Tres en Raya" width="410"
-            height="410" decoding="async" loading="lazy" fetchpriority="high">
+            height="410" decoding="async" fetchpriority="high">
         <h1>Tres en Raya - Modos del juego</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
-    <a href="#startBody" id="startbodyMove" class="start-body-button">Saltar al contenido</a>
+    <a href="#startBody" id="startbodyMove" class="start-body-button">Contenido principal</a>
     <main id="startBody">
         <section class="start-body">
             <h2>Elige tu modo de juego</h2>
             <p>
-                Aquí están los modos de juego disponibles para Tres en Raya: Tres en Raya Clásico y Jugador contra IA.
-                Si deseas consultar las reglas de cualquiera de los modos de juego, haz clic en la página de reglas en
-                la barra de navegación superior o en <i>Consultar reglas</i> en las tarjetas que aparecen a
-                continuación. Si quieres jugar de inmediato, haz clic en <i>¡Jugar ahora!</i>.
+                Bien, ya has leído las reglas de los modos de juego que te interesan y ahora es el momento de pasar a la
+                acción! &#129340;.
+                Más abajo, los modos de juego disponibles para las diferentes variantes de Morpion. Si tienes dudas
+                sobre los modos de juego que ya se parecen a
+                <i><sup>*</sup>¿Cómo se juega ya? &#129300;<sup>*</sup></i>, no dudes en hacer clic en los botones
+                <i>Revisar reglas</i>, que te llevan directamente a la página de las reglas para comprobarlo antes de
+                jugar.
             </p>
         </section>
         <div class="mods-cards">
@@ -101,7 +105,7 @@
                 <h3>Tres en Raya Clásico</h3>
                 <p>Modo clásico de tres en raya: Jugador contra Jugador</p>
                 <a href="tictactoe-es.html" aria-label="Juega al clásico tres en raya">¡Juega ahora!</a>
-                <a href="rules-es.html#classic" aria-label="Consultar las reglas del modo clásico">Consultar las
+                <a href="rules-es.html#classic" aria-label="Consultar las reglas del modo clásico">Revisar las
                     reglas</a>
             </article>
 
@@ -109,13 +113,23 @@
                 <h3>Jugador contra IA</h3>
                 <p>Modo de juego contra la inteligencia artificial</p>
                 <a href="vsIA-es.html" aria-label="Juega contra la IA">¡Juega ahora!</a>
-                <a href="rules-es.html#vsIA" aria-label="Consultar las reglas del modo IA">Consultar las reglas</a>
+                <a href="rules-es.html#vsIA" aria-label="Consultar las reglas del modo IA">Revisar las reglas</a>
+            </article>
+
+            <article class="card-mode">
+                <h3>Tres en raya XL (5x5)</h3>
+                <p>El nuevo modo 5x5 del Morpion: Jugador VS Jugador o contra una IA</p>
+                <a href="5x5-es.html" aria-label="Juega al modo Tres en Raya XL (5x5)">¡Juega ahora!</a>
+                <a href="rules-es.html#5x5" aria-label="Consultar las reglas del modo Tres en Raya XL (5x5)">Revisar las
+                    reglas</a>
             </article>
         </div>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Reservados todos los derechos - Version
-            2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Reservados todos los derechos -
+            Version 3.2.0
+        </b>
         <a href="homepage-es.html#creditsList">Créditos del sitio</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
