@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
         winsInfos.style.opacity = 0;
         btnChoice.disabled = false;
         btnChoice.style.pointerEvents = "auto";
-        restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
+        restartBtn.disabled = true;
         cells.forEach((cell) => {
             cell.style.backgroundColor = "";
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Casilla vacía, fila " + Math.floor(cell.getAttribute("data-cell") / 3) + ", columna " + (cell.getAttribute("data-cell") % 3));
+            cell.setAttribute("aria-label", "Casilla vacía, fila " + (Math.floor(cell.getAttribute("data-cell") / 3) + 1) + ", columna " + (cell.getAttribute("data-cell") % 3 + 1));
         });
     }
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Antes de comenzar el juego, haz clic en el botón \"¡Echa suertes!\"";
+                resultText.textContent = "Espera, haces clic en la casilla en lugar de \"Sorteo\"? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = currentPlayer;
             cell.setAttribute("aria-label", `Este cuadrado acaba de ser ocupado por el jugador ${currentPlayer}`);
             cell.disabled = true;
-            cell.style.pointerEvents = "none";
             restartBtn.disabled = false;
             restartBtn.style.pointerEvents = "auto";
 
@@ -85,9 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 combo.forEach(index => {
                     cells[index].style.backgroundColor = "#00B400";
                     cells[index].setAttribute("aria-label", `Casillas ganadoras ocupadas por el jugador ${winner}`);
-                    cells[index].style.pointerEvents = "none";
                 });
-                winsInfos.textContent = `¡El jugador ${winner} ganó! ¿Revancha?`;
+                winsInfos.textContent = `¡El jugador ${winner} ganó \ud83c\udfc6 \ud83c\udf89! ¿Una revancha?`;
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 gameActive = false;
@@ -99,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (board.every((cellVal) => cellVal !== "")) {
-                resultText.textContent = "";
                 winsInfos.textContent =
                     "¡Es un empate, puedes empezar una nueva partida!";
                 winsInfos.style.transform = "translateX(0%)";
@@ -108,13 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 cells.forEach(cell => {
                     cell.disabled = true;
                     cell.style.pointerEvents = "none";
-                    cell.setAttribute("aria-label", "Casilla deshabilitada tras un sorteo.");
+                    cell.setAttribute("aria-label", "Casilla deshabilitada tras un empate.");
                 });
                 return;
             }
             currentPlayer = currentPlayer === "X" ? "O" : "X";
-            resultText.textContent = "";
-            turnInfos.textContent = `Turno del jugador ${currentPlayer}`;
+            turnInfos.textContent = `Le toca al jugador ${currentPlayer} jugar.`;
             turnInfos.style.transform = "translateX(0%)";
             turnInfos.style.opacity = 1;
         });
@@ -122,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnChoice.addEventListener("click", () => {
         gameActive = true;
         currentPlayer = Math.random() < 0.5 ? "X" : "O";
-        resultText.textContent = `El jugador ${currentPlayer} comienza la partida.`;
+        resultText.textContent = `El sorteo decidió que el jugador ${currentPlayer} empezara`;
         resultText.style.transform = "translateX(0%)";
         resultText.style.opacity = 1;
         btnChoice.disabled = true;
