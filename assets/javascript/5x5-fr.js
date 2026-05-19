@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const restartButton = document.getElementById('restartButton');
     const winsInfos = document.getElementById('winsInfos');
     const playerSymbolText = document.getElementById('playerSymbol');
-    const titleGame = document.getElementById('infos-title');
+    const titleGame = document.getElementById('infos-title');  
 
     // ✅ Toutes les variables d'état déclarées proprement
     let humanSymbol = null;   // Symbole du joueur 1 (ou humain en mode IA)
@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let modeChoice = null;    // 'ia' ou 'player'
     let board = Array(25).fill('');
     let gameActive = false;
+
+    restartButton.style.pointerEvents = "none";
+    startBtn.style.pointerEvents = "none";  
 
     // ✅ La liste des combos gagnants définie UNE SEULE FOIS, accessible partout
     const COMBOS = [
@@ -111,11 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const result = verifyWinIA(board);
         if (result) {
             highlightCombo(result.combo, '#B40000', '#FFEFD3');
-            endGame("Oh non, c'est l'IA qui a gagné 😦 ! Faudra retenter !");
+            endGame("Oh non, c'est l'IA qui a gagné \ud83d\ude26 ! Faudra retenter !");
             return;
         }
         if (board.every(cell => cell !== '')) {
-            endGame("Match nul… au moins c'est pas l'IA qui a gagné 😐");
+            endGame("Match nul... au moins c'est pas l'IA qui a gagné \ud83d\ude10");
         }
         // Si rien, c'est au joueur de jouer — le click listener s'en occupe
     }
@@ -126,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Number(cell.getAttribute('data-cell'));
 
             if (!gameActive) {
-                winsInfos.textContent = 'Choisis un mode et clique sur "Tire au sort" pour commencer !';
+                winsInfos.textContent = "Choisis un mode et clique sur \"Tire au sort\" pour commencer !";
                 winsInfos.style.transform = 'translateX(0%)';
                 winsInfos.style.opacity = 1;
                 return;
@@ -152,16 +155,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     // ✅ Mode 2 joueurs : on sait quel joueur a gagné grâce à activeSymbol
                     const playerNum = activeSymbol === humanSymbol ? '1' : '2';
                     highlightCombo(result.combo, '#00B400', '#2F2D2E');
-                    endGame(`🏆 Le joueur ${playerNum} (${activeSymbol}) a gagné !`);
+                    endGame(`\ud83c\udfc6 Le joueur ${playerNum} (${activeSymbol}) a gagné !`);
                 } else {
                     highlightCombo(result.combo, '#00B400', '#2F2D2E');
-                    endGame('Félicitations, tu as gagné 🏆 !');
+                    endGame("Félicitations, tu as gagné \ud83c\udfc6 !");
                 }
                 return;
             }
 
             if (board.every(c => c !== '')) {
-                endGame("Match nul… au moins c'est pas l'IA qui a gagné 😐");
+                endGame("Match nul... au moins c'est pas l'IA qui a gagné \ud83d\ude10");
                 return;
             }
 
