@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Case vide, ligne " + Math.floor(cell.getAttribute("data-cell") / 3) + ", colonne " + (cell.getAttribute("data-cell") % 3));
+            cell.setAttribute("aria-label", "Case vide, ligne " + (Math.floor(cell.getAttribute("data-cell") / 3) + 1) + ", colonne " + (cell.getAttribute("data-cell") % 3 + 1));
         });
     }
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Avant de commencer la partie, clique sur le bouton \"Tire au sort !\"";
+                resultText.textContent = "Attends, tu cliques sur la case au lieu de \"Tirage au sort\" ? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.disabled = true;
             cell.style.pointerEvents = "none";
             restartBtn.disabled = false;
-            restartBtn.style.pointerEvents = "auto";
+            restartBtn.style.pointerEvents = "auto";            
 
             const winData = verifyWin();
             if (winData) { 
@@ -85,9 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 combo.forEach(index => {
                     cells[index].style.backgroundColor = "#00B400";
                     cells[index].setAttribute("aria-label", `Cases gagnantes occupé par le joueur ${winner}`);
-                    cells[index].style.pointerEvents = "none";
                 });
-                winsInfos.textContent = `Le joueur ${winner} a gagné ! Une revanche ?`;
+                winsInfos.textContent = `Le joueur ${winner} a gagné \ud83c\udfc6 \ud83c\udf89 ! Une revanche ?`;
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 gameActive = false;
@@ -99,9 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (board.every((cellVal) => cellVal !== "")) {
-                resultText.textContent = "";
                 winsInfos.textContent =
-                    "Match nul, vous pouvez relancer une partie !";
+                    "Match nul ! \ud83d\ude35 Coup dur, mais vous pouvez relancer une partie !";
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 gameActive = false;
@@ -113,8 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
             currentPlayer = currentPlayer === "X" ? "O" : "X";
-            resultText.textContent = "";
-            turnInfos.textContent = `C'est au joueur ${currentPlayer} de jouer.`;
+            turnInfos.textContent = `Au tour du joueur ${currentPlayer} de jouer.`;
             turnInfos.style.transform = "translateX(0%)";
             turnInfos.style.opacity = 1;
         });
@@ -122,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnChoice.addEventListener("click", () => {
         gameActive = true;
         currentPlayer = Math.random() < 0.5 ? "X" : "O";
-        resultText.textContent = `C'est au joueur ${currentPlayer} de commencer !`;
+        resultText.textContent = `Le tirage au sort a décidé que c'est le joueur ${currentPlayer} qui commence`;
         resultText.style.transform = "translateX(0%)";
         resultText.style.opacity = 1;
         btnChoice.disabled = true;
