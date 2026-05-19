@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Se explican las reglas de cada modo de juego disponible para el Tres en Raya. ¡Léalas atentamente para comprenderlas y no perderse durante la partida!">
+        content="Si te sientes perdido en todas estas variantes, esta página es para ti. Explica las reglas de cada modo de juego disponible para el Morpion.">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
     <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
 
     <meta property="og:title" content="Tres en Raya - Reglas de los modos de juego">
     <meta property="og:description"
-        content="Se explican las reglas de cada modo de juego disponible para el Tres en Raya. ¡Léalas atentamente para comprenderlas y no perderse durante la partida!">
+        content="Si te sientes perdido en todas estas variantes, esta página es para ti. Explica las reglas de cada modo de juego disponible para el Tres en Raya.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/rules-es.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tres en Raya - Reglas de los modos de juego">
     <meta name="twitter:description"
-        content="Se explican las reglas de cada modo de juego disponible para el Tres en Raya. ¡Léalas atentamente para comprenderlas y no perderse durante la partida!">
+        content="Si te sientes perdido en todas estas variantes, esta página es para ti. Explica las reglas de cada modo de juego disponible para el Morpion.">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/rules-es.html">
     <meta name="twitter:site" content="@Miammiam_am">
@@ -62,16 +62,17 @@
             <img src="assets/img/png/Logo_Morpion.png" alt="Logo de Tres en Raya" width="80" height="80"
                 fetchpriority="high" decoding="async" class="logo-navbar"><span>Tres en Raya - Reglas</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Abrir el menú de navegación" aria-expanded="false">☰</button>
+        <button id="menuButton" class="menu-button" aria-label="Abrir el menú de navegación"
+            aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-es.html">Volver a la página principal</a>
+                <a href="homepage-es.html">Inicio</a>
             </li>
             <li>
-                <a href="choice-modes-es.html">Modod del juego</a>
+                <a href="choice-modes-es.html">Modos de juego</a>
             </li>
             <li>
-                <a href="download-es.html">Recursos</a>
+                <a href="download-es.html">Descarga</a>
             </li>
             <li>
                 <a href="index.html">Idiomas disponibles</a>
@@ -83,82 +84,105 @@
             height="410" decoding="async" loading="lazy" fetchpriority="high">
         <h1>Reglas de los modos de juego del Tres en Raya</h1>
     </header>
-    <div class="navpage-rules" aria-hidden="true"></div>
-    <a href="#startBody" id="startbodyMove" class="start-body-button">Saltar al contenido</a>
+    <div class="navpage-rules" role="navigation" aria-label="Navigation">
+        <a href="#classic">Clásico Tres en Raya</a>
+        <a href="#vsIA">Tres en Raya Vs IA</a>
+        <a href="#5x5">Tres en Raya 5x5</a>
+    </div>
     <div class="background" aria-hidden="true"></div>
-    <main id="startBody">
-        <section class="start-body">
+    <main>
+        <section class="start-body" id="topPage">
             <h2>Una breve introducción</h2>
             <p>
-                Estás aquí porque has olvidado cómo jugar, ¿verdad? &#128064; No te preocupes, no es tan grave, ¡aquí
-                tienes
-                explicaciones detalladas del Tres en Raya y sus variantes! Tómate tu tiempo para leer las reglas con
-                atención y comprender bien las particularidades de cada modo de juego <i>(aunque, sinceramente, no te
-                    resulte muy útil, pero no se lo digas a nadie &#129323;)</i>.
+                Estás aquí porque olvidaste cómo se juega un modo en particular, ¿no es así &#128527;? No te preocupes,
+                nos pasa a todos. Usted tiene las explicaciones detalladas de todas las variantes del Morpion, incluso
+                su versión clásica, nunca se sabe &#128064;! Tómate el tiempo de leer atentamente para entender bien sus
+                propias particularidades, y después estarás tranquilo cuando juegues.
             </p>
         </section>
         <section class="middle-body" id="classic">
-            <h2>Modo Clásico</h2>
+            <h2>Reglas del Tres en Raya clásico</h2>
             <p>
-                El clásico Tres en Raya, o Jugador contra Jugador, se juega en una cuadrícula de 3x3. Los símbolos X y O
-                se eligen al azar; no hay necesidad de crear una guerra por un solo símbolo &#128518;. El objetivo de ambos
-                jugadores es alinear tres de sus símbolos de tres maneras posibles: horizontalmente <sup>[1]</sup>, verticalmente
-                <sup>[2]</sup> o en diagonal <sup>[3]</sup>. ¿Para ganar? Sé el primero en alinear tres de tus símbolos. Si todas las casillas
-                de la cuadrícula se llenan sin que ninguno de los jugadores logre alinear tres símbolos idénticos, el
-                juego termina en empate <sup>[4]</sup>. Sencillo, ¿verdad?
+                El Morpion clásico, o Jugador VS Jugador, se juega en una cuadrícula de tamaño clásico 3x3. La elección
+                de los símbolos X y O se hace por sorteo, no es necesario crear una guerra por un solo símbolo
+                &#128518;. El objetivo de los dos jugadores es alinear tres de sus símbolos de tres maneras posibles:
             </p>
             <div class="illustrations" id="xoAlign">
                 <figure>
                     <img src="assets/img/png/Success_1.png" alt="Ejemplo de alineación horizontal" width="170"
                         height="170" loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[1]</sup>Un ejemplo de alineación horizontal
+                        Un ejemplo de alineación horizontal
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="assets/img/png/Success_2.png" alt="Ejemplo de alineación vertical" width="170"
                         height="170" loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[2]</sup>Un ejemplo de alineación vertical
+                        Un ejemplo de alineación vertical
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="assets/img/png/Success_3.png" alt="Ejemplo de alineación diagonal" width="170"
                         height="170" loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[3]</sup>Un ejemplo de alineación diagonal
+                        Un ejemplo de alineación diagonal
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/img/png/Tie.png" alt="Ejemplo de un dibujo" width="170" height="170" loading="lazy"
+                    <img src="assets/img/png/Tie.png" alt="Ejemplo de un empate" width="170" height="170" loading="lazy"
                         fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[4]</sup>Un ejemplo de un sorteo
+                        Un ejemplo de un empate
                     </figcaption>
                 </figure>
             </div>
+            <p>
+                Para ganar? Como se muestra justo antes, alinearlos primero antes que el segundo jugador. Si todas las
+                casillas de la tabla se llenan sin que ningún jugador haya logrado alinear sus símbolos idénticos, el
+                juego termina en un empate. Es sencillo, ¿no?
+            </p>
+        </section>
+
+        <section class="middle-body" id="vsIA">
+            <h2>Reglas del Tres en Raya contra la IA</h2>
+            <p>
+                Este modo de juego es idéntico al Morpion clásico, con un pequeño detalle adicional</b>&#10024;. Siempre
+                se trata de jugar en una cuadrícula del mismo tamaño que la versión clásica, y alinear sus símbolos de
+                tres maneras diferentes que encontrarás haciendo clic <a href="#xoAlign">justo aquí</a>. Pero el segundo
+                jugador no es tu amigo o un miembro de tu familia; es contra la IA &#128556;. ¿La elección de los
+                símbolos? Siempre será al azar y la IA elegirá automáticamente el otro símbolo. &#9888;&#65039; Ten en
+                cuenta que la IA siempre jugará primero si elige <b>SOLO</b> el símbolo X, pero el objetivo del juego es
+                el mismo, sin sorpresas, prometido &#128521;. La IA es <b>REALMENTE</b> formidable y muy difícil de
+                derrotar, así que sé estratégico y buena suerte!
+            </p>
         </section>
 
         <section class="end-body">
-            <h2>Reglas del Tres en Raya contra la IA</h2>
+            <h2>Reglas del Tres en Raya XL</h2>
             <p>
-                Este modo de juego tiene una ligera diferencia con respecto al clásico Tres en Raya. Si bien sigue
-                consistiendo en jugar en una cuadrícula del mismo tamaño, alineando tus símbolos contra otro
-                jugador&mldr;
-                el otro jugador es la IA, no otro humano &#128556;. Aún puedes elegir entre los mismos dos símbolos,
-                siempre al
-                azar, y la IA elegirá automáticamente el símbolo contrario. Ten en cuenta que la IA siempre jugará
-                primero si está marcada con el símbolo X, pero el objetivo sigue siendo el mismo: alinear tres de tus
-                símbolos antes de que la IA alinee los suyos <i>(como se muestra en los diagramas <a
-                        href="rules-es.html#xoAlign">aquí</a>)</i>. Una última cosa,
-                la IA es <b>REALMENTE</b> formidable <i>(sí, puedes decir eso después cuando la IA te gane, es mi culpa
-                    &#128517;)</i>, ¡así que sé estratégico y buena suerte!
+                Así que este, estamos en un Morpion muy grande (y grande). El objetivo es alinear sus símbolos de tres
+                maneras diferentes, como siempre conoces la canción. Pero esta vez, la cuadrícula en cuestión no es una
+                cuadrícula de tamaño 3x3, sino <b> ¡5x5! </b>, de ahí el nombre <q> Morpion XL </q> (oh dios mío
+                &#129762;).
+            </p>
+            <p>
+                No te preocupes, no es tan complicado. Puedes elegir entre uno de dos modos: contra un jugador o contra
+                la IA misma. Si usted elige contra la IA, mismo principio del sorteo que el del modo contra una IA. Si
+                juegas en modo contra un jugador, el mismo principio del sorteo que en el modo clásico. ¿Y los
+                alineamientos? Todos idénticos, excepto que aquí son 5 filas de 5 columnas a alinear, no 3 como en el
+                modo clásico.
             </p>
         </section>
+        <a href="#topPage" role="button" aria-label="Volver a la parte superior de la página">Volver a la parte superior
+            de la página</a>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Reservados todos los derechos - Version
-            2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Reservados todos los derechos -
+            Version
+            3.2.0
+        </b>
         <a href="homepage-es.html#creditsList">Créditos del sitio</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>

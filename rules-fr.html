@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Règles expliquées de chaque mode de jeu disponibles pour le Morpion, lisez attentivement pour bien comprendre et ne pas être perdu pendant votre partie !">
+        content="Si vous vous sentez perdu dans toutes ces variantes, cette page est faites pour vous. Elle explique les règles de chaque mode de jeu disponibles pour le Morpion.">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
-    <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
+    <meta name="copyright" content="Copyright © 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#FFEFD3">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -16,17 +16,17 @@
     <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
     <meta name="language" content="fr">
 
-    <meta property="og:title" content="Morpion - Règles des modes de jeu">
+    <meta property="og:title" content="Morpion - Règles des variantes du Morpion">
     <meta property="og:description"
-        content="Règles expliquées de chaque mode de jeu disponibles pour le Morpion, lisez attentivement pour bien comprendre et ne pas être perdu pendant votre partie !">
+        content="Si vous vous sentez perdu dans toutes ces variantes, cette page est faites pour vous. Elle explique les règles de chaque mode de jeu disponibles pour le Morpion.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/rules-fr.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Morpion - Règles des modes de jeu">
+    <meta name="twitter:title" content="Morpion - Règles des variantes du Morpion">
     <meta name="twitter:description"
-        content="Règles expliquées de chaque mode de jeu disponibles pour le Morpion, lisez attentivement pour bien comprendre et ne pas être perdu pendant votre partie !">
+        content="Si vous vous sentez perdu dans toutes ces variantes, cette page est faites pour vous. Elle explique les règles de chaque mode de jeu disponibles pour le Morpion.">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/rules-fr.html">
     <meta name="twitter:site" content="@Miammiam_am">
@@ -54,7 +54,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
     </noscript>
 
-    <title>Règles des modes de jeu du Morpion</title>
+    <title>Règles des variantes du Morpion</title>
 </head>
 
 <body>
@@ -63,110 +63,134 @@
             <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" fetchpriority="high"
                 decoding="async" class="logo-navbar"><span>Morpion - Règles</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-expanded="false">☰</button>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation"
+            aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-fr.html">Revenir à l'accueil</a>
+                <a href="homepage-fr.html">Accueil</a>
             </li>
             <li>
                 <a href="choice-modes-fr.html">Modes de jeu</a>
             </li>
             <li>
-                <a href="download-fr.html">Ressources</a>
+                <a href="download-fr.html">Téléchargement</a>
             </li>
             <li>
                 <a href="index.html">Langues disponibles</a>
             </li>
         </ul>
     </nav>
-    <header class="header-start-page">
+    <header class="header-start-page" id="topPage">
         <img src="assets/img/png/Logo_Morpion.png" alt="Image d'affiche du Morpion" class="logo-title" width="410"
             height="410" fetchpriority="high" decoding="async">
-        <h1>Morpion - Règles des modes de jeu</h1>
+        <h1>Morpion - Règles des variantes du Morpion</h1>
     </header>
-    <div class="navpage-rules" aria-hidden="true"></div>
-    <a href="#startBody" id="startbodyMove" class="start-body-button">Aller au contenu</a>
+    <div id="navpageRules" class="navpage-rules" role="navigation" aria-label="Barre de navigation de chaque modes de jeu">
+        <a href="#classic">Morpion classique</a>
+        <a href="#vsIA">Morpion VS IA</a>
+        <a href="#5x5">Morpion XL</a>
+    </div>
     <div class="background" aria-hidden="true"></div>
-    <main id="startBody">
+    <main>
         <section class="start-body">
             <h2>Petite introduction</h2>
             <p>
-                Vous êtes ici parce que vous avez oublié comment on joue n'est-ce pas &#128064; ?
-                Ne vous inquiétez pas, ce n'est pas si grave, vous avez les explications détaillées
-                sur le Morpion et ses variantes ! Prenez le temps de
-                lire attentivement leurs règles pour bien comprendre les
-                spécificités de chaque mode de jeu <i>(même si il n'y a pas grande utilité pour être honnête
-                    avec vous, mais faut pas le dire &#129323;)</i>.
+                Vous êtes ici parce que vous avez oublié comment on joue un mode en particulier, n'est-ce pas &#128527;
+                ?
+                Ne vous inquiétez pas, ça arrive à tout le monde. Vous avez les explications détaillées
+                de toutes les variantes du Morpion, même sa version classique, on sait jamais &#128064; ! Prenez le
+                temps de
+                lire attentivement pour bien comprendre leurs propres spécificités, et après vous serez tranquille quand
+                vous jouerez.
             </p>
         </section>
         <section class="middle-body" id="classic">
             <h2>Règles du Morpion classique</h2>
             <p>
-                Le Morpion classique, ou Joueur VS Joueur, se joue sur une grille de taille 3x3 cases.
+                Le Morpion classique, ou Joueur VS Joueur, se joue sur une grille de taille classique 3x3.
                 Le choix des symboles X et O se fait par tirage au sort, pas besoin de créer une guerre pour un seul
-                symbole &#128518;.
-                Le but pour les deux joueurs est
-                d'aligner trois de leurs symboles de trois façons possibles : horizontal<sup>[1]</sup>,
-                vertical<sup>[2]</sup>
-                ou diagonale<sup>[3]</sup>. Pour gagner ? Aligner trois de ses symboles en premier.
-                Si toutes les cases de la grille sont remplies sans qu'aucun
-                joueur n'ait réussi à aligner trois symboles identiques, la
-                partie se termine par un match nul<sup>[4]</sup>.
-                Simple n'est-ce pas ?
+                symbole &#128518;. Le but pour les deux joueurs est
+                d'aligner trois de leurs symboles de trois façons possibles :
             </p>
             <div class="illustrations" id="xoAlign">
                 <figure>
                     <img src="assets/img/png/Success_1.png" width="170" height="170"
                         alt="Exemple d'alignement horizontal" loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[1]</sup>Un des exemples d'alignement horizontal
+                        Un exemple d'alignement horizontal
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="assets/img/png/Success_3.png" alt="Exemple d'alignement vertical" width="170" height="170"
                         loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[2]</sup>Un des exemples d'alignement vertical
+                        Un exemple d'alignement vertical
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="assets/img/png/Success_2.png" alt="Exemple d'alignement diagonal" width="170" height="170"
                         loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[3]</sup>Un des exemples d'alignement diagonal
+                        Un exemple d'alignement diagonal
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="assets/img/png/Tie.png" alt="Exemple de match nul" width="170" height="170" loading="lazy"
                         fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[4]</sup>Un des exemples de match nul
+                        Un exemple de match nul
                     </figcaption>
                 </figure>
             </div>
-        </section>
-
-        <section class="end-body" id="vsIA">
-            <h2>Règles du Morpion contre l'IA</h2>
             <p>
-                Ce mode de jeu a une petite particularité comparé au Morpion classique. Certes,
-                il s'agit toujours de jouer dans une grille de même taille, d'aligner ses symboles, tout ceci contre un
-                autre joueur&mldr;
-                sauf que l'autre joueur, c'est contre l'IA qui joue, et non un autre humain &#128556;.
-                Vous pouvez tout de même choisir entre les deux mêmes symboles, toujours au hasard et l'IA choisira
-                automatiquement le symbole adverse. Attention, l'IA jouera toujours en premier s'il est désigné par le
-                symbole X, mais le but du jeu reste le même, aligner trois de vos symboles
-                avant que l'IA n'aligne les siens <i>(comme sur les schémas <a href="rules-fr.html#xoAlign">juste ici</a>)</i>. Une
-                dernière chose,
-                L'IA est <b>VRAIMENT</b> redoutable <i>(oui, vous pouvez le dire plus tard quand l'IA vous aura battue,
-                    c'est ma faute &#128517;)</i>, alors soyez stratégique et bonne chance !
+                Pour gagner ? Comme montré juste avant,
+                les aligner en premier avant le deuxième joueur.
+                Si toutes les cases de la grille sont remplies sans qu'aucun
+                joueur n'ait réussi à aligner ses symboles identiques, la
+                partie se termine par un match nul. Simple n'est-ce pas ?
             </p>
         </section>
+
+        <section class="middle-body" id="vsIA">
+            <h2>Règles du Morpion contre l'IA</h2>
+            <p>
+                Ce mode de jeu identique au Morpion classique, avec &#10024;<b>un petit truc en plus</b>&#10024;.
+                Il s'agit toujours de jouer dans une grille de même taille que la version classique, et d'aligner ses
+                symboles de trois façons différentes que vous trouverez en cliquant <a href="#xoAlign">juste ici</a>.
+                Mais le deuxième joueur n'est pas votre ami ou un membre de votre famille ; c'est contre l'IA &#128556;.
+                Le choix des symboles ? Elle se fera toujours au hasard et l'IA choisira
+                automatiquement l'autre symbole. &#9888;&#65039; Attention, l'IA jouera toujours en premier si il
+                choisit <b>UNIQUEMENT</b> le
+                symbole X, mais le but du jeu reste le même, aucun effet de surprise, promis &#128521;.
+                L'IA est <b>VRAIMENT</b> redoutable et très dure à battre, alors soyez stratégique et bonne chance !
+            </p>
+        </section>
+
+        <section class="end-body" id="5x5">
+            <h2>Règles du Morpion XL</h2>
+            <p>
+                Alors celui-ci, on est sur un très gros (et grand) Morpion. Le but est d'aligner ses symboles de trois
+                façons différentes, comme d'habitude vous connaissez la chanson.
+                Mais cette fois-ci, la grille en question n'est pas une simple grille de taille 3x3, mais <b>une grille
+                    de taille 5x5 !</b>, d'où le nom <q> Morpion XL </q> (oh mon dieu &#129762;).
+            </p>
+            <p>
+                Ne vous inquiétez pas, ce n'est pas si compliqué que ça. Vous avez le choix de l'un des deux modes :
+                contre un joueur ou contre l'IA lui-même.
+                Si vous choississez contre l'IA, même principe du tirage au sort que celui du mode contre une IA. Si
+                vous prenez le mode contre un joueur, même principe du tirage au sort que celui du mode classique. Et
+                les alignements ? Tous identiques, sauf que là, c'est 5 lignes de 5 colonnes à aligner, pas 3 comme dans
+                le mode classique.
+            </p>
+        </section>
+        <a href="#topPage" role="button" aria-label="Revenir en haut de la page">Revenir en haut de la page</a>
     </main>
 
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
-            réservés - Version 2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
+            réservés - Version 3.2.0
+        </b>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>

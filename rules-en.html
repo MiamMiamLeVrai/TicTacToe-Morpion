@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Rules explained for each game mode available for Tic-Tac-Toe, read carefully to understand and not be lost during your game!">
+        content="If you feel lost in all these variants, this page is for you. She explains the rules of each game mode available for Morpion.">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
     <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
 
     <meta property="og:title" content="Tic-Tac-Toe - Rules of game modes">
     <meta property="og:description"
-        content="Rules explained for each game mode available for Tic-Tac-Toe, read carefully to understand and not be lost during your game!">
+        content="If you feel lost in all these variants, this page is for you. She explains the rules of each game mode available for Morpion.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/rules-en.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tic-Tac-Toe - Rules of game modes">
     <meta name="twitter:description"
-        content="Rules explained for each game mode available for Tic-Tac-Toe, read carefully to understand and not be lost during your game!">
+        content="If you feel lost in all these variants, this page is for you. She explains the rules of each game mode available for Morpion.">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/rules-en.html">
     <meta name="twitter:site" content="@Miammiam_am">
@@ -66,99 +66,121 @@
         <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-en.html">Return to homepage</a>
+                <a href="homepage-en.html">Homepage</a>
             </li>
             <li>
                 <a href="choice-modes-en.html">Game modes</a>
             </li>
             <li>
-                <a href="download-en.html">Resources</a>
+                <a href="download-en.html">Download</a>
             </li>
             <li>
                 <a href="index.html">Available languages</a>
             </li>
         </ul>
     </nav>
-    <header class="header-start-page">
+    <header class="header-start-page" id="topPage">
         <img src="assets/img/png/Logo_Morpion.png" alt="Poster of Tic-Tac-Toe" class="logo-title" width="410"
             height="410" fetchpriority="high" decoding="async">
         <h1>Tic-Tac-Toe - Rules of game modes</h1>
     </header>
-    <div class="navpage-rules" aria-hidden="true"></div>
-    <a href="#startBody" id="startbodyMove" class="start-body-button">Go to content</a>
+    <div class="navpage-rules" role="navigation" aria-label="Navigation bar for each game mode">
+        <a href="#classic">Classic Tic-Tac-Toe</a>
+        <a href="#vsIA">Tic-Tac-Toe vs AI</a>
+        <a href="#5x5">Tic-Tac-Toe XL</a>
+    </div>
     <div class="background" aria-hidden="true"></div>
-    <main id="startBody">
+    <main>
         <section class="start-body">
             <h2>Small introduction</h2>
             <p>
-                You're here because you've forgotten how to play, haven't you? &#128064; Don't worry, it's not so bad,
-                you have
-                detailed explanations of Tic-Tac-Toe and its variations! Take the time to read their rules carefully to
-                fully understand the specifics of each game mode <i>(even if it's not very useful to be honest with you,
-                    but don't tell anyone &#129323;)</i>.
+                You are here because you have forgotten how to play a particular mode, isn’t it &#128527;? Don’t worry,
+                it happens to everyone. You have detailed explanations of all the variants of the Morpion, even its
+                classic version, we never know &#128064; ! Take the time to read carefully to fully understand their own
+                specificities, and then you will be at peace when you play.
             </p>
         </section>
         <section class="middle-body" id="classic">
             <h2>Rules of Classic Tic-Tac-Toe</h2>
             <p>
-                Classic Tic-Tac-Toe, or Player vs. Player, is played on a 3x3 grid. The X and O symbols are chosen
-                randomly; there's no need to create a war over a single symbol &#128518;. The goal for both players is
-                to align three of their symbols in three possible ways: horizontally<sup>[1]</sup>,
-                vertically<sup>[2]</sup>, or diagonally<sup>[3]</sup>. To win? Be the first to align three of your
-                symbols. If all the grid squares are filled without
-                either player managing to align three identical symbols, the game ends in a draw<sup>[4]</sup>. Simple,
-                isn't it?
+                The classic Tic-Tac-Toe, or Player vs Player, is played on a 3x3 classic grid. The choice of symbols X
+                and O is done by drawing lots, no need to create a war for a single symbol &#128518;. The goal for both
+                players is to align three of their symbols in three possible ways:
             </p>
             <div class="illustrations" id="xoAlign">
                 <figure>
-                    <img src="assets/img/png/Success_1.png" width="170" height="170"
-                        alt="Example of horizontal alignment" loading="lazy" fetchpriority="low" decoding="async">
-                    <figcaption>
-                        <sup aria-hidden="true">[1]</sup>One of the examples of horizontal alignment
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/img/png/Success_3.png" alt="Example of vertical alignment" width="170" height="170"
+                    <img src="assets/img/png/Success_1.png" width="170" height="170" alt="Horizontal Alignment Example"
                         loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[2]</sup>One of the examples of vertical alignment
+                        An example of horizontal alignment
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/img/png/Success_2.png" alt="Example of diagonal alignment" width="170" height="170"
+                    <img src="assets/img/png/Success_3.png" alt="Vertical Alignment Example" width="170" height="170"
                         loading="lazy" fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[3]</sup>One of the examples of diagonal alignment
+                        An example of vertical alignment
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/img/png/Tie.png" alt="Example of a draw" width="170" height="170" loading="lazy"
+                    <img src="assets/img/png/Success_2.png" alt="Diagonal Alignment Example" width="170" height="170"
+                        loading="lazy" fetchpriority="low" decoding="async">
+                    <figcaption>
+                        An example of diagonal alignment
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/png/Tie.png" alt="Draw Example" width="170" height="170" loading="lazy"
                         fetchpriority="low" decoding="async">
                     <figcaption>
-                        <sup aria-hidden="true">[4]</sup>One of the examples of a draw
+                        An example of a draw
                     </figcaption>
                 </figure>
             </div>
-        </section>
-
-        <section class="end-body" id="vsIA">
-            <h2>Rules of Tic-Tac-Toe VS IA</h2>
             <p>
-                This game mode has a slight difference compared to classic Tic-Tac-Toe. While it's still about playing
-                on a grid of the same size, aligning your symbols against another player&mldr; the other player is the
-                AI, not another human &#128556;. You can still choose between the same two symbols, always randomly, and
-                the AI will automatically choose the opposing symbol. Be aware that the AI will always play first if
-                it's marked with the X symbol, but the goal remains the same: align three of your symbols before the AI
-                aligns its own <i>(as shown in the diagrams <a href="rules-en.html#xoAlign">right here</a>)</i>. One last thing, the AI is <b>REALLY</b>
-                formidable <i>(yes, you can say that later when the AI beats you, it's my fault &#128517;)</i>, so be
-                strategic and good luck!
+                To win? As shown just before, line them up first before the second player. If all the squares of the
+                grid are filled without any player having managed to align their identical symbols, the game ends in a
+                draw. Simple, isn’t it?
             </p>
         </section>
+
+        <section class="middle-body" id="vsIA">
+            <h2>Rules of Tic-Tac-Toe VS IA</h2>
+            <p>
+                This game mode is identical to the classic Morpion, with &#10024;<b>an extra little trick</b>&#10024;.
+                It's always about playing in a grid of the same size as the classic version, and aligning its symbols in
+                three different ways that you will find by clicking <a href="#xoAlign">just here</a>. But the second
+                player is not your friend or a member of your family; it’s against the AI &#128556;. The choice of
+                symbols? It will always be done at random and the AI will automatically choose the other symbol.
+                &#9888;&#65039; Be careful, the AI will always play first if it chooses <b>ONLY</b> the symbol X, but
+                the goal of the game remains the same, no surprise effect, promise &#128521;. AI is <b>REALLY</b>
+                formidable and very hard to beat, so be strategic and good luck!
+            </p>
+        </section>
+
+        <section class="end-body" id="5x5">
+            <h2>Rules of Tic-Tac-Toe 5x5</h2>
+            <p>
+                So this one, we’re onto a very big (and tall) Morpion. The goal is to align your symbols in three
+                different ways, as usual you know the drill. But this time, the grid in question is not a simple 3x3
+                grid, but <b>a 5x5 grid! </b>, hence the name <q> Morpion XL </q> (oh my god &#129762;).
+            </p>
+            <p>
+                Don't worry, it's not that complicated. You have the choice of one of two modes: against a player or
+                against the AI itself. If you choose against AI, the same principle of drawing lots as in fashion
+                against an AI. If you take the mode against a player, the same principle of drawing lots as in classic
+                mode. And the rosters? All identical, except that here it's 5 rows of 5 columns to align, not 3 as in
+                the classic mode.
+            </p>
+        </section>
+        <a href="#topPage" role="button" aria-label="Back to top">Back to top</a>
     </main>
 
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved
-            - Version 2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved
+            - Version 3.2.0
+        </b>
         <a href="homepage-en.html#creditsList">Site credits</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
