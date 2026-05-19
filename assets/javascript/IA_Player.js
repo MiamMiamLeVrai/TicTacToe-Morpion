@@ -6,7 +6,7 @@ function verifyWinIA(board) {
     ];
     for (const [a,b,c] of combos) {
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-            return board[a];
+            return { symbol: board[a], combo: [a, b, c] };
         }
     }
     return null;
@@ -14,8 +14,8 @@ function verifyWinIA(board) {
 
 function miniMax(board, depth, isMaximizing, aiSymbol, humanSymbol) {
     const winner = verifyWinIA(board);
-    if (winner === aiSymbol) return 10 - depth;
-    if (winner === humanSymbol) return depth - 10;
+    if (winner?.symbol === aiSymbol) return 10 - depth;
+    if (winner?.symbol === humanSymbol) return depth - 10;
     if (board.every(cell => cell !== "")) return 0; // match nul
 
     if (isMaximizing) {
