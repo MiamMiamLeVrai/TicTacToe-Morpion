@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description"
+        content="Un Morpion de 25 cases ? Elle existe réellement ! Jouez à ce mode de jeu gratuitement et sans limite !">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
     <meta name="copyright" content="Copyright © 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
@@ -13,17 +14,19 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-status-bar-style" content="default">
     <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
-    <meta name="language" content="fr-FR">
+    <meta name="language" content="fr">
 
-    <meta property="og:title" content="Faux Morpion 5x5 (Provisoire)">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Morpion XL (5x5)">
+    <meta property="og:description"
+        content="Un Morpion de 25 cases ? Elle existe réellement ! Jouez à ce mode de jeu gratuitement et sans limite !">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/5x5-fr.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Faux Morpion 5x5 (Provisoire)">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Morpion XL (5x5)">
+    <meta name="twitter:description"
+        content="Un Morpion de 25 cases ? Elle existe réellement ! Jouez à ce mode de jeu gratuitement et sans limite !">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/5x5-fr.html">
     <meta name="twitter:creator" content="@Miammiam_am">
@@ -37,10 +40,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-
-    <link rel="stylesheet" href="assets/css/5x5.css">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
     <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/5x5.css">
 
     <link rel="canonical" href="https://tictactoe-morpion.netlify.app/5x5-fr.html">
     <link rel="alternate" href="https://tictactoe-morpion.netlify.app/5x5-en.html" hreflang="en-US">
@@ -52,7 +54,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
     </noscript>
 
-    <title>Faux Morpion 5x5 (Provisoire)</title>
+    <title>Morpion XL (5x5)</title>
 </head>
 
 <body>
@@ -65,13 +67,13 @@
             aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-fr.html">Revenir à l'accueil</a>
+                <a href="homepage-fr.html">Accueil</a>
             </li>
             <li>
                 <a href="choice-modes-fr.html">Modes de jeu</a>
             </li>
             <li>
-                <a href="download-fr.html">Ressources</a>
+                <a href="download-fr.html">Téléchargement</a>
             </li>
             <li>
                 <a href="index.html">Langues disponibles</a>
@@ -81,12 +83,12 @@
     <header class="header-start-page">
         <img src="assets/img/png/Logo_Morpion.png" alt="Image d'affiche du Morpion" width="410" height="410"
             fetchpriority="high" decoding="async" class="logo-title">
-        <h1>Faux Morpion 5x5 (Provisoire)</h1>
+        <h1>Morpion XL (5x5)</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
     <main>
         <section class="morpion-classic">
-            <h2>Faux morpion 5x5</h2>
+            <h2>Morpion XL (5x5)</h2>
             <div class="grid" aria-label="Grille du morpion" role="grid">
                 <button class="cell" data-cell="0" aria-label="Case vide, ligne 1, colonne 1"></button>
                 <button class="cell" data-cell="1" aria-label="Case vide, ligne 1, colonne 2"></button>
@@ -120,23 +122,25 @@
             <h2 id="infos-title">Choix du joueur</h2>
             <section class="player-choice">
                 <div class="buttons">
-                    <button id="iaChoice" aria-label="Contre une IA">Contre l'IA</button>
+                    <button id="iaChoice" aria-label="Contre une IA">Contre une IA</button>
                     <button id="humanChoice" aria-label="Contre un joueur">Contre un joueur</button>
-                    <button id="startBtn" aria-label="Tire au sort" disabled>Tire au sort !</button>
+                    <button id="startBtn" aria-label="Tirage au sort" disabled>Tirage au sort</button>
                     <button id="restartButton" aria-label="Recommencer la partie" disabled>Recommencer la
                         partie</button>
                 </div>
             </section>
             <section class="player-infos">
                 <h2>Informations de la partie</h2>
-                <p id="playerSymbol" role="status" aria-live="polite"></p>
-                <p id="winsInfos" aria-live="polite" role="status"></p>
+                <b><p id="playerSymbol" role="status" aria-live="polite"></p></b>
+                <b><p id="winsInfos" aria-live="polite" role="status"></p></b>
             </section>
         </aside>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
-            réservés - Version 3.0.0</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
+            réservés - Version 3.2.0
+        </b>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
