@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPlayer = null;
     let board = Array(9).fill("");
     let gameActive = false;
-    
-    restartBtn.style.pointerEvents = "none";
 
+    restartBtn.style.pointerEvents = "none";
+    
     function resetGame() {
         currentPlayer = null;
         board = Array(9).fill("");
@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
         winsInfos.style.opacity = 0;
         btnChoice.disabled = false;
         btnChoice.style.pointerEvents = "auto";
-        restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
+        restartBtn.disabled = true;
         cells.forEach((cell) => {
             cell.style.backgroundColor = "";
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
-            cell.setAttribute("aria-label", "Empty cell, row " + Math.floor(cell.getAttribute("data-cell") / 3) + ", column " + (cell.getAttribute("data-cell") % 3));
+            cell.setAttribute("aria-label", "Empty cell, row " + (Math.floor(cell.getAttribute("data-cell") / 3) + 1) + ", column " + (cell.getAttribute("data-cell") % 3 + 1));
         });
     }
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Before starting the game, click on the \"Choose randomly!\" button";
+                resultText.textContent = "Wait, are you clicking the box instead of \"Draw\"? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.setAttribute("aria-label", `This square has just been taken by the player ${currentPlayer}.`);
             cell.disabled = true;
             cell.style.pointerEvents = "none";
-            restartBtn.disabled = false;
             restartBtn.style.pointerEvents = "auto";
+            restartBtn.disabled = false;
 
             const winData = verifyWin();
             if (winData) {
@@ -85,9 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 combo.forEach((index) => {
                     cells[index].style.backgroundColor = "#00B400";
                     cells[index].setAttribute("aria-label", `Winning cells occupied by the player ${winner}.`);
-                    cells[index].style.pointerEvents = "none";
                 });
-                winsInfos.textContent = `The player ${winner} has won! A rematch ?`;
+                winsInfos.textContent = `Player ${winner} won \ud83c\udfc6 \ud83c\udf89! A rematch?`;
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 gameActive = false;
@@ -99,9 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (board.every((cellVal) => cellVal !== "")) {
-                resultText.textContent = "";
-                turnInfos.textContent = "";
-                winsInfos.textContent = "Draw, you can restart a new game!";
+                winsInfos.textContent = "Draw! \ud83d\ude35 Tough break, but you can restart a game!";
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 gameActive = false;
@@ -113,8 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
             currentPlayer = currentPlayer === "X" ? "O" : "X";
-            resultText.textContent = "";
-            turnInfos.textContent = `It's the turn of player ${currentPlayer} to play.`;
+            turnInfos.textContent = `Now it's the turn of player ${currentPlayer} to play.`;
             turnInfos.style.transform = "translateX(0%)";
             turnInfos.style.opacity = 1;
         });
@@ -124,12 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
         gameActive = true;
         currentPlayer = Math.random() < 0.5 ? "X" : "O";
         resultText.style.transform = "translateX(0%)";
-        resultText.textContent = `It's the turn of player ${currentPlayer} to start!`;
+        resultText.textContent = `The draw decided that it is the player ${currentPlayer} who starts`;
         resultText.style.opacity = 1;
         btnChoice.disabled = true;
         btnChoice.style.pointerEvents = "none";
-        restartBtn.disabled = false;
         restartBtn.style.pointerEvents = "auto";
+        restartBtn.disabled = false;
     });
+    
     restartBtn.addEventListener("click", resetGame);
 });
