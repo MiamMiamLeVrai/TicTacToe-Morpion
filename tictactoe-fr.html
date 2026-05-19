@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !">
+        content="Voici le Morpion le plus classique que vous connaissez. Sans publicité, sans téléchargement, et disponible en ligne, ça se joue à l'infini !">
     <meta name="author" content="Simon HERIES (MiamMiamLeVrai)">
     <meta name="copyright" content="Copyright 2026 Simon HERIES (MiamMiamLeVrai)">
     <meta name="robots" content="index, follow">
@@ -15,23 +15,23 @@
     <meta name="mobile-web-app-status-bar-style" content="default">
     <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
     <meta name="language" content="fr">
-    
+
     <meta property="og:title" content="Le Morpion - Jouez en ligne gratuitement">
     <meta property="og:description"
-        content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !">
+        content="Voici le Morpion le plus classique que vous connaissez. Sans publicité, sans téléchargement, et disponible en ligne, ça se joue à l'infini !">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/tictactoe-fr.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Le Morpion - Jouez en ligne gratuitement">
     <meta name="twitter:description"
-        content="Le jeu du Morpion sous toutes ses formes, disponible en ligne, sans téléchargement et même sans pub. C'est le moment d'y jouer sans modération !">
+        content="Voici le Morpion le plus classique que vous connaissez. Sans publicité, sans téléchargement, et disponible en ligne, ça se joue à l'infini !">
     <meta name="twitter:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/tictactoe-fr.html">
     <meta name="twitter:site" content="@Miammiam_am">
     <meta name="twitter:creator" content="@Miammiam_am">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
@@ -63,16 +63,17 @@
             <img src="assets/img/png/Logo_Morpion.png" alt="Logo du Morpion" width="80" height="80" fetchpriority="high"
                 decoding="async" class="logo-navbar"><span>Morpion - Jouez !</span>
         </div>
-        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation" aria-expanded="false">☰</button>
+        <button id="menuButton" class="menu-button" aria-label="Ouvre le menu de navigation"
+            aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-fr.html">Revenir à l'accueil</a>
+                <a href="homepage-fr.html">Accueil</a>
             </li>
             <li>
                 <a href="choice-modes-fr.html">Modes de jeu</a>
             </li>
             <li>
-                <a href="download-fr.html">Ressources</a>
+                <a href="download-fr.html">Téléchargement</a>
             </li>
             <li>
                 <a href="index.html">Langues disponibles</a>
@@ -82,7 +83,7 @@
     <header class="header-start-page">
         <img src="assets/img/png/Logo_Morpion.png" alt="Image d'affiche du Morpion" class="logo-title" width="410"
             height="410" fetchpriority="high" decoding="async">
-        <h1>Morpion - Jouez directement !</h1>
+        <h1>Morpion - Jouez !</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
     <main>
@@ -104,15 +105,21 @@
         <aside aria-labelledby="infos-title">
             <section class="player-choice">
                 <h2>Qui va jouer en premier ?</h2>
-                <button id="playerChoice" aria-label="Tire au sort">
-                    Tire au sort !
+                <button id="playerChoice" aria-label="Tirage au sort">
+                    Tirage au sort
                 </button>
-                <p id="playerResult" role="status" aria-live="polite"></p>
+                <b>
+                    <p id="playerResult" role="status" aria-live="polite"></p>
+                </b>
             </section>
             <section class="player-infos">
                 <h2 id="infos-title">Informations de la partie</h2>
-                <p id="turnInfos" aria-live="polite" role="status"></p>
-                <p id="winsInfos" aria-live="polite" role="status"></p>
+                <b>
+                    <p id="turnInfos" aria-live="polite" role="status"></p>
+                </b>
+                <b>
+                    <p id="winsInfos" aria-live="polite" role="status"></p>
+                </b>
             </section>
 
             <div class="buttons">
@@ -123,8 +130,10 @@
         </aside>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
-            réservés - Version 2.1.1</span>
+        <b>
+            &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
+            réservés - Version 3.2.0
+        </b>
         <a href="homepage-fr.html#creditsList">Crédits du site</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
