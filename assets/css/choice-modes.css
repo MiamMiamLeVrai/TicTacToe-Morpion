@@ -4,6 +4,12 @@
     background-color: var(--selector-color);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -14,9 +20,6 @@ body {
     line-height: 1.4;
     color: var(--text-color);
     background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .menu-button {
@@ -27,28 +30,27 @@ body {
     cursor: pointer;
     color: var(--nav-links-color);
     font-size: x-large;
-    margin-left: auto;
-    margin-right: 32px;
+    margin: 0 32px 0 auto;
 }
 
 nav {
     display: flex;
     align-items: center;
     background: var(--link-color);
-    padding: 16px;
+    padding: 20px;
     border-bottom: 3px solid var(--nav-links-color);
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     overflow: hidden;
-    transition: transform 0.35s ease-in-out, background-color 0.6s ease-in-out;
-    will-change: transform;
+    transition: transform 0.2s ease-in-out, background-color 0.4s ease-in-out;
+    will-change: transform, background-color;
 }
 
 nav.nav-hidden {
-    transform: translateY(-150px);
-    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-100%);
+    background-color: transparent;
 }
 
 .nav-logo {
@@ -66,16 +68,13 @@ nav.nav-hidden {
 }
 
 nav span {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
     color: var(--nav-links-color);
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0 0 0 16px;
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
@@ -85,39 +84,43 @@ nav ul.nav-open {
 }
 
 nav ul li a {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     display: block;
     text-decoration: none;
     color: var(--nav-links-color);
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0 8px;
     padding: 16px;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
-    border-radius: 16px;
+    transition: background-color 0.4s cubic-bezier(0.23, 0.1, 0.32, 1), 
+                color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                transform 0.6s cubic-bezier(0.23, 1, 0.320, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
     background-color: var(--nav-links-color);
     color: var(--link-color);
-    transform: scale(1.05);
+    transform: translate(-4px, -4px);
+    box-shadow: var(--nav-links-box-shadow);
 }
 
-nav ul li a:focus {
-    box-shadow: 0 0 0 3px var(--nav-links-color);
+nav ul li a:active {
+    outline: 3px solid var(--nav-links-color);
+    box-shadow: var(--nav-links-box-shadow);
+    transform: translateX(4px);
 }
 
 .header-start-page {
     display: flex;
     align-items: center;
-    margin-top: 200px;
-    padding-left: 200px;
-    padding-bottom: 75px;
+    padding: 200px 0 75px 200px;
     border-bottom: 3px solid var(--text-color);
-    gap: 75px;
+    gap: 100px;
 }
 
 .header-start-page h1 {
-    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-size: clamp(2.1rem, 4vw, 4.2rem);
 }
 
 .logo-title {
@@ -129,29 +132,35 @@ nav ul li a:focus {
 
 .start-body-button {
     display: inline-block;
-    font-size: clamp(1.2rem, 2vw, 2.6rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     background-color: var(--link-color);
     color: var(--button-text-color);
     text-decoration: none;
     border: 3px solid var(--button-border-color);
     border-radius: 16px;
-    padding: 16px 20px;
+    padding: 20px 26px;
     position: fixed;
     z-index: 10;
     right: 30px;
     bottom: 30px;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: background-color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                border-color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                transform 0.6s cubic-bezier(0.23, 1, 0.320, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .start-body-button:hover {
     background-color: var(--button-border-color);
-    color: var(--link-color);
-    border-color: var(--link-color);
-    transform: scale(1.05);
+    color: var(--background-btn-color);
+    border-color: var(--background-btn-color);
+    transform: translate(-10px, -10px);
+    box-shadow: var(--button-box-shadow);
 }
 
-.start-body-button:focus {
-    box-shadow: 0 0 0 3px var(--background-btn-color);
+.start-body-button:active {
+    box-shadow: var(--button-box-shadow);
+    transform: translate(-5px, -5px);
 }
 
 .start-body-button.start-body-hidden {
@@ -170,23 +179,24 @@ nav ul li a:focus {
 }
 
 .start-body {
-    text-align: center;
-    padding: 35px 50px;
+    margin: 40px 60px;
 }
 
 .start-body h2 {
-    font-size: clamp(1.3rem, 3vw, 3rem);
+    margin: 5px 0 20px 0;
+    font-size: clamp(1.6rem, 2.4vw, 3.5rem);
 }
 
 .start-body p {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    margin: 0 0 20px 0;
 }
 
 .mods-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    margin: 40px 60px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    margin: 70px 30px;
     place-content: center;
 }
 
@@ -201,68 +211,66 @@ nav ul li a:focus {
 }
 
 .card-mode h3 {
-    font-size: clamp(1.5rem, 2vw, 2.4rem);
+    font-size: clamp(1.6rem, 1.9vw, 2.2rem);
+    margin: 20px 0;
+    padding: 0;
 }
 
 .card-mode p {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    margin: 0 0 20px 0;
 }
 
 .card-mode a {
     display: inline-block;
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
-    margin: 10px 100px;
-    padding: 16px 20px;
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    margin: 20px 50px;
+    padding: 20px 26px;
     background-color: var(--link-color);
     text-decoration: none;
     color: var(--button-text-color);
     border: 3px solid var(--background-btn-color);
     border-radius: 16px;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: background-color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                border-color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+                transform 0.6s cubic-bezier(0.23, 1, 0.320, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .card-mode a:hover {
     background-color: var(--button-text-color);
     color: var(--link-color);
     border-color: var(--link-color);
-    transform: scale(1.05);
+    transform: translate(-10px, -10px);
+    box-shadow: var(--button-box-shadow);
 }
 
-.card-mode a:focus {
-    box-shadow: 0 0 0 3px var(--link-color);
+.card-mode a:active {
+    box-shadow: var(--button-box-shadow);
+    transform: translate(-5px, -5px);
 }
 
 footer {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 20px 60px;
     flex-direction: column;
     border-top: 3px solid var(--text-color);
     background-color: var(--button-text-color);
 }
 
-.rights {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
-    text-align: center;
-    margin-top: 32px;
-    font-weight: bold;
-}
-
 footer a {
-    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--background-btn-color);
     margin: 32px auto;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-footer a:hover {
-    color: var(--secondary-link-color);
-    text-decoration: underline;
-}
-
-footer a:focus {
-    box-shadow: 0 0 0 3px var(--secondary-link-color);
+footer b {
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    text-align: center;
+    margin: 32px 0 0 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -279,12 +287,12 @@ footer a:focus {
     }
 
     nav {
-        padding: 6px;
+        padding: 10px;
         flex-wrap: wrap;
     }
 
     nav ul {
-        width: calc(100% - 12px);
+        width: calc(100% - 25px);
         height: auto;
         display: none;
         flex-direction: column;
@@ -298,13 +306,17 @@ footer a:focus {
         width: 60px;
     }
 
+    nav span {
+        margin: 0 0 0 16px;
+    }
+
     nav ul li:nth-child(1) {
-        margin-top: 8px;
+        margin: 8px 0 0 0;
     }
 
     nav ul li a {
         padding: 8px;
-        margin: 0;
+        margin: 0 auto;
         border-radius: 0px;
     }
 
@@ -314,13 +326,12 @@ footer a:focus {
 
     .header-start-page {
         flex-direction: column;
-        margin-top: 150px;
-        padding: 0 0 25px 0;
+        padding: 130px 0 0 0;
         gap: 30px;
     }
     
     .header-start-page h1 {
-        text-align: center;
+        margin: 0 0 30px 0;
     }
 
     .logo-title {
@@ -328,32 +339,29 @@ footer a:focus {
     }
 
     .start-body-button {
-        padding: 12px 16px;
+        padding: 16px 22px;
     }
 
     .start-body {
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: 25px 30px;
     }
 
     .start-body h2 {
-        margin-top: 0;
+        margin: 10px 0 0 0;
     }
 
     .mods-cards {
         grid-template-columns: 1fr;
         row-gap: 30px;
-        margin-top: 0;
     }
 
     .card-mode a {
-        margin: 10px auto;
-        padding: 12px 16px;
+        margin: 10px 80px;
+        padding: 16px 22px;
     }
 
     footer {
-        padding-top: 15px;
-        padding-bottom: 30px;
+        padding: 15px 0 30px 0;
     }
 
     footer a {
@@ -367,12 +375,12 @@ footer a:focus {
     }
 
     nav {
-        padding: 10px;
+        padding: 12px;
         flex-wrap: wrap;
     }
 
     nav ul {
-        width: calc(100% - 17px);
+        width: calc(100% - 15px);
         height: auto;
         display: none;
         flex-direction: column;
@@ -387,13 +395,11 @@ footer a:focus {
     }
     
     nav ul li:nth-child(1) {
-        margin-top: 8px;
+        margin: 8px 0 0 0;
     }
 
     nav ul li a {
         padding: 8px;
-        margin-left: 8px;
-        margin-right: 8px;
         border-radius: 0px;
     }
 
@@ -402,9 +408,8 @@ footer a:focus {
     }
 
     .header-start-page {
-        margin-top: 150px;
-        padding: 0 0 50px 50px;
-        gap: 40px;
+        padding: 150px 50px 50px 50px;
+        gap: 80px;
     }
 
     .logo-title {
@@ -412,31 +417,21 @@ footer a:focus {
     }
 
     .start-body-button {
-        padding: 12px 16px;
+        padding: 16px 20px;
     }
 
     .start-body {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .start-body h2 {
-        margin-top: 0;
+        margin: 30px 45px;
     }
 
     .mods-cards {
         grid-template-columns: 1fr;
         row-gap: 30px;
-        margin-top: 0;
     }
 
     .card-mode a {
-        margin: 15px 100px;
-        padding: 12px 16px;
-    }
-
-    .rights {
-        margin: 16px;
+        margin: 15px 210px;
+        padding: 16px 20px;
     }
 
     footer a {
@@ -457,15 +452,17 @@ footer a:focus {
         width: 75px;
     }
 
+    nav span {
+        margin: 0 0 0 16px;
+    }
+
     nav ul li a {
         padding: 12px;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin: 0 8px;
     }
 
     .header-start-page {
-        margin-top: 150px;
-        padding: 25px 0 65px 100px;
+        padding: 150px 0 65px 100px;
         gap: 50px;
     }
 
@@ -473,36 +470,26 @@ footer a:focus {
         width: 360px;
     }
 
-    .start-body-button {
-        padding: 14px 18px;
-    }
-
     .start-body {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    .start-body h2 {
-        margin-top: 0;
+        margin: 30px 45px;
     }
 
     .mods-cards {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
-        margin-top: 0;
+        row-gap: 30px;
+    }
+
+    .card-mode:nth-child(3) {
+        grid-column: 1 / -1;
+        margin: 0 100px;
     }
 
     .card-mode a {
-        margin: 20px auto;
-        padding: 14px 18px;
+        margin: 20px 65px;
     }
 
-    .rights {
-        margin: 32px;
-        text-align: center;
-    }
-
-    footer a {
-        margin: 16px auto;
+    .card-mode:nth-child(3) a {
+        margin: 20px 170px;
     }
 }
