@@ -6,14 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const START_BODY = document.getElementById("startbodyMove");
     const dateFooter = document.getElementById("dateFooter");
     const NAVBAR_BUTTON = document.getElementById("menuButton");
-    const NAVPAGE_RULES = document.getElementById("navpageRules");
     const navForMobile = NAVBAR ? NAVBAR.querySelector("ul") : null;
+    const THEME_COLOR_META = document.querySelector("meta[name='theme-color']");
 
-    function handledScroll() {
+    const NAVBAR_COLOR = "#FFEFD3";
+    const BG_COLOR = "#001B2E";
+
+    function handleScroll() {
         const CURRENT_SCROLL = window.scrollY;
         if (NAVBAR) {
             if (CURRENT_SCROLL > lastScroll) {
                 NAVBAR.classList.add("nav-hidden");
+                if (THEME_COLOR_META) THEME_COLOR_META.setAttribute("content", BG_COLOR);
                 if (NAVBAR_BUTTON && navForMobile) {
                     navForMobile.classList.remove("nav-open");
                     NAVBAR_BUTTON.setAttribute("aria-expanded", "false");
@@ -21,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             } else {
                 NAVBAR.classList.remove("nav-hidden");
+                if (THEME_COLOR_META) THEME_COLOR_META.setAttribute("content", NAVBAR_COLOR);
             }
         }
 
@@ -65,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
         if (!ticking) {
-            window.requestAnimationFrame(handledScroll);
+            window.requestAnimationFrame(handleScroll);
             ticking = true;
         }
     }, { passive: true });
