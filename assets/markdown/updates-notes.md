@@ -1,14 +1,46 @@
 # Tic-Tac-Toe - Morpion
 
+## 🇫🇷 Notes de mise à jour
+
+### ⚙️ NOUVELLE VERSION : Version 3.2.1 : Toutes petites corrections, rien de plus 👀 (04/06/2026)
+
+#### C'est quoi les nouveautés ? 👀
+
+- Divers corrections dans les fichiers JS pour éviter les comportements inattendus et les bugs, notamment dans `tictactoe.js` et `vsIA.js`.
+- Aux vus des modifications apportées dans `netlify.toml`, les éléments inline CSS et JS sont désormais supprimés.
+- Ajouts de nouvelles mesures de sécurité dans le fichier `netlify.toml` pour renforcer la protection du site contre les attaques potentielles.
+- Divers corrections dans les autres fichiers du projet (`sitemap.xml`, `site.webmanifest`) pour corriger des erreurs mineures et améliorer la cohérence du projet.
+- Mise à jour de la version de 3.2.0 à 3.2.1
+
+__AMUSEZ-VOUS BIEN SUR LE MORPION !__
+
+---
+
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.2.0: The update that will make you like this: 🤯 (2026/05/19)
-
-That's it, the new version is finally out! But why does it have the name Version 3.2.0? Lots of new features have been integrated in this version; first the 3.0.0 beta that was released only brought the 5x5 mode, and secondly the improvements made in the 3.1.0 version, which should have been released earlier than expected. This version is here to correct, repair, improve and add features to the project in full. But as a result...
+### ⚙️ NEW VERSION: Version 3.2.1: All small corrections, nothing more 👀 (2026/06/04)
 
 #### What's new? 👀
 
-##### On the HTML side
+- Various fixes in the JS files to prevent unexpected behaviors and bugs, notably in `tictactoe.js` and `vsIA.js`.
+- In view of the modifications made in `netlify.toml`, the inline CSS and JS elements are now removed.
+- Additions of new security measures in the `netlify.toml` file to enhance the protection of the site against potential attacks.
+- Various fixes in the other project files (`sitemap.xml`, `site.webmanifest`) to correct minor errors and improve the consistency of the project.
+- Updated from version 3.2.0 to version 3.2.1
+
+__HAVE FUN ON TIC-TAC-TOE!__
+
+---
+---
+
+---
+---
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.2.0: The update that will make you like this: 🤯 (2026/05/19)
+That's it, the new version is finally out! But why does it have the name Version 3.2.0? Lots of new features have been integrated in this version; first the 3.0.0 beta that was released only brought the 5x5 mode, and secondly the improvements made in the 3.1.0 version, which should have been released earlier than expected. This version is here to correct, repair, improve and add features to the project in full. But as a result...
+What's new? 👀
+On the HTML side
 
 - The new game mode "Morpion XL" or "Morpion 5x5" is now available in its English and Spanish versions, with their respective JavaScript files.
 - Rewriting certain paragraphs on most of the site's pages, notably `index.html`, `homepage.html`, `download.html`, `choice-modes.html`, `rules.html`, `tictactoe.html` and `vsIA.html` (_Change also applied in the French and Spanish versions_).
@@ -23,21 +55,21 @@ That's it, the new version is finally out! But why does it have the name Version
 - The download button "Get the elements" for `download.html` also had a text change to "Download the folder" related to that of the main navigation bar. (_Change also applied in the French and Spanish versions_).
 - All translations of all pages, for the English and Spanish versions, have been updated to [Reverso](https://www.reverso.net/), so no more fraudulent translations from Google Translate.
 
-##### On the CSS side
+On the CSS side
 
 - New CSS animations created for the accessibility buttons found on most web pages, the download button in `download.html`, game mode choices in `choice-modes.html`, `tictactoe.html`, `5x5.html` and `vsIA.html`, the main navigation bar on all pages, the navigation bar in game modes `rules.html`, certain images in `homepage.html`, other buttons in `index.html` and the error page `404.html`.
 - The page `5x5.html` is now suitable for mobile and tablet display.
 - All font sizes and some image sizes have been adjusted for better readability on mobile devices, tablets, desktop screens and more.
 - All web pages, except `index.html` and other unspecified elements, will adopt the left-text alignment design to better match the appearance of the site’s `tictactoe.html`, `5x5.html` and `vsIA.html` game pages.
 
-##### On the JavaScript side
+On the JavaScript side
 
 - The date present in all web pages gets a small improvement, so that every time a page is loaded, the date is automatically updated to match today's date, in `MM/YYYY` format, and is necessarily displayed in capital letters. (_Change also applied in the French and Spanish versions_).
 - `tictactoe.js` and `vsIA.js` have been modified/corrected in a few minor ways.
 - The AI logic has been slightly improved to prevent crashes and unexpected behaviors, more precisely in the AI logic for the 3x3 Morpion.
 - All emojis have been replaced by their unicode equivalents to avoid display issues on different browsers and operating systems, and to better match the choices made for emojis in HTML pages.
 
-##### On the other files side
+On the other files side
 
 - All images with visual artifacts have been reworked to improve their quality and visibility on different platforms.
 - The icons for tabs (Favicons) have been replaced by the new image versions.
@@ -46,19 +78,13 @@ That's it, the new version is finally out! But why does it have the name Version
 - The `download` folder has been updated to include new versions of downloadable files.
 - Version 3.0.0 (beta) updated to version 3.2.0.
 
-__HAVE FUN ON TIC-TAC-TOE!__
-
 ---
 
-## 🇫🇷 Notes de mise à jour
-
-### ⚙️ NOUVELLE VERSION : Version 3.2.0 : La mise à jour qui va vous rendre comme ça : 🤯 (19/05/2026)
-
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.2.0 : La mise à jour qui va vous rendre comme ça : 🤯 (19/05/2026)
 Ça y est, la nouvelle version est enfin sortie ! Mais pourquoi elle porte le nom Version 3.2.0 ? Pleins de nouveautés ont été intégrées dans cette version ; premièrement la 3.0.0 bêta qui est sortie a uniquement apporté le mode 5x5, et deuxièmement les améliorations apportées dans la version 3.1.0, qui aurait du sortir plus tôt que prévu. Cette version est là pour corriger, réparer, améliorer et ajouter des fonctionnalités au projet en long et en large. Mais du coup...
-
-#### C'est quoi les nouveautés ? 👀
-
-##### Du côté de HTML
+C'est quoi les nouveautés ? 👀
+Du côté de HTML
 
 - Le nouveau mode de jeu "Morpion XL" ou "Morpion 5x5" est maintenant disponible dans sa version anglaise et espagnole, avec leurs fichiers JavaScript respectifs.
 - Réécriture de certains paragraphes dans la plupart des pages du site, notamment `index.html`, `homepage.html`, `download.html`, `choice-modes.html`, `rules.html`, `tictactoe.html` et `vsIA.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
@@ -73,21 +99,21 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Le bouton de téléchargement "Obtenir les éléments" pour `download.html` a aussi eu un changement de texte pour "Télécharger le dossier" en lien avec celui de la barre de navigation principale (_Changement appliqué aussi dans les versions anglaise et espagnole_).
 - Toutes les traductions de toutes les pages, pour les versions anglaise et espagnole, sont passées à la traduction de [Reverso](https://www.reverso.net/), donc fini les traductions frauduleuses de Google Translate.
 
-##### Du côté de CSS
+Du côté de CSS
 
 - De nouvelles animations CSS créées pour les boutons d'accessibilité présent dans la majorité des pages webs, du bouton de téléchargement dans `download.html`, de choix de mode de jeu dans `choice-modes.html`, `tictactoe.html`, `5x5.html` et `vsIA.html`, de la barre de navigation principale dans toutes les pages, de la barre de navigation des modes de jeu `rules.html`, de certains images dans `homepage.html`, des autres boutons dans `index.html` et de la page d'erreur `404.html`.
 - La page `5x5.html` est maintenant adaptée pour un affichage mobile et tablette.
 - Toutes les tailles de police et certaines tailles d'images ont été ajustées pour une meilleure lisibilité sur les appareils mobiles, tablettes, écrans de bureau et plus.
 - Toutes les pages webs, sauf `index.html` et d'autres éléments non spécifiés, adopteront le design d'alignement de texte à gauche pour mieux correspondre à l'apparence des pages jeux `tictactoe.html`, `5x5.html` et `vsIA.html` du site.
 
-##### Du côté de JavaScript
+Du côté de JavaScript
 
 - La date présent dans toutes les pages webs obtient une petite amélioration qui fait qu'à chaque chargement de page, la date est mise à jour automatiquement pour correspondre à la date du jour, au format `MM/AAAA` et s'affiche obligatoirement en capitales (_Changement appliqué aussi dans les versions anglaise et espagnole_).
 - Quelques légères modifications / corrections ont été apportées dans `tictactoe.js` et `vsIA.js`.
 - La logique IA a été légèrement améliorée pour éviter les crashs et les comportements inattendus, plus précisement dans la logique de l'IA pour le Morpion 3x3.
 - Tous les emojis ont été remplacés par leurs équivalents unicode pour éviter les problèmes d'affichage sur les différents navigateurs et systèmes d'exploitation, et pour mieux correspondre aux choix faite pour les emojis dans les pages HTML.
 
-##### Du côté des autres fichiers
+Du côté des autres fichiers
 
 - Toutes les images présentant des artefacts visuels ont été retravaillées pour améliorer leur qualité et leur visibilité sur les différentes plateformes.
 - Les icônes pour les onglets (Favicons) ont été remplacées par les nouvelles versions d'images.
@@ -95,8 +121,6 @@ __HAVE FUN ON TIC-TAC-TOE!__
 - Le fichier `.gitignore` a été mis à jour.
 - Le dossier `download` a été mis à jour pour inclure les nouvelles versions des fichiers téléchargeables.
 - Version 3.0.0 (bêta) mise à jour vers la version 3.2.0.
-
-__AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ---
 ---
@@ -251,6 +275,7 @@ What's new 👀?
 ⚙️ NOUVELLE VERSION : Version 1.4.0 : Fini GitHub Pages, Bonjour Netlify 👋🏽 (13/03/2026)
 Depuis le début du projet (depuis la version 1.0.0 en gros), GitHub Pages a servi d'hébergement pour le site qui est aussi, par ailleurs, un projet personnel pour moi. Cependant, après plusieurs mois d'utilisation, j'ai décidé de migrer le site vers Netlify pour plusieurs raisons, notamment pour bénéficier de meilleures performances, d'une plus grande flexibilité et de fonctionnalités supplémentaires que Netlify offre par rapport à GitHub Pages. Cette migration a été effectuée avec soin pour assurer une transition en douceur et minimiser les interruptions pour les utilisateurs du site. Mais du coup…
 C'est quoi les nouveautés 👀 ?
+
 - __La nouveauté majeure : Le site est désormais hébergé sur Netlify, offrant de meilleures performances, une plus grande flexibilité et des fonctionnalités supplémentaires par rapport à GitHub Pages.__
 - Mise à jour de __TOUS__ les liens du site pour correspondre au nouveau domaine Netlify, assurant ainsi que tous les liens fonctionnent correctement et redirigent vers les bonnes pages.
 - Mise à jour des liens du fichier `README.md` pour refléter le changement d'hébergement et fournir des informations à jour sur le projet.
