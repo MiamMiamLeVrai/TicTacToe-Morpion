@@ -116,28 +116,17 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const winner = verifyWinIA(board);
             if (winner) {
-                const combos =
-                    [[0,1,2],[3,4,5],[6,7,8],
-                    [0,3,6],[1,4,7],[2,5,8],
-                    [0,4,8],[2,4,6]];
-                for (const [a, b, c] of combos) { 
-                    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-                        [a, b, c].forEach(i => {
-                            cells[i].style.backgroundColor = "#00B400";
-                            cells[i].style.color = "#2F2D2E";
-                        });
-                        break;
-                    }
-                }
+                winner.combo.forEach(i => {
+                    cells[i].style.backgroundColor = "#00B400";
+                    cells[i].style.color = "#2F2D2E";
+                });
                 endGame("¡Felicidades, has ganado \ud83c\udfc6!");
                 return;
             }
-            
             if (board.every(cell => cell !== "")) {
                 endGame("Un empate... al menos la IA no ganó \ud83d\ude10");
                 return;
             }
-            
             setTimeout(playAI, 400);
         });
     });  
