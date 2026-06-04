@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = currentPlayer;
             cell.setAttribute("aria-label", `Este cuadrado acaba de ser ocupado por el jugador ${currentPlayer}`);
             cell.disabled = true;
+            cell.style.pointerEvents = "none";
             restartBtn.disabled = false;
             restartBtn.style.pointerEvents = "auto";
 

@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 combo.forEach(index => {
                     cells[index].style.backgroundColor = "#00B400";
-                    cells[index].setAttribute("aria-label", `Cases gagnantes occupé par le joueur ${winner}`);
+                    cells[index].setAttribute("aria-label", `Cases gagnantes occupées par le joueur ${winner}`);
                 });
                 winsInfos.textContent = `Le joueur ${winner} a gagné \ud83c\udfc6 \ud83c\udf89 ! Une revanche ?`;
                 winsInfos.style.transform = "translateX(0%)";
