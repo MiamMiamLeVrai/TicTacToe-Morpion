@@ -56,19 +56,19 @@
 <body>
     <nav aria-label="Main navigation" id="navbarMove">
         <div class="nav-logo">
-            <img src="assets/img/png/Logo_Morpion.png" alt="Tic-Tac-Toe Logo" width="80" height="80" fetchpriority="high"
-                decoding="async" class="logo-navbar"><span>Tic-Tac-Toe vs AI - Play!</span>
+            <img src="assets/img/png/Logo_Morpion.png" alt="Tic-Tac-Toe Logo" width="80" height="80"
+                fetchpriority="high" decoding="async" class="logo-navbar"><span>Tic-Tac-Toe vs AI - Play!</span>
         </div>
         <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <ul>
             <li>
-                <a href="homepage-en.html">Return to homepage</a>
+                <a href="homepage-en.html">Homepage</a>
             </li>
             <li>
                 <a href="choice-modes-en.html">Game modes</a>
             </li>
             <li>
-                <a href="download-en.html">Resources</a>
+                <a href="download-en.html">Download</a>
             </li>
             <li>
                 <a href="index.html">Available languages</a>
@@ -78,7 +78,7 @@
     <header class="header-start-page">
         <img src="assets/img/png/Logo_Morpion.png" alt="Poster of Tic-Tac-Toe" class="logo-title" width="410"
             height="410" fetchpriority="high" decoding="async">
-        <h1>Tic-Tac-Toe vs AI - Play online for free</h1>
+        <h1>Player vs AI mode</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
     <main>
@@ -100,23 +100,23 @@
         <aside aria-labelledby="infos-title">
             <section class="player-choice">
                 <h2>Choose your symbol</h2>
-                <div class="buttons">
-                    <button id="startBtn" aria-label="Start the game">Start the game</button>
-                </div>
+                <button id="startBtn" aria-label="Start the game">Start the game</button>
+                <b>
+                    <p id="playerSymbol" role="status" aria-live="polite"></p>
+                </b>
             </section>
-            <p id="playerSymbol" role="status" aria-live="polite"></p>
             <section class="player-infos">
                 <h2 id="infos-title">Game information</h2>
-                <p id="winsInfos" aria-live="polite" role="status"></p>
-            </section>
-
-            <div class="buttons">
+                <b>
+                    <p id="winsInfos" aria-live="polite" role="status"></p>
+                </b>
                 <button id="restartButton" aria-label="Restart the game" disabled>Restart the game</button>
-            </div>
+            </section>
         </aside>
     </main>
     <footer>
-        <b>&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved - Version 3.2.1</b>
+        <b>&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved - Version
+            3.2.2</b>
         <a href="homepage-en.html#creditsList">Site credits</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
