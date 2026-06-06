@@ -2,15 +2,17 @@
 
 ## 🇫🇷 Notes de mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 3.2.1 : Toutes petites corrections, rien de plus 👀 (04/06/2026)
+### ⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations✍️ (2026/06/06)
 
 #### C'est quoi les nouveautés ? 👀
 
-- Divers corrections dans les fichiers JS pour éviter les comportements inattendus et les bugs, notamment dans `tictactoe.js` et `vsIA.js`.
-- Aux vus des modifications apportées dans `netlify.toml`, les éléments inline CSS et JS sont désormais supprimés.
-- Ajouts de nouvelles mesures de sécurité dans le fichier `netlify.toml` pour renforcer la protection du site contre les attaques potentielles.
-- Divers corrections dans les autres fichiers du projet (`sitemap.xml`, `site.webmanifest`) pour corriger des erreurs mineures et améliorer la cohérence du projet.
-- Mise à jour de la version de 3.2.0 à 3.2.1
+- Certaines pages n'ayant pas bénéficié de mise à jour des versions précedentes du projet, elles ont été corrigées pour garantir une cohérence accrue par rapport aux autres pages du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Les titres des pages des deux premiers modes de jeu (`tictactoe.html` et `vsIA.html`) ont été mis à jour pour être plus explicites et cohérents par rapport à la page `choice-modes.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Améliorations apportées aux pages `tictactoe.html` et `vsIA.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Améliorations apportées aux feuilles de style `tictactoe.css` et `vsIA.css` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Petit erreur spécifique dans la version espagnole de `rules.html` corrigée, qui faisait qu'une partie du texte ne s'affichait pas en gras et manquait de l'emoji d'étoile, ce qui a été corrigé pour que le texte soit en gras et que l'emoji d'étoile soit présent comme dans les autres versions du site.
+- La barre d'onglet adopte maintenant la couleur de la barre de navigation du site, pour une meilleure cohérence visuelle. (_Uniquement pour les utilisateurs de Safari_)
+- Mise à jour de la version 3.2.1 vers la version 3.2.2.
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
@@ -18,15 +20,17 @@ __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.2.1: All small corrections, nothing more 👀 (2026/06/04)
+### ⚙️ NEW VERSION: Version 3.2.2: More and more improvements ✍️ (06/06/2026)
 
-#### What's new? 👀
+#### What's new ? 👀
 
-- Various fixes in the JS files to prevent unexpected behaviors and bugs, notably in `tictactoe.js` and `vsIA.js`.
-- In view of the modifications made in `netlify.toml`, the inline CSS and JS elements are now removed.
-- Additions of new security measures in the `netlify.toml` file to enhance the protection of the site against potential attacks.
-- Various fixes in the other project files (`sitemap.xml`, `site.webmanifest`) to correct minor errors and improve the consistency of the project.
-- Updated from version 3.2.0 to version 3.2.1
+- Some pages were not updated in the previous versions of the project, so they have been corrected to ensure greater consistency with other pages in the project (_Change also applied in the French and Spanish versions_).
+- The page titles for the first two game modes (`tictactoe.html` and `vsIA.html` ) have been updated to be more explicit and consistent with the `choice-modes.html` page (_Change also applied in the French and Spanish versions_).
+- Page improvements `tictactoe.html` and `vsIA.html` (_Change also applied in the French and Spanish versions_).
+- Improvements to the `tictactoe.css` and `vsIA.css` stylesheets (_Change also applied in the French and Spanish versions_).
+- Small specific error in the Spanish version of `rules.html` fixed, which made part of the text not appear in bold and lacked the star emoji, which has been fixed so that the text is in bold and the star emoji is present as in the other versions of the site.
+- The tab bar now adopts the color of the site's navigation bar for better visual consistency. (_Only for Safari users_)
+- Updated from version 3.2.1 to version 3.2.2.
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -35,6 +39,26 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ---
 ---
+
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.2.1 : Toutes petites corrections, rien de plus 👀 (04/06/2026)
+C'est quoi les nouveautés ? 👀
+
+- Divers corrections dans les fichiers JS pour éviter les comportements inattendus et les bugs, notamment dans `tictactoe.js` et `vsIA.js` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Aux vus des modifications apportées dans `netlify.toml`, les éléments inline CSS et JS sont désormais supprimés.
+- Ajouts de nouvelles mesures de sécurité dans le fichier `netlify.toml` pour renforcer la protection du site contre les attaques potentielles, d'éviter les injections de code malveillant, les CSS et les JS inline, etc.
+- Divers corrections dans les autres fichiers du projet (`sitemap.xml`, `site.webmanifest`) pour corriger des erreurs mineures et améliorer la cohérence du projet.
+- Mise à jour de la version de 3.2.0 à 3.2.1
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.2.1: All small corrections, nothing more 👀 (2026/06/04)
+What's new? 👀
+
+- Various fixes in the JS files to prevent unexpected behaviors and bugs, notably in `tictactoe.js` and `vsIA.js` (_Change also applied in the French and Spanish versions_).
+- In view of the modifications made in `netlify.toml`, the inline CSS and JS elements are now removed.
+- Additions of new security measures in the `netlify.toml` file to enhance the protection of the site against potential attacks, to avoid malicious code injections, inline CSS and JS, etc.
+- Various fixes in the other project files (`sitemap.xml`, `site.webmanifest`) to correct minor errors and improve the consistency of the project.
+- Updated from version 3.2.0 to version 3.2.1
 
 🇺🇸 Release Notes
 ⚙️ NEW VERSION: Version 3.2.0: The update that will make you like this: 🤯 (2026/05/19)
@@ -78,8 +102,6 @@ On the other files side
 - The `download` folder has been updated to include new versions of downloadable files.
 - Version 3.0.0 (beta) updated to version 3.2.0.
 
----
-
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 3.2.0 : La mise à jour qui va vous rendre comme ça : 🤯 (19/05/2026)
 Ça y est, la nouvelle version est enfin sortie ! Mais pourquoi elle porte le nom Version 3.2.0 ? Pleins de nouveautés ont été intégrées dans cette version ; premièrement la 3.0.0 bêta qui est sortie a uniquement apporté le mode 5x5, et deuxièmement les améliorations apportées dans la version 3.1.0, qui aurait du sortir plus tôt que prévu. Cette version est là pour corriger, réparer, améliorer et ajouter des fonctionnalités au projet en long et en large. Mais du coup...
@@ -122,12 +144,6 @@ Du côté des autres fichiers
 - Le dossier `download` a été mis à jour pour inclure les nouvelles versions des fichiers téléchargeables.
 - Version 3.0.0 (bêta) mise à jour vers la version 3.2.0.
 
----
----
-
----
----
-
 🇺🇸 Release Notes
 ⚙️ NEW VERSION: Version 3.0.0 (beta): 5v5 mode is FINALLY here… and that's it 😐 (2026/05/05)
 
@@ -159,8 +175,6 @@ What's new? 👀
 - A `variable.css` file was created to improve the simplicity of the other CSS files
 - Various improvements and fixes across all files
 - Site version updated from 2.1.0 to 2.1.1
-
----
 
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 2.1.1 : Correctifs et améliorations… en gros : pas grand-chose… (24/04/2026)
@@ -210,8 +224,6 @@ C'est quoi les nouveautés ? 👀
 - Certains liens, situés dans la balise `<head>` dans tous les fichiers HTML sauf la page `404.html` cassaient la recherche d'indexation de Google, y compris dans `sitemap.xml` sont résolus dans la 2.1.0
 - Énormes modifications du texte ont eu lieu dans les fichiers `README.md` et `credits.md` pour mieux coller à la MAJ 2.0.0
 - Mise à jour de la version de 2.0.0 à 2.1.0
-
----
 
 🇺🇸 Updates notes
 ⚙️ NEW VERSION: Version 2.0.0: Hello AI, goodbye SCSS, new language, and a major spring cleaning! (2026/04/02)
