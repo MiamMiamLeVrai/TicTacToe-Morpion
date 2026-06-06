@@ -237,10 +237,9 @@ aside {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0;
 }
 
-.buttons button:disabled::after, .player-choice button:disabled::after {
+.player-infos button:disabled::after, .player-choice button:disabled::after {
     pointer-events: none;
     transform: none;
     transition: none;
@@ -252,7 +251,6 @@ aside {
 
 .player-choice h2 {
     font-size: clamp(1.6rem, 2.4vw, 3.5rem);
-    margin: 0;
 }
 
 .player-choice button {
@@ -288,7 +286,7 @@ aside {
 
 .player-choice b p {
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
-    margin: 0 0 15px 0;
+    margin: 0 0 25px 0;
 }
 
 .player-infos h2 {
@@ -298,10 +296,10 @@ aside {
 
 .player-infos b p {
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
-    margin: 0 0 15px 0;
+    margin: 10px 0 25px 0;
 }
 
-.buttons button {
+.player-infos button {
     display: inline-block;
     background-color: var(--background-btn-color);
     border: 3px solid var(--button-text-color);
@@ -309,7 +307,6 @@ aside {
     cursor: pointer;
     pointer-events: auto;
     padding: 20px 26px;
-    margin: 0;
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     transition: background-color 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
@@ -319,7 +316,7 @@ aside {
                 box-shadow 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.buttons button:hover {
+.player-infos button:hover {
     background-color: var(--button-text-color);
     color: var(--link-color);
     border-color: var(--link-color);
@@ -327,7 +324,7 @@ aside {
     box-shadow: var(--button-box-shadow);
 }
 
-.buttons button:active {
+.player-infos button:active {
     box-shadow: var(--button-box-shadow);
     transform: translate(-5px, -5px);
 }
@@ -355,12 +352,6 @@ footer b {
 }
 
 #playerResult {
-    transform: translateX(200%);
-    transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1), opacity 1s cubic-bezier(0.23, 1, 0.320, 1);
-    opacity: 0;
-}
-
-#rechoosePlayerText {
     transform: translateX(200%);
     transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1), opacity 1s cubic-bezier(0.23, 1, 0.320, 1);
     opacity: 0;
@@ -464,13 +455,9 @@ footer b {
         text-align: center;
     }
 
-    .player-choice h2 {
-        margin: 0;
-    }
-
     .player-choice button {
         padding: 16px 22px;
-        margin: 10px;
+        margin: 15px 0;
     }
 
     .player-infos {
@@ -478,16 +465,15 @@ footer b {
     }
 
     .player-infos h2 {
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .player-infos b p {
-        margin: 5px 0;
+        margin: 15px 0;
     }
 
-    .buttons button {
+    .player-infos button {
         padding: 16px 22px;
-        margin: 10px;
     }
 }
 
@@ -563,17 +549,9 @@ footer b {
         text-align: center;
     }
 
-    .player-choice h2 {
-        margin: 0;
-    }
-
     .player-choice button {
         padding: 16px 20px;
-        margin: 10px 0;
-    }
-
-    .player-choice b p {
-        margin: 0 0 15px 0;
+        margin: 20px 0;
     }
 
     .player-infos {
@@ -581,16 +559,15 @@ footer b {
     }
 
     .player-infos h2 {
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .player-infos b p {
-        margin: 5px 0 0 0;
+        margin: 15px 0;
     }
 
-    .buttons button {
+    .player-infos button {
         padding: 16px 20px;
-        margin: 15px 0 0 0;
     }
 }
 
@@ -637,5 +614,17 @@ footer b {
 
     .morpion-classic .grid .cell {
         font-size: 5.5rem;
+    }
+
+    .player-choice button {
+        margin: 15px 0;
+    }
+
+    .player-choice b p {
+        margin: 0 0 15px 0;
+    }
+
+    .player-infos b p {
+        margin: 15px 0;
     }
 }
