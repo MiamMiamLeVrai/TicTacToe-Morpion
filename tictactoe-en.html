@@ -15,14 +15,14 @@
     <meta name="mobile-web-app-status-bar-style" content="default">
     <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
     <meta name="language" content="en">
-    
+
     <meta property="og:title" content="Tic-Tac-Toe - Play online for free">
     <meta property="og:description"
         content="Here is the most classic Tic-Tac-Toe you know. Without ads, without downloads, and available online, it's played ad-infinitely!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tictactoe-morpion.netlify.app/tictactoe-en.html">
     <meta property="og:image" content="https://tictactoe-morpion.netlify.app/assets/img/png/Morpion-TicTacToe.png">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tic-Tac-Toe - Play online for free">
     <meta name="twitter:description"
@@ -31,7 +31,7 @@
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/tictactoe-en.html">
     <meta name="twitter:site" content="@Miammiam_am">
     <meta name="twitter:creator" content="@Miammiam_am">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
@@ -77,7 +77,7 @@
     <header class="header-start-page">
         <img src="assets/img/png/Logo_Morpion.png" alt="Poster of Tic-Tac-Toe" class="logo-title" width="410"
             height="410" decoding="async" fetchpriority="high">
-        <h1>Tic-Tac-Toe - Play!</h1>
+        <h1>The classic mode of Tic-Tac-Toe</h1>
     </header>
     <div class="background" aria-hidden="true"></div>
     <main>
@@ -100,26 +100,29 @@
             <section class="player-choice">
                 <h2>Who will play first?</h2>
                 <button id="playerChoice" aria-label="Draw a random player to start the game">
-                    Draw
+                    Random draw
                 </button>
-                <p id="playerResult" role="status" aria-live="polite"></p>
+                <b>
+                    <p id="playerResult" role="status" aria-live="polite"></p>
+                </b>
             </section>
             <section class="player-infos">
                 <h2 id="infos-title">Game information</h2>
-                <p id="turnInfos" role="status" aria-live="polite"></p>
-                <p id="winsInfos" role="status" aria-live="polite"></p>
-            </section>
-
-            <div class="buttons">
+                <b>
+                    <p id="turnInfos" role="status" aria-live="polite"></p>
+                </b>
+                <b>
+                    <p id="winsInfos" role="status" aria-live="polite"></p>
+                </b>
                 <button id="restartButton" aria-label="Restart the game" disabled>
                     Restart the game
                 </button>
-            </div>
+            </section>
         </aside>
     </main>
     <footer>
-        <span class="rights">&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved
-            - Version 3.2.1</span>
+        <b>&copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - All rights reserved
+            - Version 3.2.2</b>
         <a href="homepage-en.html#creditsList">Site credits</a>
     </footer>
     <script src="assets/javascript/animation.js" defer></script>
