@@ -356,7 +356,7 @@ aside h2 {
                 box-shadow 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.buttons button:disabled::after, .player-choice button:disabled::after {
+.buttons button:disabled::after, .buttons button:disabled::after {
     pointer-events: none;
     transform: none;
     transition: none;
@@ -377,12 +377,12 @@ aside h2 {
 
 .player-infos h2 {
     font-size: clamp(1.6rem, 2.4vw, 3.5rem);
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .player-infos b p {
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 footer {
