@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Wait, are you clicking the box instead of \"Draw\"? \ud83e\udd28";
+                resultText.textContent = "Wait, are you clicking the box instead of \"Randon draw\"? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 combo.forEach((index) => {
                     cells[index].style.backgroundColor = "#00B400";
+                    cells[index].style.color = "#2F2D2E";
                     cells[index].setAttribute("aria-label", `Winning cells occupied by the player ${winner}.`);
                 });
                 winsInfos.textContent = `Player ${winner} won \ud83c\udfc6 \ud83c\udf89! A rematch?`;
