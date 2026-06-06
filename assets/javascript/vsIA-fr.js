@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             winner.combo.forEach(i => {
                 cells[i].style.backgroundColor = "#B40000";
                 cells[i].style.color = "#FFEFD3";
+                cells[i].setAttribute("aria-label", `Cases gagnantes occupées par le joueur ${winner}`);
             });
             endGame("Oh non, c'est l'IA qui a gagné \ud83d\ude26 ! Faudra retenter !");
             return;
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winner.combo.forEach(i => {
                     cells[i].style.backgroundColor = "#00B400";
                     cells[i].style.color = "#2F2D2E";
+                    cells[i].setAttribute("aria-label", `Cases gagnantes occupées par le joueur ${winner}`);
                 });
                 endGame("Félicitations, tu as gagné \ud83c\udfc6 !");
                 return;
