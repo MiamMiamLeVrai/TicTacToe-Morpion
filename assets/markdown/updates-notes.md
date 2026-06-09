@@ -2,17 +2,14 @@
 
 ## 🇫🇷 Notes de mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations✍️ (2026/06/06)
+### ⚙️ NOUVELLE VERSION : Version 3.2.3 : Dernières corrections _enfin je l'espère_ (09/06/2026)
 
 #### C'est quoi les nouveautés ? 👀
 
-- Certaines pages n'ayant pas bénéficié de mise à jour des versions précedentes du projet, elles ont été corrigées pour garantir une cohérence accrue par rapport aux autres pages du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Les titres des pages des deux premiers modes de jeu (`tictactoe.html` et `vsIA.html`) ont été mis à jour pour être plus explicites et cohérents par rapport à la page `choice-modes.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Améliorations apportées aux pages `tictactoe.html` et `vsIA.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Améliorations apportées aux feuilles de style `tictactoe.css` et `vsIA.css` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Petit erreur spécifique dans la version espagnole de `rules.html` corrigée, qui faisait qu'une partie du texte ne s'affichait pas en gras et manquait de l'emoji d'étoile, ce qui a été corrigé pour que le texte soit en gras et que l'emoji d'étoile soit présent comme dans les autres versions du site.
-- La barre d'onglet adopte maintenant la couleur de la barre de navigation du site, pour une meilleure cohérence visuelle. (_Uniquement pour les utilisateurs de Safari_)
-- Mise à jour de la version 3.2.1 vers la version 3.2.2.
+- Correction d'un bug dans `netlify.toml` qui bloquait l'affichage des icônes Font Awesome utilisées dans `homepage.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Ajout d'une balise `link` dans le `<head>` de la page d'erreur `404.html` pour une question de propreté, même si ce n'est pas critique.
+- Les fichiers `.gitignore` et `sitemap.xml` ont été mis à jour.
+- Mise à jour de la version 3.2.2 vers la version 3.2.3.
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
@@ -20,17 +17,14 @@ __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.2.2: More and more improvements ✍️ (06/06/2026)
+### ⚙️ NEW VERSION: Version 3.2.3: Last fixes _finally I hope_ (2026/06/09)
 
-#### What's new ? 👀
+#### What's new? 👀
 
-- Some pages were not updated in the previous versions of the project, so they have been corrected to ensure greater consistency with other pages in the project (_Change also applied in the French and Spanish versions_).
-- The page titles for the first two game modes (`tictactoe.html` and `vsIA.html` ) have been updated to be more explicit and consistent with the `choice-modes.html` page (_Change also applied in the French and Spanish versions_).
-- Page improvements `tictactoe.html` and `vsIA.html` (_Change also applied in the French and Spanish versions_).
-- Improvements to the `tictactoe.css` and `vsIA.css` stylesheets (_Change also applied in the French and Spanish versions_).
-- Small specific error in the Spanish version of `rules.html` fixed, which made part of the text not appear in bold and lacked the star emoji, which has been fixed so that the text is in bold and the star emoji is present as in the other versions of the site.
-- The tab bar now adopts the color of the site's navigation bar for better visual consistency. (_Only for Safari users_)
-- Updated from version 3.2.1 to version 3.2.2.
+- Fixing a bug in `netlify.toml` that was blocking the display of Font Awesome icons used in `homepage.html` (_Change also applied in the French and Spanish versions_).
+- Adding a `link` tag in the `<head>` of the `404.html` error page for cleanliness, even if it's not critical.
+- The `.gitignore` and `sitemap.xml` files have been updated.
+- Updated from version 3.2.2 to version 3.2.3.
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -39,6 +33,26 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ---
 ---
+
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations ✍️ (06/06/2026)
+C'est quoi les nouveautés ? 👀
+
+- Certaines pages n'ayant pas bénéficié de mise à jour des versions précedentes du projet, elles ont été corrigées pour garantir une cohérence accrue par rapport aux autres pages du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Les titres des pages des deux premiers modes de jeu (`tictactoe.html` et `vsIA.html`) ont été mis à jour pour être plus explicites et cohérents par rapport à la page `choice-modes.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Améliorations apportées aux pages `tictactoe.html` et `vsIA.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Améliorations apportées aux feuilles de style `tictactoe.css` et `vsIA.css` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Mise à jour de la version 3.2.1 vers la version 3.2.2.
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.2.2: More and more improvements ✍️ (06/06/2026)
+What's new ? 👀
+
+- Some pages were not updated in the previous versions of the project, so they have been corrected to ensure greater consistency with other pages in the project (_Change also applied in the French and Spanish versions_).
+- The page titles for the first two game modes (`tictactoe.html` and `vsIA.html` ) have been updated to be more explicit and consistent with the `choice-modes.html` page (_Change also applied in the French and Spanish versions_).
+- Page improvements `tictactoe.html` and `vsIA.html` (_Change also applied in the French and Spanish versions_).
+- Improvements to the `tictactoe.css` and `vsIA.css` stylesheets (_Change also applied in the French and Spanish versions_).
+- Updated from version 3.2.1 to version 3.2.2.
 
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 3.2.1 : Toutes petites corrections, rien de plus 👀 (04/06/2026)
@@ -230,7 +244,7 @@ C'est quoi les nouveautés ? 👀
 It's here! The most important update to the Morpion project has finally arrived! This update brings a ton of new features, listed below, including bug fixes (as usual), the end of support for a particular programming language, and a language no one could have imagined 🤨. But so…
 What's new? 👀
 
-- SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; 1) Modern browsers no longer need specific properties to display a grid. 2) Bugs will be easier to fix and will be addressed directly in the CSS if needed.
+- SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; Modern browsers no longer need specific properties to display a grid and bugs will be easier to fix and will be addressed directly in the CSS if needed.
 - The design of some pages has been reworked to be visually cleaner.
 - Responsiveness has been improved for most web pages, but further improvements are planned for future updates.
 - Some long-standing, unnecessary properties have been removed, but further improvements are planned for future updates.
@@ -254,7 +268,7 @@ What's new? 👀
 Ça y est, la mise à jour la plus importante du projet Morpion est enfin arrivé ! Cette MAJ apporte énormément de nouveautés listés juste en-dessous comme des bugs corrigés (comme d'habitude), une fin d'utilisation d'un langage de programmation en particulier et une langue que personne n'aurait pu imaginer 🤨. Mais du coup…
 C'est quoi les nouveautés ? 👀
 
-- Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; 1) Les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, 2) Les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
+- Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; De 1, les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, et de 2, les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
 - Le design de certaines pages ont été refaits pour être plus "propres" visuellement
 - Le responsive pour la majorité des pages webs ont été améliorés, mais d'autres améliorations seront prévus pour des MAJ futures
 - Certaines propriétés inutiles présents depuis un bon moment ont été supprimés, mais d'autres améliorations seront prévues pour des MAJ futures
