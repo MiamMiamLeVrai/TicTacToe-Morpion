@@ -5,5 +5,6 @@ Disallow: /assets/.DS_Store
 Disallow: /assets/download/.DS_Store
 Disallow: /assets/img/.DS_Store
 Disallow: /assets/img/png/.DS_Store
+Disallow: /assets/json/.DS_Store
 
 Sitemap: https://tictactoe-morpion.netlify.app/sitemap.xml
