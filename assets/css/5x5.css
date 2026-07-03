@@ -387,24 +387,70 @@ aside h2 {
 
 footer {
     display: flex;
-    padding: 20px 60px;
-    flex-direction: column;
-    border-top: 3px solid var(--text-color);
+    flex-direction: row;
     background-color: var(--button-text-color);
+    padding: 20px 60px 40px 60px;
+    border-top: 3px solid var(--text-color);
 }
 
-footer a {
+footer .contact-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+footer .contact-area h3 {
+    font-size: clamp(1.6rem, 1.9vw, 2.2rem);
+}
+
+footer .contact i {
+    font-size: clamp(65px, 7vw, 90px);
+    color: var(--text-color);
+    transition: transform 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+    margin: 8px 16px 8px 0;
+    cursor: pointer;
+}
+
+footer .contact i:hover {
+    transform: scale(1.1);
+}
+
+footer .contact i:active {
+    transform: scale(0.95);
+}
+
+footer .credits {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    margin: 30px 0 0 0;
+}
+
+footer .credits b {
+    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
+    text-align: end;
+}
+
+footer .credits span {
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     text-decoration: none;
-    color: var(--background-btn-color);
-    margin: 32px auto;
+    color: var(--text-color);
     transition: color 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-footer b {
-    font-size: clamp(1.2rem, 1.8vw, 2.1rem);
-    text-align: center;
-    margin: 32px 0 0 0;
+footer .credits span a {
+    text-decoration: underline;
+    color: var(--text-color);
+    transition: color 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+footer .credits span a:hover {
+    color: var(--secondary-link-color);
 }
 
 #playerSymbol {
