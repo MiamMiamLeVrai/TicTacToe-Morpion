@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 currentPlayer = currentPlayer === humanSymbol ? aiSymbol : humanSymbol;
                 const playerNum = currentPlayer === humanSymbol ? '1' : '2';
-                playerSymbolText.textContent = `It’s the player’s turn ${playerNum} (${currentPlayer})`;
+                playerSymbolText.textContent = `It's player ${playerNum}'s turn (${currentPlayer})`;
             }
          });
     });
@@ -186,9 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
         restartButton.style.pointerEvents = 'auto';
 
         if (modeChoice === 'ia') {
-            playerSymbolText.textContent = `You play with the ${humanSymbol} symbol, so AI play with the ${aiSymbol} symbol`;
+            playerSymbolText.textContent = `You play with the ${humanSymbol} symbol, so AI plays with the ${aiSymbol} symbol`;
         } else {
-            playerSymbolText.textContent = `Player 1 play with ${humanSymbol}, Player 2 play with ${aiSymbol}. It's the turn to Player 1!`;
+            playerSymbolText.textContent = `Player 1 plays with ${humanSymbol}, Player 2 plays with ${aiSymbol}. It's the turn to Player 1!`;
         }
         playerSymbolText.style.transform = 'translateX(0%)';
         playerSymbolText.style.opacity = 1;

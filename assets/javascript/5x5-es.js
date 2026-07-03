@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     humanChoice.addEventListener("click", () => {
         modeChoice = 'player';
-        titleGame.textContent = 'modo: Jugador vs Jugador';
+        titleGame.textContent = 'Modo: Jugador vs Jugador';
         iaChoice.disabled = true;
         iaChoice.style.pointerEvents = 'none';
         humanChoice.disabled = true;
