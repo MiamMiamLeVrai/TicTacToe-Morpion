@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             winner.combo.forEach(i => {
                 cells[i].style.backgroundColor = "#B40000";
                 cells[i].style.color = "#FFEFD3";
-                cells[i].setAttribute("aria-label", `Winning cells occupied by the player ${winner}.`);
+                cells[i].setAttribute("aria-label", `Winning cells occupied by the player ${winner.symbol}.`);
             });
             endGame("Oh no, the AI won \ud83d\ude26! We'll have to try again!");
             return;
@@ -117,33 +117,22 @@ document.addEventListener('DOMContentLoaded', () => {
             cell.textContent = humanSymbol;
             cell.disabled = true;
             cell.style.pointerEvents = "none";
-            cell.setAttribute("aria-label", `You're in the box ${humanSymbol}`);
+            cell.setAttribute("aria-label", `You placed ${humanSymbol} in this cell, row ${Math.floor(index / 3) + 1}, column ${(index % 3) + 1}`);
             
             const winner = verifyWinIA(board);
             if (winner) {
-                const combos =
-                    [[0,1,2],[3,4,5],[6,7,8],
-                    [0,3,6],[1,4,7],[2,5,8],
-                    [0,4,8],[2,4,6]];
-                for (const [a, b, c] of combos) { 
-                    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-                        [a, b, c].forEach(i => {
-                            cells[i].style.backgroundColor = "#00B400";
-                            cells[i].style.color = "#2F2D2E";
-                            cells[i].setAttribute("aria-label", `Winning cells occupied by the player ${winner}.`);
-                        });
-                        break;
-                    }
-                }
+                winner.combo.forEach(i => {
+                    cells[i].style.backgroundColor = "#00B400";
+                    cells[i].style.color = "#2F2D2E";
+                    cells[i].setAttribute("aria-label", `Winning cells occupied by the player ${winner.symbol}.`);
+                });
                 endGame("Congratulations, you won \ud83c\udfc6!");
                 return;
             }
-            
             if (board.every(cell => cell !== "")) {
                 endGame("It's a draw… at least the AI didn't win \ud83d\ude10");
                 return;
             }
-            
             setTimeout(playAI, 400);
         });
     }); 
