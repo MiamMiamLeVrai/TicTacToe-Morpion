@@ -2,14 +2,20 @@
 
 ## 🇫🇷 Notes de mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 3.2.3 : Dernières corrections _enfin je l'espère_ (09/06/2026)
+### ⚙️ NOUVELLE VERSION : Version 3.3.0 : Le pied-de-page se refait une beauté 💅 ! (03/07/2026)
+
+Petit mot avant de commencer la notes de cette mise à jour. Depuis un certain moment, si vous regardez les dates des mises à jour majeures et importantes, je prends de plus en plus de temps. En réalité, ce manque de temps et cette envie de continuer à développer le projet se dissipent, ce qui ralonge le temps pour chaque mise à jour (et franchement ça en devient un peu énervant 😠). Quand je dis "cette envie", je parle du fait qu'au commencement, je me suis têtu pendant plusieurs semaines de développer des modes de jeu et des fonctionnalités supplémentaires autant que je pouvais. Mais le problème c'est que je ne pouvais pas continuer à développer le projet autant que je le souhaitais.
+
+Je ne pense pas que le projet va être abandonné, loin de là, mais je pense que le projet va rester dans cette version 3.3.0 très longtemps. J'espère pas trop longtemps mais ça prendra le temps que ça prendra. Il sera toujours jouable mais sans aucune garantie de mise à jour future. Peut-être que d'autres projets webs ou applications verront le jour et en vrai, je ne dirai pas non, mais le projet Morpion va rester en suspens d'actualisation.
+
+Après cette demi mauvaise nouvelle, il est temps de dire peut-être pour la dernière fois…
 
 #### C'est quoi les nouveautés ? 👀
 
-- Correction d'un bug dans `netlify.toml` qui bloquait l'affichage des icônes Font Awesome utilisées dans `homepage.html` (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Ajout d'une balise `link` dans le `<head>` de la page d'erreur `404.html` pour une question de propreté, même si ce n'est pas critique.
-- Les fichiers `.gitignore` et `sitemap.xml` ont été mis à jour.
-- Mise à jour de la version 3.2.2 vers la version 3.2.3.
+- Le pied-de-page a une nouvelle apparence dans la majorité des pages webs du projet (les pages `404.html`, `index.html` et `homepage.html` ne sont pas concernées par ces changements), elle accueille un accès rapide à mes réseaux sociaux tels que GitHub, LinkedIn et Twitter (X) (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le CSS a aussi subi le changement pour être en raccord avec le changement de design du pied-de-page (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Quelques résolutions de bugs d'affichage et autres dans l'ensemble du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Version 3.2.2 mise à jour vers la version 3.3.0.
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
@@ -17,14 +23,20 @@ __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.2.3: Last fixes _finally I hope_ (2026/06/09)
+### ⚙️ NEW VERSION: Version 3.3.0: The footer is getting a makeover 💅! (2026/07/03)
 
-#### What's new? 👀
+A quick word before starting the notes for this update. For some time now, if you look at the dates of major and important updates, I have been taking more and more time. In reality, this lack of time and the desire to continue developing the project are dissipating, which is slowing down the time for each update (and honestly it's getting a bit annoying 😠). When I say "this desire", I'm talking about the fact that at first, I stubbornly tried for several weeks to develop additional game modes and features as much as I could. But the problem is that I couldn’t continue to develop the project as much as I wanted.
 
-- Fixing a bug in `netlify.toml` that was blocking the display of Font Awesome icons used in `homepage.html` (_Change also applied in the French and Spanish versions_).
-- Adding a `link` tag in the `<head>` of the `404.html` error page for cleanliness, even if it's not critical.
-- The `.gitignore` and `sitemap.xml` files have been updated.
-- Updated from version 3.2.2 to version 3.2.3.
+I don’t think the project will be abandoned, far from it, but I think that the project will stay in this 3.3.0 version for a very long time. I hope not too long, but it will take as long as it takes. It will still be playable but with no guarantee of future updates. Maybe other web projects or applications will be created and in real life, I won’t say no, but the Morpion project will remain pending for updates.
+
+After this half bad news, it's time to say maybe for the last time...
+
+#### What's new ? 👀
+
+- The footer has a new appearance in most of the project's web pages (the `404.html`, `index.html` and `homepage.html` pages are not affected by these changes). It provides quick access to my social networks such as GitHub, LinkedIn, and Twitter (X). (_Change also applied in the French and Spanish versions_).
+- The CSS has also been changed to match the change in footer design (_Change applied also in the French and Spanish versions_).
+- Some display bug fixes and other improvements in the project (_Change also applied in the French and Spanish versions_).
+- Version 3.2.2 updated to version 3.3.0.
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -35,7 +47,7 @@ __HAVE FUN ON TIC-TAC-TOE!__
 ---
 
 🇫🇷 Notes de mise à jour
-⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations ✍️ (06/06/2026)
+⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations✍️ (2026/06/06)
 C'est quoi les nouveautés ? 👀
 
 - Certaines pages n'ayant pas bénéficié de mise à jour des versions précedentes du projet, elles ont été corrigées pour garantir une cohérence accrue par rapport aux autres pages du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
@@ -244,7 +256,7 @@ C'est quoi les nouveautés ? 👀
 It's here! The most important update to the Morpion project has finally arrived! This update brings a ton of new features, listed below, including bug fixes (as usual), the end of support for a particular programming language, and a language no one could have imagined 🤨. But so…
 What's new? 👀
 
-- SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; Modern browsers no longer need specific properties to display a grid and bugs will be easier to fix and will be addressed directly in the CSS if needed.
+- SCSS, previously used for this project due to its better compatibility across all browsers, will no longer be in the project starting with this version: two reasons why SCSS will be "obsolete"; 1) Modern browsers no longer need specific properties to display a grid. 2) Bugs will be easier to fix and will be addressed directly in the CSS if needed.
 - The design of some pages has been reworked to be visually cleaner.
 - Responsiveness has been improved for most web pages, but further improvements are planned for future updates.
 - Some long-standing, unnecessary properties have been removed, but further improvements are planned for future updates.
@@ -268,7 +280,7 @@ What's new? 👀
 Ça y est, la mise à jour la plus importante du projet Morpion est enfin arrivé ! Cette MAJ apporte énormément de nouveautés listés juste en-dessous comme des bugs corrigés (comme d'habitude), une fin d'utilisation d'un langage de programmation en particulier et une langue que personne n'aurait pu imaginer 🤨. Mais du coup…
 C'est quoi les nouveautés ? 👀
 
-- Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; De 1, les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, et de 2, les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
+- Le SCSS, autrefois utilisé pour ce projet en raison d'une meilleure compatibilité pour tous les navigateurs, ne sera plus dans le projet à partir de cette version : deux raisons qui ont fait que SCSS sera "obsolète"; 1) Les navigateurs modernes n'ont plus besoin des propriétés spécifiques pour afficher une grille, 2) Les bugs seront plus faciles à régler et sera fait directement dans le CSS en cas de soucis
 - Le design de certaines pages ont été refaits pour être plus "propres" visuellement
 - Le responsive pour la majorité des pages webs ont été améliorés, mais d'autres améliorations seront prévus pour des MAJ futures
 - Certaines propriétés inutiles présents depuis un bon moment ont été supprimés, mais d'autres améliorations seront prévues pour des MAJ futures
