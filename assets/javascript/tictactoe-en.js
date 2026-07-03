@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Wait, are you clicking the box instead of \"Randon draw\"? \ud83e\udd28";
+                resultText.textContent = "Wait, are you clicking the box instead of \"Random draw\"? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
