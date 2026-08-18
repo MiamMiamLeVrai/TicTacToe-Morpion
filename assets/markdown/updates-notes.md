@@ -2,20 +2,16 @@
 
 ## 🇫🇷 Notes de mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 3.3.0 : Le pied-de-page se refait une beauté 💅 ! (03/07/2026)
+### ⚙️ NOUVELLE VERSION : Version 3.3.1 : Bugs mineures corrigés (18/08/2026)
 
-Petit mot avant de commencer la notes de cette mise à jour. Depuis un certain moment, si vous regardez les dates des mises à jour majeures et importantes, je prends de plus en plus de temps. En réalité, ce manque de temps et cette envie de continuer à développer le projet se dissipent, ce qui ralonge le temps pour chaque mise à jour (et franchement ça en devient un peu énervant 😠). Quand je dis "cette envie", je parle du fait qu'au commencement, je me suis têtu pendant plusieurs semaines de développer des modes de jeu et des fonctionnalités supplémentaires autant que je pouvais. Mais le problème c'est que je ne pouvais pas continuer à développer le projet autant que je le souhaitais.
-
-Je ne pense pas que le projet va être abandonné, loin de là, mais je pense que le projet va rester dans cette version 3.3.0 très longtemps. J'espère pas trop longtemps mais ça prendra le temps que ça prendra. Il sera toujours jouable mais sans aucune garantie de mise à jour future. Peut-être que d'autres projets webs ou applications verront le jour et en vrai, je ne dirai pas non, mais le projet Morpion va rester en suspens d'actualisation.
-
-Après cette demi mauvaise nouvelle, il est temps de dire peut-être pour la dernière fois…
+Petit retour pour annoncer la sortie de la version 3.3.1 du projet Morpion. Cette mise à jour mineure corrige quelques bugs mineures et améliore la stabilité du projet. Il n'y a pas de nouvelles fonctionnalités ajoutées dans cette version, mais elle est importante pour assurer une expérience de jeu plus fluide et sans problèmes. Mais du coup...
 
 #### C'est quoi les nouveautés ? 👀
 
-- Le pied-de-page a une nouvelle apparence dans la majorité des pages webs du projet (les pages `404.html`, `index.html` et `homepage.html` ne sont pas concernées par ces changements), elle accueille un accès rapide à mes réseaux sociaux tels que GitHub, LinkedIn et Twitter (X) (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Le CSS a aussi subi le changement pour être en raccord avec le changement de design du pied-de-page (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Quelques résolutions de bugs d'affichage et autres dans l'ensemble du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
-- Version 3.2.2 mise à jour vers la version 3.3.0.
+- Bug corrigé dans le fichier `vsIA-fr.js` : le listener `restartBtn` était placé dans la boucle `cells.forEach`, ce qui pouvait causer des soucis de performance et des répétitions du listener `restartBtn` inutiles.
+- Erreur grammaticale dans le fichier `tictactoe-fr.js` est maintenant corrigé
+- Des règles ont été ajoutées dans les fichiers `tictactoe.css`, `vsIA.css` et `5x5.css`, respectivement pour les utilisateurs de claviers et pour le côté interactif des cases de la grille
+- Version 3.3.0 mise à jour vers la version 3.3.1
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
@@ -23,20 +19,16 @@ __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.3.0: The footer is getting a makeover 💅! (2026/07/03)
+### ⚙️ NEW VERSION: Version 3.3.1: Minor bugs fixed (2026/08/18)
 
-A quick word before starting the notes for this update. For some time now, if you look at the dates of major and important updates, I have been taking more and more time. In reality, this lack of time and the desire to continue developing the project are dissipating, which is slowing down the time for each update (and honestly it's getting a bit annoying 😠). When I say "this desire", I'm talking about the fact that at first, I stubbornly tried for several weeks to develop additional game modes and features as much as I could. But the problem is that I couldn’t continue to develop the project as much as I wanted.
+Welcome back to announce the release of version 3.3.1 of the Morpion project. This minor update fixes some minor bugs and improves the project stability. There are no new features added in this version, but it is important to ensure a smoother and trouble-free gaming experience. But then...
 
-I don’t think the project will be abandoned, far from it, but I think that the project will stay in this 3.3.0 version for a very long time. I hope not too long, but it will take as long as it takes. It will still be playable but with no guarantee of future updates. Maybe other web projects or applications will be created and in real life, I won’t say no, but the Morpion project will remain pending for updates.
+#### What's new? 👀
 
-After this half bad news, it's time to say maybe for the last time...
-
-#### What's new ? 👀
-
-- The footer has a new appearance in most of the project's web pages (the `404.html`, `index.html` and `homepage.html` pages are not affected by these changes). It provides quick access to my social networks such as GitHub, LinkedIn, and Twitter (X). (_Change also applied in the French and Spanish versions_).
-- The CSS has also been changed to match the change in footer design (_Change applied also in the French and Spanish versions_).
-- Some display bug fixes and other improvements in the project (_Change also applied in the French and Spanish versions_).
-- Version 3.2.2 updated to version 3.3.0.
+- Bug fixed in the `vsIA-fr.js` file: the `restartBtn` listener was placed in the `cells.forEach` loop, which could cause performance issues and unnecessary repetitions of the `restartBtn` listener.
+- Grammatical error in the `tictactoe-fr.js` file is now fixed
+- Rules have been added in the `tictactoe.css`, `vsIA.css`, and `5x5.css` files, respectively for keyboard users and for the interactive side of the grid cells
+- Version 3.3.0 updated to version 3.3.1
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -45,6 +37,30 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ---
 ---
+
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.3.0 : Le pied-de-page se refait une beauté 💅 ! (03/07/2026)
+Petit mot avant de commencer la notes de cette mise à jour. Depuis un certain moment, si vous regardez les dates des mises à jour majeures et importantes, je prends de plus en plus de temps. En réalité, ce manque de temps et cette envie de continuer à développer le projet se dissipent, ce qui ralonge le temps pour chaque mise à jour (et franchement ça en devient un peu énervant 😠). Quand je dis "cette envie", je parle du fait qu'au commencement, je me suis têtu pendant plusieurs semaines de développer des modes de jeu et des fonctionnalités supplémentaires autant que je pouvais. Mais le problème c'est que je ne pouvais pas continuer à développer le projet autant que je le souhaitais.
+Je ne pense pas que le projet va être abandonné, loin de là, mais je pense que le projet va rester dans cette version 3.3.0 très longtemps. J'espère pas trop longtemps mais ça prendra le temps que ça prendra. Il sera toujours jouable mais sans aucune garantie de mise à jour future. Peut-être que d'autres projets webs ou applications verront le jour et en vrai, je ne dirai pas non, mais le projet Morpion va rester en suspens d'actualisation.
+Après cette demi mauvaise nouvelle, il est temps de dire peut-être pour la dernière fois…
+C'est quoi les nouveautés ? 👀
+
+- Le pied-de-page a une nouvelle apparence dans la majorité des pages webs du projet (les pages `404.html`, `index.html` et `homepage.html` ne sont pas concernées par ces changements), elle accueille un accès rapide à mes réseaux sociaux tels que GitHub, LinkedIn et Twitter (X) (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Le CSS a aussi subi le changement pour être en raccord avec le changement de design du pied-de-page (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Quelques résolutions de bugs d'affichage et autres dans l'ensemble du projet (_Changement appliqué aussi dans les versions anglaise et espagnole_).
+- Version 3.2.2 mise à jour vers la version 3.3.0.
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.3.0: The footer is getting a makeover 💅! (2026/07/03)
+A quick word before starting the notes for this update. For some time now, if you look at the dates of major and important updates, I have been taking more and more time. In reality, this lack of time and the desire to continue developing the project are dissipating, which is slowing down the time for each update (and honestly it's getting a bit annoying 😠). When I say "this desire", I'm talking about the fact that at first, I stubbornly tried for several weeks to develop additional game modes and features as much as I could. But the problem is that I couldn’t continue to develop the project as much as I wanted.
+I don’t think the project will be abandoned, far from it, but I think that the project will stay in this 3.3.0 version for a very long time. I hope not too long, but it will take as long as it takes. It will still be playable but with no guarantee of future updates. Maybe other web projects or applications will be created and in real life, I won’t say no, but the Morpion project will remain pending for updates.
+After this half bad news, it's time to say maybe for the last time...
+What's new ? 👀
+
+- The footer has a new appearance in most of the project's web pages (the `404.html`, `index.html` and `homepage.html` pages are not affected by these changes). It provides quick access to my social networks such as GitHub, LinkedIn, and Twitter (X). (_Change also applied in the French and Spanish versions_).
+- The CSS has also been changed to match the change in footer design (_Change applied also in the French and Spanish versions_).
+- Some display bug fixes and other improvements in the project (_Change also applied in the French and Spanish versions_).
+- Version 3.2.2 updated to version 3.3.0.
 
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 3.2.2 : Encore et toujours des améliorations✍️ (2026/06/06)
