@@ -130,6 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             setTimeout(playAI, 400);
         });
-        restartBtn.addEventListener("click", resetGame);
     });
+    restartBtn.addEventListener("click", resetGame);
 });

@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 cells.forEach(cell => {
                     cell.disabled = true;
                     cell.style.pointerEvents = "none";
-                    cell.setAttribute("aria-label", "Cases désactivés après match nul");
+                    cell.setAttribute("aria-label", "Cases désactivées après match nul");
                 });
                 return;
             }
