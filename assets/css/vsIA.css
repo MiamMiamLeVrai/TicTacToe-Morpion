@@ -227,6 +227,11 @@ main {
     background-color: var(--nav-links-color);
 }
 
+.morpion-classic .grid .cell:disabled {
+    background-color: var(--nav-links-color);
+    border-color: var(--nav-links-color);
+}
+
 .morpion-classic .grid .cell:active {
     background-color: var(--selector-color);
     border-color: var(--nav-links-color);
