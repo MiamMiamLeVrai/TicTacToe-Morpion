@@ -1,4 +1,4 @@
-import { getBestMove, verifyWinIA } from './5x5_Player.js';
+import { getBestMove, verifyWinIA } from './5x5_Player.js?v=3.4.0';
 
 document.addEventListener('DOMContentLoaded', () => {
     const cells = document.querySelectorAll('.cell');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const restartButton = document.getElementById('restartButton');
     const winsInfos = document.getElementById('winsInfos');
     const playerSymbolText = document.getElementById('playerSymbol');
-    const titleGame = document.getElementById('infos-title');  
+    const titleGame = document.getElementById('infos-title');
 
     // ✅ Toutes les variables d'état déclarées proprement
     let humanSymbol = null;   // Symbole du joueur 1 (ou humain en mode IA)
@@ -17,9 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let modeChoice = null;    // 'ia' ou 'player'
     let board = Array(25).fill('');
     let gameActive = false;
+    let aiTimer = null;
+    let aiThinking = false;
 
     restartButton.style.pointerEvents = "none";
-    startBtn.style.pointerEvents = "none";  
+    startBtn.style.pointerEvents = "none";
+
+    function scheduleAI() {
+        aiThinking = true;
+        aiTimer = setTimeout(playAI, 400);
+    }
 
     // Colorie les cases du combo gagnant
     function highlightCombo(combo, bgColor, textColor) {
@@ -41,32 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetGame() {
+        clearTimeout(aiTimer);
+        aiThinking = false;
         modeChoice = null;
         humanSymbol = null;
         aiSymbol = null;
         currentPlayer = null;
         board = Array(25).fill('');
         gameActive = false;
-
         playerSymbolText.textContent = '';
         playerSymbolText.style.transform = 'translateX(200%)';
         playerSymbolText.style.opacity = 0;
         winsInfos.textContent = '';
         winsInfos.style.transform = 'translateX(200%)';
         winsInfos.style.opacity = 0;
-
         startBtn.disabled = true;
         startBtn.style.pointerEvents = 'none';
         restartButton.disabled = true;
         restartButton.style.pointerEvents = 'none';
-
         iaChoice.disabled = false;
         iaChoice.style.pointerEvents = 'auto';
         humanChoice.disabled = false;
         humanChoice.style.pointerEvents = 'auto';
-
         titleGame.textContent = 'Choix du joueur';
-
         cells.forEach(cell => {
             const idx = Number(cell.getAttribute('data-cell'));
             cell.textContent = '';
@@ -80,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function playAI() {
+        aiThinking = false;
         if (!gameActive) return;
 
         const bestMove = getBestMove(board, aiSymbol, humanSymbol);
@@ -113,12 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Number(cell.getAttribute('data-cell'));
 
             if (!gameActive) {
-                winsInfos.textContent = "Choisis un mode et clique sur \"Tire au sort\" pour commencer !";
+                winsInfos.textContent = "Choisis un mode et clique sur \"Tirage au sort\" pour commencer !";
                 winsInfos.style.transform = 'translateX(0%)';
                 winsInfos.style.opacity = 1;
                 return;
             }
-
+            if (aiThinking) return;
             if (board[index] !== '') return;
 
             // ✅ Le symbole actif dépend du mode
@@ -148,18 +153,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (board.every(c => c !== '')) {
-                endGame("Match nul... au moins c'est pas l'IA qui a gagné \ud83d\ude10");
+                endGame(modeChoice === 'ia' ? "Match nul... aucun de vous deux n'a gagné la partie. \ud83d\ude10" : "Match nul ! \ud83e\udd1d");
                 return;
             }
 
             if (modeChoice === 'ia') {
                 // Mode IA : l'IA joue après le joueur
-                setTimeout(playAI, 400);
+                scheduleAI();
             } else {
                 // ✅ Mode 2 joueurs : on alterne les tours
                 currentPlayer = currentPlayer === humanSymbol ? aiSymbol : humanSymbol;
                 const playerNum = currentPlayer === humanSymbol ? '1' : '2';
-                playerSymbolText.textContent = `C'est au tour du joueur ${playerNum} (${currentPlayer})`;
+                playerSymbolText.textContent = `C'est au tour du joueur ${playerNum} (${currentPlayer}).`;
             }
         });
     });
@@ -203,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         restartButton.style.pointerEvents = 'auto';
 
         if (modeChoice === 'ia') {
-            playerSymbolText.textContent = `Tu joues avec le symbole ${humanSymbol}, donc l'IA joue avec le symbole ${aiSymbol}`;
+            playerSymbolText.textContent = `Tu joues avec le symbole ${humanSymbol}, donc l'IA joue avec le symbole ${aiSymbol}.`;
         } else {
             playerSymbolText.textContent = `Joueur 1 joue avec ${humanSymbol}, Joueur 2 joue avec ${aiSymbol}. C'est au tour du Joueur 1 !`;
         }
@@ -212,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Si l'IA a tiré X, elle commence
         if (modeChoice === 'ia' && aiSymbol === 'X') {
-            setTimeout(playAI, 400);
+            scheduleAI();
         }
     });
 

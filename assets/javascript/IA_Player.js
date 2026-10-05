@@ -43,7 +43,7 @@ function miniMax(board, depth, isMaximizing, aiSymbol, humanSymbol) {
 
 function getBestMove(board, aiSymbol, humanSymbol) {
     let bestScore = -100;
-    let bestMove = null;
+    let bestMoves = [];
     for (let i = 0; i < 9; i++) {
         if (board[i] === "") {
             board[i] = aiSymbol;
@@ -51,11 +51,24 @@ function getBestMove(board, aiSymbol, humanSymbol) {
             board[i] = "";
             if (score > bestScore) {
                 bestScore = score;
-                bestMove = i;
+                bestMoves = [i];
+            } else if (score === bestScore) {
+                bestMoves.push(i);
             }
         }
     }
-    return bestMove;
+    return bestMoves.length ? bestMoves[Math.floor(Math.random() * bestMoves.length)] : null;
 }
 
-export { getBestMove, verifyWinIA };
+function getRandomMove(board) {
+    const free = board.map((cell, i) => (cell === "" ? i : -1)).filter(i => i !== -1);
+    return free.length ? free[Math.floor(Math.random() * free.length)] : null;
+}
+
+function getMoveByDifficulty(board, aiSymbol, humanSymbol, difficulty = "hard") {
+    const mistakeChance = { easy: 0.7, medium: 0.3, hard: 0 }[difficulty] ?? 0;
+    if (Math.random() < mistakeChance) return getRandomMove(board);
+    return getBestMove(board, aiSymbol, humanSymbol);
+}
+
+export { getBestMove, getMoveByDifficulty, verifyWinIA };

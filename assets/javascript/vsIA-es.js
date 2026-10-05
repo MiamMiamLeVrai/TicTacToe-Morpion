@@ -1,4 +1,4 @@
-import { getBestMove, verifyWinIA } from "./IA_Player.js";
+import { getBestMove, getMoveByDifficulty, verifyWinIA } from "./IA_Player.js?v=3.4.0";
 
 document.addEventListener("DOMContentLoaded", () => {
     const cells = document.querySelectorAll(".cell");
@@ -6,15 +6,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerSymbolText = document.getElementById("playerSymbol");
     const winsInfos = document.getElementById("winsInfos");
     const restartBtn = document.getElementById("restartButton");
+    const difficultySelect = document.getElementById("difficulty");
     
     let humanSymbol = null;
     let aiSymbol = null;
     let board = Array(9).fill("");
     let gameActive = false;
+    let aiTimer = null;
+    let aiThinking = false;
 
     restartBtn.style.pointerEvents = "none";
+
+    function scheduleAI() {
+        aiThinking = true;
+        aiTimer = setTimeout(playAI, 400);
+    }
     
     function resetGame() {
+        clearTimeout(aiTimer);
+        aiTimer = null;
+        aiThinking = false;
         humanSymbol = null;
         aiSymbol = null;
         board = Array(9).fill("");
@@ -29,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
         startBtn.style.pointerEvents = "auto";
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
+        difficultySelect.disabled = false;
+        difficultySelect.style.pointerEvents = "auto";
         cells.forEach((cell) => {
             cell.textContent = "";
             cell.disabled = false;
@@ -51,7 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     function playAI() {
-        const bestMove = getBestMove(board, aiSymbol, humanSymbol);
+        aiThinking = false;
+        if (!gameActive) return;
+        const difficulty = document.querySelector('input[name="difficulty"]:checked');
+        const bestMove = getMoveByDifficulty(board, aiSymbol, humanSymbol, difficulty);
         if (bestMove === null) return;
         
         board[bestMove] = aiSymbol;
@@ -86,13 +102,15 @@ document.addEventListener("DOMContentLoaded", () => {
         startBtn.style.pointerEvents = "none";
         restartBtn.disabled = false;
         restartBtn.style.pointerEvents = "auto";
+        difficultySelect.disabled = true;
+        difficultySelect.style.pointerEvents = "none";
         
         playerSymbolText.textContent = `Estás jugando con el símbolo ${humanSymbol}, así que la IA está jugando con el símbolo ${aiSymbol}.`;
         playerSymbolText.style.transform = "translateX(0%)";
         playerSymbolText.style.opacity = 1;
         
         if (aiSymbol === "X") {
-            setTimeout(playAI, 400);
+            scheduleAI();
         }
     });
     
@@ -101,11 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const index = Number(cell.getAttribute("data-cell"));
             
             if (!gameActive) { 
-                winsInfos.textContent = "Antes de comenzar, haga clic en \"Dibujar un símbolo\" para elegir el símbolo.";
+                winsInfos.textContent = "Antes de comenzar, haz clic en \"Sorteo\" para elegir el símbolo.";
                 winsInfos.style.transform = "translateX(0%)";
                 winsInfos.style.opacity = 1;
                 return;
             }
+            if (aiThinking) return;
             
             if (board[index] !== "") return;
             
@@ -129,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 endGame("Un empate... al menos la IA no ganó \ud83d\ude10");
                 return;
             }
-            setTimeout(playAI, 400);
+            scheduleAI();
         });
     });  
     restartBtn.addEventListener("click", resetGame);

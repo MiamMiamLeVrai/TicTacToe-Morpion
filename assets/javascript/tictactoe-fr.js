@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         restartBtn.style.pointerEvents = "none";
         cells.forEach((cell) => {
             cell.style.backgroundColor = "";
+            cell.style.color = "";
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";

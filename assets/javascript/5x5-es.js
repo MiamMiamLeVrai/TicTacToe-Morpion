@@ -1,4 +1,4 @@
-import { getBestMove, verifyWinIA } from "./5x5_Player.js";
+import { getBestMove, verifyWinIA } from "./5x5_Player.js?v=3.4.0";
 
 document.addEventListener("DOMContentLoaded", () => {
     const cells = document.querySelectorAll(".cell");
@@ -16,9 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let modeChoice = null;
     let board = Array(25).fill("");
     let gameActive = false;
+    let aiTimer = null;
+    let aiThinking = false;
 
     restartButton.style.pointerEvents = "none";
     startBtn.style.pointerEvents = "none";
+
+    function scheduleAI() {
+        aiThinking = true;
+        aiTimer = setTimeout(playAI, 400);
+    }
 
     function highlightCombo(combo, bgColor, textColor) {
         combo.forEach(i => {
@@ -39,32 +46,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetGame() {
+        clearTimeout(aiTimer);
+        aiThinking = false;
         modeChoice = null;
         humanSymbol = null;
         aiSymbol = null;
         currentPlayer = null;
         board = Array(25).fill('');
         gameActive = false;
-
         playerSymbolText.textContent = '';
         playerSymbolText.style.transform = 'translateX(200%)';
         playerSymbolText.style.opacity = 0;
         winsInfos.textContent = '';
         winsInfos.style.transform = 'translateX(200%)';
         winsInfos.style.opacity = 0;
-
         startBtn.disabled = true;
         startBtn.style.pointerEvents = 'none';
         restartButton.disabled = true;
         restartButton.style.pointerEvents = 'none';
-
         iaChoice.disabled = false;
         iaChoice.style.pointerEvents = 'auto';
         humanChoice.disabled = false;
         humanChoice.style.pointerEvents = 'auto';
-
         titleGame.textContent = "Elección de jugador";
-
         cells.forEach(cell => {
             const idx = Number(cell.getAttribute('data-cell'));
             cell.textContent = '';
@@ -77,8 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function playAI() {
+        aiThinking = false;
         if (!gameActive) return;
-
         const bestMove = getBestMove(board, aiSymbol, humanSymbol);
         if (bestMove === null) return;
 
@@ -95,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         if (board.every(cell => cell !== '')) {
-            endGame("Sorteo... al menos no es la IA la que ganó \ud83d\ude10")
+            endGame("¡Empate! Al menos no es la IA la que ganó \ud83d\ude10");
+            return;
         }
     }
 
@@ -104,12 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const index = Number(cell.getAttribute('data-cell'));
 
             if (!gameActive) {
-                winsInfos.textContent = "Elija un modo y haga clic en \"Sorteo\" para comenzar!";
+                winsInfos.textContent = "¡Elige un modo y haz clic en \"Sorteo\" para comenzar!";
                 winsInfos.style.transform = 'translateX(0%)';
                 winsInfos.style.opacity = 1;
                 return;
             }
-
+            if (aiThinking) return;
             if (board[index] !== '') return;
 
             const activeSymbol = modeChoice === 'player' ? currentPlayer : humanSymbol;
@@ -134,12 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (board.every(c => c !== '')) {
-                endGame("Sorteo... al menos no es la IA la que ganó \ud83d\ude10");
+                endGame(modeChoice === 'ia' ? "¡Empate!... al menos no es la IA la que ganó \ud83d\ude10" : "¡Empate! \ud83e\udd1d");
                 return;
             }
 
             if (modeChoice === 'ia') {
-                setTimeout(playAI, 400);
+                scheduleAI();
             } else {
                 currentPlayer = currentPlayer === humanSymbol ? aiSymbol : humanSymbol;
                 const playerNum = currentPlayer === humanSymbol ? '1' : '2';
@@ -194,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         playerSymbolText.style.opacity = 1;
 
         if (modeChoice === 'ia' && aiSymbol === 'X') {
-            setTimeout(playAI, 400);
+            scheduleAI();
         }
     });
 

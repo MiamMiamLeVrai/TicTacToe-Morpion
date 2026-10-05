@@ -1,4 +1,4 @@
-import { getBestMove, verifyWinIA } from "./IA_Player.js";
+import { getBestMove, getMoveByDifficulty, verifyWinIA } from "./IA_Player.js?v=3.4.0";
 
 document.addEventListener('DOMContentLoaded', () => {
     const cells = document.querySelectorAll(".cell");
@@ -6,34 +6,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerSymbolText = document.getElementById("playerSymbol");
     const winsInfos = document.getElementById("winsInfos");
     const restartBtn = document.getElementById("restartButton");
+    const difficultySelect = document.getElementById("difficulty");
     
     let humanSymbol = null;
     let aiSymbol = null;
     let board = Array(9).fill("");
     let gameActive = false;
+    let aiTimer = null;
+    let aiThinking = false;
 
     restartBtn.style.pointerEvents = "none";
+
+    function scheduleAI() {
+        aiThinking = true;
+        aiTimer = setTimeout(playAI, 400);
+    }
     
     function resetGame() {
+        clearTimeout(aiTimer);
+        aiTimer = null;
+        aiThinking = false;
         humanSymbol = null;
         aiSymbol = null;
         board = Array(9).fill("");
         gameActive = false;
-        
         playerSymbolText.textContent = "";
         playerSymbolText.style.transform = "translateX(200%)";
         playerSymbolText.style.opacity = 0;
-        
         winsInfos.textContent = "";
         winsInfos.style.transform = "translateX(200%)";
         winsInfos.style.opacity = 0;
-        
         startBtn.disabled = false;
         startBtn.style.pointerEvents = "auto";
-        
         restartBtn.disabled = true;
         restartBtn.style.pointerEvents = "none";
-        
+        difficultySelect.disabled = false;
+        difficultySelect.style.pointerEvents = "auto";
         cells.forEach((cell) => {
             cell.textContent = "";
             cell.disabled = false;
@@ -56,7 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function playAI() {
-        const bestMove = getBestMove(board, aiSymbol, humanSymbol);
+        aiThinking = false;
+        if (!gameActive) return;
+        const difficulty = document.querySelector('input[name="difficulty"]:checked');
+        const bestMove = getMoveByDifficulty(board, aiSymbol, humanSymbol, difficulty);
         if (bestMove === null) return;
         
         board[bestMove] = aiSymbol;
@@ -90,13 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.style.pointerEvents = "none";
         restartBtn.disabled = false;
         restartBtn.style.pointerEvents = "auto";
+        difficultySelect.disabled = true;
+        difficultySelect.style.pointerEvents = "none";
         
         playerSymbolText.textContent = `You play with the symbol ${humanSymbol}, so the AI plays with the symbol ${aiSymbol}`;
         playerSymbolText.style.transform = "translateX(0%)";
         playerSymbolText.style.opacity = 1;
         
         if (aiSymbol === "X") {
-            setTimeout(playAI, 400);
+            scheduleAI();
         }
     });
 
@@ -110,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 winsInfos.style.opacity = 1;
                 return;
             }
-            
+            if (aiThinking) return;            
             if (board[index] !== "") return;
             
             board[index] = humanSymbol;
@@ -133,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 endGame("It's a draw… at least the AI didn't win \ud83d\ude10");
                 return;
             }
-            setTimeout(playAI, 400);
+            scheduleAI();
         });
     }); 
     restartBtn.addEventListener("click", resetGame);

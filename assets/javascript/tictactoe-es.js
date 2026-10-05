@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         restartBtn.disabled = true;
         cells.forEach((cell) => {
             cell.style.backgroundColor = "";
+            cell.style.color = "";
             cell.textContent = "";
             cell.disabled = false;
             cell.style.pointerEvents = "auto";
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameActive) {
                 resultText.style.transform = "translateX(0%)";
                 resultText.style.opacity = 1;
-                resultText.textContent = "Espera, haces clic en la casilla en lugar de \"Sorteo\"? \ud83e\udd28";
+                resultText.textContent = "Espera, ¿haces clic en la casilla en lugar de \"Sorteo\"? \ud83e\udd28";
                 return;
             }
             if (board[index] !== "") {
