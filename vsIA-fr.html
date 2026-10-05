@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#FFEFD3">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="_F7DWhtzfgylHbsyvVaQZ6ZclcI-buIk4YS_nCKpE4A">
     <meta name="language" content="fr">
 
@@ -31,19 +31,15 @@
     <meta name="twitter:url" content="https://tictactoe-morpion.netlify.app/vsIA-fr.html">
     <meta name="twitter:site" content="@Miammiam_am">
     <meta name="twitter:creator" content="@Miammiam_am">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/css/vsIA.css">
     <link rel="manifest" href="assets/json/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/variables.css?v=3.4.0">
+    <link rel="stylesheet" href="assets/css/vsIA.css?v=3.4.0">
 
     <link rel="canonical" href="https://tictactoe-morpion.netlify.app/vsIA-fr.html">
     <link rel="alternate" href="https://tictactoe-morpion.netlify.app/vsIA-en.html" hreflang="en-US">
@@ -86,7 +82,7 @@
     <main>
         <section class="morpion-classic">
             <h2>Morpion VS IA</h2>
-            <div class="grid" aria-label="Grille du morpion" role="grid">
+            <div class="grid" aria-label="Grille du morpion" role="group">
                 <button class="cell" data-cell="0" aria-label="Case vide, ligne 1, colonne 1"></button>
                 <button class="cell" data-cell="1" aria-label="Case vide, ligne 1, colonne 2"></button>
                 <button class="cell" data-cell="2" aria-label="Case vide, ligne 1, colonne 3"></button>
@@ -102,16 +98,21 @@
         <aside aria-labelledby="infos-title">
             <section class="player-choice">
                 <h2>Choisissez votre symbole</h2>
-                <button id="startBtn" aria-label="Tire au sort">Tirage au sort</button>
-                <b>
-                    <p id="playerSymbol" role="status" aria-live="polite"></p>
-                </b>
+                    <fieldset class="difficulty" id="difficulty">
+                    <legend>Choix de la difficulté</legend>
+                        <input type="radio" name="difficulty" id="diff-easy" value="easy">
+                            <label for="diff-easy">Facile</label>
+                        <input type="radio" name="difficulty" id="diff-medium" value="medium" checked>
+                            <label for="diff-medium">Moyen</label>
+                        <input type="radio" name="difficulty" id="diff-hard" value="hard">
+                            <label for="diff-hard">Impossible</label>
+                    </fieldset>
+                <button id="startBtn" aria-label="Tirage au sort">Tirage au sort</button>
+                <p id="playerSymbol" role="status" aria-live="polite"></p>
             </section>
             <section class="player-infos">
                 <h2 id="infos-title">Informations de la partie</h2>
-                <b>
-                    <p id="winsInfos" aria-live="polite" role="status"></p>
-                </b>
+                <p id="winsInfos" aria-live="polite" role="status"></p>
                 <button id="restartButton" aria-label="Recommencer la partie" disabled>Recommencer la partie</button>
             </section>
         </aside>
@@ -120,33 +121,33 @@
         <section class="contact-area">
             <h3>Moyens de me contacter</h3>
             <div class="contact">
-                <i class="fa-brands fa-linkedin">
-                    <a href="https://www.linkedin.com/in/simon-heries-3447563aa/"
-                        aria-label="Profil LinkedIn (s'ouvre dans une nouvelle fenêtre)" target="_blank"
-                        rel="noopener noreferrer"></a>
-                </i>
-                <i class="fa-brands fa-github">
-                    <a href="https://github.com/MiamMiamLeVrai"
-                        aria-label="Profil GitHub (s'ouvre dans une nouvelle fenêtre)" target="_blank"
-                        rel="noopener noreferrer"></a>
-                </i>
-                <i class="fa-brands fa-square-x-twitter">
-                    <a href="https://x.com/Miammiam_am" aria-label="Profil Twitter (s'ouvre dans une nouvelle fenêtre)"
-                        target="_blank" rel="noopener noreferrer"></a>
-                </i>
+                <a href="https://www.linkedin.com/in/simon-heries-3447563aa/"
+                    aria-label="Profil LinkedIn (s'ouvre dans une nouvelle fenêtre)" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/MiamMiamLeVrai"
+                    aria-label="Profil GitHub (s'ouvre dans une nouvelle fenêtre)" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://x.com/Miammiam_am" aria-label="Profil Twitter (s'ouvre dans une nouvelle fenêtre)"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+                </a>
             </div>
         </section>
         <section class="credits">
             <b>
                 &copy; <span id="dateFooter"></span> - Simon HERIES (MiamMiamLeVrai) - Tous droits
-                réservés - Version 3.3.1
+                réservés - Version 3.4.0
             </b>
             <span>Plus d'informations : <a href="homepage-fr.html#creditsList" aria-label="Crédits du site">Crédits du
                     site</a></span>
         </section>
     </footer>
-    <script src="assets/javascript/animation.js" defer></script>
-    <script src="assets/javascript/vsIA-fr.js" type="module"></script>
+    <script src="assets/javascript/animation.js?v=3.4.0" defer></script>
+    <script src="assets/javascript/vsIA-fr.js?v=3.4.0" type="module"></script>
 </body>
 
 </html>
