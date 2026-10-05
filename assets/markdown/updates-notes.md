@@ -2,16 +2,66 @@
 
 ## 🇫🇷 Notes de mise à jour
 
-### ⚙️ NOUVELLE VERSION : Version 3.3.1 : Bugs mineures corrigés (18/08/2026)
+### ⚙️ NOUVELLE VERSION : Version 3.4.0 : LES DIFFICULTÉS SONT ENFIN LÀ (pas partout en tout cas...) 🥳 (05/10/2026) !!!
 
-Petit retour pour annoncer la sortie de la version 3.3.1 du projet Morpion. Cette mise à jour mineure corrige quelques bugs mineures et améliore la stabilité du projet. Il n'y a pas de nouvelles fonctionnalités ajoutées dans cette version, mais elle est importante pour assurer une expérience de jeu plus fluide et sans problèmes. Mais du coup...
+Vous avez bien vu et lu, une nouvelle version du projet Morpion est sortie ! Et elle apporte une nouvelle fonctionnalité qui normalement aurait du venir beaucoup plutôt que prévu, mais maintenant elle est disponible pour un mode en particulier. Il servira de test, puis viendra dans d'autres modes. Cette mise à jour vient aussi corriger d'énormes bugs présent depuis un certain temps, qui existe depuis plusieurs versions qui n'a pas été corrigé, et refait l'organisation du fichier de notes de mise à jour dans sa globalité. Mais du coup…
 
 #### C'est quoi les nouveautés ? 👀
 
-- Bug corrigé dans le fichier `vsIA-fr.js` : le listener `restartBtn` était placé dans la boucle `cells.forEach`, ce qui pouvait causer des soucis de performance et des répétitions du listener `restartBtn` inutiles.
-- Erreur grammaticale dans le fichier `tictactoe-fr.js` est maintenant corrigé
-- Des règles ont été ajoutées dans les fichiers `tictactoe.css`, `vsIA.css` et `5x5.css`, respectivement pour les utilisateurs de claviers et pour le côté interactif des cases de la grille
-- Version 3.3.0 mise à jour vers la version 3.3.1
+##### 🟢 La nouveauté de la mise à jour
+
+__LE CHOIX DE LA DIFFICULTÉ__ est __ENFIN DISPONIBLE__ dans le projet Morpion 🥳 !!! Il viendra plus tard pour les autres modes dans une prochaine mise à jour. Vous aurez le choix entre trois difficultés : __FACILE__, __MOYEN__ et __IMPOSSIBLE__. Il est pour l'instant __disponible uniquement pour le mode JOUEUR VS IA__.
+
+##### 🔴 Les points majeurs
+
+- Correction d'un bug dans le fichier `tictactoe.js` qui faisait que les symboles X, O des cases gagnantes dans la partie précédente s'affichaient dans la mauvaise couleur, au lieu de la couleur du texte, ce qui n'était pas cohérent avec le reste du design et manquait de contrôle visuel.
+- Correction d'un bug dans le fichier `vsIA.js` où les utilisateurs pouvaient cliquer autant de fois sur le bouton "Recommencer" dans un délai très court, ce qui pouvait entraîner des comportements inattendus au niveau de l'IA, notamment une logique des cases de la grille cassée.
+- Ajout d'un timer pour la partie contre l'IA, permettant de bloquer les clics de l'utilisateur pendant le tour de l'IA.
+- Autres corrections et améliorations apportées dans la globalité des fichiers JavaScript au projet.
+- Correction de design des grilles dans `tictactoc.css`, `5x5.css` et `vsIA.css` : l'arrière-plan des grilles de jeu recouvraient et coloraient les cases et bordures où les symboles étaient placés. Et coloraient aussi les cases où les symboles ne sont pas placés quand les parties se terminent. Maintenant les grilles sont plus visuellement cohérentes et intuitives.
+- Ajout de choix de difficulté pour les parties contre l'IA dans `vsIA-*.html`, permettant de sélectionner un niveau de difficulté (facile, moyen, difficile) qui affecte la logique de l'IA.
+- Ajout du design pour l'affichage principale et les affichages mobiles des choix de difficulté pour les parties contre l'IA dans `vsIA.css`.
+
+##### 🟠 Les points mineurs
+
+- Correction d'un bug dans le fichier `vsIA.js` où les clics de l'IA pouvaient être en double, enregistrés pour une prochaine partie, et que les joueurs pouvait joueur deux fois en un tour, ce qui amenait à des comportements inattendus de l'IA.
+- Amélioration de la sécurité du cache dans `netlify.toml` en remettant à niveau les fichiers CSS, les fichiers JS, etc.
+- Modification et remise à niveau de la CSP qui bloquait le chargement de fichiers externes et des fichiers recevant des modifications, notamment `site.webmanifest`, les fichiers CSS, les fichiers JS, etc.
+- Amélioration de la logique de l'IA `5x5_Player.js` qui faisait que l'IA ne réfléchissait pas correctement pour placer ses symboles sur la grille.
+- Amélioration de la logique de l'IA `IA_Player.js` qui faisait qu'elle était imbattable et prévisible dans toutes les situations, ce qui devenait frustrant pour les joueurs.
+- Correction du chemin dans `site.webmanifest` pour pointer vers les bons fichiers d'images pour les icônes de l'application.
+
+##### 🟡 Les points d'améliorations / finitions / détails
+
+- Nouveau agencement du markdown `updates-notes.md`. Maintenant les notes de mise à jour du projet sont classés dans quatre points de couleur (🟢, 🔴, 🟠, 🟡), respectivement : la nouveauté de la mise à jour, les points majeures (Les points majeurs), les points mineurs (les points mineurs) et les points d'améliorations (les points d'améliorations).
+- Correction de la syntaxe pour la barre de status des iPhones : `<meta name="mobile-web-app-status-bar-style" content="default">` -> `<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">`.
+- Correction de la syntaxe pour les aria-label pour la grille de jeu : `role="grid"` -> `role="group"`.
+- Correction de la syntaxe HTML au niveau des icônes sociales dans les pied-de-page des pages HTML.
+- Meilleure cohérence des aria-label dans le fichier `index.html` qui provoquait une incohérence dans ce qui est affiché.
+- Suppression du rôle `role="button"` dans les aria-label dans le fichier `index.html`.
+- Ajout d'une règle `:focus-visible` pour les utilisateurs qui utilisent uniquement un clavier pour naviguer.
+- Mise à jour de la librairie Font Awesome (l'ancienne version 6.7.2 vers la nouvelle version 7.3.1) et ajout d'une couche de sécurité SRI.
+- Création du dossier `assets/fonts` pour stocker les polices Outfit localement.
+- Meilleur traitement et utilisation de la police Outfit dans le projet. La police n'est plus importée depuis une URL Google externe, mais est maintenant intégrée localement dans le projet.
+- Ajout de la balise `<link>` pour charger le fichier CSS `variables.css` localement.
+- Meilleur gestion des imports CSS, de la police Outfit dans le projet.
+- Erreur de texte dans le fichier `5x5-fr.js` corrigée : "Tire au sort" -> "Tirage au sort".
+- Erreur de texte dans l'aria-label `vsIA-fr.html` corrigée : "Tire au sort" -> "Tirage au sort".
+- Erreur de texte dans le fichier `vsIA-en.js` corrigée : "Start the game" -> "Draw a symbol".
+- Erreur de texte dans le fichier `vsIA-es.js` corrigée : "Dibujar símbolo" -> "Sorteo".
+- Erreur de texte dans l'aria-label `vsIA-es.html` corrigée : "Dibujar símbolo" -> "Sorteo".
+- Erreur de texte dans le fichier `5x5-*.js` corrigée : "au moins c'est pas l'IA qui a gagné" en une phrase plus spécifique par rapport à l'adversaire choisi.
+- Erreur de texte dans le fichier `5x5-es.js` corrigée : "Sorteo…" -> "Empate…".
+- Erreur de syntaxes dans tous les fichiers JavaScript et HTML corrigées.
+- Mélange de registre dans les versions espagnoles corrigé.
+- Mélange de balises HTML dans les pages des jeux corrigé : `<b><p>…</p></b>` -> `<p>…</p>`.
+- Mélange de balises HTML dans une grande partie des pages webs contenant des icônes sociales corrigé : `<i><a>…</a></i>` -> `<a><i>…</i></a>`.
+- Ajout d'une aria-label `aria-hidden="true"` pour les icônes sociales, permettant aux lecteurs d'écran de les ignorer.
+- Date mise à jour dans `sitemap.xml`.
+- Certaines règles dans le fichier `netlify.toml` ont été optimisées et supprimées car elles ne sont pas nécessaires dans le cadre du projet.
+- Simplification du fichier `.gitignore`.
+- Simplification du fichier `robots.txt`.
+- Mise à jour de la version du projet 3.3.1 vers 3.4.0.
 
 __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
@@ -19,16 +69,67 @@ __AMUSEZ-VOUS BIEN SUR LE MORPION !__
 
 ## 🇺🇸 Release Notes
 
-### ⚙️ NEW VERSION: Version 3.3.1: Minor bugs fixed (2026/08/18)
+### ⚙️ NEW VERSION: Version 3.4.0: THE DIFFICULTIES ARE FINALLY THERE (not everywhere anyway...) 🥳 (2026/05/10) !!!
 
-Welcome back to announce the release of version 3.3.1 of the Morpion project. This minor update fixes some minor bugs and improves the project stability. There are no new features added in this version, but it is important to ensure a smoother and trouble-free gaming experience. But then...
+You saw and read it, a new version of the Morpion project has been released! And it brings a new feature that normally should have come a lot rather than expected, but now it is available for a particular mode. It will serve as a test, then come in other modes. This update also corrects huge bugs that have been around for some time, which have existed in several versions since then, and reorganizes the entire release notes file. But then...
 
 #### What's new? 👀
 
-- Bug fixed in the `vsIA-fr.js` file: the `restartBtn` listener was placed in the `cells.forEach` loop, which could cause performance issues and unnecessary repetitions of the `restartBtn` listener.
-- Grammatical error in the `tictactoe-fr.js` file is now fixed
-- Rules have been added in the `tictactoe.css`, `vsIA.css`, and `5x5.css` files, respectively for keyboard users and for the interactive side of the grid cells
-- Version 3.3.0 updated to version 3.3.1
+##### 🟢 The update's novelty
+
+__THE CHOICE OF DIFFICULTY__ is __FINALLY AVAILABLE__ in the Tic-Tac-Toe project 🥳 !!! It will come later for the others modes in a future update.You will have to choose between three difficulty levels: __EASY__, __MEDIUM__, and __IMPOSSIBLE__. For now, it is only __available in the PLAYER VS AI.__
+
+##### 🔴 Majors points
+
+- Fixed a bug in the file `tictactoe.js` that made the winning symbols (X, O) display in the wrong color, instead of the text color, which was inconsistent with the rest of the design and lacked visual control.
+- Fixed a bug in the `vsIA.js` file where users could click the "Restart the game" button so many times within a very short timeframe, which could lead to unexpected AI behaviors including broken grid cell logic.
+- Added a timer for the game against AI, allowing you to block user clicks during the AI turn.
+- Other corrections and improvements made to the project’s entire JavaScript files.
+- Fixed the design of the grids in `tictactoc.css`, `5x5.css` and `vsIA.css`: the background of the game grids covered and colored the squares and borders where the symbols were placed. And also colored the boxes where the symbols are not placed when the games end. Now the grids are more visually coherent and intuitive.
+- Added difficulty choices for AI games in `vsIA-*. html`, allowing you to select a difficulty level (easy, medium, difficult) that affects the AI logic.
+- Added design for the main display and mobile displays of difficulty choices for AI games in `vsIA.css`.
+
+##### 🟠 Minor points
+
+- Fixed a bug in the `vsIA.js` file where AI clicks could be duplicated, saved for an upcoming game, and players could play twice in one round, leading to unexpected AI behaviors.
+- Improved cache security in `netlify.toml` by upgrading CSS files, JS files, etc.
+- Modification and upgrade of the CSP that blocked external files from loading and files receiving modifications, including `site.webmanifest`, CSS files, JS files, etc.
+- Improvement of the AI logic `5x5_Player.js` which caused the AI to not reflect correctly when placing its symbols on the grid.
+- Improved the AI logic `IA_Player.js` which made it unbeatable and predictable in all situations, making it frustrating for players.
+- Fixed the path in `site.webmanifest` to point to the correct image files for the app icons.
+
+##### 🟡 The improvement points / finishes / details
+
+- New markdown layout `updates-notes.md`. Now the project's release notes are sorted into four color points (🟢, 🔴, 🟠, 🟡), respectively: the novelty of the update, the major points (The major points), the minor points (The minor points) and the improvement points (The improvement points).
+- Syntax fix for iPhone status bar: `<meta name="mobile-web-app-status-bar-style" content="default">` -> `<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">`.
+- Correction of the syntax for aria-label for the game grid: `role="grid"` -> `role="group"`.
+- Correction of HTML syntax at the level of social icons in the footers of HTML pages.
+- Better consistency of the aria-label in the `index.html` file, which caused an inconsistency in what is displayed.
+- Removing the role `role="button"` from aria-label in the `index.html`file.
+- Added a `:focus-visible` rule for users who only use a keyboard to navigate.
+- Update of the Font Awesome library (from the old version 6.7.2 to the new version 7.3.1) and addition of a SRI security layer.
+- Creating the `assets/fonts` folder to store Outfit fonts locally.
+- Better processing and use of the Outfit font in the project. The font is no longer imported from an external Google URL, but is now integrated locally in the project.
+- Adding the `<link>` tag to load the CSS `variables.css` file locally.
+- Better management of CSS imports, of the Outfit font in the project.
+- Better management of CSS imports, of the Outfit font in the project.
+- Text error in the file `5x5-fr.js` corrected: "Draw lots" -> "Draw lots".
+- Text error in the aria-label `vsIA-fr.html` corrected: "Draw lots" -> "Draw lots".
+- Text error in the file `vsIA-en.js` fixed: "Start the game" -> "Draw a symbol".
+- Text error in the file `vsIA-es.js` corrected: "Dibujar" -> "Sorteo".
+- Text error in the aria-label `vsIA-es.html` corrected: "Dibujar" -> "Sorteo".
+- Text error in file `5x5-*. js` corrected: "at least it's not the AI that won" in a more specific sentence compared to the chosen opponent.
+- Text error in the file `5x5-es.js` corrected: "Sorteo..." -> "Empate...".
+- Syntax error in all corrected JavaScript and HTML files.
+- Registry mix in the Spanish versions corrected.
+- Fixed HTML tag mix in game pages: `<b><p>…</p></b>` -> `<p>…</p>`.
+- Mixing of HTML tags in most web pages containing social icons corrected: `<i><a>…</a></i>` -> `<a><i>…</i></a>`.
+- Added an aria-label `aria-hidden="true"` for social icons, allowing screen readers to ignore them.
+- Updated date in `sitemap.xml`.
+- Some rules in the `netlify.toml` file were optimized and deleted because they are not needed for the project.
+- Simplification of the `.gitignore` file.
+- Simplification of the `robots.txt` file.
+- Update from project version 3.3.1 to 3.4.0.
 
 __HAVE FUN ON TIC-TAC-TOE!__
 
@@ -37,6 +138,25 @@ __HAVE FUN ON TIC-TAC-TOE!__
 
 ---
 ---
+
+🇫🇷 Notes de mise à jour
+⚙️ NOUVELLE VERSION : Version 3.3.1 : Bugs mineures corrigés (18/08/2026)
+Petit retour pour annoncer la sortie de la version 3.3.1 du projet Morpion. Cette mise à jour mineure corrige quelques bugs mineures et améliore la stabilité du projet. Il n'y a pas de nouvelles fonctionnalités ajoutées dans cette version, mais elle est importante pour assurer une expérience de jeu plus fluide et sans problèmes. Mais du coup...
+C'est quoi les nouveautés ? 👀
+- Bug corrigé dans le fichier `vsIA-fr.js` : le listener `restartBtn` était placé dans la boucle `cells.forEach`, ce qui pouvait causer des soucis de performance et des répétitions du listener `restartBtn` inutiles.
+- Erreur grammaticale dans le fichier `tictactoe-fr.js` est maintenant corrigé
+- Des règles ont été ajoutées dans les fichiers `tictactoe.css`, `vsIA.css` et `5x5.css`, respectivement pour les utilisateurs de claviers et pour le côté interactif des cases de la grille
+- Version 3.3.0 mise à jour vers la version 3.3.1
+
+🇺🇸 Release Notes
+⚙️ NEW VERSION: Version 3.3.1: Minor bugs fixed (2026/08/18)
+Welcome back to announce the release of version 3.3.1 of the Morpion project. This minor update fixes some minor bugs and improves the project stability. There are no new features added in this version, but it is important to ensure a smoother and trouble-free gaming experience. But then...
+What's new? 👀
+
+- Bug fixed in the `vsIA-fr.js` file: the `restartBtn` listener was placed in the `cells.forEach` loop, which could cause performance issues and unnecessary repetitions of the `restartBtn` listener.
+- Grammatical error in the `tictactoe-fr.js` file is now fixed
+- Rules have been added in the `tictactoe.css`, `vsIA.css`, and `5x5.css` files, respectively for keyboard users and for the interactive side of the grid cells
+- Version 3.3.0 updated to version 3.3.1
 
 🇫🇷 Notes de mise à jour
 ⚙️ NOUVELLE VERSION : Version 3.3.0 : Le pied-de-page se refait une beauté 💅 ! (03/07/2026)
