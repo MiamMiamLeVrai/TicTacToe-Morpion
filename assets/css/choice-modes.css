@@ -1,5 +1,3 @@
-@import url('variables.css');
-
 ::selection {
     background-color: var(--selector-color);
 }
@@ -286,6 +284,11 @@ footer .contact i:hover {
 
 footer .contact i:active {
     transform: scale(0.95);
+}
+
+footer .contact a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 footer .credits {

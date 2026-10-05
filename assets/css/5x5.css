@@ -1,5 +1,3 @@
-@import url('variables.css');
-
 ::selection {
     background-color: var(--selector-color);
 }
@@ -316,7 +314,7 @@ main {
 .morpion-classic .grid .cell:focus {
     background-color: var(--selector-color);
     border-color: var(--nav-links-color);
-}
+} 
 
 aside {
     display: flex;
@@ -385,7 +383,7 @@ aside h2 {
     margin: 20px 0 0 0;
 }
 
-.player-infos b p {
+.player-infos p {
     font-size: clamp(1.2rem, 1.8vw, 2.1rem);
     margin: 10px 0 0 0;
 }
@@ -425,6 +423,11 @@ footer .contact i:hover {
 
 footer .contact i:active {
     transform: scale(0.95);
+}
+
+footer .contact a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 footer .credits {
@@ -468,6 +471,10 @@ footer .credits span a:hover {
     transform: translateX(200%);
     transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1), opacity 1s cubic-bezier(0.23, 1, 0.320, 1);
     opacity: 0;
+}
+
+#playerSymbol, #winsInfos, #turnInfos, #playerResult {
+    font-weight: 700;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -573,7 +580,7 @@ footer .credits span a:hover {
         margin: 10px 0 20px 0;
     }
 
-    .player-infos b p {
+    .player-infos p {
         margin: 0 0 5px 0;
     }
 
@@ -671,7 +678,7 @@ footer .credits span a:hover {
         margin: 10px 0 20px 0;
     }
 
-    .player-infos b p {
+    .player-infos p {
         margin: 0 0 5px 0;
     }
 
